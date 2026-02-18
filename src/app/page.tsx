@@ -11,6 +11,11 @@ import {
   Zap,
   Brain,
   Eye,
+  Clock,
+  BarChart3,
+  Scale,
+  Shield,
+  Receipt,
 } from "lucide-react";
 import {
   Card,
@@ -69,6 +74,56 @@ const calculators = [
     icon: PiggyBank,
     color: "text-amber-600",
     bg: "bg-amber-50",
+    badge: null,
+  },
+  {
+    title: "Retirement Calculator",
+    description:
+      "Plan your retirement with confidence. AI shows if you're on track and how to optimize your savings.",
+    href: "/retirement-calculator",
+    icon: Clock,
+    color: "text-indigo-600",
+    bg: "bg-indigo-50",
+    badge: "New",
+  },
+  {
+    title: "Investment Return Calculator",
+    description:
+      "Calculate potential returns on stocks, ETFs, and more. AI compares strategies and risk levels.",
+    href: "/investment-calculator",
+    icon: BarChart3,
+    color: "text-cyan-600",
+    bg: "bg-cyan-50",
+    badge: "New",
+  },
+  {
+    title: "Net Worth Calculator",
+    description:
+      "Track your total assets vs liabilities. AI gives you a financial health score and tips to improve.",
+    href: "/net-worth-calculator",
+    icon: Scale,
+    color: "text-teal-600",
+    bg: "bg-teal-50",
+    badge: null,
+  },
+  {
+    title: "Emergency Fund Calculator",
+    description:
+      "Find out how much you need in your emergency fund. AI personalizes it based on your situation.",
+    href: "/emergency-fund-calculator",
+    icon: Shield,
+    color: "text-orange-600",
+    bg: "bg-orange-50",
+    badge: null,
+  },
+  {
+    title: "Tax Bracket Calculator",
+    description:
+      "See which tax bracket you're in and your effective rate. AI explains how marginal taxes actually work.",
+    href: "/tax-bracket-calculator",
+    icon: Receipt,
+    color: "text-rose-600",
+    bg: "bg-rose-50",
     badge: null,
   },
 ];
