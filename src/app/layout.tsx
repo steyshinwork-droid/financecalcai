@@ -20,6 +20,11 @@ export const metadata: Metadata = {
     "Free AI-powered financial calculators with personalized insights. Mortgage, compound interest, budget, debt payoff, retirement, investment, net worth, tax bracket and more.",
   keywords:
     "financial calculator, AI calculator, mortgage calculator, compound interest calculator, budget calculator, debt payoff calculator, retirement calculator, investment calculator, net worth calculator, tax bracket calculator",
+  verification: {
+    other: {
+      "verify-admitad": "b0a3ffeae4",
+    },
+  },
   openGraph: {
     type: "website",
     siteName: "FinanceCalcAI",
