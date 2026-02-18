@@ -1,0 +1,223 @@
+import Link from "next/link";
+import {
+  TrendingUp,
+  Home,
+  Wallet,
+  CreditCard,
+  PiggyBank,
+  Calculator,
+  Sparkles,
+  ArrowRight,
+  Zap,
+  Brain,
+  Eye,
+} from "lucide-react";
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+
+const calculators = [
+  {
+    title: "Compound Interest Calculator",
+    description:
+      "See how your money grows over time with the power of compound interest. AI explains the best strategy for you.",
+    href: "/compound-interest-calculator",
+    icon: TrendingUp,
+    color: "text-emerald-600",
+    bg: "bg-emerald-50",
+    badge: "Popular",
+  },
+  {
+    title: "Mortgage Calculator",
+    description:
+      "Calculate your monthly mortgage payment and get AI advice on whether you can afford it.",
+    href: "/mortgage-calculator",
+    icon: Home,
+    color: "text-blue-600",
+    bg: "bg-blue-50",
+    badge: "Popular",
+  },
+  {
+    title: "Budget Calculator",
+    description:
+      "Plan your monthly budget with AI that finds where you can save money.",
+    href: "/budget-calculator",
+    icon: Wallet,
+    color: "text-purple-600",
+    bg: "bg-purple-50",
+    badge: null,
+  },
+  {
+    title: "Debt Payoff Calculator",
+    description:
+      "Find the fastest way to pay off your debts. AI compares snowball vs avalanche methods.",
+    href: "/debt-payoff-calculator",
+    icon: CreditCard,
+    color: "text-red-600",
+    bg: "bg-red-50",
+    badge: null,
+  },
+  {
+    title: "Savings Goal Calculator",
+    description:
+      "Set a savings goal and get a personalized plan. AI tells you exactly how much to save each month.",
+    href: "/savings-goal-calculator",
+    icon: PiggyBank,
+    color: "text-amber-600",
+    bg: "bg-amber-50",
+    badge: null,
+  },
+];
+
+const features = [
+  {
+    icon: Brain,
+    title: "AI-Powered Insights",
+    description:
+      "Not just numbers — get personalized explanations and advice in plain English.",
+  },
+  {
+    icon: Zap,
+    title: "Instant Results",
+    description:
+      "Lightning-fast calculations with beautiful charts and visualizations.",
+  },
+  {
+    icon: Eye,
+    title: "Clean & Ad-Light",
+    description:
+      "No ad spam. Clean interface designed for clarity, not clutter.",
+  },
+];
+
+export default function HomePage() {
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="relative overflow-hidden bg-gradient-to-b from-emerald-50 to-white px-4 pb-16 pt-20">
+        <div className="mx-auto max-w-4xl text-center">
+          <Badge variant="secondary" className="mb-4">
+            <Sparkles className="mr-1 h-3 w-3" /> Powered by AI
+          </Badge>
+          <h1 className="mb-6 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+            Financial Calculators
+            <br />
+            <span className="text-emerald-600">That Actually Help</span>
+          </h1>
+          <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-600">
+            Free calculators with AI-powered insights. Get personalized advice,
+            &quot;what if&quot; scenarios, and plain-English explanations — not
+            just numbers.
+          </p>
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link
+              href="/compound-interest-calculator"
+              className="inline-flex items-center gap-2 rounded-lg bg-emerald-600 px-6 py-3 font-semibold text-white transition hover:bg-emerald-700"
+            >
+              <Calculator className="h-5 w-5" />
+              Try a Calculator
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+            <Link
+              href="#calculators"
+              className="inline-flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-6 py-3 font-semibold text-gray-700 transition hover:bg-gray-50"
+            >
+              See All Calculators
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Us Section */}
+      <section className="border-b px-4 py-16">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-2 text-center text-sm font-semibold uppercase tracking-wider text-emerald-600">
+            Why FinanceCalcAI
+          </h2>
+          <p className="mb-12 text-center text-2xl font-bold text-gray-900">
+            More than just a calculator
+          </p>
+          <div className="grid gap-8 md:grid-cols-3">
+            {features.map((feature) => (
+              <div key={feature.title} className="text-center">
+                <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
+                  <feature.icon className="h-6 w-6" />
+                </div>
+                <h3 className="mb-2 font-semibold text-gray-900">
+                  {feature.title}
+                </h3>
+                <p className="text-sm text-gray-500">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Calculators List */}
+      <section id="calculators" className="px-4 py-16">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-2 text-center text-sm font-semibold uppercase tracking-wider text-emerald-600">
+            Free Tools
+          </h2>
+          <p className="mb-12 text-center text-2xl font-bold text-gray-900">
+            Choose a Calculator
+          </p>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {calculators.map((calc) => (
+              <Link key={calc.href} href={calc.href} className="group">
+                <Card className="h-full transition group-hover:border-emerald-200 group-hover:shadow-lg">
+                  <CardHeader>
+                    <div className="mb-3 flex items-center justify-between">
+                      <div
+                        className={`flex h-10 w-10 items-center justify-center rounded-lg ${calc.bg}`}
+                      >
+                        <calc.icon className={`h-5 w-5 ${calc.color}`} />
+                      </div>
+                      {calc.badge && (
+                        <Badge variant="secondary" className="text-xs">
+                          {calc.badge}
+                        </Badge>
+                      )}
+                    </div>
+                    <CardTitle className="text-lg group-hover:text-emerald-600">
+                      {calc.title}
+                    </CardTitle>
+                    <CardDescription>{calc.description}</CardDescription>
+                    <div className="mt-3 flex items-center text-sm font-medium text-emerald-600 opacity-0 transition group-hover:opacity-100">
+                      Calculate now <ArrowRight className="ml-1 h-4 w-4" />
+                    </div>
+                  </CardHeader>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-emerald-600 px-4 py-16 text-white">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="mb-4 text-3xl font-bold">
+            Stop Guessing. Start Calculating.
+          </h2>
+          <p className="mb-8 text-lg text-emerald-100">
+            Our AI doesn&apos;t just crunch numbers — it explains what they mean
+            for YOUR situation.
+          </p>
+          <Link
+            href="/compound-interest-calculator"
+            className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-emerald-600 transition hover:bg-emerald-50"
+          >
+            <Calculator className="h-5 w-5" />
+            Try Your First Calculator
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}
