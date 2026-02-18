@@ -44,9 +44,15 @@ export function Header() {
           ))}
           <Link
             href="/#calculators"
-            className="text-sm font-medium text-emerald-600 transition hover:text-emerald-700"
+            className="text-sm font-medium text-gray-600 transition hover:text-emerald-600"
           >
             All Calculators
+          </Link>
+          <Link
+            href="/blog"
+            className="text-sm font-medium text-emerald-600 transition hover:text-emerald-700"
+          >
+            Blog
           </Link>
         </nav>
 
@@ -71,6 +77,13 @@ export function Header() {
               {calc.name}
             </Link>
           ))}
+          <Link
+            href="/blog"
+            className="block py-2 font-medium text-emerald-600 transition hover:text-emerald-700"
+            onClick={() => setMenuOpen(false)}
+          >
+            Blog
+          </Link>
         </nav>
       )}
     </header>
