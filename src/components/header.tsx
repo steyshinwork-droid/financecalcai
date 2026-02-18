@@ -10,6 +10,11 @@ const calculators = [
   { name: "Budget", href: "/budget-calculator" },
   { name: "Debt Payoff", href: "/debt-payoff-calculator" },
   { name: "Savings Goal", href: "/savings-goal-calculator" },
+  { name: "Retirement", href: "/retirement-calculator" },
+  { name: "Investment", href: "/investment-calculator" },
+  { name: "Net Worth", href: "/net-worth-calculator" },
+  { name: "Emergency Fund", href: "/emergency-fund-calculator" },
+  { name: "Tax Bracket", href: "/tax-bracket-calculator" },
 ];
 
 export function Header() {

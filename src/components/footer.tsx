@@ -31,12 +31,12 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/mortgage-calculator" className="hover:text-emerald-600">
-                  Mortgage Calculator
+                  Mortgage
                 </Link>
               </li>
               <li>
                 <Link href="/budget-calculator" className="hover:text-emerald-600">
-                  Budget Calculator
+                  Budget
                 </Link>
               </li>
               <li>
@@ -47,6 +47,31 @@ export function Footer() {
               <li>
                 <Link href="/savings-goal-calculator" className="hover:text-emerald-600">
                   Savings Goal
+                </Link>
+              </li>
+              <li>
+                <Link href="/retirement-calculator" className="hover:text-emerald-600">
+                  Retirement
+                </Link>
+              </li>
+              <li>
+                <Link href="/investment-calculator" className="hover:text-emerald-600">
+                  Investment
+                </Link>
+              </li>
+              <li>
+                <Link href="/net-worth-calculator" className="hover:text-emerald-600">
+                  Net Worth
+                </Link>
+              </li>
+              <li>
+                <Link href="/emergency-fund-calculator" className="hover:text-emerald-600">
+                  Emergency Fund
+                </Link>
+              </li>
+              <li>
+                <Link href="/tax-bracket-calculator" className="hover:text-emerald-600">
+                  Tax Bracket
                 </Link>
               </li>
             </ul>
