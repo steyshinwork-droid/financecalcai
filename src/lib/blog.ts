@@ -571,9 +571,523 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
-];
+  {
+    slug: "how-much-do-i-need-to-retire",
+    title: "How Much Do I Need to Retire? The Real Number",
+    description:
+      "The 4% rule, Social Security, and the exact savings target you need to retire comfortably. Stop guessing — here's the math.",
+    date: "2026-02-18",
+    readTime: "6 min read",
+    category: "Retirement",
+    relatedCalculator: {
+      name: "Retirement Calculator",
+      href: "/retirement-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "Most people have no idea how much they need to retire. They guess a round number — $1 million, $2 million — without any math behind it. The truth is, your retirement number is personal. But there's a proven formula to calculate it, and it's simpler than you think.",
+      },
+      {
+        type: "h2",
+        text: "The 4% Rule: Your Starting Point",
+      },
+      {
+        type: "p",
+        text: "The 4% rule comes from the Trinity Study: a landmark 1998 analysis showing that retirees who withdraw 4% of their portfolio in year one — then adjust for inflation each year — have a 95%+ chance of never running out of money over 30 years.",
+      },
+      {
+        type: "p",
+        text: "The math works backwards. If you need $50,000/year in retirement and Social Security covers $20,000, you need $30,000/year from savings. Divide by 4%: $30,000 ÷ 0.04 = $750,000. That's your number.",
+      },
+      {
+        type: "h2",
+        text: "The Simple Formula",
+      },
+      {
+        type: "p",
+        text: "Retirement Number = (Annual expenses − Social Security income) ÷ 0.04",
+      },
+      {
+        type: "ul",
+        items: [
+          "Annual expenses $60,000, no Social Security: $60,000 ÷ 0.04 = $1,500,000",
+          "Annual expenses $60,000, SS pays $18,000: $42,000 ÷ 0.04 = $1,050,000",
+          "Annual expenses $40,000, SS pays $15,000: $25,000 ÷ 0.04 = $625,000",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What Will You Actually Spend in Retirement?",
+      },
+      {
+        type: "p",
+        text: "Most financial planners use 70-80% of pre-retirement income as a baseline. If you earn $80,000 now, plan for $56,000-$64,000/year in retirement. But this varies hugely by lifestyle.",
+      },
+      {
+        type: "p",
+        text: "Expenses that drop in retirement: mortgage (if paid off), commuting, work clothes, payroll taxes. Expenses that rise: healthcare, travel, hobbies. Healthcare is the wild card — budget $5,000-$15,000/year per person for premiums and out-of-pocket costs.",
+      },
+      {
+        type: "tip",
+        text: "The 4% rule assumes a 30-year retirement. Retiring at 55 instead of 65? Consider a 3-3.5% withdrawal rate to make money last 40+ years.",
+      },
+      {
+        type: "h2",
+        text: "How Long Will You Need the Money?",
+      },
+      {
+        type: "p",
+        text: "Average life expectancy in the US is 79. But averages are misleading — if you make it to 65, your life expectancy jumps to 84 for men and 87 for women. Plan for at least 25-30 years of retirement, possibly more.",
+      },
+      {
+        type: "h2",
+        text: "The Power of Starting Early",
+      },
+      {
+        type: "ul",
+        items: [
+          "Saving $500/month from age 25 at 7% return = $1.3M at 65",
+          "Saving $500/month from age 35 at 7% return = $606K at 65",
+          "Saving $500/month from age 45 at 7% return = $260K at 65",
+        ],
+      },
+      {
+        type: "p",
+        text: "Starting 10 years earlier more than doubles your outcome. The math is brutal — every decade you delay roughly halves what you'll accumulate.",
+      },
+      {
+        type: "h2",
+        text: "Retirement Account Priority Order",
+      },
+      {
+        type: "ol",
+        items: [
+          "401(k) up to employer match — it's an instant 50-100% return",
+          "HSA if available — triple tax advantage",
+          "Roth IRA — $7,000/year limit, tax-free growth",
+          "Max out 401(k) — $23,000/year limit",
+          "Taxable brokerage — no limits, flexible",
+        ],
+      },
+      {
+        type: "cta",
+        text: "Use our Retirement Calculator to see exactly how much you need based on your age, income, and expenses — plus a year-by-year savings plan to get there.",
+        ctaText: "Calculate Your Retirement Number",
+        ctaHref: "/retirement-calculator",
+      },
+    ],
+  },
+  {
+    slug: "how-to-calculate-investment-returns",
+    title: "How to Calculate Investment Returns (And What Actually Matters)",
+    description:
+      "ROI, CAGR, annualized returns — what do they all mean? Here's how to measure whether your investments are actually performing well.",
+    date: "2026-02-18",
+    readTime: "5 min read",
+    category: "Investing",
+    relatedCalculator: {
+      name: "Investment Return Calculator",
+      href: "/investment-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "Your portfolio went up 15% last year. Is that good? It depends entirely on what the market did, what you're comparing to, and whether that 15% is nominal or real (after inflation). Understanding investment returns is essential for making smart decisions — here's what you actually need to know.",
+      },
+      {
+        type: "h2",
+        text: "Simple Return (ROI)",
+      },
+      {
+        type: "p",
+        text: "ROI = (Ending Value − Beginning Value) ÷ Beginning Value × 100. You invested $10,000. It's now worth $13,500. ROI = ($13,500 − $10,000) ÷ $10,000 = 35%. Simple. But ROI ignores time — a 35% return in 2 years is very different from 35% over 10 years.",
+      },
+      {
+        type: "h2",
+        text: "CAGR: The Most Useful Metric",
+      },
+      {
+        type: "p",
+        text: "Compound Annual Growth Rate (CAGR) tells you the steady annual rate that would produce the same result. Formula: CAGR = (Ending Value ÷ Beginning Value)^(1/years) − 1.",
+      },
+      {
+        type: "p",
+        text: "Example: $10,000 grew to $18,000 over 6 years. CAGR = (18,000/10,000)^(1/6) − 1 = 1.8^0.167 − 1 = 10.3%/year. That means your investment grew as if it earned exactly 10.3% every single year — smoothing out the ups and downs.",
+      },
+      {
+        type: "h2",
+        text: "Real Return vs Nominal Return",
+      },
+      {
+        type: "p",
+        text: "If your portfolio earned 8% but inflation was 3%, your real return is only about 5%. Real return = nominal return − inflation rate. Over decades, inflation silently destroys purchasing power. Always think in real returns when planning for the future.",
+      },
+      {
+        type: "tip",
+        text: "The S&P 500's historical nominal return is ~10%/year. After inflation (~3%), the real return is ~7%. This is why financial planners often use 7% as the default assumption for long-term projections.",
+      },
+      {
+        type: "h2",
+        text: "Benchmarking: Is Your Return Actually Good?",
+      },
+      {
+        type: "p",
+        text: "A 12% return sounds great — unless the S&P 500 returned 25% that year. Always compare your returns to a relevant benchmark. For US stocks: S&P 500. For international: MSCI World. For bonds: Bloomberg US Aggregate Bond Index.",
+      },
+      {
+        type: "ul",
+        items: [
+          "S&P 500 historical average: ~10%/year (1926-2024)",
+          "US bonds historical average: ~4-5%/year",
+          "60/40 portfolio (stocks/bonds): ~7-8%/year",
+          "Inflation (CPI) historical average: ~3%/year",
+        ],
+      },
+      {
+        type: "h2",
+        text: "The Hidden Cost: Fees",
+      },
+      {
+        type: "p",
+        text: "A 1% annual fee sounds trivial. Over 30 years on a $100,000 investment at 7% return, that 1% fee costs you $175,000 in lost gains. Choose low-cost index funds (expense ratios under 0.1%) over actively managed funds (1-2% fees) whenever possible.",
+      },
+      {
+        type: "h2",
+        text: "Dollar-Cost Averaging vs Lump Sum",
+      },
+      {
+        type: "p",
+        text: "Research consistently shows lump-sum investing beats dollar-cost averaging (DCA) about 2/3 of the time over 10-year periods. But DCA wins psychologically — it removes the temptation to time the market. Both beat sitting in cash.",
+      },
+      {
+        type: "cta",
+        text: "Use our Investment Return Calculator to project exactly how your money grows at different return rates — and see what fees are really costing you over time.",
+        ctaText: "Calculate Your Investment Returns",
+        ctaHref: "/investment-calculator",
+      },
+    ],
+  },
+  {
+    slug: "how-to-calculate-net-worth",
+    title: "How to Calculate Your Net Worth (And Why It's the Only Number That Matters)",
+    description:
+      "Your income doesn't make you wealthy — your net worth does. Here's exactly how to calculate it and what to do next.",
+    date: "2026-02-18",
+    readTime: "5 min read",
+    category: "Personal Finance",
+    relatedCalculator: {
+      name: "Net Worth Calculator",
+      href: "/net-worth-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "A doctor earning $300,000/year with $400,000 in student debt and a $600,000 mortgage might have a lower net worth than a teacher earning $60,000 who's been maxing out their 401(k) for 20 years. Income is a flow. Net worth is the scoreboard. Here's how to calculate yours — and what it actually means.",
+      },
+      {
+        type: "h2",
+        text: "The Formula",
+      },
+      {
+        type: "p",
+        text: "Net Worth = Total Assets − Total Liabilities. That's it. Add up everything you own, subtract everything you owe. The result — positive or negative — is your net worth.",
+      },
+      {
+        type: "h2",
+        text: "Your Assets: Everything You Own",
+      },
+      {
+        type: "ul",
+        items: [
+          "Cash and savings accounts",
+          "Checking and money market accounts",
+          "Investment accounts (brokerage, stocks, ETFs)",
+          "Retirement accounts (401k, IRA, Roth IRA)",
+          "Home value (current market value, not purchase price)",
+          "Vehicles (current market value, not what you paid)",
+          "Other property (rental real estate, land)",
+          "Business ownership value",
+          "Other valuable assets (jewelry, collectibles)",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Your Liabilities: Everything You Owe",
+      },
+      {
+        type: "ul",
+        items: [
+          "Mortgage balance (remaining principal)",
+          "Car loan balance",
+          "Student loan balance",
+          "Credit card balances",
+          "Personal loans",
+          "Medical debt",
+          "Any other money owed",
+        ],
+      },
+      {
+        type: "tip",
+        text: "Use current market value for assets, not purchase price. Your house might be worth $350,000 today even if you paid $280,000. Use Zillow or Redfin for estimates. For cars, use Kelley Blue Book.",
+      },
+      {
+        type: "h2",
+        text: "What's a Good Net Worth?",
+      },
+      {
+        type: "p",
+        text: "The median US household net worth is about $192,000 (2022 Federal Reserve data). The average is $1.06 million — skewed heavily by the ultra-wealthy. Use the median as a realistic benchmark.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Age 25: median ~$10,000 (most people just starting)",
+          "Age 35: median ~$76,000",
+          "Age 45: median ~$168,000",
+          "Age 55: median ~$212,000",
+          "Age 65: median ~$266,000",
+        ],
+      },
+      {
+        type: "h2",
+        text: "The Simple Wealth Target by Age",
+      },
+      {
+        type: "p",
+        text: "A common rule: your net worth should equal your age × your annual income ÷ 10. If you're 40 and earn $80,000: target = 40 × $80,000 ÷ 10 = $320,000. This is a rough guide — not gospel.",
+      },
+      {
+        type: "h2",
+        text: "How to Grow Your Net Worth",
+      },
+      {
+        type: "ol",
+        items: [
+          "Increase income — your biggest lever, especially early in your career",
+          "Reduce spending — every dollar saved is a dollar added to net worth",
+          "Pay off high-interest debt — guaranteed return equal to the interest rate",
+          "Invest consistently — compound growth is how net worth accelerates",
+          "Avoid lifestyle inflation — keep expenses flat as income grows",
+        ],
+      },
+      {
+        type: "cta",
+        text: "Calculate your net worth in 2 minutes with our free Net Worth Calculator. See exactly where you stand — and get a personalized plan to grow it.",
+        ctaText: "Calculate Your Net Worth",
+        ctaHref: "/net-worth-calculator",
+      },
+    ],
+  },
+  {
+    slug: "how-to-save-10000-fast",
+    title: "How to Save $10,000 Fast: A Realistic Step-by-Step Plan",
+    description:
+      "Saving $10,000 feels overwhelming. Here's an exact plan — with timelines — to hit your goal whether you have 6 months or 2 years.",
+    date: "2026-02-18",
+    readTime: "6 min read",
+    category: "Savings",
+    relatedCalculator: {
+      name: "Savings Goal Calculator",
+      href: "/savings-goal-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "$10,000 is a transformative amount of money. It's a solid emergency fund, a house down payment starter, a car purchase, or seed money for investing. Whatever your reason, here's an exact plan to get there — based on your timeline and income.",
+      },
+      {
+        type: "h2",
+        text: "How Long Will It Take?",
+      },
+      {
+        type: "p",
+        text: "It depends entirely on how much you can save per month. The math is simple: $10,000 ÷ monthly savings = months to goal.",
+      },
+      {
+        type: "ul",
+        items: [
+          "$200/month → 50 months (4+ years)",
+          "$400/month → 25 months (about 2 years)",
+          "$600/month → 17 months (about 1.5 years)",
+          "$833/month → 12 months (exactly 1 year)",
+          "$1,000/month → 10 months",
+          "$2,000/month → 5 months",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Step 1: Find Your Savings Number",
+      },
+      {
+        type: "p",
+        text: "Take-home pay minus fixed expenses (rent, car, insurance, minimum debt payments, utilities, groceries). Whatever's left is potential savings. Be honest. If you have $400 left but spend $350 on dining and entertainment, your real current savings rate is $50/month.",
+      },
+      {
+        type: "h2",
+        text: "Step 2: Open a Dedicated Savings Account",
+      },
+      {
+        type: "p",
+        text: "Don't save in your checking account. Open a separate high-yield savings account (HYSA) that earns 4-5% APY. The separation prevents spending, and the interest helps. On $5,000 average balance at 4.5% APY, you'll earn ~$225/year — that's free progress toward your goal.",
+      },
+      {
+        type: "tip",
+        text: "Name your savings account after your goal. 'House Down Payment' or 'Emergency Fund' in the account name makes it feel real and harder to raid.",
+      },
+      {
+        type: "h2",
+        text: "Step 3: Automate Everything",
+      },
+      {
+        type: "p",
+        text: "Set up automatic transfer from checking to savings the day after payday. Pay yourself first — before you have a chance to spend it. If the transfer happens automatically, you'll never miss the money.",
+      },
+      {
+        type: "h2",
+        text: "Step 4: Find the Extra Money",
+      },
+      {
+        type: "p",
+        text: "Most people can find $200-500/month they didn't know they had. Common sources:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Cancel unused subscriptions — the average American wastes $133/month",
+          "Meal prep instead of restaurants — saves $200-400/month for most people",
+          "Refinance auto loan or credit cards to lower interest rates",
+          "Negotiate bills (internet, insurance) — most people save $50-100/month",
+          "Sell items you don't use (furniture, clothes, electronics)",
+          "One weekend side gig per month — even $200 extra accelerates everything",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Step 5: Use Windfalls Strategically",
+      },
+      {
+        type: "p",
+        text: "Tax refund, work bonus, birthday money, sold something online — send 100% of windfalls directly to your savings goal. The average US tax refund is $3,000. One good year with a refund + bonus could put you halfway there instantly.",
+      },
+      {
+        type: "h2",
+        text: "The Motivation Secret: Track Progress Visually",
+      },
+      {
+        type: "p",
+        text: "Print a simple savings tracker. Color in each $500 increment. Seeing $2,500 colored in when you were at $0 last month is more motivating than any app. Humans respond to visual progress — use it.",
+      },
+      {
+        type: "cta",
+        text: "Use our Savings Goal Calculator to build your exact monthly plan. Enter your goal, timeline, and current savings — get a step-by-step schedule with interest calculations.",
+        ctaText: "Build Your Savings Plan",
+        ctaHref: "/savings-goal-calculator",
+      },
+    ],
+  },
+  {
+    slug: "how-do-tax-brackets-work",
+    title: "How Do Tax Brackets Actually Work? (Most People Get This Wrong)",
+    description:
+      "You don't pay your top tax rate on all your income. Here's how marginal tax brackets actually work — and how to use them to pay less.",
+    date: "2026-02-18",
+    readTime: "5 min read",
+    category: "Taxes",
+    relatedCalculator: {
+      name: "Tax Bracket Calculator",
+      href: "/tax-bracket-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "The most common tax myth: 'I don't want a raise — it'll bump me into a higher tax bracket and I'll take home less.' This is completely wrong. Tax brackets don't work that way. Understanding how they actually work can save you thousands — and eliminate a lot of unnecessary anxiety about earning more.",
+      },
+      {
+        type: "h2",
+        text: "The Marginal Tax System Explained",
+      },
+      {
+        type: "p",
+        text: "The US uses a marginal (progressive) tax system. You don't pay your top rate on ALL your income — only on the portion that falls within each bracket. Think of it like filling buckets.",
+      },
+      {
+        type: "h2",
+        text: "2024 Tax Brackets (Single Filers)",
+      },
+      {
+        type: "ul",
+        items: [
+          "10%: $0 – $11,600",
+          "12%: $11,601 – $47,150",
+          "22%: $47,151 – $100,525",
+          "24%: $100,526 – $191,950",
+          "32%: $191,951 – $243,725",
+          "35%: $243,726 – $609,350",
+          "37%: Over $609,350",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Real Example: $75,000 Income",
+      },
+      {
+        type: "p",
+        text: "If you earn $75,000 as a single filer in 2024, you're in the 22% bracket. But you don't pay 22% on $75,000. Here's what you actually pay:",
+      },
+      {
+        type: "ul",
+        items: [
+          "First $11,600 taxed at 10% = $1,160",
+          "Next $35,550 taxed at 12% = $4,266",
+          "Remaining $27,850 taxed at 22% = $6,127",
+          "Total federal tax = $11,553",
+          "Effective tax rate = 15.4% (not 22%)",
+        ],
+      },
+      {
+        type: "tip",
+        text: "Your 'marginal rate' is the rate on your last dollar earned. Your 'effective rate' is your actual average rate across all income. Always distinguish between the two.",
+      },
+      {
+        type: "h2",
+        text: "Standard Deduction: The Free Tax Cut",
+      },
+      {
+        type: "p",
+        text: "Before brackets apply, you subtract the standard deduction: $14,600 for single filers in 2024, $29,200 for married filing jointly. This is income you pay zero tax on. Our example above assumes this is already accounted for in the taxable income figure.",
+      },
+      {
+        type: "h2",
+        text: "Legal Ways to Reduce Your Tax Bracket",
+      },
+      {
+        type: "ol",
+        items: [
+          "401(k) contributions — reduce taxable income dollar-for-dollar (up to $23,000)",
+          "Traditional IRA contributions — up to $7,000/year deductible",
+          "HSA contributions — triple tax advantage, reduces taxable income",
+          "Business deductions — if self-employed, many expenses are deductible",
+          "Harvest tax losses — sell losing investments to offset gains",
+        ],
+      },
+      {
+        type: "h2",
+        text: "State Taxes: The Hidden Layer",
+      },
+      {
+        type: "p",
+        text: "Most states charge additional income tax on top of federal. Rates range from 0% (Texas, Florida, Nevada) to 13.3% (California). Your total marginal rate is federal + state. A California resident in the 22% federal bracket might pay 22% + 9.3% = 31.3% on their last dollar.",
+      },
+      {
+        type: "cta",
+        text: "Use our Tax Bracket Calculator to see exactly how much you owe — broken down by bracket, with your effective rate and take-home pay after taxes.",
+        ctaText: "Calculate Your Taxes",
+        ctaHref: "/tax-bracket-calculator",
+      },
+    ],
+  },
 
-export function getBlogPost(slug: string): BlogPost | undefined {
   return blogPosts.find((post) => post.slug === slug);
 }
 
