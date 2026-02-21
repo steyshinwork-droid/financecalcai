@@ -1087,6 +1087,537 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "roth-ira-vs-401k",
+    title: "Roth IRA vs 401(k): Which Should You Choose?",
+    description:
+      "Both accounts grow tax-advantaged, but they work differently. Here's exactly how to decide which is right for you — and whether you should use both.",
+    date: "2026-02-21",
+    readTime: "6 min read",
+    category: "Retirement",
+    relatedCalculator: {
+      name: "Retirement Calculator",
+      href: "/retirement-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "Roth IRA or 401(k)? It's one of the most common questions in personal finance — and the answer matters more than most people think. The wrong choice could cost you tens of thousands in taxes over a 30-year career. Here's a clear, no-nonsense breakdown.",
+      },
+      {
+        type: "h2",
+        text: "The Core Difference: When You Pay Taxes",
+      },
+      {
+        type: "p",
+        text: "With a traditional 401(k), you contribute pre-tax dollars — your taxable income drops today, but you pay taxes when you withdraw in retirement. With a Roth IRA, you contribute after-tax dollars — no immediate tax break, but all growth and withdrawals are completely tax-free.",
+      },
+      {
+        type: "ul",
+        items: [
+          "401(k): Pay taxes later (in retirement)",
+          "Roth IRA: Pay taxes now (this year)",
+          "Traditional IRA: Same tax treatment as 401(k), but employer-independent",
+        ],
+      },
+      {
+        type: "h2",
+        text: "2024 Contribution Limits",
+      },
+      {
+        type: "ul",
+        items: [
+          "401(k): $23,000/year ($30,500 if age 50+)",
+          "Roth IRA: $7,000/year ($8,000 if age 50+) — income limits apply",
+          "Roth IRA phases out: $146,000–$161,000 single, $230,000–$240,000 married",
+        ],
+      },
+      {
+        type: "h2",
+        text: "When Roth IRA Wins",
+      },
+      {
+        type: "p",
+        text: "Choose Roth IRA if you're in a low tax bracket now and expect higher taxes in retirement. Early in your career, your income — and tax rate — is likely at its lowest point ever. Paying taxes now at 12% instead of later at 22-24% is a massive win.",
+      },
+      {
+        type: "ul",
+        items: [
+          "You're young and expect your income to grow significantly",
+          "You're in the 12% or 22% tax bracket",
+          "You want tax-free income in retirement (no RMDs from Roth)",
+          "You may need to access contributions before 59½ (Roth allows this penalty-free)",
+        ],
+      },
+      {
+        type: "h2",
+        text: "When 401(k) Wins",
+      },
+      {
+        type: "p",
+        text: "Choose 401(k) if you're in a high tax bracket now and expect lower income in retirement. Deferring taxes from a 35% bracket today to a 22% bracket in retirement saves 13 cents on every dollar.",
+      },
+      {
+        type: "ul",
+        items: [
+          "You're in the 24%+ tax bracket",
+          "You expect to spend less in retirement than you earn now",
+          "Your employer offers a matching contribution (always capture the full match first)",
+          "You need to reduce your taxable income to stay under a threshold",
+        ],
+      },
+      {
+        type: "tip",
+        text: "Always capture the full 401(k) employer match before contributing to a Roth IRA. A 50% match is an instant 50% return — no investment can beat that.",
+      },
+      {
+        type: "h2",
+        text: "The Best Strategy: Use Both",
+      },
+      {
+        type: "p",
+        text: "Most financial advisors recommend 'tax diversification' — contributing to both types. Having both a traditional 401(k) and a Roth IRA gives you flexibility in retirement to draw from whichever account is most tax-efficient in any given year.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Contribute to 401(k) up to the full employer match",
+          "Max out your Roth IRA ($7,000/year)",
+          "Go back and max out the 401(k) ($23,000/year limit) if you have more to save",
+          "After that, taxable brokerage accounts",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Required Minimum Distributions (RMDs)",
+      },
+      {
+        type: "p",
+        text: "At age 73, the IRS forces you to withdraw a minimum amount from traditional 401(k)s and IRAs — and pay taxes on it. Roth IRAs have no RMDs during the owner's lifetime, giving you more control over your tax situation in retirement.",
+      },
+      {
+        type: "cta",
+        text: "Use our Retirement Calculator to see how much you need to save — whether you use a Roth, 401(k), or both. Get a personalized year-by-year savings plan.",
+        ctaText: "Calculate Your Retirement",
+        ctaHref: "/retirement-calculator",
+      },
+    ],
+  },
+  {
+    slug: "good-debt-vs-bad-debt",
+    title: "Good Debt vs Bad Debt: How to Tell the Difference",
+    description:
+      "Not all debt is created equal. Understanding which debt builds wealth and which destroys it is the key to smart borrowing decisions.",
+    date: "2026-02-21",
+    readTime: "5 min read",
+    category: "Debt",
+    relatedCalculator: {
+      name: "Debt Payoff Calculator",
+      href: "/debt-payoff-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "Dave Ramsey says all debt is bad. Robert Kiyosaki says debt makes you rich. The truth is somewhere in between — and far more nuanced. The difference between good debt and bad debt can mean the difference between building wealth and being trapped in a cycle of payments.",
+      },
+      {
+        type: "h2",
+        text: "What Makes Debt 'Good'?",
+      },
+      {
+        type: "p",
+        text: "Good debt has two characteristics: it's used to acquire something that appreciates in value or increases your earning power, and the interest rate is relatively low. Good debt puts you in a better financial position over time than if you hadn't borrowed.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Mortgage — historically, real estate appreciates; interest is tax-deductible",
+          "Student loans — a degree that increases your income by more than the debt cost",
+          "Business loans — if the business generates more revenue than the loan costs",
+          "Low-interest auto loan — sometimes better than depleting savings",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What Makes Debt 'Bad'?",
+      },
+      {
+        type: "p",
+        text: "Bad debt is used to buy things that lose value immediately — and comes with high interest rates that compound against you. You end up paying far more than the item was worth, for something that's now worth less than you paid.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Credit card debt at 20-29% APR — the most destructive consumer debt",
+          "Payday loans — APRs of 300-400%, designed to trap borrowers",
+          "Buy Now Pay Later (BNPL) — easy to over-borrow, high late fees",
+          "Personal loans for vacations or luxury items",
+          "Auto loans for depreciating vehicles you can't afford",
+        ],
+      },
+      {
+        type: "tip",
+        text: "The 'good vs bad' distinction isn't just about what you buy — it's about the interest rate. A car loan at 3% is very different from a car loan at 18%. Always know your rate before borrowing.",
+      },
+      {
+        type: "h2",
+        text: "The Real Cost of Bad Debt",
+      },
+      {
+        type: "p",
+        text: "$5,000 in credit card debt at 24% APR, paying only the minimum ($100/month), takes over 8 years to pay off and costs $4,300 in interest. You effectively pay $9,300 for $5,000 worth of purchases.",
+      },
+      {
+        type: "h2",
+        text: "When 'Good' Debt Turns Bad",
+      },
+      {
+        type: "p",
+        text: "Even good debt becomes bad in the wrong context. A mortgage on a house you can't afford. Student loans for a degree with poor job prospects. A business loan for a business without a viable model. The category matters less than the specific terms and your ability to repay.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Good: $30,000 student loan for a nursing degree (median salary: $80K+)",
+          "Bad: $80,000 student loan for a degree with $35K median salary",
+          "Good: $250,000 mortgage on $90K household income (under 3x income)",
+          "Bad: $500,000 mortgage on $90K household income (over 5x income)",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How to Prioritize Debt Payoff",
+      },
+      {
+        type: "ol",
+        items: [
+          "Pay off all bad debt (20%+ interest) as aggressively as possible",
+          "Build a 3-month emergency fund so you don't create new bad debt",
+          "Pay extra on good debt only after investing for retirement (the math usually favors investing)",
+          "Exception: pay off mortgage early if that's your goal for peace of mind",
+        ],
+      },
+      {
+        type: "cta",
+        text: "Use our Debt Payoff Calculator to see exactly how long it takes to eliminate your debt — and how much interest you'll save by paying more each month.",
+        ctaText: "Calculate Your Debt Payoff",
+        ctaHref: "/debt-payoff-calculator",
+      },
+    ],
+  },
+  {
+    slug: "how-to-start-investing",
+    title: "How to Start Investing with $1,000 (Step-by-Step for Beginners)",
+    description:
+      "You don't need to be rich to start investing. Here's exactly what to do with your first $1,000 — the accounts, the funds, and the steps.",
+    date: "2026-02-21",
+    readTime: "7 min read",
+    category: "Investing",
+    relatedCalculator: {
+      name: "Investment Return Calculator",
+      href: "/investment-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "$1,000 might not feel like much. But $1,000 invested at 25 becomes $14,000 by retirement at 65 — without adding another dollar. Most people delay investing because they think they need more money to start. They're wrong. Here's exactly how to start today.",
+      },
+      {
+        type: "h2",
+        text: "Step 1: Before You Invest — The Checklist",
+      },
+      {
+        type: "p",
+        text: "Investing only makes sense after these boxes are checked. If you haven't done these first, do them before putting money in the market:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Emergency fund: At least $1,000 saved (ideally 3-6 months of expenses)",
+          "No high-interest debt: Pay off credit cards first (20%+ guaranteed return)",
+          "401(k) employer match: Captured in full — it's free money before investing",
+          "Stable income: You won't need to sell investments in the next 3-5 years",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Step 2: Open the Right Account",
+      },
+      {
+        type: "p",
+        text: "Where you invest matters as much as what you invest in. Start with tax-advantaged accounts before taxable accounts.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Roth IRA — best for most beginners. $7,000/year limit, tax-free growth. Open at Fidelity, Vanguard, or Schwab (all free).",
+          "401(k) — if employer matches, use this first up to the match",
+          "Taxable brokerage — after maxing tax-advantaged accounts, no limits",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Step 3: Choose What to Buy",
+      },
+      {
+        type: "p",
+        text: "For most beginners, the answer is simple: a low-cost index fund that tracks the entire US stock market or S&P 500. Decades of research show that index funds outperform the majority of actively managed funds after fees.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Fidelity ZERO Total Market Index (FZROX) — 0% expense ratio",
+          "Vanguard Total Stock Market ETF (VTI) — 0.03% expense ratio",
+          "Schwab US Broad Market ETF (SCHB) — 0.03% expense ratio",
+          "S&P 500 funds: VOO (Vanguard), IVV (iShares), SPY (State Street)",
+        ],
+      },
+      {
+        type: "tip",
+        text: "Ignore any investment with an expense ratio above 0.5%. A 1% fee sounds tiny but costs you 20%+ of your final portfolio value over 30 years. Low fees are the single most controllable factor in your investment returns.",
+      },
+      {
+        type: "h2",
+        text: "The Simple 3-Fund Portfolio",
+      },
+      {
+        type: "p",
+        text: "If you want slightly more diversification, the 'Bogleheads 3-fund portfolio' is a classic beginner strategy:",
+      },
+      {
+        type: "ul",
+        items: [
+          "US Total Stock Market fund (~60%) — US companies, all sizes",
+          "International Stock Market fund (~30%) — global diversification",
+          "US Bond Market fund (~10%) — stability, lower risk",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Step 4: Set Up Automatic Contributions",
+      },
+      {
+        type: "p",
+        text: "The best investing strategy is one you stick to. Set up automatic monthly contributions — even $50-100/month makes a real difference over decades. Automating removes emotion from the equation. You won't time the market, you won't panic-sell, you'll just keep buying.",
+      },
+      {
+        type: "h2",
+        text: "What NOT to Do as a Beginner",
+      },
+      {
+        type: "ol",
+        items: [
+          "Don't pick individual stocks — even professionals can't consistently beat index funds",
+          "Don't buy crypto with money you can't afford to lose 80% of",
+          "Don't check your portfolio daily — volatility is normal, panic-selling locks in losses",
+          "Don't wait for the 'right time' — time in market beats timing the market",
+          "Don't pay high fees — expense ratios above 0.5% are unnecessary",
+        ],
+      },
+      {
+        type: "cta",
+        text: "Use our Investment Return Calculator to see exactly how your $1,000 — plus monthly contributions — grows over time. Try different return rates and timelines.",
+        ctaText: "Calculate Your Investment Growth",
+        ctaHref: "/investment-calculator",
+      },
+    ],
+  },
+  {
+    slug: "what-is-a-good-savings-rate",
+    title: "What Is a Good Savings Rate? (And How to Calculate Yours)",
+    description:
+      "The savings rate is the single most powerful lever in personal finance. Here's what percentage you should be saving — and how to get there.",
+    date: "2026-02-21",
+    readTime: "5 min read",
+    category: "Savings",
+    relatedCalculator: {
+      name: "Savings Goal Calculator",
+      href: "/savings-goal-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "Your savings rate — the percentage of income you save — is the most powerful number in personal finance. It determines not just how fast you build wealth, but how many years until you can retire. A small change in savings rate can cut your working years in half.",
+      },
+      {
+        type: "h2",
+        text: "The Standard Benchmark: 20%",
+      },
+      {
+        type: "p",
+        text: "Most financial experts recommend saving at least 20% of gross income. This comes from the 50/30/20 rule — 50% needs, 30% wants, 20% savings. At a 20% savings rate, assuming a 5-7% investment return, you can retire in roughly 37 years.",
+      },
+      {
+        type: "h2",
+        text: "How Savings Rate Determines Retirement Age",
+      },
+      {
+        type: "p",
+        text: "This is the math that changes everything. Your savings rate doesn't just determine how much you save — it determines how many years you need to work. Here's the table (assuming 5% real investment returns, expenses stay constant):",
+      },
+      {
+        type: "ul",
+        items: [
+          "5% savings rate → 66 years to retirement",
+          "10% savings rate → 51 years",
+          "20% savings rate → 37 years",
+          "30% savings rate → 28 years",
+          "50% savings rate → 17 years",
+          "70% savings rate → 8.5 years",
+        ],
+      },
+      {
+        type: "p",
+        text: "The relationship isn't linear — it's exponential. Going from 10% to 20% cuts 14 years. Going from 20% to 30% cuts 9 more years. Each additional percentage point matters more than it seems.",
+      },
+      {
+        type: "tip",
+        text: "Calculate your savings rate: (Monthly savings ÷ Gross monthly income) × 100. Include 401(k) contributions, IRA contributions, and any other savings. Many people are surprised how low theirs actually is.",
+      },
+      {
+        type: "h2",
+        text: "What Counts as 'Savings'?",
+      },
+      {
+        type: "ul",
+        items: [
+          "401(k) and IRA contributions (both traditional and Roth)",
+          "Employer 401(k) match (this is part of your compensation)",
+          "High-yield savings account contributions",
+          "Investment account contributions",
+          "Extra mortgage principal payments (building home equity)",
+          "HSA contributions",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How to Increase Your Savings Rate",
+      },
+      {
+        type: "ol",
+        items: [
+          "Automate savings — set transfers to happen before you see the money",
+          "Save every raise — bank 50-100% of each pay increase before lifestyle inflation sets in",
+          "Reduce the biggest expenses first — housing and transportation are usually the biggest levers",
+          "Eliminate high-interest debt — paying off credit cards is a guaranteed 'return'",
+          "Track your rate monthly — what gets measured gets managed",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Is 20% Realistic?",
+      },
+      {
+        type: "p",
+        text: "For many people early in their careers, 20% feels impossible — especially in expensive cities. Start where you are. If you can only save 5%, save 5% and increase by 1% every 6 months. The direction matters more than the current number. Most people can get to 15-20% within 3-5 years of focused effort.",
+      },
+      {
+        type: "cta",
+        text: "Use our Savings Goal Calculator to see how long it will take to reach any savings target — and what monthly savings rate you need to get there on time.",
+        ctaText: "Calculate Your Savings Goal",
+        ctaHref: "/savings-goal-calculator",
+      },
+    ],
+  },
+  {
+    slug: "how-to-lower-mortgage-payment",
+    title: "How to Lower Your Monthly Mortgage Payment (7 Ways That Work)",
+    description:
+      "Struggling with your mortgage payment? These seven proven strategies can reduce what you pay each month — some immediately, some over time.",
+    date: "2026-02-21",
+    readTime: "6 min read",
+    category: "Mortgage",
+    relatedCalculator: {
+      name: "Mortgage Calculator",
+      href: "/mortgage-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "Your mortgage is probably your largest monthly expense. Even a $200 reduction in your payment frees up $2,400 a year — money that could go toward savings, debt payoff, or investments. Here are seven ways to lower your mortgage payment, ranked from fastest to implement.",
+      },
+      {
+        type: "h2",
+        text: "1. Refinance to a Lower Interest Rate",
+      },
+      {
+        type: "p",
+        text: "Refinancing replaces your current mortgage with a new one at a lower rate. On a $300,000 loan, dropping from 7.5% to 6.5% saves about $200/month. General rule: refinancing makes sense if you can lower your rate by at least 0.75-1% and plan to stay in the home long enough to recoup closing costs (typically 2-4 years).",
+      },
+      {
+        type: "h2",
+        text: "2. Extend Your Loan Term",
+      },
+      {
+        type: "p",
+        text: "Refinancing from a 15-year to a 30-year mortgage, or resetting a 20-year loan back to 30 years, dramatically lowers your monthly payment. The trade-off: you'll pay more total interest and stay in debt longer. Use this only if cash flow is the priority, not total cost.",
+      },
+      {
+        type: "h2",
+        text: "3. Remove PMI (Private Mortgage Insurance)",
+      },
+      {
+        type: "p",
+        text: "If you put less than 20% down, you're likely paying PMI — typically $50-200/month. Once your loan-to-value ratio reaches 80% (either through payments or home value appreciation), you can request PMI removal. If your home has appreciated significantly, get an appraisal — you may qualify sooner than you think.",
+      },
+      {
+        type: "tip",
+        text: "Servicers are required to automatically cancel PMI when your loan balance reaches 78% of the original purchase price — but you can request removal at 80%. Don't wait for the automatic cancellation; request it as soon as you hit 80%.",
+      },
+      {
+        type: "h2",
+        text: "4. Appeal Your Property Tax Assessment",
+      },
+      {
+        type: "p",
+        text: "Property taxes are part of your monthly escrow payment. If you think your home is assessed above its actual market value, you can appeal. Studies show 30-60% of homeowners who appeal win a reduction. This requires research (comparable sales in your area) but can save $100-300+/month.",
+      },
+      {
+        type: "h2",
+        text: "5. Shop Your Homeowner's Insurance",
+      },
+      {
+        type: "p",
+        text: "Homeowner's insurance is also escrowed with your mortgage payment. The average homeowner overpays by $200-500/year by not shopping around. Get quotes from 3-5 insurers every 2-3 years. Bundling with auto insurance typically saves 10-15% more.",
+      },
+      {
+        type: "h2",
+        text: "6. Recast Your Mortgage",
+      },
+      {
+        type: "p",
+        text: "A mortgage recast is different from refinancing. You make a large lump-sum payment toward principal, and the lender recalculates (recasts) your monthly payment on the new, lower balance. No credit check, minimal fees ($150-500), and your interest rate stays the same. A $20,000 lump sum on a $300,000 mortgage at 7% saves about $130/month.",
+      },
+      {
+        type: "h2",
+        text: "7. Request a Loan Modification (If You're Struggling)",
+      },
+      {
+        type: "p",
+        text: "If you're behind on payments or facing hardship, contact your servicer about a loan modification. This permanently changes your loan terms — interest rate, term length, or principal — to make payments affordable. Not available to everyone, and it affects your credit, but it can prevent foreclosure.",
+      },
+      {
+        type: "h2",
+        text: "The Math: What Saves the Most?",
+      },
+      {
+        type: "ul",
+        items: [
+          "Refinancing (1% rate drop on $300K): Save ~$200/month",
+          "PMI removal: Save $50-200/month",
+          "Property tax appeal: Save $50-300/month",
+          "Insurance shopping: Save $15-40/month",
+          "Mortgage recast ($20K lump sum): Save $100-150/month",
+        ],
+      },
+      {
+        type: "cta",
+        text: "Use our Mortgage Calculator to see exactly how different rates, terms, and down payments affect your monthly payment. Compare scenarios side by side.",
+        ctaText: "Calculate Your Mortgage",
+        ctaHref: "/mortgage-calculator",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
