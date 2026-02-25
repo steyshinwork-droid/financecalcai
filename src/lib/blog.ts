@@ -1618,6 +1618,537 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-to-save-for-retirement-in-your-30s",
+    title: "How to Save for Retirement in Your 30s: The Complete Guide",
+    description:
+      "Your 30s are the most important decade for retirement savings. Here's exactly how much to save, where to put it, and how to catch up if you're behind.",
+    date: "2026-02-20",
+    readTime: "8 min read",
+    category: "Retirement",
+    relatedCalculator: {
+      name: "Retirement Calculator",
+      href: "/retirement-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "If you're in your 30s and haven't started saving for retirement, you're not alone — but you are behind. The good news: you still have time to retire comfortably. The bad news: that window is closing faster than you think. Here's a practical, no-nonsense guide to retirement savings in your 30s.",
+      },
+      {
+        type: "h2",
+        text: "How Much Should You Have Saved by 30? By 35? By 40?",
+      },
+      {
+        type: "p",
+        text: "Fidelity's rule of thumb: save 1x your salary by 30, 2x by 35, 3x by 40. So if you earn $60,000, you should have $60K saved by 30, $120K by 35, and $180K by 40.",
+      },
+      {
+        type: "ul",
+        items: [
+          "By age 30: 1x annual salary",
+          "By age 35: 2x annual salary",
+          "By age 40: 3x annual salary",
+          "By age 45: 4x annual salary",
+          "By age 50: 6x annual salary",
+          "By age 60: 8x annual salary",
+          "By age 67: 10x annual salary",
+        ],
+      },
+      {
+        type: "h2",
+        text: "The Power of Starting in Your 30s vs. Waiting Until 40",
+      },
+      {
+        type: "p",
+        text: "Starting at 30 vs. 40 is not just a 10-year difference — it's a 2x difference in your retirement account. Here's the math: $500/month starting at 30 at 7% return = $1.17 million by 65. The same $500/month starting at 40 = only $567,000. That 10-year delay costs you over $600,000.",
+      },
+      {
+        type: "h2",
+        text: "Where to Put Your Retirement Money (in Order)",
+      },
+      {
+        type: "ol",
+        items: [
+          "401(k) up to employer match — this is free money, always get the full match first",
+          "Pay off high-interest debt (above 7%) — guaranteed return",
+          "Max out HSA if eligible — triple tax advantage",
+          "Max out Roth IRA ($7,000/year in 2024) — tax-free growth",
+          "Max out 401(k) ($23,000/year in 2024)",
+          "Taxable brokerage account for anything beyond",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Roth IRA vs. Traditional IRA: Which Is Better in Your 30s?",
+      },
+      {
+        type: "p",
+        text: "For most people in their 30s, the Roth IRA wins. You're likely in a lower tax bracket now than you will be at peak career (50s). Pay taxes now at a lower rate, grow tax-free, and withdraw tax-free in retirement. The exception: if you're in the 32%+ bracket today, consider the Traditional IRA.",
+      },
+      {
+        type: "tip",
+        text: "Roth IRA income limit in 2024: $161,000 for single filers, $240,000 for married filing jointly. If you earn more, look into the Backdoor Roth IRA strategy.",
+      },
+      {
+        type: "h2",
+        text: "What to Invest In: Asset Allocation in Your 30s",
+      },
+      {
+        type: "p",
+        text: "In your 30s, you have 30+ years until retirement. That means you can handle volatility — and you should lean heavily toward stocks for maximum growth. A simple, proven allocation for your 30s: 90% stocks (70% US index funds + 20% international index funds), 10% bonds.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Vanguard Total Stock Market Index (VTI) — broad US exposure",
+          "Vanguard Total International Stock Index (VXUS) — international exposure",
+          "Vanguard Total Bond Market Index (BND) — stability",
+          "Target Date 2055 Fund — set it and forget it option",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What If You're Behind? How to Catch Up Fast",
+      },
+      {
+        type: "p",
+        text: "If you're 35 with less than 1x your salary saved, don't panic — but do act urgently. The most effective strategies: increase your savings rate to 20%+ of income, cut the biggest expenses (housing, car), eliminate high-interest debt, and consider income growth through career advancement or side income.",
+      },
+      {
+        type: "h2",
+        text: "The One Number That Matters Most: Your Savings Rate",
+      },
+      {
+        type: "p",
+        text: "Your savings rate is more important than your investment returns. Saving 5% vs. 20% of income is the difference between retiring at 65 and retiring at 47. Target at minimum 15% of gross income for retirement (including any employer match). If you're behind, push toward 20-25%.",
+      },
+      {
+        type: "cta",
+        text: "See exactly how much you need to save each month to hit your retirement goal. Our Retirement Calculator shows you the numbers based on your age, income, and current savings.",
+        ctaText: "Calculate Your Retirement",
+        ctaHref: "/retirement-calculator",
+      },
+    ],
+  },
+  {
+    slug: "how-to-invest-1000-dollars",
+    title: "How to Invest $1,000: The Best Ways to Grow Your Money",
+    description:
+      "Got $1,000 to invest? Here are the smartest ways to put that money to work — from index funds to high-yield savings accounts — ranked by risk and return.",
+    date: "2026-02-21",
+    readTime: "7 min read",
+    category: "Investing",
+    relatedCalculator: {
+      name: "Investment Calculator",
+      href: "/investment-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "A thousand dollars might not sound like a fortune, but it's enough to start building real wealth. The key is knowing where to put it. Here's a breakdown of the best ways to invest $1,000 in 2024, from the safest options to the highest-potential plays.",
+      },
+      {
+        type: "h2",
+        text: "First: Do These Things Before Investing",
+      },
+      {
+        type: "ol",
+        items: [
+          "Pay off credit card debt first — guaranteed 20%+ return",
+          "Build a $1,000 starter emergency fund",
+          "Make sure you're getting your full 401(k) employer match",
+          "Then invest your $1,000",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Option 1: High-Yield Savings Account (Safest, 4-5% Return)",
+      },
+      {
+        type: "p",
+        text: "If you need this money within 1-2 years, a high-yield savings account (HYSA) is the right choice. Online banks like Marcus, Ally, or SoFi currently offer 4.5-5% APY — dramatically better than the 0.01% at traditional banks. Your $1,000 earns $45-50 in the first year with zero risk.",
+      },
+      {
+        type: "h2",
+        text: "Option 2: S&P 500 Index Fund (Best Long-Term Option)",
+      },
+      {
+        type: "p",
+        text: "If you won't need this money for 5+ years, investing in a low-cost S&P 500 index fund is the single best thing most people can do. The S&P 500 has returned an average of 10% per year over the last 50 years. $1,000 invested today could become $17,449 in 30 years at that rate.",
+      },
+      {
+        type: "tip",
+        text: "Best brokerages for beginners: Fidelity (no minimums, great interface), Vanguard (lowest-cost funds), or Schwab. All have $0 commission trades and offer fractional shares.",
+      },
+      {
+        type: "h2",
+        text: "Option 3: Roth IRA (Best for Tax-Free Growth)",
+      },
+      {
+        type: "p",
+        text: "If you haven't maxed your Roth IRA yet, put the $1,000 there. You can contribute up to $7,000 per year (2024), and every dollar grows completely tax-free. That $1,000 earning 10% for 30 years becomes $17,449 — and you owe zero taxes on any of it when you withdraw in retirement.",
+      },
+      {
+        type: "h2",
+        text: "Option 4: Pay Off Debt (Guaranteed Return Equal to Your Interest Rate)",
+      },
+      {
+        type: "p",
+        text: "Paying off a credit card charging 22% APR is the equivalent of earning a guaranteed 22% investment return. No investment consistently beats that. If you have high-interest debt, paying it down beats almost every other investment option.",
+      },
+      {
+        type: "h2",
+        text: "Option 5: Treasury Bills / CDs (Safe, 5%+ Short-Term)",
+      },
+      {
+        type: "p",
+        text: "Treasury Bills (T-Bills) currently yield around 5% and are backed by the US government. They're ideal for money you'll need in 3-12 months. CDs (certificates of deposit) offer similar rates with FDIC insurance.",
+      },
+      {
+        type: "h2",
+        text: "What NOT to Do With $1,000",
+      },
+      {
+        type: "ul",
+        items: [
+          "Don't buy individual stocks — too risky with only $1,000",
+          "Don't buy crypto with money you can't afford to lose",
+          "Don't invest in anything promising guaranteed high returns",
+          "Don't put it in a regular savings account earning 0.01%",
+          "Don't use options or leveraged ETFs without experience",
+        ],
+      },
+      {
+        type: "h2",
+        text: "The Best Strategy: Split It",
+      },
+      {
+        type: "p",
+        text: "For most people, the best approach is: $500 into a Roth IRA invested in an S&P 500 index fund, $500 into a high-yield savings account as a starter emergency fund. This gives you long-term growth potential and immediate financial security.",
+      },
+      {
+        type: "cta",
+        text: "See how your $1,000 investment could grow over time with different return rates and time horizons. Our Investment Calculator shows you the numbers.",
+        ctaText: "Calculate Investment Growth",
+        ctaHref: "/investment-calculator",
+      },
+    ],
+  },
+  {
+    slug: "how-to-calculate-your-net-worth",
+    title: "How to Calculate Your Net Worth (And What It Should Be)",
+    description:
+      "Net worth is the most important number in personal finance. Here's how to calculate it, what's considered 'good' at every age, and how to increase it fast.",
+    date: "2026-02-22",
+    readTime: "6 min read",
+    category: "Net Worth",
+    relatedCalculator: {
+      name: "Net Worth Calculator",
+      href: "/net-worth-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "Net worth is the single most important number in your financial life. It tells you exactly where you stand financially — better than your income, your credit score, or your bank balance. Here's how to calculate it, what it should be, and how to grow it.",
+      },
+      {
+        type: "h2",
+        text: "Net Worth Formula: The Simple Math",
+      },
+      {
+        type: "p",
+        text: "Net Worth = Total Assets − Total Liabilities. That's it. Add up everything you own (assets), subtract everything you owe (liabilities), and the result is your net worth. It can be positive or negative.",
+      },
+      {
+        type: "h2",
+        text: "What Counts as an Asset?",
+      },
+      {
+        type: "ul",
+        items: [
+          "Checking and savings accounts",
+          "Investment accounts (401k, IRA, brokerage)",
+          "Home value (current market value, not purchase price)",
+          "Vehicle value (current resale value)",
+          "Other real estate",
+          "Business ownership value",
+          "Cash value of life insurance",
+          "Valuable personal property (jewelry, art, collectibles)",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What Counts as a Liability?",
+      },
+      {
+        type: "ul",
+        items: [
+          "Mortgage balance",
+          "Car loans",
+          "Student loans",
+          "Credit card debt",
+          "Personal loans",
+          "Medical debt",
+          "Any other money you owe",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Average Net Worth by Age in the US (2024)",
+      },
+      {
+        type: "p",
+        text: "According to the Federal Reserve's Survey of Consumer Finances, here are the median (middle) net worth figures by age group. Note: median is more useful than average because a few billionaires skew the averages dramatically.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Under 35: $39,000 median / $183,000 average",
+          "35-44: $135,000 median / $549,000 average",
+          "45-54: $247,000 median / $975,000 average",
+          "55-64: $365,000 median / $1,566,000 average",
+          "65-74: $410,000 median / $1,794,000 average",
+          "75+: $335,000 median / $1,624,000 average",
+        ],
+      },
+      {
+        type: "tip",
+        text: "Don't compare yourself to averages — they're heavily skewed by the ultra-wealthy. Focus on your own trajectory: is your net worth growing year over year?",
+      },
+      {
+        type: "h2",
+        text: "The Rule of Thumb: What's a 'Good' Net Worth?",
+      },
+      {
+        type: "p",
+        text: "Thomas Stanley's research (The Millionaire Next Door) suggests this formula: Expected Net Worth = Age × Gross Annual Income ÷ 10. So a 40-year-old earning $80,000 should have a net worth of $320,000. This is a rough guideline, not a hard rule.",
+      },
+      {
+        type: "h2",
+        text: "The 5 Fastest Ways to Increase Your Net Worth",
+      },
+      {
+        type: "ol",
+        items: [
+          "Increase income — the biggest lever available to you",
+          "Reduce high-interest debt — every dollar paid off increases net worth $1",
+          "Maximize retirement contributions — tax-advantaged growth",
+          "Buy a home — forced savings through equity buildup",
+          "Cut lifestyle inflation — don't increase spending with income increases",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why Net Worth Matters More Than Income",
+      },
+      {
+        type: "p",
+        text: "A doctor earning $300,000 with $400,000 in student loans, a $600,000 mortgage, and $50,000 in credit card debt has a lower net worth than a teacher earning $50,000 who has paid off their home and maxed their 401(k) for 20 years. Income buys lifestyle. Net worth buys freedom.",
+      },
+      {
+        type: "cta",
+        text: "Calculate your exact net worth right now. Enter your assets and liabilities and see your complete financial picture in minutes.",
+        ctaText: "Calculate My Net Worth",
+        ctaHref: "/net-worth-calculator",
+      },
+    ],
+  },
+  {
+    slug: "what-is-a-good-savings-rate",
+    title: "What Is a Good Savings Rate? (By Age and Income)",
+    description:
+      "How much of your income should you save each month? Here's what financial experts recommend at every income level and age — and how to hit those targets.",
+    date: "2026-02-23",
+    readTime: "5 min read",
+    category: "Savings",
+    relatedCalculator: {
+      name: "Savings Goal Calculator",
+      href: "/savings-goal-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "The question 'how much should I save?' sounds simple, but the answer depends on your age, income, goals, and timeline. Here's a clear breakdown of what financial experts recommend and how to actually achieve those savings rates.",
+      },
+      {
+        type: "h2",
+        text: "The Standard Recommendation: 20% Rule",
+      },
+      {
+        type: "p",
+        text: "Most financial planners recommend saving at least 20% of your gross income. This comes from the popular 50/30/20 budget rule: 50% on needs, 30% on wants, 20% on savings and debt repayment. But 20% is a minimum — not a target for everyone.",
+      },
+      {
+        type: "h2",
+        text: "Savings Rate by Age: What's Considered Good?",
+      },
+      {
+        type: "ul",
+        items: [
+          "20s: 10-15% minimum (time is your biggest asset)",
+          "30s: 15-20% (building the foundation)",
+          "40s: 20-25% (peak earning years, accelerate)",
+          "50s: 25-30% (final push before retirement)",
+          "60s: 30%+ or as much as possible",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Savings Rate by Goal",
+      },
+      {
+        type: "ul",
+        items: [
+          "Retire at 65 (standard): Save 15% of income starting at 25",
+          "Retire at 55 (early retirement): Save 25-30% starting at 25",
+          "FIRE (Financial Independence, Retire Early at 40-45): Save 50%+ of income",
+          "Just building an emergency fund: Save 10% until you have 3-6 months of expenses",
+        ],
+      },
+      {
+        type: "tip",
+        text: "The FIRE community often talks about the 4% rule: you can retire when your investments are 25x your annual expenses. To get there faster, increase your savings rate. At a 50% savings rate, you can retire in roughly 17 years from zero.",
+      },
+      {
+        type: "h2",
+        text: "What Counts as 'Savings'?",
+      },
+      {
+        type: "ul",
+        items: [
+          "401(k) contributions (including employer match)",
+          "IRA contributions (Roth or Traditional)",
+          "High-yield savings account deposits",
+          "Investment account contributions",
+          "Extra mortgage principal payments",
+          "HSA contributions",
+          "Paying down high-interest debt (counts as negative interest earned)",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How to Increase Your Savings Rate",
+      },
+      {
+        type: "ol",
+        items: [
+          "Automate savings — set up automatic transfers the day you get paid",
+          "Save raises — when income increases, increase savings rate first",
+          "Track spending — most people underestimate where money goes by 20-30%",
+          "Cut the big three — housing, car, and food are 60%+ of most budgets",
+          "Increase income — the fastest path to a higher savings rate",
+        ],
+      },
+      {
+        type: "h2",
+        text: "The Honest Truth About Savings Rates",
+      },
+      {
+        type: "p",
+        text: "The average American saves about 4-5% of income. That's not enough to retire comfortably. If you're saving 20%, you're doing better than 80% of Americans. If you're saving 30%+, you're on the path to genuine financial independence. The exact number matters less than the habit — start saving consistently, then optimize the percentage over time.",
+      },
+      {
+        type: "cta",
+        text: "Figure out how long it will take to reach your savings goal at different monthly contribution amounts. Our Savings Goal Calculator does the math for you.",
+        ctaText: "Calculate My Savings Goal",
+        ctaHref: "/savings-goal-calculator",
+      },
+    ],
+  },
+  {
+    slug: "how-to-pay-off-student-loans-fast",
+    title: "How to Pay Off Student Loans Fast: 7 Proven Strategies",
+    description:
+      "The average student loan borrower takes 20 years to pay off their debt. Here are 7 strategies to do it in 5-7 years and save thousands in interest.",
+    date: "2026-02-24",
+    readTime: "7 min read",
+    category: "Debt",
+    relatedCalculator: {
+      name: "Debt Payoff Calculator",
+      href: "/debt-payoff-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "Americans owe over $1.7 trillion in student loans. The standard repayment plan is 10 years — but the average borrower actually takes 20 years because of income-driven plans, deferment, and minimum payments. Here's how to pay off student loans in 5-7 years instead.",
+      },
+      {
+        type: "h2",
+        text: "Strategy 1: Pay More Than the Minimum (And Specify How)",
+      },
+      {
+        type: "p",
+        text: "Even $100 extra per month on a $30,000 loan at 6% cuts your payoff time from 10 years to 7.5 years and saves over $2,000 in interest. Important: tell your loan servicer to apply extra payments to principal, not future payments. Otherwise, they may just advance your due date.",
+      },
+      {
+        type: "h2",
+        text: "Strategy 2: Refinance to a Lower Interest Rate",
+      },
+      {
+        type: "p",
+        text: "If you have good credit (700+) and stable income, refinancing private student loans or federal loans (carefully) can reduce your interest rate significantly. Going from 7% to 4% on $50,000 saves over $10,000 in total interest. Warning: refinancing federal loans converts them to private loans, losing access to income-driven repayment and forgiveness programs.",
+      },
+      {
+        type: "tip",
+        text: "Only refinance federal loans if you're certain you won't need Public Service Loan Forgiveness (PSLF) or income-driven repayment plans. Private loans should almost always be refinanced if you can get a lower rate.",
+      },
+      {
+        type: "h2",
+        text: "Strategy 3: Apply the Debt Avalanche Method",
+      },
+      {
+        type: "p",
+        text: "If you have multiple student loans, list them by interest rate from highest to lowest. Pay minimums on all, then throw every extra dollar at the highest-rate loan first. This minimizes total interest paid — mathematically the most efficient approach.",
+      },
+      {
+        type: "h2",
+        text: "Strategy 4: Use Windfalls Strategically",
+      },
+      {
+        type: "p",
+        text: "Tax refunds, bonuses, gifts, and side income are powerful loan-killers. If you get a $3,000 tax refund and apply it to a $20,000 loan at 6%, you cut 8 months off your payoff timeline and save $900 in interest. Make a rule: any unexpected money goes directly to debt.",
+      },
+      {
+        type: "h2",
+        text: "Strategy 5: Pursue Public Service Loan Forgiveness (If Eligible)",
+      },
+      {
+        type: "p",
+        text: "If you work for a government agency or qualifying non-profit, PSLF forgives your remaining federal student loan balance after 10 years (120 payments) of income-driven payments. This is genuinely valuable for teachers, nurses, social workers, and government employees with large loan balances.",
+      },
+      {
+        type: "h2",
+        text: "Strategy 6: Increase Your Income",
+      },
+      {
+        type: "p",
+        text: "This is the most powerful strategy that people overlook. An extra $500/month in income directed entirely at student loans can cut a 10-year payoff timeline in half. Side hustles, job switches, overtime — every extra dollar applied to principal shortens your sentence.",
+      },
+      {
+        type: "h2",
+        text: "Strategy 7: Make Biweekly Payments",
+      },
+      {
+        type: "p",
+        text: "Instead of making one monthly payment, make half your payment every two weeks. Because there are 52 weeks in a year, you end up making 26 half-payments = 13 full payments instead of 12. That one extra payment per year on a 10-year loan cuts your payoff time by about 10 months.",
+      },
+      {
+        type: "h2",
+        text: "Should You Pay Off Student Loans or Invest?",
+      },
+      {
+        type: "p",
+        text: "The math says: if your student loan interest rate is below 5%, invest first (the stock market averages 10% long-term). If your rate is above 7%, pay off debt first. Between 5-7%, do both. Always contribute at least enough to your 401(k) to get the full employer match before any extra debt payments.",
+      },
+      {
+        type: "cta",
+        text: "See exactly how different payment strategies affect your payoff date and total interest. Our Debt Payoff Calculator shows you the numbers in seconds.",
+        ctaText: "Calculate My Debt Payoff",
+        ctaHref: "/debt-payoff-calculator",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
