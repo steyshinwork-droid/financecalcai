@@ -125,8 +125,35 @@ export default async function BlogPostPage({ params }: Props) {
   const post = getBlogPost(slug);
   if (!post) notFound();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      "@type": "Organization",
+      name: "FinanceCalcAI",
+      url: "https://financecalcai.vercel.app",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "FinanceCalcAI",
+      url: "https://financecalcai.vercel.app",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://financecalcai.vercel.app/blog/${slug}`,
+    },
+  };
+
   return (
     <div className="mx-auto max-w-2xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Back link */}
       <Link
         href="/blog"

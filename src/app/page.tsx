@@ -149,9 +149,40 @@ const features = [
   },
 ];
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "FinanceCalcAI",
+  url: "https://financecalcai.vercel.app",
+  description:
+    "Free AI-powered financial calculators with personalized insights.",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://financecalcai.vercel.app/?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "FinanceCalcAI",
+  url: "https://financecalcai.vercel.app",
+  description:
+    "Free AI-powered financial calculators to help you make smarter money decisions.",
+};
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-b from-emerald-50 to-white px-4 pb-16 pt-20">
         <div className="mx-auto max-w-4xl text-center">
