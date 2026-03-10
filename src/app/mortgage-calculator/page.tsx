@@ -53,6 +53,41 @@ export default function MortgagePage() {
 
       <RelatedArticles calculatorHref="/mortgage-calculator" />
       <RelatedCalculators currentSlug="mortgage-calculator" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "How is a monthly mortgage payment calculated?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "A monthly mortgage payment is calculated using the loan amount, interest rate, and loan term. The formula is: M = P[r(1+r)^n]/[(1+r)^n-1], where P is the principal, r is the monthly interest rate, and n is the number of payments.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is the 28/36 rule for mortgages?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The 28/36 rule says your monthly housing costs should not exceed 28% of your gross monthly income, and total debt payments should not exceed 36%. This is a widely used guideline for determining mortgage affordability.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How much do I need for a down payment?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The standard down payment is 20% to avoid private mortgage insurance (PMI). However, many loan programs allow as little as 3-5% down. FHA loans require 3.5% down with a 580+ credit score.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

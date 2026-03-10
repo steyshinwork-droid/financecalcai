@@ -64,6 +64,41 @@ export default function EmergencyFundPage() {
 
       <RelatedArticles calculatorHref="/emergency-fund-calculator" />
       <RelatedCalculators currentSlug="emergency-fund-calculator" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "How much should I have in an emergency fund?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Most financial experts recommend 3-6 months of living expenses in your emergency fund. If you have a stable job and no dependents, 3 months may be enough. If you're self-employed, have variable income, or support a family, aim for 6 months or more.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Where should I keep my emergency fund?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Keep your emergency fund in a high-yield savings account (HYSA) that earns 4-5% APY. It should be separate from your checking account (to avoid spending it), FDIC-insured, and accessible within 1-2 business days. Do not invest your emergency fund in stocks.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How long does it take to build an emergency fund?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "It depends on your savings rate. Saving $500/month, a $15,000 emergency fund takes 30 months. Saving $1,000/month takes 15 months. Start with a $1,000 mini emergency fund as your first goal, then build to 3-6 months of expenses.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

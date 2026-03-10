@@ -64,6 +64,41 @@ export default function NetWorthPage() {
 
       <RelatedArticles calculatorHref="/net-worth-calculator" />
       <RelatedCalculators currentSlug="net-worth-calculator" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is net worth?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Net worth is the total value of everything you own (assets) minus everything you owe (liabilities). Assets include cash, investments, real estate, and vehicles. Liabilities include mortgages, car loans, student loans, and credit card debt.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is the average net worth by age in the US?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "According to the Federal Reserve (2022): median net worth under 35 is $39,000; ages 35-44 is $135,600; ages 45-54 is $247,200; ages 55-64 is $364,500; ages 65-74 is $409,900. Use median rather than average, as averages are skewed by the ultra-wealthy.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How can I increase my net worth?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "To increase net worth: pay down high-interest debt (every dollar of debt eliminated adds directly to net worth), invest consistently in index funds, avoid depreciating assets, increase your income, and track your net worth monthly to stay accountable.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

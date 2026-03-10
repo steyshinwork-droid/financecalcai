@@ -40,6 +40,41 @@ export default function SavingsGoalPage() {
 
       <RelatedArticles calculatorHref="/savings-goal-calculator" />
       <RelatedCalculators currentSlug="savings-goal-calculator" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "How much should I save each month?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Most financial experts recommend saving at least 20% of your take-home pay. Of that, aim for 15% toward retirement and 5% toward other goals like an emergency fund or house down payment. If 20% isn't possible, start with any amount and increase by 1% every few months.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How long does it take to save $10,000?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "How long it takes to save $10,000 depends on your monthly savings: at $200/month it takes 50 months, at $400/month it takes 25 months, at $833/month it takes exactly 12 months. A high-yield savings account earning 4-5% APY slightly accelerates the timeline.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Where should I keep my savings?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Keep short-term savings in a high-yield savings account (HYSA) earning 4-5% APY — institutions like Ally Bank, Marcus, or SoFi offer these. They're FDIC-insured and accessible within 1-2 business days. Don't keep savings in a regular checking account earning near 0%.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

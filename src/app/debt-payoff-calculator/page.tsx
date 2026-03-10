@@ -41,6 +41,41 @@ export default function DebtPayoffPage() {
 
       <RelatedArticles calculatorHref="/debt-payoff-calculator" />
       <RelatedCalculators currentSlug="debt-payoff-calculator" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is the debt snowball method?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The debt snowball method pays off debts from smallest balance to largest, regardless of interest rate. You pay minimums on everything and put every extra dollar toward the smallest debt. When it's paid off, you roll that payment to the next one. It provides quick wins that build motivation.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is the debt avalanche method?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The debt avalanche method targets the highest interest rate debt first. You pay minimums on all debts and direct extra payments to the highest-rate debt. This is mathematically optimal — you pay less total interest and become debt-free faster.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Which debt payoff method saves more money?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The debt avalanche method saves more money in total interest. However, the debt snowball method has higher completion rates because the psychological wins keep people motivated. Choose avalanche if you're disciplined; choose snowball if you've struggled with debt payoff before.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

@@ -66,6 +66,41 @@ export default function TaxBracketPage() {
 
       <RelatedArticles calculatorHref="/tax-bracket-calculator" />
       <RelatedCalculators currentSlug="tax-bracket-calculator" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "How do tax brackets work?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Tax brackets are progressive — you don't pay your top rate on all income. Each bracket only applies to income within that range. For example, if you're single and earn $50,000, you pay 10% on the first $11,600, 12% on income from $11,600-$47,150, and 22% only on income above $47,150.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is the difference between marginal and effective tax rate?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Your marginal tax rate is the rate on your last dollar of income — the bracket you're 'in.' Your effective tax rate is your actual average rate across all income. Someone in the 22% bracket typically has an effective rate of 12-15%, because most of their income was taxed at lower rates.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What are the 2024 federal income tax brackets?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The 2024 federal tax brackets for single filers are: 10% (up to $11,600), 12% ($11,600-$47,150), 22% ($47,150-$100,525), 24% ($100,525-$191,950), 32% ($191,950-$243,725), 35% ($243,725-$609,350), 37% (over $609,350). These apply to taxable income after deductions.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

@@ -41,6 +41,41 @@ export default function BudgetPage() {
 
       <RelatedArticles calculatorHref="/budget-calculator" />
       <RelatedCalculators currentSlug="budget-calculator" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is the 50/30/20 budget rule?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The 50/30/20 rule divides your after-tax income into three categories: 50% for needs (housing, food, utilities), 30% for wants (dining out, entertainment), and 20% for savings and debt repayment. It's a simple framework for managing personal finances.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What percentage of income should go to housing?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Most financial experts recommend spending no more than 28-30% of your gross monthly income on housing costs including rent or mortgage, insurance, and property taxes.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How do I stick to a budget?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The most effective way to stick to a budget is automation: set up automatic transfers to savings on payday, use autopay for bills, and track spending weekly with an app. Leave yourself a reasonable 'fun money' allowance — overly restrictive budgets fail.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

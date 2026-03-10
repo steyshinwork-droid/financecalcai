@@ -64,6 +64,41 @@ export default function InvestmentPage() {
 
       <RelatedArticles calculatorHref="/investment-calculator" />
       <RelatedCalculators currentSlug="investment-calculator" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is a good return on investment?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The S&P 500 has historically returned about 10% per year nominally, or 7% after inflation. A 7-10% annual return is considered good for a long-term stock portfolio. For bonds, 4-5% is typical. Always compare your returns to a relevant benchmark.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is dollar-cost averaging?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Dollar-cost averaging (DCA) means investing a fixed amount at regular intervals regardless of market price. When prices are low you buy more shares; when high, fewer. It removes the stress of timing the market and is the strategy behind most 401(k) contributions.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How much do I need to start investing?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "You can start investing with as little as $1 using fractional shares on platforms like Fidelity, Schwab, or Robinhood. Most index funds have no minimums. The best time to start is now — even small amounts compound significantly over decades.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

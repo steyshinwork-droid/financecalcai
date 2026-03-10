@@ -40,6 +40,41 @@ export default function RetirementPage() {
 
       <RelatedArticles calculatorHref="/retirement-calculator" />
       <RelatedCalculators currentSlug="retirement-calculator" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "How much do I need to retire?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Using the 4% rule, you need 25 times your annual expenses saved to retire. If you spend $50,000/year, you need $1,250,000. If you spend $80,000/year, you need $2,000,000. This assumes a 30-year retirement with a diversified portfolio.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How much should I have saved for retirement by age?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Common benchmarks: by 30 — 1x your salary; by 40 — 3x your salary; by 50 — 6x your salary; by 60 — 8x your salary; by 67 — 10x your salary. These are Fidelity's guidelines assuming you want to maintain your current lifestyle in retirement.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is the 4% rule in retirement?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The 4% rule states that you can withdraw 4% of your retirement portfolio in year one, then adjust for inflation each year, with a high probability of your money lasting 30 years. It's based on historical stock and bond market returns going back to 1926.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }

@@ -71,6 +71,41 @@ export default function CompoundInterestPage() {
 
       <RelatedArticles calculatorHref="/compound-interest-calculator" />
       <RelatedCalculators currentSlug="compound-interest-calculator" />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is compound interest?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods. Unlike simple interest, it grows exponentially over time — earning 'interest on interest.'",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How often does compound interest compound?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Compound interest can compound daily, monthly, quarterly, or annually. The more frequently it compounds, the more you earn. Daily compounding yields slightly more than monthly, which yields more than annual compounding.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What is the Rule of 72?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The Rule of 72 is a shortcut to estimate how long it takes to double your money. Divide 72 by your annual interest rate. At 8% interest, your money doubles in 72 ÷ 8 = 9 years.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </div>
   );
 }
