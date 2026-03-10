@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { BudgetCalc } from "./calculator";
+import { RelatedCalculators } from "@/components/related-calculators";
+import { RelatedArticles } from "@/components/related-articles";
 
 export const metadata: Metadata = {
   title: "Budget Calculator - Free AI-Powered | FinanceCalcAI",
@@ -36,6 +38,9 @@ export default function BudgetPage() {
           </p>
         </div>
       </section>
+
+      <RelatedArticles calculatorHref="/budget-calculator" />
+      <RelatedCalculators currentSlug="budget-calculator" />
     </div>
   );
 }

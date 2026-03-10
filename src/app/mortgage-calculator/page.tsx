@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { MortgageCalc } from "./calculator";
+import { RelatedCalculators } from "@/components/related-calculators";
+import { RelatedArticles } from "@/components/related-articles";
 
 export const metadata: Metadata = {
   title: "Mortgage Calculator - Free AI-Powered | FinanceCalcAI",
@@ -48,6 +50,9 @@ export default function MortgagePage() {
           </p>
         </div>
       </section>
+
+      <RelatedArticles calculatorHref="/mortgage-calculator" />
+      <RelatedCalculators currentSlug="mortgage-calculator" />
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { DebtPayoffCalc } from "./calculator";
+import { RelatedCalculators } from "@/components/related-calculators";
+import { RelatedArticles } from "@/components/related-articles";
 
 export const metadata: Metadata = {
   title: "Debt Payoff Calculator - Free AI-Powered | FinanceCalcAI",
@@ -36,6 +38,9 @@ export default function DebtPayoffPage() {
           </p>
         </div>
       </section>
+
+      <RelatedArticles calculatorHref="/debt-payoff-calculator" />
+      <RelatedCalculators currentSlug="debt-payoff-calculator" />
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { NetWorthCalc } from "./calculator";
+import { RelatedCalculators } from "@/components/related-calculators";
+import { RelatedArticles } from "@/components/related-articles";
 
 export const metadata: Metadata = {
   title: "Net Worth Calculator - Free AI-Powered | FinanceCalcAI",
@@ -59,6 +61,9 @@ export default function NetWorthPage() {
           </p>
         </div>
       </section>
+
+      <RelatedArticles calculatorHref="/net-worth-calculator" />
+      <RelatedCalculators currentSlug="net-worth-calculator" />
     </div>
   );
 }

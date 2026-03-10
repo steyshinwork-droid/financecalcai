@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { RetirementCalc } from "./calculator";
+import { RelatedCalculators } from "@/components/related-calculators";
+import { RelatedArticles } from "@/components/related-articles";
 
 export const metadata: Metadata = {
   title: "Retirement Calculator - Free AI-Powered | FinanceCalcAI",
@@ -35,6 +37,9 @@ export default function RetirementPage() {
           </p>
         </div>
       </section>
+
+      <RelatedArticles calculatorHref="/retirement-calculator" />
+      <RelatedCalculators currentSlug="retirement-calculator" />
     </div>
   );
 }

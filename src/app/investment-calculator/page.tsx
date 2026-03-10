@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { InvestmentCalc } from "./calculator";
+import { RelatedCalculators } from "@/components/related-calculators";
+import { RelatedArticles } from "@/components/related-articles";
 
 export const metadata: Metadata = {
   title: "Investment Return Calculator - Free AI-Powered | FinanceCalcAI",
@@ -59,6 +61,9 @@ export default function InvestmentPage() {
           </p>
         </div>
       </section>
+
+      <RelatedArticles calculatorHref="/investment-calculator" />
+      <RelatedCalculators currentSlug="investment-calculator" />
     </div>
   );
 }

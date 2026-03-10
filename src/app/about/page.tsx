@@ -67,6 +67,20 @@ export default function AboutPage() {
 
         <section>
           <h2 className="mb-3 text-2xl font-bold text-gray-900">
+            Personal Finance Blog
+          </h2>
+          <p className="mb-3">
+            Beyond calculators, we publish in-depth personal finance guides to
+            help you understand the concepts behind the numbers — from debt
+            payoff strategies to investing basics and tax planning.
+          </p>
+          <Link href="/blog" className="text-emerald-600 hover:underline font-medium">
+            Browse all articles →
+          </Link>
+        </section>
+
+        <section>
+          <h2 className="mb-3 text-2xl font-bold text-gray-900">
             Why FinanceCalcAI?
           </h2>
           <p>

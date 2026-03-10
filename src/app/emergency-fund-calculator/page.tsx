@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { EmergencyFundCalc } from "./calculator";
+import { RelatedCalculators } from "@/components/related-calculators";
+import { RelatedArticles } from "@/components/related-articles";
 
 export const metadata: Metadata = {
   title: "Emergency Fund Calculator - Free AI-Powered | FinanceCalcAI",
@@ -59,6 +61,9 @@ export default function EmergencyFundPage() {
           </p>
         </div>
       </section>
+
+      <RelatedArticles calculatorHref="/emergency-fund-calculator" />
+      <RelatedCalculators currentSlug="emergency-fund-calculator" />
     </div>
   );
 }

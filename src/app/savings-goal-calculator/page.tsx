@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { SavingsGoalCalc } from "./calculator";
+import { RelatedCalculators } from "@/components/related-calculators";
+import { RelatedArticles } from "@/components/related-articles";
 
 export const metadata: Metadata = {
   title: "Savings Goal Calculator - Free AI-Powered | FinanceCalcAI",
@@ -35,6 +37,9 @@ export default function SavingsGoalPage() {
           </p>
         </div>
       </section>
+
+      <RelatedArticles calculatorHref="/savings-goal-calculator" />
+      <RelatedCalculators currentSlug="savings-goal-calculator" />
     </div>
   );
 }

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { CompoundInterestCalc } from "./calculator";
+import { RelatedCalculators } from "@/components/related-calculators";
+import { RelatedArticles } from "@/components/related-articles";
 
 export const metadata: Metadata = {
   title: "Compound Interest Calculator - Free AI-Powered | FinanceCalcAI",
@@ -66,6 +68,9 @@ export default function CompoundInterestPage() {
           </ul>
         </div>
       </section>
+
+      <RelatedArticles calculatorHref="/compound-interest-calculator" />
+      <RelatedCalculators currentSlug="compound-interest-calculator" />
     </div>
   );
 }

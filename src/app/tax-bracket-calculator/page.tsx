@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { TaxBracketCalc } from "./calculator";
+import { RelatedCalculators } from "@/components/related-calculators";
+import { RelatedArticles } from "@/components/related-articles";
 
 export const metadata: Metadata = {
   title: "Tax Bracket Calculator - Free AI-Powered | FinanceCalcAI",
@@ -61,6 +63,9 @@ export default function TaxBracketPage() {
           </p>
         </div>
       </section>
+
+      <RelatedArticles calculatorHref="/tax-bracket-calculator" />
+      <RelatedCalculators currentSlug="tax-bracket-calculator" />
     </div>
   );
 }
