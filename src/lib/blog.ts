@@ -2149,6 +2149,565 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-to-build-credit-score",
+    title: "How to Build Your Credit Score Fast: 7 Proven Steps",
+    description:
+      "A good credit score saves you tens of thousands on loans and mortgages. Here's exactly how to build or rebuild your credit — fast.",
+    date: "2026-03-10",
+    readTime: "6 min read",
+    category: "Credit",
+    relatedCalculator: {
+      name: "Debt Payoff Calculator",
+      href: "/debt-payoff-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "Your credit score is a three-digit number that determines whether you get approved for a mortgage, car loan, or credit card — and what interest rate you pay. The difference between a 620 and a 760 score on a $300,000 mortgage can mean $80,000 more in interest over 30 years. Here's how to build yours, fast.",
+      },
+      {
+        type: "h2",
+        text: "How Credit Scores Are Calculated",
+      },
+      {
+        type: "ul",
+        items: [
+          "Payment history (35%) — do you pay on time, every time?",
+          "Credit utilization (30%) — how much of your available credit are you using?",
+          "Length of credit history (15%) — how long have your accounts been open?",
+          "Credit mix (10%) — do you have different types of credit?",
+          "New credit inquiries (10%) — have you applied for credit recently?",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Step 1: Pay Every Bill On Time",
+      },
+      {
+        type: "p",
+        text: "Payment history is 35% of your score — the single biggest factor. One missed payment can drop your score 50-100 points. Set up autopay for every account minimum payment. Even if you can't pay the full balance, never miss a minimum. A single 30-day late payment stays on your report for 7 years.",
+      },
+      {
+        type: "h2",
+        text: "Step 2: Slash Your Credit Utilization Below 10%",
+      },
+      {
+        type: "p",
+        text: "Credit utilization is how much of your available credit you're using. If you have a $10,000 credit limit and a $3,000 balance, your utilization is 30%. Most experts say keep it under 30%. But under 10% is where the real score boosts happen. Pay down balances aggressively, or ask for a credit limit increase.",
+      },
+      {
+        type: "tip",
+        text: "Pro Tip: Credit card issuers report your balance on a specific date each month (usually the statement date). Pay down your balance BEFORE that date — not just before the due date — to show lower utilization.",
+      },
+      {
+        type: "h2",
+        text: "Step 3: Don't Close Old Accounts",
+      },
+      {
+        type: "p",
+        text: "Closing a credit card hurts your score two ways: it reduces your available credit (raising utilization) and can shorten your credit history. Keep old accounts open, even if you don't use them. Put a small recurring charge on them (like a Netflix subscription) to keep them active.",
+      },
+      {
+        type: "h2",
+        text: "Step 4: Become an Authorized User",
+      },
+      {
+        type: "p",
+        text: "If you have a family member with an old credit card with low utilization and perfect payment history, ask them to add you as an authorized user. Their positive history appears on your credit report instantly — even if you never use the card. This is one of the fastest legitimate credit-building strategies.",
+      },
+      {
+        type: "h2",
+        text: "Step 5: Apply for a Secured Credit Card",
+      },
+      {
+        type: "p",
+        text: "If you're building credit from scratch or rebuilding after problems, get a secured credit card. You deposit $200-$500 as collateral, which becomes your credit limit. Use it for small purchases and pay it off in full each month. After 6-12 months of perfect payment, most issuers will graduate you to a regular card and return your deposit.",
+      },
+      {
+        type: "h2",
+        text: "Step 6: Dispute Errors on Your Credit Report",
+      },
+      {
+        type: "p",
+        text: "About 1 in 5 credit reports contain errors that negatively affect the score. Get your free reports at AnnualCreditReport.com (all three bureaus — Experian, Equifax, TransUnion). Look for accounts that aren't yours, incorrect late payments, or accounts listed as open that you closed. Dispute errors in writing — bureaus must investigate within 30 days.",
+      },
+      {
+        type: "h2",
+        text: "Step 7: Space Out Credit Applications",
+      },
+      {
+        type: "p",
+        text: "Every hard inquiry (when a lender checks your credit for an application) drops your score 5-10 points for up to a year. Don't apply for multiple cards or loans in a short period. Exception: when rate-shopping for a mortgage or auto loan, multiple inquiries within 14-45 days count as just one inquiry.",
+      },
+      {
+        type: "h2",
+        text: "How Fast Can You Improve Your Score?",
+      },
+      {
+        type: "ul",
+        items: [
+          "Pay down high utilization: +20-50 points within 1-2 billing cycles",
+          "Dispute and remove errors: +20-100 points within 30-60 days",
+          "Become authorized user: +10-30 points within 30 days",
+          "6 months of perfect payments: +50-100 points from a low base",
+          "850 (perfect score): typically requires 7+ years of perfect history",
+        ],
+      },
+      {
+        type: "cta",
+        text: "High-interest debt is the #1 enemy of your credit score. Use our Debt Payoff Calculator to build a plan to eliminate it — and watch your score climb.",
+        ctaText: "Calculate Your Debt Payoff Plan",
+        ctaHref: "/debt-payoff-calculator",
+      },
+    ],
+  },
+  {
+    slug: "roth-ira-vs-traditional-ira",
+    title: "Roth IRA vs Traditional IRA: Which Is Right for You?",
+    description:
+      "Both IRAs offer powerful tax advantages, but they work in opposite ways. Here's how to decide which account to open — and why the answer depends on your tax bracket.",
+    date: "2026-03-10",
+    readTime: "6 min read",
+    category: "Retirement",
+    relatedCalculator: {
+      name: "Retirement Calculator",
+      href: "/retirement-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "The Roth IRA and Traditional IRA are the two most powerful retirement accounts available to individuals. Both grow your money tax-advantaged. But they differ on one critical question: when do you pay the taxes? The answer determines which one wins for you.",
+      },
+      {
+        type: "h2",
+        text: "The Core Difference",
+      },
+      {
+        type: "p",
+        text: "Traditional IRA: contribute pre-tax dollars, pay taxes when you withdraw in retirement. Roth IRA: contribute after-tax dollars, pay zero taxes on withdrawals in retirement — including all the growth. Both let your money compound without being taxed year by year.",
+      },
+      {
+        type: "h2",
+        text: "Traditional IRA: How It Works",
+      },
+      {
+        type: "p",
+        text: "You contribute up to $7,000/year ($8,000 if 50+) and may deduct that amount from your taxable income now — saving you money on this year's tax bill. Your investments grow tax-deferred. At age 59½ you can withdraw, paying ordinary income tax on every dollar you take out. At 73, you must start taking Required Minimum Distributions (RMDs) whether you need the money or not.",
+      },
+      {
+        type: "h2",
+        text: "Roth IRA: How It Works",
+      },
+      {
+        type: "p",
+        text: "Same $7,000/$8,000 contribution limits. No tax deduction now. But your money grows completely tax-free, and qualified withdrawals in retirement are 100% tax-free — including decades of gains. No RMDs during your lifetime. You can withdraw your contributions (not earnings) any time without penalty — making it a flexible emergency backup as well.",
+      },
+      {
+        type: "tip",
+        text: "Roth IRA income limits (2024): phase-out begins at $146,000 (single) / $230,000 (married). Above $161,000 / $240,000 you cannot contribute directly. Use the Backdoor Roth strategy if you exceed these limits.",
+      },
+      {
+        type: "h2",
+        text: "The Decision Rule: It's About Tax Brackets",
+      },
+      {
+        type: "p",
+        text: "The math is simple: pay taxes at the lower rate. If you're in a lower tax bracket now than you will be in retirement, choose Roth. If you're in a higher bracket now than you'll be in retirement, choose Traditional.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Young, early career, low income → Roth IRA (taxes are cheap now)",
+          "Peak earning years, high income → Traditional IRA (reduce taxes now)",
+          "Uncertain future income → split between both",
+          "Expect high retirement income (pension + Social Security) → Traditional now, Roth later",
+          "Self-employed, variable income → Traditional in high-income years, Roth in low-income years",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Roth IRA Wins If You...",
+      },
+      {
+        type: "ul",
+        items: [
+          "Are in the 12% or 22% tax bracket today",
+          "Expect to be in a higher bracket in retirement",
+          "Are under 40 — more years of tax-free growth",
+          "Want flexibility (no RMDs, contributions withdrawable anytime)",
+          "Expect tax rates to rise in the future",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Traditional IRA Wins If You...",
+      },
+      {
+        type: "ul",
+        items: [
+          "Are in the 24%+ tax bracket today",
+          "Expect significantly lower income in retirement",
+          "Need the deduction to lower your taxable income this year",
+          "Are close to retirement (less time for Roth to compound)",
+          "Have a pension or other guaranteed retirement income",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Can You Have Both?",
+      },
+      {
+        type: "p",
+        text: "Yes. You can contribute to both a Traditional IRA and a Roth IRA in the same year — but your total contributions across both accounts cannot exceed $7,000 ($8,000 if 50+). Many financial planners recommend contributing to both for tax diversification: some tax-free money, some tax-deferred money, giving you flexibility in retirement to manage your tax bill.",
+      },
+      {
+        type: "h2",
+        text: "IRA vs 401(k): Do Both If You Can",
+      },
+      {
+        type: "p",
+        text: "If your employer offers a 401(k) match, always contribute enough to get the full match first — that's a 50-100% instant return. Then max your IRA ($7,000). Then return to your 401(k). This order maximizes both free money and flexibility.",
+      },
+      {
+        type: "cta",
+        text: "Use our Retirement Calculator to project how much you'll have at retirement with different contribution strategies — and see how tax-advantaged accounts accelerate your timeline.",
+        ctaText: "Calculate Your Retirement",
+        ctaHref: "/retirement-calculator",
+      },
+    ],
+  },
+  {
+    slug: "how-to-create-a-budget",
+    title: "How to Create a Budget That Actually Works (Step-by-Step)",
+    description:
+      "Most budgets fail within a month. Here's a realistic budgeting system that works for real people — including how to track spending without spreadsheets.",
+    date: "2026-03-10",
+    readTime: "7 min read",
+    category: "Budgeting",
+    relatedCalculator: {
+      name: "Budget Calculator",
+      href: "/budget-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "78% of Americans live paycheck to paycheck — not because they don't earn enough, but because they don't know where their money goes. A budget fixes that. It's not about restriction; it's about telling your money what to do before someone else does. Here's how to build one that you'll actually stick to.",
+      },
+      {
+        type: "h2",
+        text: "Step 1: Calculate Your True Monthly Income",
+      },
+      {
+        type: "p",
+        text: "Start with your take-home pay — not your gross salary. If you're paid bi-weekly, multiply one paycheck by 26, then divide by 12. Don't forget irregular income: freelance, rental income, dividends, side gigs. For variable income, use your average from the last 3 months, or budget from your lowest recent month to be safe.",
+      },
+      {
+        type: "h2",
+        text: "Step 2: List Every Single Expense",
+      },
+      {
+        type: "p",
+        text: "Go through your last 3 months of bank and credit card statements. Categorize everything. Most people discover 3-5 spending categories they forgot about entirely — streaming subscriptions, annual fees, irregular expenses like car registration or birthday gifts.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Fixed expenses: rent/mortgage, car payment, insurance, loan minimums, subscriptions",
+          "Variable necessities: groceries, utilities, gas, healthcare",
+          "Discretionary: dining out, entertainment, shopping, hobbies",
+          "Savings goals: emergency fund, vacation, retirement contributions",
+          "Irregular: car maintenance, medical, gifts, home repairs",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Step 3: Choose Your Budgeting Method",
+      },
+      {
+        type: "p",
+        text: "There's no single right method. Pick the one that matches your personality:",
+      },
+      {
+        type: "ul",
+        items: [
+          "50/30/20 Rule: 50% needs, 30% wants, 20% savings — simple starting point",
+          "Zero-based budget: assign every dollar a job until income minus expenses = $0",
+          "Pay yourself first: automatically save 20% on payday, spend the rest freely",
+          "Envelope method: cash in physical envelopes per category — great for overspenders",
+          "80/20 rule: save 20%, spend the rest however you want — for minimalists",
+        ],
+      },
+      {
+        type: "tip",
+        text: "The best budget is the one you'll use. If tracking every dollar stresses you out, use the Pay Yourself First method and automate savings. If you're an overspender, try zero-based budgeting.",
+      },
+      {
+        type: "h2",
+        text: "Step 4: Set Realistic Category Limits",
+      },
+      {
+        type: "p",
+        text: "Look at what you actually spent last month, then decide if that's acceptable. Don't set limits based on what you think you 'should' spend — base them on reality, then make small cuts. Cutting $800 in dining to $50 overnight never works. Cutting $800 to $600 is achievable. Then to $400 next month.",
+      },
+      {
+        type: "h2",
+        text: "Step 5: Build In Irregular Expenses",
+      },
+      {
+        type: "p",
+        text: "Most budgets blow up because of irregular expenses people forgot to plan for. Add up all annual irregular expenses (car registration, insurance annual premium, holiday gifts, etc.) and divide by 12. Add that amount as a monthly 'sinking fund' line item. When the expense hits, the money is already there.",
+      },
+      {
+        type: "h2",
+        text: "Step 6: Automate Everything",
+      },
+      {
+        type: "p",
+        text: "On payday: savings auto-transfers first. Then bills on autopay. What's left is your spending money. This makes the budget nearly automatic — you only need willpower for discretionary spending, not for every financial decision. Automation is why some people save effortlessly while others struggle.",
+      },
+      {
+        type: "h2",
+        text: "Step 7: Review Weekly (5 Minutes)",
+      },
+      {
+        type: "p",
+        text: "Pick one day per week for a 5-minute budget check-in. How much have you spent vs. budget in each category? Are you on track? This weekly awareness prevents month-end surprises. Most budget apps (YNAB, Mint, Copilot) show this in seconds.",
+      },
+      {
+        type: "h2",
+        text: "Why Most Budgets Fail (And How to Avoid It)",
+      },
+      {
+        type: "ul",
+        items: [
+          "Too restrictive — leave room for fun money or you'll abandon it",
+          "Too complicated — 40 categories is not sustainable, use 10 or fewer",
+          "No irregular expenses — plan for car repairs and gifts in advance",
+          "No review habit — a budget you don't check is just a wish list",
+          "Partner not on board — if you share finances, both people must be involved",
+        ],
+      },
+      {
+        type: "cta",
+        text: "Use our Budget Calculator to instantly apply the 50/30/20 rule to your income. See exactly how much should go to needs, wants, and savings each month.",
+        ctaText: "Calculate Your Budget",
+        ctaHref: "/budget-calculator",
+      },
+    ],
+  },
+  {
+    slug: "how-to-save-money-fast",
+    title: "How to Save Money Fast: 15 Strategies That Actually Work",
+    description:
+      "Need to save money quickly? These 15 proven strategies can free up hundreds of dollars per month — starting this week.",
+    date: "2026-03-10",
+    readTime: "6 min read",
+    category: "Savings",
+    relatedCalculator: {
+      name: "Savings Goal Calculator",
+      href: "/savings-goal-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "Whether you're saving for an emergency fund, a house down payment, or just want more financial breathing room — saving money fast is possible. Not by cutting everything fun from your life, but by making smart, targeted cuts. Here are 15 strategies ranked by impact.",
+      },
+      {
+        type: "h2",
+        text: "High Impact (Save $200-$500+/month)",
+      },
+      {
+        type: "ol",
+        items: [
+          "Refinance or eliminate your car — trade a $600/month payment for a reliable $8,000 used car. Saves $400-600/month instantly.",
+          "Move to a cheaper living situation — even $200/month cheaper is $2,400/year. Roommates, smaller apartment, different neighborhood.",
+          "Cut the biggest subscriptions — gym you don't use, streaming services, premium apps. Average American wastes $133/month on unused subscriptions.",
+          "Meal prep instead of restaurants — cooking 5 days/week instead of buying lunch and dinner out saves most people $300-500/month.",
+          "Negotiate your rent or refinance your mortgage — a successful negotiation saves thousands per year on a single call.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Medium Impact (Save $50-$200/month)",
+      },
+      {
+        type: "ol",
+        items: [
+          "Cancel and re-subscribe strategically — rotate streaming services. Watch Netflix for 2 months, cancel, switch to Hulu. Save $10-30/month.",
+          "Switch phone plans — MVNOs like Mint Mobile or Visible offer the same coverage for $15-30/month vs $80-100/month from major carriers.",
+          "Negotiate internet and insurance bills — call and ask for a loyalty discount or threaten to cancel. Works 80% of the time, saves $30-80/month.",
+          "Buy groceries with a cash-back card — 3-5% back on groceries adds up to $50-100/year with no behavior change.",
+          "Cook in bulk on Sundays — reduces weekday food spending and prevents expensive takeout when you're tired.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Quick Wins (Save $10-$50/month)",
+      },
+      {
+        type: "ol",
+        items: [
+          "Unsubscribe from retail emails — you can't buy what you don't see. Reduces impulse purchases dramatically.",
+          "Use a grocery list and never shop hungry — impulse grocery spending averages $30-50 per unplanned trip.",
+          "Switch to generic brands — store-brand products are often made by the same manufacturer. Save 20-40% on basics.",
+          "Use browser extensions for coupons — Honey or Capital One Shopping automatically apply discount codes at checkout.",
+          "Implement a 48-hour rule for non-essential purchases over $30 — most impulse urges disappear in 48 hours.",
+        ],
+      },
+      {
+        type: "tip",
+        text: "The 'reverse budget' trick: instead of tracking every expense, set up automatic savings on payday and spend what's left guilt-free. Start with just 5% if 20% feels impossible.",
+      },
+      {
+        type: "h2",
+        text: "The Savings Multiplier: Stack These Strategies",
+      },
+      {
+        type: "p",
+        text: "The power isn't in any single strategy — it's in combining several. Cutting a car payment ($400) + meal prepping ($300) + switching phone plans ($60) + canceling subscriptions ($50) = $810/month freed up. That's nearly $10,000/year with four changes.",
+      },
+      {
+        type: "h2",
+        text: "Where to Put the Money You Save",
+      },
+      {
+        type: "p",
+        text: "The money you save only helps if it goes somewhere intentional. Open a high-yield savings account (HYSA) earning 4-5% APY. Set up automatic transfers on payday. Label the account with your goal. The best HYSAs today: Marcus by Goldman Sachs, Ally Bank, SoFi — all FDIC-insured with no fees.",
+      },
+      {
+        type: "h2",
+        text: "How to Save $10,000 in a Year",
+      },
+      {
+        type: "p",
+        text: "$10,000 in 12 months = $834/month = $192/week. Sounds like a lot. But implement 3-4 medium-to-high impact strategies above and most people can find this. The secret: automate the transfer of $834 on the 1st of each month before you can spend it.",
+      },
+      {
+        type: "cta",
+        text: "Use our Savings Goal Calculator to build your personal savings plan. Enter your goal amount and timeline — get the exact monthly savings number you need.",
+        ctaText: "Build Your Savings Plan",
+        ctaHref: "/savings-goal-calculator",
+      },
+    ],
+  },
+  {
+    slug: "what-is-net-worth",
+    title: "What Is Net Worth and Why Does It Matter?",
+    description:
+      "Net worth is the single most important number in personal finance. Here's what it means, how to calculate it, and what yours should be at every age.",
+    date: "2026-03-10",
+    readTime: "5 min read",
+    category: "Personal Finance",
+    relatedCalculator: {
+      name: "Net Worth Calculator",
+      href: "/net-worth-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "Income tells you how much you make. Net worth tells you how much you have. Most people focus on their salary — but two people earning the same income can have net worths that differ by millions of dollars. Net worth is the real scorecard of financial health.",
+      },
+      {
+        type: "h2",
+        text: "The Simple Definition",
+      },
+      {
+        type: "p",
+        text: "Net worth = everything you own (assets) minus everything you owe (liabilities). If your assets total $250,000 and your debts total $180,000, your net worth is $70,000. This number can be positive, negative, or zero — and it changes every month.",
+      },
+      {
+        type: "h2",
+        text: "What Counts as an Asset?",
+      },
+      {
+        type: "ul",
+        items: [
+          "Cash and savings accounts",
+          "Investment accounts (stocks, bonds, ETFs, mutual funds)",
+          "Retirement accounts (401k, IRA, pension)",
+          "Real estate (current market value of your home)",
+          "Vehicles (current market value, not purchase price)",
+          "Business ownership stakes",
+          "Valuable personal property (jewelry, art, collectibles)",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What Counts as a Liability?",
+      },
+      {
+        type: "ul",
+        items: [
+          "Mortgage balance (remaining amount owed)",
+          "Car loans",
+          "Student loans",
+          "Credit card balances",
+          "Personal loans",
+          "Medical debt",
+          "Any other money you owe",
+        ],
+      },
+      {
+        type: "tip",
+        text: "Use current market values for assets, not what you paid. Your car is worth what someone will pay for it today — not the $28,000 you paid three years ago.",
+      },
+      {
+        type: "h2",
+        text: "Average Net Worth by Age (US, 2024)",
+      },
+      {
+        type: "ul",
+        items: [
+          "Under 35: $76,000 average / $13,000 median",
+          "35-44: $436,000 average / $91,000 median",
+          "45-54: $833,000 average / $168,000 median",
+          "55-64: $1,175,000 average / $213,000 median",
+          "65-74: $1,217,000 average / $266,000 median",
+        ],
+      },
+      {
+        type: "p",
+        text: "Note: averages are skewed by the ultra-wealthy. The median (middle value) is a better benchmark for most people. Don't compare to averages — compare to medians.",
+      },
+      {
+        type: "h2",
+        text: "What Should Your Net Worth Be? The 'Millionaire Next Door' Rule",
+      },
+      {
+        type: "p",
+        text: "A classic benchmark from the book 'The Millionaire Next Door': Expected Net Worth = Age × Gross Annual Income ÷ 10. If you're 40 earning $70,000/year, target net worth = 40 × $70,000 ÷ 10 = $280,000. Above that target? You're a 'Prodigious Accumulator of Wealth.' Below? Time to accelerate.",
+      },
+      {
+        type: "h2",
+        text: "Why Net Worth Matters More Than Income",
+      },
+      {
+        type: "p",
+        text: "A $200,000 income with $500,000 in debt and zero savings is financial fragility. A $60,000 income with $400,000 in assets and $50,000 in debt is financial strength. Net worth determines how long you could survive without income, whether you could handle a $10,000 emergency, and when you can retire.",
+      },
+      {
+        type: "h2",
+        text: "How to Grow Your Net Worth",
+      },
+      {
+        type: "ol",
+        items: [
+          "Increase income — more earnings = more to invest",
+          "Reduce debt aggressively — every dollar of debt eliminated adds directly to net worth",
+          "Invest consistently — compound growth builds wealth exponentially over time",
+          "Avoid depreciating assets — cars lose value; index funds gain value",
+          "Track monthly — what you measure, you manage",
+        ],
+      },
+      {
+        type: "cta",
+        text: "Calculate your net worth right now. Enter your assets and liabilities and see your exact number — plus how it compares to national benchmarks by age.",
+        ctaText: "Calculate My Net Worth",
+        ctaHref: "/net-worth-calculator",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
