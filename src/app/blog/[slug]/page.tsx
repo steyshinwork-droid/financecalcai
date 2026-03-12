@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBlogPost, getAllSlugs, type BlogPost } from "@/lib/blog";
-import { ArrowLeft, Clock, Tag, ArrowRight, Calculator } from "lucide-react";
+import { Clock, Tag, ArrowRight, Calculator } from "lucide-react";
 import { ShareButtons } from "@/components/share-buttons";
+import { Breadcrumb } from "@/components/breadcrumb";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -155,14 +156,7 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      {/* Back link */}
-      <Link
-        href="/blog"
-        className="mb-8 inline-flex items-center gap-2 text-sm text-gray-500 transition hover:text-emerald-600"
-      >
-        <ArrowLeft className="h-4 w-4" />
-        All guides
-      </Link>
+      <Breadcrumb items={[{ label: "Blog", href: "/blog" }, { label: post.title }]} />
 
       {/* Header */}
       <header className="mb-8">

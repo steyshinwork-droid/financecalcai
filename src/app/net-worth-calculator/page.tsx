@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { NetWorthCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
+import { Breadcrumb } from "@/components/breadcrumb";
 
 export const metadata: Metadata = {
   title: "Net Worth Calculator - Free AI-Powered | FinanceCalcAI",
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 export default function NetWorthPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
+      <Breadcrumb items={[{ label: "Net Worth Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">
           Net Worth Calculator

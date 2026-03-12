@@ -50,9 +50,15 @@ export function Header() {
           </Link>
           <Link
             href="/blog"
-            className="text-sm font-medium text-emerald-600 transition hover:text-emerald-700"
+            className="text-sm font-medium text-gray-600 transition hover:text-emerald-600"
           >
             Blog
+          </Link>
+          <Link
+            href="/glossary"
+            className="text-sm font-medium text-emerald-600 transition hover:text-emerald-700"
+          >
+            Glossary
           </Link>
         </nav>
 
@@ -79,10 +85,17 @@ export function Header() {
           ))}
           <Link
             href="/blog"
-            className="block py-2 font-medium text-emerald-600 transition hover:text-emerald-700"
+            className="block py-2 font-medium text-gray-600 transition hover:text-emerald-600"
             onClick={() => setMenuOpen(false)}
           >
             Blog
+          </Link>
+          <Link
+            href="/glossary"
+            className="block py-2 font-medium text-emerald-600 transition hover:text-emerald-700"
+            onClick={() => setMenuOpen(false)}
+          >
+            Glossary
           </Link>
         </nav>
       )}
