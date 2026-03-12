@@ -16,6 +16,8 @@ import {
   Scale,
   Shield,
   Receipt,
+  BookOpen,
+  Tag,
 } from "lucide-react";
 import {
   Card,
@@ -24,6 +26,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { blogPosts } from "@/lib/blog";
 
 const calculators = [
   {
@@ -278,6 +281,53 @@ export default function HomePage() {
                     </div>
                   </CardHeader>
                 </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Articles Section */}
+      <section className="border-t px-4 py-16">
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-12 flex items-center justify-between">
+            <div>
+              <p className="mb-1 text-sm font-semibold uppercase tracking-wider text-emerald-600">
+                Free Guides
+              </p>
+              <h2 className="text-2xl font-bold text-gray-900">
+                Latest Financial Tips
+              </h2>
+            </div>
+            <Link
+              href="/blog"
+              className="flex items-center gap-1 text-sm font-medium text-emerald-600 hover:text-emerald-700"
+            >
+              View all {blogPosts.length} guides <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {blogPosts.slice(0, 3).map((post) => (
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
+                <article className="h-full rounded-xl border border-gray-200 bg-white p-5 transition hover:border-emerald-200 hover:shadow-md">
+                  <div className="mb-3 flex items-center gap-2">
+                    <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-700">
+                      <Tag className="h-3 w-3" />
+                      {post.category}
+                    </span>
+                    <span className="flex items-center gap-1 text-xs text-gray-400">
+                      <Clock className="h-3 w-3" />
+                      {post.readTime}
+                    </span>
+                  </div>
+                  <h3 className="mb-2 font-bold text-gray-900 group-hover:text-emerald-600">
+                    {post.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 line-clamp-2">{post.description}</p>
+                  <div className="mt-3 flex items-center gap-1 text-sm font-medium text-emerald-600">
+                    <BookOpen className="h-4 w-4" /> Read guide
+                  </div>
+                </article>
               </Link>
             ))}
           </div>

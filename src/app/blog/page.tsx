@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { blogPosts } from "@/lib/blog";
 import { ArrowRight, Clock, Tag } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 
 export const metadata: Metadata = {
   title: "Financial Tips & Guides",
@@ -18,10 +17,22 @@ const categoryColors: Record<string, string> = {
   Savings: "bg-amber-100 text-amber-700",
 };
 
-export default function BlogPage() {
+const categories = ["All", "Savings", "Debt", "Investing", "Budgeting", "Mortgage"];
+
+export default function BlogPage({
+  searchParams,
+}: {
+  searchParams: { category?: string };
+}) {
+  const activeCategory = searchParams.category ?? "All";
+  const filtered =
+    activeCategory === "All"
+      ? blogPosts
+      : blogPosts.filter((p) => p.category === activeCategory);
+
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
-      <div className="mb-12 text-center">
+      <div className="mb-10 text-center">
         <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-emerald-600">
           Free Guides
         </p>
@@ -34,8 +45,28 @@ export default function BlogPage() {
         </p>
       </div>
 
+      {/* Category Filter */}
+      <div className="mb-8 flex flex-wrap justify-center gap-2">
+        {categories.map((cat) => (
+          <Link
+            key={cat}
+            href={cat === "All" ? "/blog" : `/blog?category=${cat}`}
+            className={`rounded-full px-4 py-1.5 text-sm font-medium transition ${
+              activeCategory === cat
+                ? "bg-emerald-600 text-white"
+                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+            }`}
+          >
+            {cat}
+            {cat === "All" && (
+              <span className="ml-1.5 text-xs opacity-70">{blogPosts.length}</span>
+            )}
+          </Link>
+        ))}
+      </div>
+
       <div className="space-y-6">
-        {blogPosts.map((post) => (
+        {filtered.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
             <article className="rounded-xl border border-gray-200 bg-white p-6 transition hover:border-emerald-200 hover:shadow-md">
               <div className="mb-3 flex items-center gap-3">
