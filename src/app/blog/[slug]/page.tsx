@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getBlogPost, getAllSlugs, type BlogPost } from "@/lib/blog";
 import { ArrowLeft, Clock, Tag, ArrowRight, Calculator } from "lucide-react";
+import { ShareButtons } from "@/components/share-buttons";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -182,7 +183,8 @@ export default async function BlogPostPage({ params }: Props) {
         <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 sm:text-4xl">
           {post.title}
         </h1>
-        <p className="text-lg text-gray-500">{post.description}</p>
+        <p className="mb-6 text-lg text-gray-500">{post.description}</p>
+        <ShareButtons title={post.title} slug={slug} />
       </header>
 
       {/* Content */}
@@ -190,8 +192,14 @@ export default async function BlogPostPage({ params }: Props) {
         {post.content.map((section, index) => renderSection(section, index))}
       </div>
 
+      {/* Share footer */}
+      <div className="mt-10 rounded-xl border border-gray-100 bg-gray-50 p-5">
+        <p className="mb-3 text-sm font-medium text-gray-700">Found this helpful? Share it:</p>
+        <ShareButtons title={post.title} slug={slug} />
+      </div>
+
       {/* Related calculator footer */}
-      <div className="mt-12 border-t pt-8">
+      <div className="mt-8 border-t pt-8">
         <p className="mb-3 text-sm text-gray-500">Related tool:</p>
         <Link
           href={post.relatedCalculator.href}
