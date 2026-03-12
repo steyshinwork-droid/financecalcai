@@ -1955,8 +1955,8 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "what-is-a-good-savings-rate",
-    title: "What Is a Good Savings Rate? (By Age and Income)",
+    slug: "savings-rate-by-age",
+    title: "What Is a Good Savings Rate by Age and Income?",
     description:
       "How much of your income should you save each month? Here's what financial experts recommend at every income level and age — and how to hit those targets.",
     date: "2026-02-23",
@@ -2705,6 +2705,486 @@ export const blogPosts: BlogPost[] = [
         text: "Calculate your net worth right now. Enter your assets and liabilities and see your exact number — plus how it compares to national benchmarks by age.",
         ctaText: "Calculate My Net Worth",
         ctaHref: "/net-worth-calculator",
+      },
+    ],
+  },
+  {
+    slug: "how-to-make-a-budget",
+    title: "How to Make a Budget That Actually Works (Step-by-Step)",
+    description:
+      "Most budgets fail in week two. Here's a practical, step-by-step approach to building a budget you'll actually stick to — no spreadsheets required.",
+    date: "2026-03-10",
+    readTime: "7 min read",
+    category: "Budgeting",
+    relatedCalculator: {
+      name: "Budget Calculator",
+      href: "/budget-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "Almost everyone has tried budgeting and failed. Not because budgeting is hard — but because most budgeting advice is designed for people who already have their finances together. This guide is for everyone else. Here's how to build a budget that works in the real world.",
+      },
+      {
+        type: "h2",
+        text: "Step 1: Calculate Your Real Take-Home Income",
+      },
+      {
+        type: "p",
+        text: "Start with what actually lands in your bank account — after taxes, 401(k) contributions, and health insurance. If your income varies month to month, use your lowest month from the past three months as your baseline. It's better to budget conservatively and have money left over than to budget optimistically and fall short.",
+      },
+      {
+        type: "h2",
+        text: "Step 2: List All Your Fixed Expenses",
+      },
+      {
+        type: "ul",
+        items: [
+          "Rent or mortgage payment",
+          "Car payment and insurance",
+          "Minimum debt payments (credit cards, student loans)",
+          "Subscriptions (Netflix, Spotify, gym, etc.)",
+          "Insurance premiums (health, life, renters)",
+          "Phone bill",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Step 3: Estimate Variable Expenses",
+      },
+      {
+        type: "p",
+        text: "Variable expenses change month to month — groceries, gas, dining out, entertainment, clothing. Pull your last 3 months of bank and credit card statements to find your actual averages. Most people underestimate these by 20-30%.",
+      },
+      {
+        type: "h2",
+        text: "Step 4: Choose a Budgeting Method",
+      },
+      {
+        type: "ul",
+        items: [
+          "50/30/20 Rule — 50% needs, 30% wants, 20% savings. Simple and flexible.",
+          "Zero-Based Budget — every dollar gets a job. Income minus expenses equals zero. Most powerful, most work.",
+          "Pay Yourself First — automate savings on payday, spend what's left. Best for people who struggle to save.",
+          "Envelope Method — physical or digital 'envelopes' for each category. Great for overspenders.",
+        ],
+      },
+      {
+        type: "tip",
+        text: "The best budget is the one you actually use. If tracking every dollar stresses you out, start with the 50/30/20 rule — it's forgiving and takes 10 minutes a month to review.",
+      },
+      {
+        type: "h2",
+        text: "Step 5: Build In a Buffer",
+      },
+      {
+        type: "p",
+        text: "Every month has unexpected expenses — a car repair, a medical copay, a birthday gift. Budget $100-200 as 'miscellaneous' even if you don't know what it's for. This single habit prevents most budgets from falling apart.",
+      },
+      {
+        type: "h2",
+        text: "Step 6: Review Weekly (Not Monthly)",
+      },
+      {
+        type: "p",
+        text: "A 5-minute weekly check-in beats a monthly budget review every time. By the time you catch a problem at month-end, it's too late to fix it. A quick weekly glance lets you adjust spending in real time before you go over budget.",
+      },
+      {
+        type: "h2",
+        text: "Common Budgeting Mistakes to Avoid",
+      },
+      {
+        type: "ul",
+        items: [
+          "Being too restrictive — a budget with zero fun money never lasts",
+          "Forgetting annual expenses — car registration, Amazon Prime, annual subscriptions",
+          "Not tracking irregular income — bonuses and tax refunds aren't 'free money'",
+          "Giving up after one bad month — a budget is a practice, not a test",
+        ],
+      },
+      {
+        type: "cta",
+        text: "Use our Budget Calculator to instantly see how your income splits across needs, wants, and savings — and find where to cut.",
+        ctaText: "Try the Budget Calculator",
+        ctaHref: "/budget-calculator",
+      },
+    ],
+  },
+  {
+    slug: "how-much-should-i-save-per-month",
+    title: "How Much Should I Save Per Month? (By Income and Age)",
+    description:
+      "Not sure how much to save each month? Here's a clear breakdown by income level and age — with a simple formula to find your personal savings target.",
+    date: "2026-03-10",
+    readTime: "5 min read",
+    category: "Savings",
+    relatedCalculator: {
+      name: "Savings Goal Calculator",
+      href: "/savings-goal-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "The hardest part of saving money isn't the discipline — it's knowing the target. Save too little and you'll never reach your goals. Set the bar too high and you'll quit in month two. Here's a realistic framework for figuring out your monthly savings number.",
+      },
+      {
+        type: "h2",
+        text: "The Simple Formula: 20% of Take-Home Pay",
+      },
+      {
+        type: "p",
+        text: "The most widely recommended starting point is 20% of your net (after-tax) income. If you bring home $3,500/month, that's $700 in savings. This number covers retirement contributions, emergency fund, and other savings goals combined.",
+      },
+      {
+        type: "h2",
+        text: "Monthly Savings by Income Level",
+      },
+      {
+        type: "ul",
+        items: [
+          "$30,000/year (~$2,100/mo take-home): Save $400-500/month (20%)",
+          "$50,000/year (~$3,400/mo take-home): Save $650-700/month (20%)",
+          "$75,000/year (~$4,800/mo take-home): Save $950-1,000/month (20%)",
+          "$100,000/year (~$6,200/mo take-home): Save $1,200-1,300/month (20%)",
+          "$150,000/year (~$8,800/mo take-home): Save $1,750-1,900/month (20%)",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Monthly Savings by Age and Goal",
+      },
+      {
+        type: "ul",
+        items: [
+          "Age 22-25: Save 10-15%. Time is your advantage — even $200/month invested now becomes $60,000+ by 65.",
+          "Age 26-35: Save 15-20%. Build emergency fund first, then focus on retirement accounts.",
+          "Age 36-45: Save 20-25%. If behind on retirement, increase to 25%+ through catch-up contributions.",
+          "Age 46-55: Save 25-30%. Max out 401(k) and IRA; use any extra toward debt elimination.",
+          "Age 56-65: Save 30%+. Maximize catch-up contributions ($7,500 extra in 401(k) per year).",
+        ],
+      },
+      {
+        type: "tip",
+        text: "If 20% feels impossible right now, start with 5% and automate it. Increase by 1% every time you get a raise or pay off a debt. You'll reach 20% without feeling the pain of a big cut.",
+      },
+      {
+        type: "h2",
+        text: "Where to Put Your Monthly Savings (In Order)",
+      },
+      {
+        type: "ol",
+        items: [
+          "401(k) up to employer match — it's a 50-100% instant return",
+          "Emergency fund — 3-6 months of expenses in a high-yield savings account",
+          "High-interest debt payoff — anything above 7% interest rate",
+          "Roth or Traditional IRA — $7,000/year limit (2025)",
+          "Back to 401(k) — up to the $23,500 annual limit (2025)",
+          "Taxable brokerage account — for anything above retirement account limits",
+        ],
+      },
+      {
+        type: "h2",
+        text: "What If You Can't Save 20%?",
+      },
+      {
+        type: "p",
+        text: "If 20% isn't realistic given your income and expenses, focus on two things: (1) capture the employer 401(k) match — it's free money you're leaving on the table, and (2) build a $1,000 starter emergency fund before anything else. These two steps alone put you ahead of the majority of Americans.",
+      },
+      {
+        type: "cta",
+        text: "Use our Savings Goal Calculator to see exactly how long it will take to reach any savings target at your monthly contribution rate.",
+        ctaText: "Calculate My Savings Goal",
+        ctaHref: "/savings-goal-calculator",
+      },
+    ],
+  },
+  {
+    slug: "what-is-compound-interest",
+    title: "What Is Compound Interest and Why Does It Matter?",
+    description:
+      "Compound interest is the reason some people retire rich and others work forever. Here's how it works, why it matters, and how to make it work for you.",
+    date: "2026-03-11",
+    readTime: "6 min read",
+    category: "Investing",
+    relatedCalculator: {
+      name: "Compound Interest Calculator",
+      href: "/compound-interest-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "Albert Einstein supposedly called compound interest the 'eighth wonder of the world.' Whether he said it or not, the math is undeniable: compound interest is the most powerful force in personal finance — and it works both for you (in investments) and against you (in debt).",
+      },
+      {
+        type: "h2",
+        text: "Compound Interest vs. Simple Interest",
+      },
+      {
+        type: "p",
+        text: "Simple interest calculates interest only on the original principal. If you invest $10,000 at 7% simple interest, you earn $700 every year — always on the original $10,000. Compound interest calculates interest on your principal plus any accumulated interest. That $700 gets added to your balance, so next year you earn 7% on $10,700 — not $10,000.",
+      },
+      {
+        type: "h2",
+        text: "The Math Behind Compound Interest",
+      },
+      {
+        type: "p",
+        text: "The formula is: A = P(1 + r/n)^(nt). Where P is principal, r is annual interest rate, n is compounding frequency per year, and t is time in years. The key variable is t — time. The longer money compounds, the more explosive the growth.",
+      },
+      {
+        type: "h2",
+        text: "Real-World Example: $10,000 Over 30 Years",
+      },
+      {
+        type: "ul",
+        items: [
+          "At 5% annual return: $10,000 grows to $43,219",
+          "At 7% annual return: $10,000 grows to $76,123",
+          "At 10% annual return: $10,000 grows to $174,494",
+          "With monthly contributions of $200 at 7%: grows to over $240,000",
+        ],
+      },
+      {
+        type: "tip",
+        text: "The Rule of 72: Divide 72 by your interest rate to find how many years it takes to double your money. At 7%, your money doubles every ~10 years. At 10%, every ~7.2 years.",
+      },
+      {
+        type: "h2",
+        text: "Compounding Frequency: Daily vs. Monthly vs. Annually",
+      },
+      {
+        type: "p",
+        text: "The more frequently interest compounds, the faster your money grows — but the difference is smaller than most people think. $10,000 at 7% compounded daily grows to $76,861 over 30 years. Compounded annually: $76,123. The frequency matters much less than the rate and the time horizon.",
+      },
+      {
+        type: "h2",
+        text: "Compound Interest Working Against You",
+      },
+      {
+        type: "p",
+        text: "Credit card debt compounds monthly — usually at 20-29% APR. A $5,000 credit card balance at 24% APR, making only minimum payments, will take 17 years to pay off and cost over $8,000 in interest. This is compound interest in reverse — working against your wealth every single month.",
+      },
+      {
+        type: "h2",
+        text: "How to Maximize Compound Interest",
+      },
+      {
+        type: "ol",
+        items: [
+          "Start early — every decade of delay roughly halves your ending wealth",
+          "Reinvest dividends — turn off cash payouts, let dividends buy more shares",
+          "Use tax-advantaged accounts — 401(k) and IRA let compound interest grow tax-deferred",
+          "Minimize fees — a 1% annual fee sounds small but can cost you 25% of your final portfolio",
+          "Don't interrupt compounding — avoid withdrawing investments for non-emergencies",
+        ],
+      },
+      {
+        type: "cta",
+        text: "See exactly how compound interest will grow your money with our free calculator. Enter any starting amount, rate, and time period.",
+        ctaText: "Try the Compound Interest Calculator",
+        ctaHref: "/compound-interest-calculator",
+      },
+    ],
+  },
+  {
+    slug: "how-to-get-out-of-debt",
+    title: "How to Get Out of Debt: A Step-by-Step Plan That Works",
+    description:
+      "Drowning in debt? This step-by-step guide shows you exactly how to eliminate debt faster — without gimmicks, just a proven plan.",
+    date: "2026-03-11",
+    readTime: "8 min read",
+    category: "Debt",
+    relatedCalculator: {
+      name: "Debt Payoff Calculator",
+      href: "/debt-payoff-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "The average American household carries $104,000 in debt. Getting out of debt isn't about motivation or discipline — it's about having the right system. Here's a step-by-step plan that actually works, whether you owe $5,000 or $150,000.",
+      },
+      {
+        type: "h2",
+        text: "Step 1: Know Exactly What You Owe",
+      },
+      {
+        type: "p",
+        text: "Pull up every single debt: credit cards, student loans, car loans, personal loans, medical bills, money owed to family. Write down the creditor, balance, interest rate, and minimum payment. Most people are surprised by the total — and that's exactly why you need to see it all in one place.",
+      },
+      {
+        type: "h2",
+        text: "Step 2: Stop Adding New Debt",
+      },
+      {
+        type: "p",
+        text: "You can't dig your way out of a hole. Before you pay off a single dollar, you need to stop the bleeding. Put your credit cards in a drawer (don't cancel them — that hurts your credit score). Switch to debit or cash for daily purchases until you have the habit locked in.",
+      },
+      {
+        type: "h2",
+        text: "Step 3: Build a $1,000 Emergency Fund First",
+      },
+      {
+        type: "p",
+        text: "This sounds counterintuitive — why save when you have debt? Because without an emergency fund, the first flat tire or medical bill sends you right back to the credit card. A $1,000 buffer breaks that cycle. Save it before aggressively paying debt.",
+      },
+      {
+        type: "h2",
+        text: "Step 4: Choose Your Payoff Strategy",
+      },
+      {
+        type: "ul",
+        items: [
+          "Debt Avalanche: Pay minimums on all debts, put every extra dollar on the highest interest rate debt. Saves the most money — mathematically optimal.",
+          "Debt Snowball: Pay minimums on all debts, put every extra dollar on the smallest balance. Faster wins — psychologically powerful.",
+          "Which to choose: If you need motivation to stay on track, use Snowball. If you're disciplined and want to save money, use Avalanche.",
+        ],
+      },
+      {
+        type: "tip",
+        text: "Finding extra money to throw at debt doesn't require drastic lifestyle changes. Temporarily cancel subscriptions, sell things you don't use, pick up one extra shift or gig per month. Even $200/month extra can cut years off your payoff timeline.",
+      },
+      {
+        type: "h2",
+        text: "Step 5: Lower Your Interest Rates",
+      },
+      {
+        type: "ul",
+        items: [
+          "Balance transfer credit card — 0% intro APR for 15-21 months (best for credit card debt under $15,000)",
+          "Personal loan consolidation — fixed rate, often 10-15% vs 20-29% credit card rates",
+          "Call your credit card company — ask for a rate reduction; it works about 70% of the time",
+          "Student loan refinancing — can cut rates significantly on private loans",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Step 6: Automate Everything",
+      },
+      {
+        type: "p",
+        text: "Set up automatic minimum payments on every debt so you never miss one. Then set up a separate automatic payment — your 'extra' amount — to your target debt on payday. Automation removes willpower from the equation, and willpower is a limited resource.",
+      },
+      {
+        type: "h2",
+        text: "How Long Will It Take?",
+      },
+      {
+        type: "p",
+        text: "$20,000 in credit card debt at 22% APR: paying $500/month takes 5.5 years and costs $12,700 in interest. Paying $800/month: 3 years and $8,100 in interest. The math is unforgiving — every extra dollar you can throw at debt saves you multiple dollars in interest.",
+      },
+      {
+        type: "cta",
+        text: "Use our Debt Payoff Calculator to see exactly when you'll be debt-free and how much interest you'll save with different payment amounts.",
+        ctaText: "Calculate My Debt Payoff Date",
+        ctaHref: "/debt-payoff-calculator",
+      },
+    ],
+  },
+  {
+    slug: "first-time-home-buyer-guide",
+    title: "First-Time Home Buyer Guide: Everything You Need to Know",
+    description:
+      "Buying your first home is the biggest financial decision of your life. Here's a complete guide to the process, costs, and mistakes to avoid.",
+    date: "2026-03-12",
+    readTime: "9 min read",
+    category: "Mortgage",
+    relatedCalculator: {
+      name: "Mortgage Calculator",
+      href: "/mortgage-calculator",
+    },
+    content: [
+      {
+        type: "intro",
+        text: "For most people, buying a home is the largest purchase they'll ever make. The process involves more steps, costs, and decisions than most first-time buyers expect. This guide walks you through everything — from figuring out if you're ready to closing day.",
+      },
+      {
+        type: "h2",
+        text: "Are You Financially Ready to Buy?",
+      },
+      {
+        type: "ul",
+        items: [
+          "Down payment saved: 3-20% of home price (more = better loan terms)",
+          "Closing costs: 2-5% of loan amount (often forgotten by first-time buyers)",
+          "Emergency fund: 3-6 months of expenses, separate from down payment",
+          "Stable income: at least 2 years at current employer (lenders want this)",
+          "Debt-to-income ratio: ideally below 36% (all debts including new mortgage)",
+          "Credit score: 620+ minimum, 740+ for best rates",
+        ],
+      },
+      {
+        type: "h2",
+        text: "How Much House Can You Afford?",
+      },
+      {
+        type: "p",
+        text: "The standard rule: your monthly mortgage payment (principal, interest, taxes, insurance) should not exceed 28% of your gross monthly income. On a $80,000 annual salary, that's about $1,867/month. At 7% interest rate with 20% down, that buys roughly a $280,000 home.",
+      },
+      {
+        type: "tip",
+        text: "Lenders will often approve you for more than you should spend. Just because you qualify for a $400,000 mortgage doesn't mean you should take it. Calculate what you're comfortable paying — then find a house in that range.",
+      },
+      {
+        type: "h2",
+        text: "Step-by-Step: The Home Buying Process",
+      },
+      {
+        type: "ol",
+        items: [
+          "Check and improve your credit score (start 6-12 months before buying)",
+          "Save your down payment and closing costs",
+          "Get pre-approved for a mortgage (not pre-qualified — pre-approved)",
+          "Find a buyer's agent (they're paid by the seller, so it costs you nothing)",
+          "Search for homes within your budget",
+          "Make an offer with earnest money deposit (1-2% of price)",
+          "Schedule a home inspection — never skip this",
+          "Negotiate repairs or price reductions based on inspection",
+          "Lock your mortgage rate",
+          "Final walkthrough and closing day",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Hidden Costs First-Time Buyers Miss",
+      },
+      {
+        type: "ul",
+        items: [
+          "Property taxes: 1-2% of home value annually (varies widely by location)",
+          "Homeowners insurance: $1,000-2,000/year average",
+          "PMI (Private Mortgage Insurance): 0.5-1.5%/year if down payment is under 20%",
+          "HOA fees: $200-500/month in many communities",
+          "Maintenance and repairs: budget 1% of home value per year",
+          "Moving costs: $1,000-5,000 depending on distance",
+        ],
+      },
+      {
+        type: "h2",
+        text: "First-Time Buyer Programs",
+      },
+      {
+        type: "ul",
+        items: [
+          "FHA loans: 3.5% down payment with 580+ credit score",
+          "USDA loans: 0% down for eligible rural properties",
+          "VA loans: 0% down for veterans and active military",
+          "Fannie Mae HomeReady: 3% down for moderate-income buyers",
+          "State programs: many states offer down payment assistance grants",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Renting vs. Buying: The Real Math",
+      },
+      {
+        type: "p",
+        text: "Buying only beats renting if you stay in the home long enough. Factor in closing costs (2-5%), agent commissions when selling (5-6%), maintenance, and property taxes. In most markets, you need to stay at least 5-7 years for buying to beat renting financially. If you might move in 2-3 years, renting is often the smarter financial choice.",
+      },
+      {
+        type: "cta",
+        text: "Use our Mortgage Calculator to see your exact monthly payment, total interest cost, and full amortization schedule for any home price and loan terms.",
+        ctaText: "Calculate My Mortgage Payment",
+        ctaHref: "/mortgage-calculator",
       },
     ],
   },
