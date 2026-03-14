@@ -3903,7 +3903,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-13",
     readTime: "6 min read",
     category: "Debt",
-    relatedCalculator: { name: "Debt Payoff Calculator", href: "/debt-payoff-calculator" },
+    relatedCalculator: { name: "Credit Card Payoff Calculator", href: "/credit-card-payoff-calculator" },
     content: [
       { type: "intro", text: "The average credit card interest rate is now over 21% APR. If you carry a $5,000 balance and only make minimum payments, you'll pay over $9,000 in interest and take 17+ years to pay it off. Here's how to escape the trap fast." },
       { type: "h2", text: "Step 1: Stop Adding New Debt" },
@@ -4114,7 +4114,7 @@ export const blogPosts: BlogPost[] = [
     date: "2025-03-07",
     readTime: "8 min read",
     category: "Credit",
-    relatedCalculator: { name: "Debt Payoff Calculator", href: "/debt-payoff-calculator" },
+    relatedCalculator: { name: "Credit Card Payoff Calculator", href: "/credit-card-payoff-calculator" },
     content: [
       { type: "intro", text: "A bad credit score can cost you tens of thousands of dollars over your lifetime — higher interest rates, denied loan applications, larger security deposits. But bad credit isn't permanent. With the right steps, most people can significantly improve their score within 6-12 months." },
       { type: "h2", text: "What Is Considered Bad Credit?" },
@@ -4161,7 +4161,7 @@ export const blogPosts: BlogPost[] = [
     date: "2025-03-09",
     readTime: "6 min read",
     category: "Credit",
-    relatedCalculator: { name: "Debt Payoff Calculator", href: "/debt-payoff-calculator" },
+    relatedCalculator: { name: "Credit Card Payoff Calculator", href: "/credit-card-payoff-calculator" },
     content: [
       { type: "intro", text: "Your credit score isn't a mystery — it's a formula. FICO, the most widely used scoring model, calculates your score from five specific factors, each weighted differently. Once you understand these components, you know exactly where to focus to improve your score." },
       { type: "h2", text: "The 5 Factors That Make Up Your FICO Score" },
@@ -4410,7 +4410,7 @@ export const blogPosts: BlogPost[] = [
     date: "2025-03-21",
     readTime: "5 min read",
     category: "Debt",
-    relatedCalculator: { name: "Debt Payoff Calculator", href: "/debt-payoff-calculator" },
+    relatedCalculator: { name: "Loan Comparison Calculator", href: "/loan-comparison-calculator" },
     content: [
       { type: "intro", text: "APR — Annual Percentage Rate — is one of the most important numbers in personal finance, and one of the least understood. It determines how much a loan or credit card actually costs you. Here's what it means, how it's calculated, and how to use it to make smarter borrowing decisions." },
       { type: "h2", text: "What Is APR?" },

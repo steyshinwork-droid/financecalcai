@@ -168,9 +168,9 @@ const features = [
   },
   {
     icon: Eye,
-    title: "Clean & Ad-Light",
+    title: "Clean Interface",
     description:
-      "No ad spam. Clean interface designed for clarity, not clutter.",
+      "Distraction-free design built for clarity. No pop-ups, no clutter — just the tools you need.",
   },
 ];
 

@@ -15,9 +15,13 @@ const categoryColors: Record<string, string> = {
   Mortgage: "bg-blue-100 text-blue-700",
   Budgeting: "bg-purple-100 text-purple-700",
   Savings: "bg-amber-100 text-amber-700",
+  Taxes: "bg-orange-100 text-orange-700",
+  Credit: "bg-pink-100 text-pink-700",
+  Retirement: "bg-indigo-100 text-indigo-700",
+  "Personal Finance": "bg-teal-100 text-teal-700",
 };
 
-const categories = ["All", "Savings", "Debt", "Investing", "Budgeting", "Mortgage"];
+const categories = ["All", "Savings", "Debt", "Investing", "Budgeting", "Mortgage", "Taxes", "Credit", "Retirement"];
 
 export default function BlogPage({
   searchParams,

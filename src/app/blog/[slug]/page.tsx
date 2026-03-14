@@ -19,14 +19,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return {};
+  const url = `https://financecalcai.vercel.app/blog/${slug}`;
   return {
     title: post.title,
     description: post.description,
+    alternates: { canonical: url },
     openGraph: {
       title: post.title,
       description: post.description,
       type: "article",
       publishedTime: post.date,
+      url,
+      siteName: "FinanceCalcAI",
+    },
+    twitter: {
+      card: "summary",
+      title: post.title,
+      description: post.description,
     },
   };
 }
@@ -121,6 +130,11 @@ const categoryColors: Record<string, string> = {
   Mortgage: "bg-blue-100 text-blue-700",
   Budgeting: "bg-purple-100 text-purple-700",
   Savings: "bg-amber-100 text-amber-700",
+  Taxes: "bg-orange-100 text-orange-700",
+  Credit: "bg-pink-100 text-pink-700",
+  Retirement: "bg-indigo-100 text-indigo-700",
+  "Personal Finance": "bg-teal-100 text-teal-700",
+  "Net Worth": "bg-cyan-100 text-cyan-700",
 };
 
 export default async function BlogPostPage({ params }: Props) {
