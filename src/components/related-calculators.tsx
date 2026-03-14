@@ -51,6 +51,16 @@ const ALL_CALCULATORS: Record<string, { name: string; href: string; description:
     href: "/tax-bracket-calculator",
     description: "See your effective tax rate.",
   },
+  "credit-card-payoff-calculator": {
+    name: "Credit Card Payoff Calculator",
+    href: "/credit-card-payoff-calculator",
+    description: "See how fast you can pay off your credit card.",
+  },
+  "loan-comparison-calculator": {
+    name: "Loan Comparison Calculator",
+    href: "/loan-comparison-calculator",
+    description: "Compare two loans side by side.",
+  },
 };
 
 const RELATED_MAP: Record<string, string[]> = {
@@ -64,6 +74,8 @@ const RELATED_MAP: Record<string, string[]> = {
   "net-worth-calculator": ["budget-calculator", "debt-payoff-calculator", "investment-calculator"],
   "emergency-fund-calculator": ["budget-calculator", "savings-goal-calculator", "debt-payoff-calculator"],
   "tax-bracket-calculator": ["retirement-calculator", "investment-calculator", "budget-calculator"],
+  "credit-card-payoff-calculator": ["debt-payoff-calculator", "budget-calculator", "loan-comparison-calculator"],
+  "loan-comparison-calculator": ["mortgage-calculator", "credit-card-payoff-calculator", "debt-payoff-calculator"],
 };
 
 export function RelatedCalculators({ currentSlug }: { currentSlug: string }) {

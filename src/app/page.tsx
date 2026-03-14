@@ -18,6 +18,8 @@ import {
   Receipt,
   BookOpen,
   Tag,
+  BadgePercent,
+  ArrowLeftRight,
 } from "lucide-react";
 import {
   Card,
@@ -128,6 +130,26 @@ const calculators = [
     color: "text-rose-600",
     bg: "bg-rose-50",
     badge: null,
+  },
+  {
+    title: "Credit Card Payoff Calculator",
+    description:
+      "See exactly when you'll be debt-free and how much interest you'll pay. Compare your plan vs. minimum payments.",
+    href: "/credit-card-payoff-calculator",
+    icon: BadgePercent,
+    color: "text-pink-600",
+    bg: "bg-pink-50",
+    badge: "New",
+  },
+  {
+    title: "Loan Comparison Calculator",
+    description:
+      "Compare two loan offers side by side. AI tells you which one saves more money in the long run.",
+    href: "/loan-comparison-calculator",
+    icon: ArrowLeftRight,
+    color: "text-violet-600",
+    bg: "bg-violet-50",
+    badge: "New",
   },
 ];
 

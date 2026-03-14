@@ -74,6 +74,16 @@ export function Footer() {
                   Tax Bracket
                 </Link>
               </li>
+              <li>
+                <Link href="/credit-card-payoff-calculator" className="hover:text-emerald-600">
+                  Credit Card Payoff
+                </Link>
+              </li>
+              <li>
+                <Link href="/loan-comparison-calculator" className="hover:text-emerald-600">
+                  Loan Comparison
+                </Link>
+              </li>
             </ul>
           </div>
 

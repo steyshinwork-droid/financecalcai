@@ -15,6 +15,8 @@ const calculators = [
   { name: "Net Worth", href: "/net-worth-calculator" },
   { name: "Emergency Fund", href: "/emergency-fund-calculator" },
   { name: "Tax Bracket", href: "/tax-bracket-calculator" },
+  { name: "Credit Card Payoff", href: "/credit-card-payoff-calculator" },
+  { name: "Loan Comparison", href: "/loan-comparison-calculator" },
 ];
 
 export function Header() {
