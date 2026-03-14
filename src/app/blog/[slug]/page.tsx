@@ -5,6 +5,7 @@ import { getBlogPost, getAllSlugs, type BlogPost } from "@/lib/blog";
 import { Clock, Tag, ArrowRight, Calculator } from "lucide-react";
 import { ShareButtons } from "@/components/share-buttons";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { AffiliateBanner } from "@/components/affiliate-banner";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -184,6 +185,18 @@ export default async function BlogPostPage({ params }: Props) {
       {/* Content */}
       <div className="space-y-5">
         {post.content.map((section, index) => renderSection(section, index))}
+      </div>
+
+      {/* Affiliate Banner */}
+      <div className="mt-10">
+        <AffiliateBanner
+          variant={
+            post.category === "Debt" ? "debt"
+            : post.category === "Investing" || post.category === "Retirement" ? "investing"
+            : post.category === "Savings" ? "savings"
+            : "general"
+          }
+        />
       </div>
 
       {/* Share footer */}
