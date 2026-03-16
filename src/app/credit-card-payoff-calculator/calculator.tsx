@@ -247,7 +247,7 @@ export function CreditCardPayoffCalc() {
                     tick={{ fontSize: 12 }}
                   />
                   <YAxis type="category" dataKey="name" tick={{ fontSize: 12 }} width={65} />
-                  <Tooltip formatter={(v: number) => formatMoney(v)} />
+                  <Tooltip formatter={(v: number | undefined) => v != null ? formatMoney(v) : ''} />
                   <Bar dataKey="value" radius={[0, 4, 4, 0]}>
                     {chartData.map((entry, index) => (
                       <Cell key={index} fill={entry.color} />

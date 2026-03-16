@@ -248,7 +248,7 @@ export function LoanComparisonCalc() {
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="name" tick={{ fontSize: 11 }} />
                   <YAxis tickFormatter={(v) => `$${(v / 1000).toFixed(0)}k`} tick={{ fontSize: 11 }} />
-                  <Tooltip formatter={(v: number) => formatMoney(v)} />
+                  <Tooltip formatter={(v: number | undefined) => v != null ? formatMoney(v) : ''} />
                   <Legend />
                   <Bar dataKey="Loan A" fill="#3b82f6" radius={[4, 4, 0, 0]} />
                   <Bar dataKey="Loan B" fill="#a855f7" radius={[4, 4, 0, 0]} />
