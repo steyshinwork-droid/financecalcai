@@ -41,11 +41,11 @@ const banners = {
   },
   general: {
     label: "Sponsored",
-    title: "Get Your Free Credit Score & Financial Report",
+    title: "Send Money Worldwide in Minutes",
     description:
-      "Monitor your credit score, track your net worth, and get personalized tips to improve your finances — all free.",
-    cta: "Check Your Score Free",
-    href: "https://financecalcai.vercel.app/blog/what-is-good-credit-score",
+      "Transfer funds to 200+ countries with Western Union. Competitive rates, multiple payout options — bank account, cash pickup, or mobile wallet.",
+    cta: "Send Money Now",
+    href: "https://kdbov.com/g/kryb7glvg7b0a3ffeae4a82f40b179/",
     bg: "bg-purple-50 border-purple-200",
     labelColor: "bg-purple-100 text-purple-800",
     ctaColor: "bg-purple-600 hover:bg-purple-700",
