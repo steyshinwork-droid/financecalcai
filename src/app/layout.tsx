@@ -55,6 +55,8 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5936564601032306"
           crossOrigin="anonymous"
         />
+        {/* @ts-ignore */}
+        <meta name="impact-site-verification" value="e39330ed-e605-46f6-bf43-c88ea79d9fbe" />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <Analytics />
