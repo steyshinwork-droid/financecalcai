@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getBlogPost, getAllSlugs, type BlogPost } from "@/lib/blog";
+import { getBlogPost, getAllSlugs, blogPosts, type BlogPost } from "@/lib/blog";
 import { Clock, Tag, ArrowRight, Calculator } from "lucide-react";
 import { ShareButtons } from "@/components/share-buttons";
 import { Breadcrumb } from "@/components/breadcrumb";
@@ -218,6 +218,31 @@ export default async function BlogPostPage({ params }: Props) {
         <p className="mb-3 text-sm font-medium text-gray-700">Found this helpful? Share it:</p>
         <ShareButtons title={post.title} slug={slug} />
       </div>
+
+      {/* Related Articles */}
+      {(() => {
+        const related = blogPosts
+          .filter((p) => p.category === post.category && p.slug !== slug)
+          .slice(0, 3);
+        if (related.length === 0) return null;
+        return (
+          <div className="mt-10 border-t pt-8">
+            <h3 className="mb-4 text-lg font-bold text-gray-900">Related Articles</h3>
+            <div className="space-y-3">
+              {related.map((p) => (
+                <Link
+                  key={p.slug}
+                  href={`/blog/${p.slug}`}
+                  className="flex items-center justify-between rounded-lg border border-gray-100 bg-gray-50 px-4 py-3 text-sm font-medium text-gray-700 transition hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
+                >
+                  {p.title}
+                  <ArrowRight className="h-4 w-4 flex-shrink-0 ml-2" />
+                </Link>
+              ))}
+            </div>
+          </div>
+        );
+      })()}
 
       {/* Related calculator footer */}
       <div className="mt-8 border-t pt-8">
