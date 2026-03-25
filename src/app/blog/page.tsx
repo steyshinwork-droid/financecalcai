@@ -19,16 +19,18 @@ const categoryColors: Record<string, string> = {
   Credit: "bg-pink-100 text-pink-700",
   Retirement: "bg-indigo-100 text-indigo-700",
   "Personal Finance": "bg-teal-100 text-teal-700",
+  "Net Worth": "bg-cyan-100 text-cyan-700",
 };
 
-const categories = ["All", "Savings", "Debt", "Investing", "Budgeting", "Mortgage", "Taxes", "Credit", "Retirement"];
+const categories = ["All", "Savings", "Debt", "Investing", "Budgeting", "Mortgage", "Taxes", "Credit", "Retirement", "Personal Finance", "Net Worth"];
 
-export default function BlogPage({
+export default async function BlogPage({
   searchParams,
 }: {
-  searchParams: { category?: string };
+  searchParams: Promise<{ category?: string }>;
 }) {
-  const activeCategory = searchParams.category ?? "All";
+  const { category } = await searchParams;
+  const activeCategory = category ?? "All";
   const filtered =
     activeCategory === "All"
       ? blogPosts

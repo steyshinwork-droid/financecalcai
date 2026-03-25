@@ -329,7 +329,7 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
-            {blogPosts.slice(0, 3).map((post) => (
+            {[...blogPosts].reverse().slice(0, 3).map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
                 <article className="h-full rounded-xl border border-gray-200 bg-white p-5 transition hover:border-emerald-200 hover:shadow-md">
                   <div className="mb-3 flex items-center gap-2">

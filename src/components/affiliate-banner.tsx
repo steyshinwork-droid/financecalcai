@@ -12,7 +12,7 @@ const banners = {
     description:
       "Open a high-yield savings account and put your emergency fund to work. No fees, FDIC insured, instant access.",
     cta: "Compare Top HYSAs",
-    href: "https://financecalcai.vercel.app/blog/what-is-high-yield-savings-account",
+    href: "https://financecalcai.vercel.app/blog/high-yield-savings-account-explained",
     bg: "bg-amber-50 border-amber-200",
     labelColor: "bg-amber-100 text-amber-800",
     ctaColor: "bg-amber-600 hover:bg-amber-700",
@@ -23,7 +23,7 @@ const banners = {
     description:
       "Beginner-friendly investment platform. Build a diversified portfolio of ETFs automatically, with zero commissions.",
     cta: "Start Investing Free",
-    href: "https://financecalcai.vercel.app/blog/how-to-start-investing-1000",
+    href: "https://financecalcai.vercel.app/blog/how-to-start-investing-100-dollars",
     bg: "bg-emerald-50 border-emerald-200",
     labelColor: "bg-emerald-100 text-emerald-800",
     ctaColor: "bg-emerald-600 hover:bg-emerald-700",
@@ -34,7 +34,7 @@ const banners = {
     description:
       "Move high-interest credit card debt to a 0% APR card. Stop paying interest and pay down principal faster.",
     cta: "Compare Balance Transfer Cards",
-    href: "https://financecalcai.vercel.app/blog/how-to-get-out-of-credit-card-debt",
+    href: "https://financecalcai.vercel.app/blog/how-to-get-out-of-debt-fast",
     bg: "bg-blue-50 border-blue-200",
     labelColor: "bg-blue-100 text-blue-800",
     ctaColor: "bg-blue-600 hover:bg-blue-700",
