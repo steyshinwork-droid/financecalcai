@@ -128,7 +128,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/debt-payoff-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-compound-interest-works",
     title: "How Compound Interest Works: Turn $1,000 Into $10,000",
@@ -235,7 +235,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/compound-interest-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-much-house-can-i-afford",
     title: "How Much House Can I Afford? The Simple Formula",
@@ -349,7 +349,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/mortgage-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "50-30-20-budget-rule",
     title: "The 50/30/20 Budget Rule: The Only Budget You'll Ever Need",
@@ -450,7 +450,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/budget-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-much-emergency-fund",
     title: "How Much Should You Have in Your Emergency Fund?",
@@ -570,7 +570,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/emergency-fund-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-much-do-i-need-to-retire",
     title: "How Much Do I Need to Retire? The Real Number",
@@ -677,7 +677,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/retirement-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-calculate-investment-returns",
     title: "How to Calculate Investment Returns (And What Actually Matters)",
@@ -767,7 +767,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/investment-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-calculate-net-worth",
     title: "How to Calculate Your Net Worth (And Why It's the Only Number That Matters)",
@@ -878,7 +878,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/net-worth-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-save-10000-fast",
     title: "How to Save $10,000 Fast: A Realistic Step-by-Step Plan",
@@ -985,7 +985,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/savings-goal-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-do-tax-brackets-work",
     title: "How Do Tax Brackets Actually Work? (Most People Get This Wrong)",
@@ -1086,7 +1086,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/tax-bracket-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "roth-ira-vs-401k",
     title: "Roth IRA vs 401(k): Which Should You Choose?",
@@ -1202,7 +1202,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/retirement-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "good-debt-vs-bad-debt",
     title: "Good Debt vs Bad Debt: How to Tell the Difference",
@@ -1304,7 +1304,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/debt-payoff-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-start-investing",
     title: "How to Start Investing with $1,000 (Step-by-Step for Beginners)",
@@ -1421,7 +1421,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/investment-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "what-is-a-good-savings-rate",
     title: "What Is a Good Savings Rate? (And How to Calculate Yours)",
@@ -1518,7 +1518,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/savings-goal-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-lower-mortgage-payment",
     title: "How to Lower Your Monthly Mortgage Payment (7 Ways That Work)",
@@ -1617,7 +1617,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/mortgage-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-save-for-retirement-in-your-30s",
     title: "How to Save for Retirement in Your 30s: The Complete Guide",
@@ -1730,7 +1730,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/retirement-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-invest-1000-dollars",
     title: "How to Invest $1,000: The Best Ways to Grow Your Money",
@@ -1834,7 +1834,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/investment-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-calculate-your-net-worth",
     title: "How to Calculate Your Net Worth (And What It Should Be)",
@@ -1953,7 +1953,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/net-worth-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "savings-rate-by-age",
     title: "What Is a Good Savings Rate by Age and Income?",
@@ -2055,7 +2055,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/savings-goal-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-pay-off-student-loans-fast",
     title: "How to Pay Off Student Loans Fast: 7 Proven Strategies",
@@ -2148,7 +2148,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/debt-payoff-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-build-credit-score",
     title: "How to Build Your Credit Score Fast: 7 Proven Steps",
@@ -2261,7 +2261,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/debt-payoff-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "roth-ira-vs-traditional-ira",
     title: "Roth IRA vs Traditional IRA: Which Is Right for You?",
@@ -2376,7 +2376,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/retirement-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-create-a-budget",
     title: "How to Create a Budget That Actually Works (Step-by-Step)",
@@ -2495,7 +2495,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/budget-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-save-money-fast",
     title: "How to Save Money Fast: 15 Strategies That Actually Work",
@@ -2590,7 +2590,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/savings-goal-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "what-is-net-worth",
     title: "What Is Net Worth and Why Does It Matter?",
@@ -2707,7 +2707,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/net-worth-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-make-a-budget",
     title: "How to Make a Budget That Actually Works (Step-by-Step)",
@@ -2809,7 +2809,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/budget-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-much-should-i-save-per-month",
     title: "How Much Should I Save Per Month? (By Income and Age)",
@@ -2897,7 +2897,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/savings-goal-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "what-is-compound-interest",
     title: "What Is Compound Interest and Why Does It Matter?",
@@ -2985,7 +2985,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/compound-interest-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-get-out-of-debt",
     title: "How to Get Out of Debt: A Step-by-Step Plan That Works",
@@ -3079,7 +3079,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/debt-payoff-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "first-time-home-buyer-guide",
     title: "First-Time Home Buyer Guide: Everything You Need to Know",
@@ -3187,7 +3187,7 @@ export const blogPosts: BlogPost[] = [
         ctaHref: "/mortgage-calculator",
       },
     ],
-  },,
+  },
   {
     slug: "how-to-save-for-a-house",
     title: "How to Save for a House: A Step-by-Step Plan",
@@ -3232,7 +3232,7 @@ export const blogPosts: BlogPost[] = [
       ]},
       { type: "cta", text: "Use our Mortgage Calculator to see exactly what monthly payment you can afford at different down payment levels and home prices.", ctaText: "Calculate My Mortgage", ctaHref: "/mortgage-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-a-401k",
     title: "What Is a 401(k)? The Complete Beginner's Guide",
@@ -3273,7 +3273,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "You can withdraw from your 401(k) penalty-free at age 59½. Early withdrawals face a 10% penalty plus income taxes — withdrawing $10,000 early could cost $3,000-4,000 in taxes and penalties. At age 73, Required Minimum Distributions (RMDs) kick in — you must start withdrawing." },
       { type: "cta", text: "Use our Retirement Calculator to see exactly how much your 401(k) will grow and when you'll have enough to retire.", ctaText: "Calculate My Retirement", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-reduce-monthly-expenses",
     title: "How to Reduce Monthly Expenses: 25 Practical Ways",
@@ -3328,7 +3328,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Don't try to implement all 25 at once. Pick the 3 with the biggest impact for your specific situation and implement those first. Most people find $300-500/month with just 3-5 changes." },
       { type: "cta", text: "Use our Budget Calculator to see exactly where your money is going and find the biggest opportunities to cut.", ctaText: "Analyze My Budget", ctaHref: "/budget-calculator" },
     ],
-  },,
+  },
   {
     slug: "debt-to-income-ratio",
     title: "What Is Debt-to-Income Ratio? How to Calculate and Improve It",
@@ -3373,7 +3373,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "For a conventional mortgage, lenders typically want a back-end DTI below 43%, and ideally below 36%. FHA loans allow up to 50% DTI in some cases. If your DTI is too high to qualify for the home you want, you have two options: pay down debt before applying, or increase your income." },
       { type: "cta", text: "Calculate how quickly you can pay off your debts and lower your DTI with our Debt Payoff Calculator.", ctaText: "Calculate My Debt Payoff", ctaHref: "/debt-payoff-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-start-investing-with-little-money",
     title: "How to Start Investing With Little Money (Even $50/Month)",
@@ -3423,7 +3423,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "The perfect investment strategy that you start today beats the perfect strategy you start next year. Don't wait until you have more money, more knowledge, or the 'right time.' Open an account, set up automatic contributions, buy a total market index fund, and don't touch it for 20 years. That's 90% of what you need to know." },
       { type: "cta", text: "See how your investments will grow over time with different monthly contribution amounts using our Investment Return Calculator.", ctaText: "Calculate My Investment Returns", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-a-good-credit-score",
     title: "What Is a Good Credit Score? The Complete Guide",
@@ -3467,7 +3467,7 @@ export const blogPosts: BlogPost[] = [
       ]},
       { type: "cta", text: "Improving your credit score lets you qualify for lower mortgage rates. See how much house you can afford with better rates.", ctaText: "Calculate Mortgage Payments", ctaHref: "/mortgage-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-pay-off-mortgage-early",
     title: "How to Pay Off Your Mortgage Early (And Save $50,000+)",
@@ -3491,7 +3491,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Before paying extra on your mortgage, make sure you have: 3-6 months emergency fund, no high-interest debt, and are maxing your retirement accounts. Mortgage debt at 3-4% is 'cheap' debt — investing often beats prepaying at those rates." },
       { type: "cta", text: "Calculate exactly how much you'll save by paying extra on your mortgage each month.", ctaText: "Try Mortgage Calculator", ctaHref: "/mortgage-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-dollar-cost-averaging",
     title: "What Is Dollar-Cost Averaging? (And Why It Works)",
@@ -3524,7 +3524,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Mathematically, if you have a large sum to invest, investing it all at once beats DCA about 2/3 of the time because markets trend upward over time. But the emotional and behavioral benefits of DCA often outweigh this mathematical edge for most people." },
       { type: "cta", text: "See how regular monthly investing grows over time using our Investment Return Calculator.", ctaText: "Calculate Investment Growth", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-a-high-yield-savings-account",
     title: "What Is a High-Yield Savings Account? (HYSA Explained)",
@@ -3561,7 +3561,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Move your emergency fund to a HYSA today. It takes 10 minutes and requires no lifestyle change — your money just earns more while sitting there." },
       { type: "cta", text: "Calculate how much faster you'll reach your savings goal with a higher interest rate.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-negotiate-salary",
     title: "How to Negotiate Your Salary (Scripts That Work)",
@@ -3601,7 +3601,7 @@ export const blogPosts: BlogPost[] = [
       ]},
       { type: "cta", text: "Use our Budget Calculator to see how a salary increase would change your monthly finances.", ctaText: "See Budget Impact", ctaHref: "/budget-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-invest-in-index-funds",
     title: "How to Invest in Index Funds: A Beginner's Guide",
@@ -3642,7 +3642,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Buy one total market index fund (VTI or FSKAX). Contribute every month automatically. Never sell during crashes. Rebalance once a year. That's it. This simple strategy has beaten most professional money managers over every 20-year period." },
       { type: "cta", text: "Calculate how much your index fund investments will grow over time.", ctaText: "Calculate Investment Returns", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-retire-early",
     title: "How to Retire Early: The FIRE Method Explained",
@@ -3681,7 +3681,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "You don't have to be extreme. Even getting from a 10% to a 25% savings rate cuts your working years in half. Small changes compound dramatically over time." },
       { type: "cta", text: "Calculate when you can retire based on your current savings rate and portfolio size.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-inflation",
     title: "What Is Inflation and How Does It Affect Your Money?",
@@ -3715,7 +3715,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The single best inflation hedge for most people is a low-cost total stock market index fund held for 20+ years. Stocks have beaten inflation in every 20-year period in US history." },
       { type: "cta", text: "See how compound interest can help your savings outpace inflation over time.", ctaText: "Try Compound Interest Calculator", ctaHref: "/compound-interest-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-save-for-college",
     title: "How to Save for College: 529 Plans and Beyond",
@@ -3752,7 +3752,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Don't sacrifice your retirement to save for college. You can borrow for college — you can't borrow for retirement. Max your 401(k) match first, then contribute to a 529." },
       { type: "cta", text: "Calculate how much you need to save monthly to reach your college savings goal.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-passive-income",
     title: "What Is Passive Income? 10 Real Ways to Earn It",
@@ -3792,7 +3792,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The fastest path to passive income for most people: invest consistently in index funds. It's boring, but $1,000/month invested for 20 years at 7% returns creates $600,000+ in wealth that generates ~$24,000/year in passive income." },
       { type: "cta", text: "Calculate how your investments will grow into passive income over time.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-avoid-lifestyle-inflation",
     title: "How to Avoid Lifestyle Inflation (And Actually Build Wealth)",
@@ -3823,7 +3823,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "This isn't about deprivation. It's about being intentional. Spend more on things that genuinely improve your life. Cut spending on things you barely notice. The goal is high satisfaction per dollar, not minimum spending." },
       { type: "cta", text: "See exactly where your money is going and where you can redirect it to savings.", ctaText: "Try Budget Calculator", ctaHref: "/budget-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-use-a-health-savings-account",
     title: "How to Use an HSA: The Ultimate Triple Tax Advantage",
@@ -3855,7 +3855,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Priority order for investing: 401(k) match → HSA max → Roth IRA max → more 401(k) → taxable brokerage. The HSA comes before filling your Roth IRA because of the triple tax advantage." },
       { type: "cta", text: "See how contributing to an HSA could affect your retirement timeline.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-buy-your-first-home",
     title: "How to Buy Your First Home: A Step-by-Step Guide",
@@ -3895,7 +3895,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The true cost of homeownership goes beyond the mortgage: property taxes, insurance, HOA fees, maintenance (budget 1% of home value per year), and utilities. Factor all of these into your budget before buying." },
       { type: "cta", text: "Calculate your monthly mortgage payment, including taxes and insurance.", ctaText: "Try Mortgage Calculator", ctaHref: "/mortgage-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-get-out-of-credit-card-debt",
     title: "How to Get Out of Credit Card Debt Fast",
@@ -3928,7 +3928,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "After paying off a card, keep it open (to maintain your credit utilization ratio) but put it away. The habit of not carrying a balance is more valuable than any reward points." },
       { type: "cta", text: "Calculate exactly how long it will take to pay off your credit card debt at different payment amounts.", ctaText: "Try Debt Payoff Calculator", ctaHref: "/debt-payoff-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-set-financial-goals",
     title: "How to Set Financial Goals You'll Actually Achieve",
@@ -3979,7 +3979,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Focus on 1-3 goals at a time, not 10. Spreading effort across too many goals usually means achieving none of them." },
       { type: "cta", text: "Calculate exactly how much you need to save per month to hit your savings goals.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-maximize-tax-refund",
     title: "How to Maximize Your Tax Refund: 12 Legal Strategies",
@@ -4021,7 +4021,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "If you have investments that have lost value, selling them can offset capital gains you've realized. This 'tax-loss harvesting' can reduce your taxable income by up to $3,000 per year beyond offsetting gains." },
       { type: "cta", text: "See how different deductions and strategies affect your tax bill.", ctaText: "Try Income Tax Calculator", ctaHref: "/income-tax-calculator" },
     ],
-  },,
+  },
   {
     slug: "standard-deduction-vs-itemizing",
     title: "Standard Deduction vs. Itemizing: Which Saves You More?",
@@ -4065,7 +4065,7 @@ export const blogPosts: BlogPost[] = [
       ]},
       { type: "cta", text: "Calculate your estimated tax liability under different scenarios.", ctaText: "Try Income Tax Calculator", ctaHref: "/income-tax-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-reduce-taxable-income",
     title: "How to Reduce Your Taxable Income: 10 Legal Strategies",
@@ -4106,7 +4106,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "You don't need to do all 10 things. Pick the 2-3 that apply to your situation and implement them consistently. Small optimizations compounded over decades create enormous wealth." },
       { type: "cta", text: "See how reducing your taxable income changes your tax bill.", ctaText: "Try Income Tax Calculator", ctaHref: "/income-tax-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-fix-bad-credit",
     title: "How to Fix Bad Credit: A Step-by-Step Repair Guide",
@@ -4153,7 +4153,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Time is your biggest ally. Most negative items (late payments, collections) fall off your credit report after 7 years. A bankruptcy takes 10 years. You can make real progress well before that with positive actions." },
       { type: "cta", text: "Calculate how fast you can pay off the debts dragging down your credit.", ctaText: "Try Debt Payoff Calculator", ctaHref: "/debt-payoff-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-factors-affect-credit-score",
     title: "What Factors Affect Your Credit Score? (The 5 Components Explained)",
@@ -4190,7 +4190,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Since payment history and utilization together make up 65% of your score, these are where you should focus almost all your energy. Set up autopay for minimums, then aggressively pay down high-balance cards." },
       { type: "cta", text: "See how paying off debt reduces your utilization and improves your financial picture.", ctaText: "Try Debt Payoff Calculator", ctaHref: "/debt-payoff-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-an-etf",
     title: "What Is an ETF? Exchange-Traded Funds Explained for Beginners",
@@ -4240,7 +4240,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "For most long-term investors, a simple combination of a US stock market ETF + an international stock ETF + a bond ETF covers everything you need. No stock-picking required." },
       { type: "cta", text: "See how investing in ETFs compounds over time with different contribution amounts.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-build-three-fund-portfolio",
     title: "How to Build a Simple 3-Fund Portfolio (The Lazy Portfolio That Beats Most Pros)",
@@ -4276,7 +4276,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Total annual cost of a 3-fund portfolio: roughly 0.03% to 0.15%. Compare that to a typical actively managed fund at 1% or higher. On a $500,000 portfolio, that's a difference of $4,250 to $4,925 every single year — money that stays in your pocket." },
       { type: "cta", text: "Calculate how your 3-fund portfolio could grow over time with consistent contributions.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "retirement-savings-by-age",
     title: "How Much Should I Have Saved for Retirement by Age?",
@@ -4318,7 +4318,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "A common rule of thumb: at retirement, you can withdraw 4% of your portfolio per year without running out of money over 30 years. So if you need $40,000/year from savings, you need $1 million. Need $60,000/year? You need $1.5 million." },
       { type: "cta", text: "Calculate your personalized retirement number based on your income, age, and goals.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "zero-based-budgeting",
     title: "Zero-Based Budgeting: The Method That Makes Every Dollar Count",
@@ -4365,7 +4365,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "You Need a Budget (YNAB) is the gold standard app for zero-based budgeting. EveryDollar (by Dave Ramsey) is another popular option. Or use a simple spreadsheet — the method works with any tool." },
       { type: "cta", text: "Set a savings goal and see exactly how much to budget per month.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-build-emergency-fund-from-scratch",
     title: "How to Build an Emergency Fund from Scratch (Even on a Tight Budget)",
@@ -4402,7 +4402,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The hardest part is the first $1,000. Once you see that buffer there, the psychological relief is so powerful that saving the rest becomes much easier. Just start — even $50 this week." },
       { type: "cta", text: "Calculate exactly how long it will take to build your emergency fund.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-apr-explained",
     title: "What Is APR? Annual Percentage Rate Explained Simply",
@@ -4446,7 +4446,7 @@ export const blogPosts: BlogPost[] = [
       ]},
       { type: "cta", text: "See how different APRs affect how fast you can become debt-free.", ctaText: "Try Debt Payoff Calculator", ctaHref: "/debt-payoff-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-pmi-and-how-to-avoid-it",
     title: "What Is PMI (Private Mortgage Insurance) and How to Avoid It?",
@@ -4488,7 +4488,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Don't confuse PMI with MIP (Mortgage Insurance Premium) on FHA loans. MIP is required for the life of most FHA loans regardless of equity. If you have an FHA loan and have built 20% equity, refinancing to a conventional loan can eliminate it." },
       { type: "cta", text: "Calculate your mortgage payment with and without PMI to see the real difference.", ctaText: "Try Mortgage Calculator", ctaHref: "/mortgage-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-create-personal-finance-plan",
     title: "How to Create a Personal Finance Plan in 5 Steps",
@@ -4540,7 +4540,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "A good plan executed imperfectly beats a perfect plan never started. You don't need every detail figured out before you begin. Pick one thing from this list and do it today. Momentum builds." },
       { type: "cta", text: "Start with a concrete savings goal to anchor your financial plan.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-negotiate-bills-lower",
     title: "How to Negotiate Your Bills Lower: 8 Calls That Can Save You $1,000+/Year",
@@ -4572,7 +4572,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Set a calendar reminder to renegotiate every 12 months. Promotional rates expire. Insurance premiums creep up. A single annual afternoon of phone calls can easily save $500-$2,000." },
       { type: "cta", text: "Calculate how much you could save over time by reducing your monthly expenses.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-open-roth-ira",
     title: "How to Open a Roth IRA: Step-by-Step Guide for Beginners",
@@ -4602,7 +4602,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "You can contribute to a Roth IRA for the previous tax year up until the tax filing deadline (usually April 15). If you haven't maxed out last year's contribution, you may still have time." },
       { type: "cta", text: "See how your Roth IRA contributions could grow over time.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-debt-to-income-ratio",
     title: "Debt-to-Income Ratio: What It Is and How to Improve Yours",
@@ -4626,7 +4626,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "If you're planning to apply for a mortgage, focus on reducing your DTI 6–12 months in advance. Lenders pull your credit right before closing, so new debts taken out after pre-approval can jeopardize your loan." },
       { type: "cta", text: "Create a plan to pay down debt and improve your DTI.", ctaText: "Try Debt Payoff Calculator", ctaHref: "/debt-payoff-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-build-credit-from-scratch",
     title: "How to Build Credit From Scratch: 6 Steps That Actually Work",
@@ -4652,7 +4652,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Check your credit report for free at AnnualCreditReport.com (the official site). New builders often find errors — a wrong address, or an account that isn't yours — that hurt their score before it even starts." },
       { type: "cta", text: "See how a good credit score affects your loan rates.", ctaText: "Try Loan Comparison Calculator", ctaHref: "/loan-comparison-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-index-fund-investing",
     title: "Index Fund Investing: The Beginner's Complete Guide",
@@ -4676,7 +4676,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The best index fund strategy is boring: pick a total market or S&P 500 fund, invest consistently every month, and don't look at it during market downturns. Investors who check their portfolios less frequently tend to earn higher returns." },
       { type: "cta", text: "See how consistent investing in index funds grows over time.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-maximize-401k",
     title: "How to Maximize Your 401(k): 7 Strategies for Every Income Level",
@@ -4704,7 +4704,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "If you can't max out your 401(k), prioritize: (1) contribute enough to get full employer match, (2) max out your Roth IRA, (3) come back and increase your 401(k) contributions." },
       { type: "cta", text: "Project how your 401(k) contributions grow into retirement.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-refinancing-mortgage",
     title: "Should You Refinance Your Mortgage? How to Know If It Makes Sense",
@@ -4728,7 +4728,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Watch out for 'no-closing-cost' refinances — the costs are usually rolled into the loan or paid through a higher interest rate. Make sure you're comparing total cost, not just monthly payment." },
       { type: "cta", text: "Compare your current mortgage vs a potential refinance.", ctaText: "Try Mortgage Calculator", ctaHref: "/mortgage-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-track-net-worth",
     title: "How to Track Your Net Worth (And Why You Should Start Today)",
@@ -4752,7 +4752,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Don't be discouraged if your starting net worth is negative. The most powerful thing about tracking is watching the trend. A net worth that grows $500 per month is on track to reach $1 million in under 20 years if invested well." },
       { type: "cta", text: "Calculate your current net worth right now.", ctaText: "Try Net Worth Calculator", ctaHref: "/net-worth-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-create-sinking-fund",
     title: "Sinking Funds: How to Save for Irregular Expenses Without Stress",
@@ -4776,7 +4776,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Start with just one or two sinking funds — the categories where you most often feel caught off guard. Car maintenance and home repairs are the most universal. Add more categories as you get comfortable." },
       { type: "cta", text: "Calculate how long it takes to reach your sinking fund goal.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-compound-interest-investing",
     title: "How Compound Interest Makes You Rich (With Real Numbers)",
@@ -4800,7 +4800,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The most important action: start. A 25-year-old investing $200/month will likely have more at 65 than a 35-year-old investing $400/month. Time is the ingredient that can't be bought back." },
       { type: "cta", text: "See exactly how your money grows with compound interest.", ctaText: "Try Compound Interest Calculator", ctaHref: "/compound-interest-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-budget-on-low-income",
     title: "How to Budget on a Low Income: A Realistic Guide",
@@ -4826,7 +4826,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Cash budgeting (envelope method) works extremely well on tight budgets. Withdraw your grocery and spending money in cash at the start of each week. When it's gone, it's gone. It makes limits physical and real." },
       { type: "cta", text: "Build a budget that fits your actual income.", ctaText: "Try Budget Calculator", ctaHref: "/budget-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-good-debt-vs-bad-debt",
     title: "Good Debt vs Bad Debt: How to Tell the Difference",
@@ -4850,7 +4850,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The simplest rule: if the interest rate on your debt exceeds what you'd earn investing that money, it's costing you wealth. Pay off 20% credit card debt before investing — a 20% guaranteed return (paying down debt) beats the stock market's average 10%." },
       { type: "cta", text: "Build a plan to eliminate your high-interest debt.", ctaText: "Try Debt Payoff Calculator", ctaHref: "/debt-payoff-calculator" },
     ],
-  },,
+  },
   {
     slug: "high-yield-savings-account-explained",
     title: "High-Yield Savings Accounts: Are They Worth It in 2025?",
@@ -4872,7 +4872,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Use a high-yield savings account for your emergency fund (3–6 months of expenses) and any savings goal within the next 2 years. Keep long-term wealth in invested accounts." },
       { type: "cta", text: "See how much your savings could grow with higher interest rates.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
     ],
-  },,
+  },
   {
     slug: "15-year-vs-30-year-mortgage",
     title: "15-Year vs 30-Year Mortgage: Which Saves You More Money?",
@@ -4896,7 +4896,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "A middle-ground strategy: take the 30-year mortgage, but make one extra principal payment per year. This alone cuts a 30-year mortgage to roughly 23 years and saves tens of thousands in interest." },
       { type: "cta", text: "Calculate your exact payment and total interest for any mortgage scenario.", ctaText: "Try Mortgage Calculator", ctaHref: "/mortgage-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-dividend-investing",
     title: "Dividend Investing 101: How to Build a Passive Income Stream",
@@ -4920,7 +4920,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Don't chase high dividend yields. A 10% yield often signals the company is struggling — the dividend could be cut. Focus on consistent dividend growers with sustainable payout ratios." },
       { type: "cta", text: "See how your dividend investments could grow over time with reinvestment.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "roth-vs-traditional-ira-comparison",
     title: "Roth IRA vs Traditional IRA: Which Is Better for You?",
@@ -4944,7 +4944,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Can't decide? Do both. Many people contribute to a Traditional 401(k) at work (for the match) and a Roth IRA on the side. This tax diversification gives you flexibility to manage taxes strategically in retirement." },
       { type: "cta", text: "Calculate how much your retirement account could grow over time.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-cut-monthly-expenses",
     title: "How to Cut Monthly Expenses: 25 Practical Ways to Save More",
@@ -4968,7 +4968,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The 30-day rule: before any non-essential purchase over $50, wait 30 days. Most impulse purchases lose their appeal. This one habit can save $200–$500/month for many people." },
       { type: "cta", text: "Build a budget that shows exactly where your money goes each month.", ctaText: "Try Budget Calculator", ctaHref: "/budget-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-debt-consolidation-loan",
     title: "Debt Consolidation: Does It Actually Work?",
@@ -4992,7 +4992,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Check your credit score before applying for a consolidation loan. You need 670+ for decent rates, 720+ for the best rates. A few months of on-time payments and lower credit utilization can significantly improve your score before applying." },
       { type: "cta", text: "See how quickly you could pay off all your debts and how much interest you'd save.", ctaText: "Try Debt Payoff Calculator", ctaHref: "/debt-payoff-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-dispute-credit-report-errors",
     title: "How to Dispute Credit Report Errors (and Actually Win)",
@@ -5016,7 +5016,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Removing a collection account that isn't yours can raise your credit score 50–100 points overnight. Even legitimate old collections lose their scoring impact after a few years — disputing them may get them removed entirely." },
       { type: "cta", text: "See how your credit score affects your loan rates and total borrowing costs.", ctaText: "Compare Loan Options", ctaHref: "/loan-comparison-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-rebalancing-portfolio",
     title: "Portfolio Rebalancing: Why It Matters and How to Do It",
@@ -5040,7 +5040,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "For most investors, rebalancing once per year in tax-advantaged accounts is enough. Don't over-optimize — the transaction costs and complexity of frequent rebalancing often outweigh the benefits." },
       { type: "cta", text: "See how your investment portfolio grows over time with consistent contributions.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-are-tax-deductions-vs-credits",
     title: "Tax Deductions vs Tax Credits: What's the Difference?",
@@ -5064,7 +5064,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Always take the standard deduction vs itemizing — whichever is larger. Most Americans benefit from the standard deduction since it increased significantly under the 2017 Tax Cuts and Jobs Act. Only itemize if your deductions clearly exceed the standard amount." },
       { type: "cta", text: "Find your tax bracket and estimate your federal income tax bill.", ctaText: "Try Tax Bracket Calculator", ctaHref: "/tax-bracket-calculator" },
     ],
-  },,
+  },
   {
     slug: "cash-envelope-budgeting-system",
     title: "The Cash Envelope System: Old-School Budgeting That Actually Works",
@@ -5088,7 +5088,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Start with just 2–3 envelopes for your biggest problem categories. Don't try to envelope everything at once. Master groceries and restaurants first — those two categories alone save most people $200–$400/month." },
       { type: "cta", text: "Build your monthly budget and see exactly how much you have for each category.", ctaText: "Try Budget Calculator", ctaHref: "/budget-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-save-money-on-groceries",
     title: "How to Save Money on Groceries: 15 Strategies That Actually Work",
@@ -5110,7 +5110,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The single highest-impact grocery habit: cook at home on Sundays for the week ahead. Batch cooking eliminates weekday 'I don't have time to cook' moments that lead to $15 takeout orders. Four such moments per week = $240/month in avoidable spending." },
       { type: "cta", text: "Build a complete budget to see how groceries fit into your total spending plan.", ctaText: "Try Budget Calculator", ctaHref: "/budget-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-home-equity-loan",
     title: "Home Equity Loans and HELOCs: How to Use Your Home's Value",
@@ -5134,7 +5134,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Home equity loan interest may be tax-deductible if the funds are used to buy, build, or substantially improve your home. Using the proceeds for debt consolidation or other purposes is NOT deductible. Consult a tax advisor." },
       { type: "cta", text: "Calculate how a home equity loan fits into your overall mortgage picture.", ctaText: "Try Mortgage Calculator", ctaHref: "/mortgage-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-increase-net-worth-fast",
     title: "How to Increase Your Net Worth: 7 Strategies That Work",
@@ -5161,7 +5161,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "What gets measured gets managed. People who track their net worth monthly consistently build more wealth than those who don't. Seeing the number move motivates continued action. Use a spreadsheet or a net worth calculator at the start of each month." },
       { type: "cta", text: "Calculate your current net worth and track your progress.", ctaText: "Try Net Worth Calculator", ctaHref: "/net-worth-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-bond-investing-basics",
     title: "Bond Investing Explained: What Bonds Are and How They Work",
@@ -5185,7 +5185,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "How much of your portfolio should be in bonds? A classic rule of thumb: your age in bonds. If you're 40, hold 40% bonds. More modern approaches suggest 110 or 120 minus your age given longer lifespans. Adjust based on your risk tolerance." },
       { type: "cta", text: "See how a balanced portfolio of stocks and bonds grows over time.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-stop-lifestyle-inflation",
     title: "Lifestyle Inflation: The Silent Wealth Killer (and How to Stop It)",
@@ -5209,7 +5209,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The most dangerous form of lifestyle inflation is invisible: subscription creep. Each new streaming service, app subscription, or monthly box seems small. But $12 + $15 + $20 + $30 + $50 = $127/month = $1,524/year. Audit subscriptions every 6 months." },
       { type: "cta", text: "Build a budget that allocates income increases to savings, not just spending.", ctaText: "Try Budget Calculator", ctaHref: "/budget-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-save-for-vacation",
     title: "How to Save for a Vacation Without Going Into Debt",
@@ -5233,7 +5233,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Start your vacation fund the day you return from your last vacation. You're motivated, the trip is fresh, and you have a full year before you need the money again. Month 1 of saving feels easy when you're still glowing from the last trip." },
       { type: "cta", text: "Calculate exactly how much to save monthly to hit your vacation goal.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-credit-score-needed-for-mortgage",
     title: "What Credit Score Do You Need to Buy a House?",
@@ -5255,7 +5255,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Get pre-approved before house hunting — it's a soft pull on your credit. But once you're ready to formally apply, limit hard inquiries: all mortgage applications within a 14-45 day window count as a single inquiry for scoring purposes." },
       { type: "cta", text: "See how your mortgage payment changes based on your rate.", ctaText: "Try Mortgage Calculator", ctaHref: "/mortgage-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-reduce-tax-bill-legally",
     title: "10 Legal Ways to Reduce Your Tax Bill",
@@ -5285,7 +5285,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The biggest tax mistake most people make: not contributing enough to their 401(k) to get the full employer match. This is free money PLUS a tax deduction. Always capture the full match before anything else." },
       { type: "cta", text: "Calculate your current tax bracket and see how deductions reduce your bill.", ctaText: "Try Tax Bracket Calculator", ctaHref: "/tax-bracket-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-build-emergency-fund-fast",
     title: "How to Build an Emergency Fund Fast (Even on a Tight Budget)",
@@ -5311,7 +5311,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Name your emergency fund account something specific like 'Emergency Fund - Do Not Touch.' Research shows that naming savings goals increases the likelihood of hitting them. Also: resist the urge to define every unexpected expense as an 'emergency' — that's just spending." },
       { type: "cta", text: "Calculate exactly how much you need in your emergency fund.", ctaText: "Try Emergency Fund Calculator", ctaHref: "/emergency-fund-calculator" },
     ],
-  },,
+  },
   {
     slug: "etf-vs-mutual-fund-differences",
     title: "ETF vs Mutual Fund: Key Differences and Which to Choose",
@@ -5335,7 +5335,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "For most investors, the choice between an ETF and an index mutual fund tracking the same index barely matters. Both will deliver nearly identical returns. Choose based on whether you want automation (mutual fund) or trading flexibility (ETF)." },
       { type: "cta", text: "Model how your ETF or mutual fund investments grow over time.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-get-out-of-debt-fast",
     title: "How to Get Out of Debt Fast: A Step-by-Step Action Plan",
@@ -5361,7 +5361,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The most powerful debt payoff tool is your income. A second job or side income for 12–18 months can cut a 5-year payoff plan in half. The sacrifice is temporary; the freedom is permanent." },
       { type: "cta", text: "Build your personalized debt payoff plan and see your debt-free date.", ctaText: "Try Debt Payoff Calculator", ctaHref: "/debt-payoff-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-social-security-benefits",
     title: "Social Security Benefits Explained: When to Claim and How Much You'll Get",
@@ -5385,7 +5385,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Create a free account at SSA.gov to see your actual Social Security statement — including projected benefits at ages 62, 67, and 70. This is the most reliable number to use for retirement planning." },
       { type: "cta", text: "Include Social Security in your retirement income projection.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-term-life-insurance",
     title: "Term Life Insurance Explained: How Much Coverage Do You Need?",
@@ -5409,7 +5409,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "You don't need life insurance if: you're single with no dependents, your family is financially independent, or you have enough assets that a death benefit isn't needed. Don't buy insurance you don't need just because someone is selling it." },
       { type: "cta", text: "Understand your full financial picture to determine your life insurance needs.", ctaText: "Try Net Worth Calculator", ctaHref: "/net-worth-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-start-investing-100-dollars",
     title: "How to Start Investing With $100: The Beginner's First Steps",
@@ -5433,7 +5433,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Time in the market beats timing the market. A $100 investment at age 22 growing at 8% annually is worth $2,172 at age 62. The same $100 invested at 42 is worth $466. Start now, even with a tiny amount." },
       { type: "cta", text: "See how small investments grow into big wealth over time.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-use-credit-card-rewards",
     title: "Credit Card Rewards: How to Maximize Points, Miles, and Cash Back",
@@ -5457,7 +5457,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Put all your regular spending — groceries, gas, utilities, subscriptions — on one rewards card and autopay the full balance monthly. You'll earn $300–$600/year with zero extra effort and zero interest cost." },
       { type: "cta", text: "Calculate how quickly you can pay off your credit card balance.", ctaText: "Try Credit Card Payoff Calculator", ctaHref: "/credit-card-payoff-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-escrow-account-mortgage",
     title: "What Is an Escrow Account for a Mortgage? How It Works",
@@ -5481,7 +5481,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Review your annual escrow analysis statement carefully. Check that tax and insurance estimates match your actual bills. Errors happen, and catching them early prevents payment surprises." },
       { type: "cta", text: "See the full breakdown of your mortgage payment including escrow.", ctaText: "Try Mortgage Calculator", ctaHref: "/mortgage-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-budget-irregular-income",
     title: "How to Budget When Your Income Is Irregular",
@@ -5505,7 +5505,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The income buffer account is the key insight. Many freelancers struggle because they spend income as it arrives. Building a 2–3 month buffer transforms the stressful feast-or-famine cycle into something manageable." },
       { type: "cta", text: "Plan your monthly budget based on your baseline income.", ctaText: "Try Budget Calculator", ctaHref: "/budget-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-inflation-and-how-to-protect",
     title: "What Is Inflation and How to Protect Your Money From It",
@@ -5529,7 +5529,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "A high-yield savings account earning 4–5% APY currently outpaces inflation and is appropriate for emergency funds and short-term savings. But for money you won't touch for 5+ years, the stock market has historically been the most reliable inflation beater." },
       { type: "cta", text: "See how your investments grow in real terms after accounting for inflation.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-tax-withholding",
     title: "Tax Withholding Explained: How to Avoid Owing or Overpaying Taxes",
@@ -5553,7 +5553,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "If you consistently get large refunds, consider adjusting your W-4 to get that money in your paycheck each month instead. Even $200/month invested at 8% for 30 years is worth over $270,000." },
       { type: "cta", text: "Calculate your tax bracket and estimate your annual tax liability.", ctaText: "Try Tax Bracket Calculator", ctaHref: "/tax-bracket-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-save-money-on-car-insurance",
     title: "How to Lower Your Car Insurance Bill: 9 Discounts Most People Miss",
@@ -5579,7 +5579,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The best time to shop for new car insurance is 3–4 weeks before your renewal date. New policies typically start on your renewal date, giving you time to switch without a coverage gap or cancellation fee." },
       { type: "cta", text: "Calculate how much you could save by redirecting insurance savings.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
     ],
-  },,
+  },
   {
     slug: "401k-vs-ira-which-is-better",
     title: "401(k) vs IRA: Which Should You Use First?",
@@ -5603,7 +5603,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The worst retirement strategy is trying to optimize perfectly and ending up investing nothing. Even putting 5% in a 401(k) with minimal employer match beats the theoretical perfect allocation that never happens." },
       { type: "cta", text: "Project your retirement savings across all account types.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-improve-credit-score-fast",
     title: "How to Improve Your Credit Score Fast: 6 Steps That Work",
@@ -5629,7 +5629,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Rapid rescore services, offered by some mortgage lenders, can update your credit file within days instead of months — useful if you're about to apply for a mortgage and find an error. Ask your mortgage broker if this service is available." },
       { type: "cta", text: "See how your credit score affects your loan interest rates.", ctaText: "Try Loan Comparison Calculator", ctaHref: "/loan-comparison-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-home-equity-line-of-credit",
     title: "HELOC Explained: How a Home Equity Line of Credit Works",
@@ -5653,7 +5653,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Never use a HELOC for vacations, cars, or everyday spending. Your home is not an ATM. Only borrow against home equity for investments that maintain or increase value — primarily home improvements." },
       { type: "cta", text: "Calculate your home equity and understand your mortgage position.", ctaText: "Try Mortgage Calculator", ctaHref: "/mortgage-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-zero-based-budget",
     title: "Zero-Based Budgeting: How to Give Every Dollar a Job",
@@ -5677,7 +5677,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The first month of zero-based budgeting is always messy — you'll forget categories and miscalculate. That's normal. By month three, you'll know your numbers cold, and the system becomes nearly automatic." },
       { type: "cta", text: "Calculate your monthly expenses and income to start your zero-based budget.", ctaText: "Try Budget Calculator", ctaHref: "/budget-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-asset-allocation",
     title: "Asset Allocation: How to Divide Your Portfolio for Your Goals",
@@ -5701,7 +5701,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Target-date retirement funds automatically adjust your allocation as you approach retirement — becoming more conservative each year. For most investors, a single target-date fund provides all the asset allocation management they need." },
       { type: "cta", text: "Model how different allocations perform over your investment timeline.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-lower-monthly-mortgage-payment",
     title: "How to Lower Your Monthly Mortgage Payment: 5 Options",
@@ -5725,7 +5725,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Be cautious of 'mortgage relief' companies that charge fees for services you can do yourself — like applying for hardship programs or disputing your tax assessment. Your mortgage servicer and county assessor offer these options free of charge." },
       { type: "cta", text: "Compare your current mortgage payment with different rate and term scenarios.", ctaText: "Try Mortgage Calculator", ctaHref: "/mortgage-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-invest-for-retirement-in-your-40s",
     title: "How to Catch Up on Retirement Savings in Your 40s",
@@ -5751,7 +5751,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Get a financial plan — not a product pitch — from a fee-only fiduciary financial planner (search at NAPFA.org). A one-time comprehensive plan for $1,000–$3,000 can give you a realistic roadmap and prevent expensive mistakes." },
       { type: "cta", text: "Run your retirement projections to see where you stand.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-save-for-house-down-payment",
     title: "How to Save for a House Down Payment (Even on a Tight Budget)",
@@ -5773,7 +5773,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "A Roth IRA has a first-time homebuyer exception: you can withdraw up to $10,000 in earnings (penalty-free) for a first home purchase. Contributions can always be withdrawn tax-free. This makes a Roth IRA a useful dual-purpose account." },
       { type: "cta", text: "Calculate how long it will take to reach your down payment goal.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-private-mortgage-insurance-pmi",
     title: "What Is PMI (Private Mortgage Insurance) and How to Get Rid of It",
@@ -5795,7 +5795,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Keep track of your home's value and your loan balance. When the ratio hits 80% (loan/value), write your lender a formal PMI cancellation request. They aren't required to cancel it automatically until 78%." },
       { type: "cta", text: "Calculate your mortgage payment with and without PMI.", ctaText: "Try Mortgage Calculator", ctaHref: "/mortgage-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-financial-independence-fire",
     title: "What Is FIRE? Financial Independence, Retire Early Explained",
@@ -5818,7 +5818,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "FIRE doesn't have to mean never working again. Many FIRE practitioners 'retire' to passion projects, part-time consulting, or creative work. The goal is making work optional — what you do with that freedom is up to you." },
       { type: "cta", text: "Calculate when you can reach financial independence.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-refinance-mortgage",
     title: "How to Refinance Your Mortgage: When It Makes Sense and When It Doesn't",
@@ -5840,7 +5840,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Don't refinance into a new 30-year loan if you're already 10 years into your mortgage. You'll pay way more in total interest. Instead, try to match or beat your remaining loan term." },
       { type: "cta", text: "Calculate your new mortgage payment after refinancing.", ctaText: "Try Mortgage Calculator", ctaHref: "/mortgage-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-capital-gains-tax",
     title: "What Is Capital Gains Tax? How to Pay Less When You Sell Investments",
@@ -5862,7 +5862,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Track your cost basis carefully — the original purchase price plus any improvements. Without good records, the IRS assumes $0 basis and taxes the entire sale price as a gain." },
       { type: "cta", text: "See what tax bracket you're in and how gains affect your total tax.", ctaText: "Try Tax Bracket Calculator", ctaHref: "/tax-bracket-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-hsa-health-savings-account",
     title: "What Is an HSA? The Triple Tax Advantage Account Most People Ignore",
@@ -5884,7 +5884,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "An HSA is effectively a stealth retirement account. After maxing your 401(k) and Roth IRA, max your HSA next — it beats taxable brokerage accounts for most people due to the tax advantages." },
       { type: "cta", text: "See how HSA savings grow into retirement.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-track-expenses-effectively",
     title: "How to Track Expenses: The System That Actually Works",
@@ -5906,7 +5906,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The goal of expense tracking isn't perfection — it's awareness. Most people who track expenses for even one month are genuinely surprised by where their money goes. That awareness alone changes behavior." },
       { type: "cta", text: "Use our budget calculator to set spending targets by category.", ctaText: "Try Budget Calculator", ctaHref: "/budget-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-file-taxes-for-beginners",
     title: "How to File Taxes for the First Time: A Step-by-Step Beginner's Guide",
@@ -5930,7 +5930,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "If you worked as a freelancer or gig worker, you owe self-employment tax (15.3%) on net profit. Set aside 25–30% of every payment for taxes to avoid a surprise bill in April." },
       { type: "cta", text: "Check which tax bracket your income falls in.", ctaText: "Try Tax Bracket Calculator", ctaHref: "/tax-bracket-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-invest-in-real-estate",
     title: "How to Invest in Real Estate: 5 Ways to Start (With Any Budget)",
@@ -5954,7 +5954,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "For most beginners, REITs or Fundrise are the smartest entry points. They give real estate exposure with liquidity, diversification, and no property management headaches. Build experience before committing to direct property ownership." },
       { type: "cta", text: "Model your real estate investment returns over time.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-much-life-insurance-do-i-need",
     title: "How Much Life Insurance Do I Need? The Simple Formula",
@@ -5978,7 +5978,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Apply for life insurance when you're young and healthy. A 30-year-old pays 2–3x less than a 45-year-old for the same coverage. Medical issues later in life can make insurance unaffordable or unavailable." },
       { type: "cta", text: "Calculate your net worth to see if you already have enough assets.", ctaText: "Try Net Worth Calculator", ctaHref: "/net-worth-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-compound-interest-explained",
     title: "Compound Interest Explained: Why Einstein Called It the 8th Wonder of the World",
@@ -6000,7 +6000,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Compound interest works in reverse with debt. A $5,000 credit card balance at 24% APR, paid only minimums, takes 20+ years to pay off and costs $15,000+ in interest. The same math that builds wealth destroys it when you're on the wrong side." },
       { type: "cta", text: "See exactly how compound interest grows your money over time.", ctaText: "Try Compound Interest Calculator", ctaHref: "/compound-interest-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-create-passive-income",
     title: "How to Create Passive Income: 8 Realistic Sources That Actually Work",
@@ -6027,7 +6027,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The most reliable passive income source for most people: maxing out retirement accounts (401k + IRA) and investing in index funds. It's boring, but a $500,000 portfolio at 4% withdrawal rate generates $20,000/year forever." },
       { type: "cta", text: "Calculate how your investments grow into passive income.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-net-worth-and-how-to-calculate",
     title: "What Is Net Worth and How to Calculate Yours Today",
@@ -6050,7 +6050,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Track your net worth monthly — not daily. Monthly tracking shows real trends without the noise of daily market fluctuations. Many people find that seeing the number go up each month is more motivating than any budgeting tool." },
       { type: "cta", text: "Calculate your net worth right now.", ctaText: "Try Net Worth Calculator", ctaHref: "/net-worth-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-negotiate-credit-card-interest-rate",
     title: "How to Negotiate a Lower Credit Card Interest Rate (Script Included)",
@@ -6072,7 +6072,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The best time to call: weekday mornings when hold times are shorter and customer service reps are freshest. Have your account number ready and be polite — you're asking for a favor, even if it's one they commonly grant." },
       { type: "cta", text: "See how a lower rate affects your credit card payoff timeline.", ctaText: "Try Credit Card Payoff Calculator", ctaHref: "/credit-card-payoff-calculator" },
     ],
-  },,
+  },
   {
     slug: "50-30-20-budget-rule-explained",
     title: "The 50/30/20 Budget Rule: The Simplest Budget That Works",
@@ -6094,7 +6094,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The 20% savings bucket is the most important number. If you're not saving 20%, start with whatever you can — even 5%. Automate it to move on payday so it's invisible. Increase it by 1% every 3 months." },
       { type: "cta", text: "Use our budget calculator to build your personalized 50/30/20 plan.", ctaText: "Try Budget Calculator", ctaHref: "/budget-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-build-1000-emergency-fund-fast",
     title: "How to Build a $1,000 Emergency Fund Fast (Even on a Tight Budget)",
@@ -6130,7 +6130,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Open your emergency fund account today — even if you only put in $20. The hardest part is starting. Automate a small transfer each payday and watch it grow. Once you have $1,000, you'll feel a kind of financial calm you've never felt before." },
       { type: "cta", text: "Calculate exactly how much you need in your emergency fund.", ctaText: "Try Emergency Fund Calculator", ctaHref: "/emergency-fund-calculator" },
     ],
-  },,
+  },
   {
     slug: "traditional-ira-vs-roth-ira",
     title: "Traditional IRA vs Roth IRA: Which One Should You Choose?",
@@ -6168,7 +6168,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "If you can't decide: split the difference. Many people contribute to both a 401(k) (Traditional, pre-tax) and a Roth IRA (after-tax). This diversifies your tax situation in retirement and gives you flexibility regardless of future tax law changes." },
       { type: "cta", text: "See how your IRA grows over time with different contribution rates.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-save-for-a-house-down-payment",
     title: "How to Save for a House Down Payment (Step-by-Step Plan)",
@@ -6208,7 +6208,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Look up your state's first-time homebuyer programs before assuming you need to save the full down payment yourself. Programs in states like California, Texas, New York, and Florida can provide $10,000–$30,000 in assistance — money you don't need to save." },
       { type: "cta", text: "Calculate exactly how long it will take to reach your savings goal.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-much-should-i-have-saved-by-age",
     title: "How Much Should I Have Saved? Benchmarks by Age (25, 30, 40, 50, 60)",
@@ -6246,7 +6246,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The most powerful thing you can do in your 20s is start — even small. $200/month invested at age 25 grows to $700,000+ by 65 at 8% returns. The same $200/month started at 35 grows to only $325,000. Time is worth more than the amount." },
       { type: "cta", text: "Calculate whether you're on track for a comfortable retirement.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-compound-interest-and-how-does-it-work",
     title: "What Is Compound Interest and How Does It Work?",
@@ -6284,7 +6284,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The single best compounding move: contribute to a Roth IRA or 401(k) starting with your first paycheck and never stop. The math on 40 years of tax-free compounding is staggering. At $500/month from age 22 to 65 at 8%: $1.9 million. Starting at 32: $880,000. Ten years costs you over $1 million." },
       { type: "cta", text: "See how compound interest grows your specific investment over time.", ctaText: "Try Compound Interest Calculator", ctaHref: "/compound-interest-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-create-a-monthly-budget",
     title: "How to Create a Monthly Budget from Scratch (Step-by-Step)",
@@ -6328,7 +6328,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The first month is always a mess — expect to find expenses you forgot about. That's the point. After 90 days of tracking, your budget becomes accurate and effortless. The first three months are the hardest; after that, it takes under 15 minutes per week to maintain." },
       { type: "cta", text: "Use our free budget calculator to build your personalized monthly budget.", ctaText: "Try Budget Calculator", ctaHref: "/budget-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-a-401k-and-how-does-it-work",
     title: "What Is a 401(k) and How Does It Work? A Complete Beginner's Guide",
@@ -6370,7 +6370,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Contribute at minimum enough to get your full employer match — always. Then if possible, increase to 15% of your income total (including match). If you can't afford 15% yet, start at whatever you can and increase by 1% each time you get a raise. You'll never miss money you never touched." },
       { type: "cta", text: "See how your 401(k) contributions grow into a retirement nest egg.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-get-out-of-debt-on-low-income",
     title: "How to Get Out of Debt on a Low Income (It Is Possible)",
@@ -6415,7 +6415,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Progress on a low income is slow — and that's okay. Even paying $25 extra per month on a $5,000 credit card at 22% saves $2,300 in interest and cuts years off your payoff. Track your total debt number monthly. Watching it go down, even slowly, is more motivating than any other tracking method." },
       { type: "cta", text: "See exactly when you'll be debt-free with extra payments.", ctaText: "Try Debt Payoff Calculator", ctaHref: "/debt-payoff-calculator" },
     ],
-  },,
+  },
   {
     slug: "what-is-an-index-fund",
     title: "What Is an Index Fund and Why Do Experts Love Them?",
@@ -6452,7 +6452,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The ideal index fund strategy: buy consistently (dollar-cost average), reinvest dividends automatically, and ignore market news. The investors who do best are usually the ones who forget they have the account. Boring is profitable." },
       { type: "cta", text: "See how index fund returns grow your investment over time.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-stop-living-paycheck-to-paycheck",
     title: "How to Stop Living Paycheck to Paycheck: A Realistic Plan",
@@ -6486,7 +6486,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "The fastest way to break the cycle: find $200/month through spending cuts and redirect it to a separate savings account automatically on payday. Within 6 months you'll have $1,200 in the bank — likely for the first time. That buffer changes how you feel about money more than anything else." },
       { type: "cta", text: "Build a budget that gets you out of the paycheck-to-paycheck cycle.", ctaText: "Try Budget Calculator", ctaHref: "/budget-calculator" },
     ],
-  },,
+  },
   {
     slug: "how-to-invest-100-dollars",
     title: "How to Invest $100: The Best Ways to Start With Almost Nothing",
@@ -6692,6 +6692,197 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Yes. CDs at FDIC-insured banks are protected up to $250,000 per depositor, per institution, per ownership category. Credit union CDs are covered by NCUA insurance with the same limits. Your principal is completely safe as long as you stay within these limits and the institution is federally insured." },
       { type: "tip", text: "Check when your existing CDs mature — most banks automatically renew them at whatever the current rate is, which might be much lower than what you could get elsewhere. Set a calendar reminder 2 weeks before maturity to compare rates and decide whether to renew or move the money." },
       { type: "cta", text: "See how much your savings can grow with consistent deposits.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
+    ],
+  },
+  {
+    slug: "what-is-a-money-market-account",
+    title: "What Is a Money Market Account? How It Works and When to Use One",
+    description: "Money market accounts offer higher interest than regular savings with easy access to your funds. Here's how they work, what rates to expect, and when they beat a HYSA or CD.",
+    date: "2025-04-10",
+    readTime: "5 min read",
+    category: "Saving",
+    relatedCalculator: { name: "Savings Goal Calculator", href: "/savings-goal-calculator" },
+    content: [
+      { type: "intro", text: "A money market account (MMA) is a type of savings account that typically earns more interest than a standard savings account while still giving you easy access to your money. It's one of the safest places to park cash you might need soon — and in today's rate environment, top MMAs pay 4–5% with no lock-up period." },
+      { type: "h2", text: "How a Money Market Account Works" },
+      { type: "p", text: "You open an MMA at a bank or credit union and deposit money. The bank pays you interest — typically higher than a regular savings account because MMAs often require a higher minimum balance. You can withdraw money, write checks (limited), or use a debit card. Unlike CDs, there's no penalty for withdrawals, though federal regulations may limit certain types of transfers." },
+      { type: "h2", text: "Money Market Account vs Regular Savings Account" },
+      { type: "ul", items: [
+        "Interest rate: MMAs typically pay more — often 3–5x higher than standard savings",
+        "Minimum balance: MMAs often require $1,000–$10,000 to open or avoid fees; regular savings may require $0",
+        "Access: Both allow withdrawals; MMAs often offer check-writing or debit card access",
+        "FDIC insurance: Both are insured up to $250,000 — equally safe",
+      ] },
+      { type: "h2", text: "Money Market Account vs High-Yield Savings Account" },
+      { type: "p", text: "Online high-yield savings accounts (HYSAs) now often match or beat MMA rates with lower minimum balances. The main advantage of an MMA is check-writing ability, which some HYSAs don't offer. If you don't need to write checks, a HYSA at an online bank (Marcus, Ally, SoFi) may be the better deal with fewer requirements." },
+      { type: "h2", text: "Money Market Account vs Money Market Fund" },
+      { type: "p", text: "These are different products that get confused constantly. A money market account is a bank deposit — FDIC insured, safe, pays a fixed rate. A money market fund is an investment product sold by brokerages — not FDIC insured, invests in short-term securities, and aims to maintain a $1.00 share price. Money market funds at Fidelity or Vanguard can pay slightly more than bank MMAs but carry minimal investment risk. For cash you can't afford to lose, stick with the bank account." },
+      { type: "h2", text: "When a Money Market Account Makes Sense" },
+      { type: "ul", items: [
+        "Emergency fund: safe, liquid, earns decent interest while sitting idle",
+        "Short-term savings goals: saving for a vacation, down payment, or large purchase in 1–2 years",
+        "Business operating account: higher rates than checking, with check-writing access",
+        "Holding cash between investments: park money earning good rates while you decide where to invest",
+      ] },
+      { type: "h2", text: "What Rates to Expect" },
+      { type: "p", text: "As of 2024–2025, top money market accounts at online banks pay 4.5–5.0% APY. Traditional bank MMAs at Chase or Wells Fargo often pay 0.01–0.5%. The difference on $10,000 is $490 per year. Always shop rates at Bankrate or NerdWallet before opening any savings account." },
+      { type: "tip", text: "If you currently have $5,000+ sitting in a checking account or regular savings earning less than 1%, moving it to a high-yield MMA or HYSA could earn you $200–$250 extra per year with zero additional risk. It takes about 15 minutes to open an account online." },
+      { type: "cta", text: "See how much your savings can grow with higher interest rates.", ctaText: "Try Savings Goal Calculator", ctaHref: "/savings-goal-calculator" },
+    ],
+  },
+  {
+    slug: "what-is-umbrella-insurance",
+    title: "What Is Umbrella Insurance and Do You Need It?",
+    description: "Umbrella insurance provides extra liability coverage beyond your home and auto policies. Here's when it makes sense, what it covers, and how much it costs.",
+    date: "2025-04-11",
+    readTime: "5 min read",
+    category: "Insurance",
+    relatedCalculator: { name: "Net Worth Calculator", href: "/net-worth-calculator" },
+    content: [
+      { type: "intro", text: "Umbrella insurance is extra liability coverage that kicks in when your home or auto insurance limits run out. If you're sued for more than your existing policies cover, your personal assets — savings, investments, even future earnings — could be at risk. Umbrella insurance protects all of that for about $150–$300 per year." },
+      { type: "h2", text: "How Umbrella Insurance Works" },
+      { type: "p", text: "Your auto insurance might cover $300,000 in liability. Your homeowner's might cover $300,000 more. If someone sues you for $1.5 million after a serious car accident, those policies pay out, then your umbrella policy covers the remaining $900,000. Without umbrella insurance, you'd pay that out of pocket — or have wages garnished, savings seized, or liens placed on your home." },
+      { type: "h2", text: "What Umbrella Insurance Covers" },
+      { type: "ul", items: [
+        "Bodily injury liability: someone injured in a car accident you caused, or injured on your property",
+        "Property damage liability: you or your teenager damages someone's property significantly",
+        "Personal liability: lawsuits for defamation, libel, slander (varies by policy)",
+        "Rental property liability: covered if you own rental property",
+        "Incidents worldwide: most umbrella policies cover you globally, not just in the US",
+      ] },
+      { type: "h2", text: "What Umbrella Insurance Does NOT Cover" },
+      { type: "ul", items: [
+        "Your own injuries or property damage",
+        "Intentional acts or criminal behavior",
+        "Business liability (need separate business insurance)",
+        "Professional liability / malpractice (need errors & omissions insurance)",
+        "Damage to your own vehicle",
+      ] },
+      { type: "h2", text: "How Much Does Umbrella Insurance Cost?" },
+      { type: "p", text: "A $1 million umbrella policy typically costs $150–$300 per year — about $15–$25 per month. Each additional $1 million in coverage costs roughly $75–$100 more annually. For the coverage provided, umbrella insurance is one of the best values in personal finance. Most insurers require you to carry minimum levels of home and auto liability (usually $250,000–$300,000) before adding umbrella." },
+      { type: "h2", text: "Who Should Get Umbrella Insurance?" },
+      { type: "p", text: "You should seriously consider umbrella insurance if: you have significant assets (home equity, investments, retirement savings over $100,000), you have a teenage driver, you own a pool, trampoline, or dog, you host people at your home regularly, you do volunteer work or serve on a board, or your income could be garnished in a lawsuit. If you have very few assets and limited income, umbrella insurance is less urgent — there's less to protect." },
+      { type: "h2", text: "How to Get Umbrella Insurance" },
+      { type: "p", text: "Most major insurers (State Farm, Allstate, GEICO, Nationwide) offer umbrella policies. The easiest approach is to get it through the same company that handles your home or auto insurance — they often give discounts for bundling. Call your current insurer and ask for a quote. It typically takes under 15 minutes to add." },
+      { type: "tip", text: "A common rule of thumb: get umbrella insurance if your net worth exceeds $500,000. But given how cheap it is ($15/month), consider it if your net worth exceeds $100,000 — the cost of a single major lawsuit far exceeds the lifetime cost of the policy." },
+      { type: "cta", text: "Know what you're protecting — calculate your net worth.", ctaText: "Try Net Worth Calculator", ctaHref: "/net-worth-calculator" },
+    ],
+  },
+  {
+    slug: "how-to-build-generational-wealth",
+    title: "How to Build Generational Wealth: A Practical Guide",
+    description: "Generational wealth isn't just for the ultra-rich. Here's how ordinary families build lasting financial legacies through investing, real estate, education, and estate planning.",
+    date: "2025-04-12",
+    readTime: "6 min read",
+    category: "Investing",
+    relatedCalculator: { name: "Compound Interest Calculator", href: "/compound-interest-calculator" },
+    content: [
+      { type: "intro", text: "Generational wealth means building assets that outlast you — money, property, and financial knowledge passed down to your children and grandchildren. You don't need to be a millionaire to start. The most powerful tool is time, and the second most powerful is starting now." },
+      { type: "h2", text: "What Generational Wealth Actually Means" },
+      { type: "p", text: "Generational wealth isn't just money — it's the full package: financial assets (investments, retirement accounts), real estate, business ownership, financial literacy, and habits. Many wealthy families don't start wealthy — they build over 2–3 generations by making consistent decisions and passing down knowledge alongside assets." },
+      { type: "h2", text: "Step 1: Get Your Own Financial Foundation Right" },
+      { type: "p", text: "You can't build generational wealth while carrying high-interest debt or living paycheck to paycheck. The foundation: eliminate consumer debt, build a 3–6 month emergency fund, and start investing in tax-advantaged accounts (401k, Roth IRA). Max out your 401k match at minimum — that's a guaranteed 50–100% return. Get your own house in order before trying to build a legacy." },
+      { type: "h2", text: "Step 2: Invest Consistently in Index Funds" },
+      { type: "p", text: "The stock market has averaged roughly 10% per year historically. $500/month invested for 30 years at 10% grows to $1.13 million. That same money sits in a savings account and you have $180,000. Low-cost index funds (Vanguard, Fidelity, Schwab) are the simplest, most proven vehicle for long-term wealth building. Open a Roth IRA for yourself and your children once they have earned income — the tax-free growth compounds for decades." },
+      { type: "h2", text: "Step 3: Real Estate" },
+      { type: "p", text: "Owning your home builds equity over time and gives you an asset to pass down. Beyond your primary home, rental properties can generate income and appreciate in value. Real estate passed to heirs often receives a 'step-up in basis' — your heirs inherit at current market value and avoid capital gains taxes on appreciation during your lifetime. This is one of the most significant wealth transfer benefits in the tax code." },
+      { type: "h2", text: "Step 4: Life Insurance as a Wealth Transfer Tool" },
+      { type: "p", text: "Term life insurance protects your family if you die prematurely — it replaces your income so they're not derailed financially. For generational wealth, a sufficient death benefit (10–12x your annual income) ensures your wealth-building plan survives even if you don't. Some families also use permanent life insurance (whole or universal) as a tax-advantaged wealth transfer vehicle, though this strategy only makes sense for high-net-worth individuals after maximizing all other accounts." },
+      { type: "h2", text: "Step 5: Teach Financial Literacy" },
+      { type: "p", text: "The biggest factor in whether generational wealth survives is whether the next generation knows how to manage it. Research shows that 70% of wealthy families lose their wealth by the second generation, and 90% by the third — largely due to lack of financial education. Talk to your children about money. Explain investing, debt, compound interest, and taxes. Give them small amounts to manage and learn from. Financial knowledge transferred is often more valuable than financial assets transferred." },
+      { type: "h2", text: "Step 6: Estate Planning" },
+      { type: "p", text: "Without a will, your assets may not go where you intend. Update beneficiary designations on retirement accounts and life insurance — these supersede your will. Consider a revocable living trust to avoid probate (costly and public). Set up powers of attorney for finances and healthcare. These documents cost a few hundred dollars and take a few hours — and they're the legal infrastructure that actually transfers your wealth." },
+      { type: "tip", text: "If you're starting from zero, don't be discouraged. The first generation builds the foundation. Open a Roth IRA, invest consistently, buy a home if it makes financial sense, get life insurance, and write a will. That's generational wealth in its earliest form — and it compounds from there." },
+      { type: "cta", text: "See how your investments grow over time with compound interest.", ctaText: "Try Compound Interest Calculator", ctaHref: "/compound-interest-calculator" },
+    ],
+  },
+  {
+    slug: "how-to-negotiate-a-raise",
+    title: "How to Negotiate a Raise: A Step-by-Step Script That Works",
+    description: "Most people never ask for a raise — and most who ask get one. Here's exactly how to prepare, what to say, and how to handle every response your manager might give.",
+    date: "2025-04-13",
+    readTime: "6 min read",
+    category: "Income",
+    relatedCalculator: { name: "Budget Calculator", href: "/budget-calculator" },
+    content: [
+      { type: "intro", text: "Negotiating a raise is one of the highest-ROI financial moves you can make. A $5,000 raise compounds over a career — it raises your base for all future raises, bonuses, and even retirement benefits. Yet most people never ask. Here's how to ask — and how to actually get it." },
+      { type: "h2", text: "Step 1: Do Your Research First" },
+      { type: "p", text: "Never go into a salary conversation without data. Check Glassdoor, Levels.fyi (for tech), LinkedIn Salary, Payscale, and Salary.com for your role, location, and experience level. Talk to recruiters — they'll tell you what the market is paying. If you're being paid 15–20% below market, that's your most powerful argument. If you're at market rate, focus on your specific contributions and impact." },
+      { type: "h2", text: "Step 2: Build Your Case" },
+      { type: "p", text: "List your accomplishments since your last raise. Be specific and quantify everything possible: 'I increased sales by 23%', 'I reduced onboarding time from 3 weeks to 1 week', 'I took on the entire X project when the team member left'. Generic claims like 'I work hard' don't move the needle. Concrete results tied to business outcomes do." },
+      { type: "h2", text: "Step 3: Choose the Right Time" },
+      { type: "p", text: "The best times to ask: after a major win or positive project outcome, during performance review season (or slightly before, to shape the review), after you've taken on significantly more responsibility, when you've received a competing job offer (use carefully). Bad times: when your company just announced layoffs, when your manager is under stress, during a difficult project, or randomly without a clear reason." },
+      { type: "h2", text: "Step 4: The Conversation Script" },
+      { type: "p", text: "Request a dedicated meeting — don't ambush your manager at the end of another meeting. Use this framework: 'I've really enjoyed my work here and I'm committed to [company]. I wanted to talk about my compensation. Based on my research, the market rate for my role with my experience in [city] is [X–Y range]. I've also taken on [specific responsibilities] and delivered [specific results]. I'd like to discuss increasing my salary to [specific number].' Then stop talking. Wait for their response." },
+      { type: "h2", text: "How to Handle Each Response" },
+      { type: "ul", items: [
+        "Yes: great — get it in writing with a start date",
+        "Not right now / budget issues: ask 'What would it take to get there, and when?' Get specifics, set a follow-up date",
+        "You're already at the top of your band: ask about promotion criteria, bonuses, or other compensation (extra PTO, remote work, professional development budget)",
+        "No without explanation: ask 'Can you help me understand what factors are considered?' — this creates accountability and shows you're serious",
+        "Counter-offer below your ask: negotiate from there, don't accept the first counter",
+      ] },
+      { type: "h2", text: "What Not to Say" },
+      { type: "ul", items: [
+        "Don't say 'I need more money because...' (rent, bills, student loans) — your personal expenses aren't your employer's problem",
+        "Don't threaten to quit unless you actually have an offer and are prepared to leave",
+        "Don't apologize for asking or undercut yourself ('I know this might be a lot...')",
+        "Don't accept the first no as final — follow up in 3–6 months with updated accomplishments",
+      ] },
+      { type: "h2", text: "The Competing Offer Strategy" },
+      { type: "p", text: "Having a competing job offer is the single strongest leverage in salary negotiation. If you receive an offer from another company, you can show it to your employer and ask them to match or beat it. Be prepared: many employers will match; some won't and will let you go. Only use this tactic if you're genuinely willing to take the other job." },
+      { type: "tip", text: "Ask for more than you expect to get. If you want $5,000 more, ask for $7,000–$8,000. Negotiation is expected — your manager won't be offended. The worst they can say is no. And if you never ask, you definitely won't get it." },
+      { type: "cta", text: "See how a raise impacts your monthly budget.", ctaText: "Try Budget Calculator", ctaHref: "/budget-calculator" },
+    ],
+  },
+  {
+    slug: "how-to-start-a-side-hustle",
+    title: "How to Start a Side Hustle: 10 Ideas and a Step-by-Step Plan",
+    description: "A side hustle can add $500–$2,000/month to your income. Here are the best options for different skills and schedules, plus how to actually launch one this week.",
+    date: "2025-04-14",
+    readTime: "6 min read",
+    category: "Income",
+    relatedCalculator: { name: "Budget Calculator", href: "/budget-calculator" },
+    content: [
+      { type: "intro", text: "A side hustle is any work you do outside your main job to earn extra income. The best side hustles leverage skills you already have, fit your schedule, and can scale over time. Starting is simpler than most people think — the hard part is choosing one and actually launching." },
+      { type: "h2", text: "Why Start a Side Hustle?" },
+      { type: "p", text: "Extra income creates options: pay off debt faster, build savings, invest more, or create a path to financial independence. Even $500/month extra ($6,000/year) invested over 20 years at 8% becomes $294,000. Beyond money, many people find that a side hustle builds skills, confidence, and sometimes becomes their main career." },
+      { type: "h2", text: "10 Side Hustle Ideas by Category" },
+      { type: "ul", items: [
+        "Freelance skills: writing, graphic design, web development, video editing, SEO — find clients on Upwork, Fiverr, LinkedIn",
+        "Teaching: tutor students online (Wyzant, Tutor.com), teach English abroad (VIPKid, iTalki), create an online course (Teachable, Gumroad)",
+        "Gig economy: DoorDash, Uber, Instacart, TaskRabbit — flexible hours, start immediately",
+        "Sell products: handmade goods on Etsy, resell thrift store finds on eBay/Poshmark, print-on-demand merchandise",
+        "Content creation: YouTube, blog, newsletter, podcast — slow to monetize but scalable",
+        "Local services: lawn care, cleaning, pet sitting, handyman work, photography",
+        "Real estate: rent a room on Airbnb, rent your car on Turo, manage short-term rentals for others",
+        "Consulting: offer expertise in your industry to small businesses or startups",
+        "Social media management: manage Instagram or TikTok accounts for local businesses",
+        "Virtual assistant: handle admin tasks remotely for entrepreneurs ($15–$40/hr)",
+      ] },
+      { type: "h2", text: "How to Choose the Right Side Hustle" },
+      { type: "p", text: "Ask three questions: What skills do I already have? How much time can I realistically commit each week? Do I want active income (trading time for money) or passive income (building something that earns without constant effort)? Gig economy jobs start immediately and pay quickly but don't scale. Freelancing scales with your reputation. Content and products take time to build but can earn while you sleep." },
+      { type: "h2", text: "Step-by-Step Launch Plan" },
+      { type: "ul", items: [
+        "Week 1: Choose one specific side hustle — don't try multiple at once",
+        "Week 1: Research the market — what do competitors charge? What do clients need?",
+        "Week 2: Create your profile, portfolio, or basic offer (don't over-prepare)",
+        "Week 2: Tell 5 people you trust what you're offering — your first clients often come from your network",
+        "Week 3: Apply for your first 20 gigs or send 20 outreach messages",
+        "Month 2–3: Deliver excellent work, collect testimonials, raise prices gradually",
+      ] },
+      { type: "h2", text: "Side Hustle Taxes: What You Need to Know" },
+      { type: "p", text: "Any side hustle income over $400 is taxable. You'll likely need to pay self-employment tax (15.3%) on top of income tax. Set aside 25–30% of side hustle income for taxes. Track all business expenses — internet, equipment, home office, subscriptions — these are deductible. If you earn over $600 from a single client or platform, they'll issue a 1099 form. Consider paying quarterly estimated taxes if your side income exceeds $1,000/year." },
+      { type: "h2", text: "Common Mistakes to Avoid" },
+      { type: "ul", items: [
+        "Trying to start multiple side hustles at once — pick one and commit for 90 days",
+        "Over-preparing and never launching — an imperfect start beats no start",
+        "Undercharging — research market rates and charge accordingly from the start",
+        "Ignoring taxes — get surprised by a large tax bill in April",
+        "Burning out — a side hustle shouldn't destroy your health or main job performance",
+      ] },
+      { type: "tip", text: "The fastest path to your first $500 from a side hustle: reach out directly to 10 people in your existing network who might need your service. Warm outreach converts at 10–20%. Cold applications on platforms convert at 1–5%. Your network is your fastest early clients." },
+      { type: "cta", text: "See how extra income changes your financial picture.", ctaText: "Try Budget Calculator", ctaHref: "/budget-calculator" },
     ],
   },
 ];
