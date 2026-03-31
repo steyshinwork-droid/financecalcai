@@ -9,6 +9,11 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Sparkles, Info, Calendar } from "lucide-react";
 
+function useNumInput(initial: number) {
+  const [str, setStr] = useState(String(initial));
+  return [str, setStr, parseFloat(str) || 0] as const;
+}
+
 function formatMoney(n: number): string {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
 }
@@ -48,24 +53,40 @@ function getBenchmark(age: number): number {
   return 100000;
 }
 
+function parseField(v: string): number {
+  return parseFloat(v) || 0;
+}
+
 export function NetWorthCalc() {
-  const [age, setAge] = useState(30);
-  const [assets, setAssets] = useState<Record<string, number>>({
-    cash: 15000, investments: 30000, realEstate: 0, vehicles: 15000, otherAssets: 5000,
+  const [ageStr, setAge, age] = useNumInput(30);
+  const [assets, setAssets] = useState<Record<string, string>>({
+    cash: "15000", investments: "30000", realEstate: "0", vehicles: "15000", otherAssets: "5000",
   });
-  const [liabilities, setLiabilities] = useState<Record<string, number>>({
-    mortgage: 0, studentLoans: 20000, carLoans: 10000, creditCards: 3000, otherDebts: 0,
+  const [liabilities, setLiabilities] = useState<Record<string, string>>({
+    mortgage: "0", studentLoans: "20000", carLoans: "10000", creditCards: "3000", otherDebts: "0",
   });
   const [calculated, setCalculated] = useState(false);
 
+  const numericAssets = useMemo(() => {
+    const r: Record<string, number> = {};
+    for (const k of Object.keys(assets)) r[k] = parseField(assets[k]);
+    return r;
+  }, [assets]);
+
+  const numericLiabilities = useMemo(() => {
+    const r: Record<string, number> = {};
+    for (const k of Object.keys(liabilities)) r[k] = parseField(liabilities[k]);
+    return r;
+  }, [liabilities]);
+
   const results = useMemo(() => {
-    const totalAssets = Object.values(assets).reduce((s, v) => s + v, 0);
-    const totalLiabilities = Object.values(liabilities).reduce((s, v) => s + v, 0);
+    const totalAssets = Object.values(numericAssets).reduce((s, v) => s + v, 0);
+    const totalLiabilities = Object.values(numericLiabilities).reduce((s, v) => s + v, 0);
     const netWorth = totalAssets - totalLiabilities;
     const benchmark = getBenchmark(age);
     const percentile = netWorth >= benchmark ? "above" : "below";
     return { totalAssets, totalLiabilities, netWorth, benchmark, percentile };
-  }, [assets, liabilities, age]);
+  }, [numericAssets, numericLiabilities, ageStr]);
 
   const aiInsight = useMemo(() => {
     if (!calculated) return "";
@@ -89,12 +110,12 @@ export function NetWorthCalc() {
       insights.push(`Your debt-to-asset ratio is ${debtToAssetRatio.toFixed(0)}% — this is ${debtToAssetRatio < 30 ? "healthy" : "manageable"}. Keep paying down debt while building assets.`);
     }
 
-    if ((liabilities.creditCards || 0) > 0) {
-      insights.push(`Priority: Pay off ${formatMoney(liabilities.creditCards)} in credit card debt first — it likely has 20%+ interest rate, which costs you ${formatMoney(liabilities.creditCards * 0.2)}/year in interest alone.`);
+    if ((numericLiabilities.creditCards || 0) > 0) {
+      insights.push(`Priority: Pay off ${formatMoney(numericLiabilities.creditCards)} in credit card debt first — it likely has 20%+ interest rate, which costs you ${formatMoney(numericLiabilities.creditCards * 0.2)}/year in interest alone.`);
     }
 
     return insights.join("\n\n");
-  }, [calculated, results, age, liabilities]);
+  }, [calculated, results, ageStr, liabilities]);
 
   return (
     <div className="space-y-6">
@@ -103,7 +124,14 @@ export function NetWorthCalc() {
         <CardContent>
           <div className="mb-4 space-y-2">
             <Label className="flex items-center gap-1"><Calendar className="h-4 w-4 text-gray-400" /> Your Age</Label>
-            <Input type="number" value={age} onChange={(e) => setAge(Number(e.target.value))} min={18} max={90} className="max-w-[200px]" />
+            <Input
+              type="text"
+              inputMode="numeric"
+              value={ageStr}
+              onChange={(e) => setAge(e.target.value)}
+              onFocus={(e) => e.target.select()}
+              className="max-w-[200px]"
+            />
           </div>
           <Separator className="my-4" />
           <h3 className="mb-3 font-semibold text-emerald-700">Assets (What You Own)</h3>
@@ -111,7 +139,13 @@ export function NetWorthCalc() {
             {assetFields.map((f) => (
               <div key={f.key} className="space-y-1">
                 <Label className="text-sm"><DollarSign className="mr-1 inline h-3 w-3" />{f.label}</Label>
-                <Input type="number" value={assets[f.key] || 0} onChange={(e) => setAssets({ ...assets, [f.key]: Number(e.target.value) })} min={0} step={1000} />
+                <Input
+                  type="text"
+                  inputMode="numeric"
+                  value={assets[f.key] ?? "0"}
+                  onChange={(e) => setAssets({ ...assets, [f.key]: e.target.value })}
+                  onFocus={(e) => e.target.select()}
+                />
               </div>
             ))}
           </div>
@@ -121,7 +155,13 @@ export function NetWorthCalc() {
             {liabilityFields.map((f) => (
               <div key={f.key} className="space-y-1">
                 <Label className="text-sm"><DollarSign className="mr-1 inline h-3 w-3" />{f.label}</Label>
-                <Input type="number" value={liabilities[f.key] || 0} onChange={(e) => setLiabilities({ ...liabilities, [f.key]: Number(e.target.value) })} min={0} step={1000} />
+                <Input
+                  type="text"
+                  inputMode="numeric"
+                  value={liabilities[f.key] ?? "0"}
+                  onChange={(e) => setLiabilities({ ...liabilities, [f.key]: e.target.value })}
+                  onFocus={(e) => e.target.select()}
+                />
               </div>
             ))}
           </div>

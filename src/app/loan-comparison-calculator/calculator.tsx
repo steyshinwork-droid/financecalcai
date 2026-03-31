@@ -36,8 +36,8 @@ function calcLoan(principal: number, aprPercent: number, years: number) {
 }
 
 function generateInsight(
-  p1: number, r1: number, y1: number, m1: number, i1: number,
-  p2: number, r2: number, y2: number, m2: number, i2: number
+  _p1: number, r1: number, _y1: number, m1: number, i1: number,
+  _p2: number, r2: number, _y2: number, m2: number, i2: number
 ): string {
   const parts: string[] = [];
 
@@ -134,9 +134,11 @@ export function LoanComparisonCalc() {
               <DollarSign className="h-3.5 w-3.5" /> Loan Amount
             </Label>
             <Input
-              type="number"
+              type="text"
+              inputMode="numeric"
               value={values.principal}
               onChange={(e) => onChange({ ...values, principal: e.target.value })}
+              onFocus={(e) => e.target.select()}
               placeholder="20000"
             />
           </div>
@@ -145,10 +147,11 @@ export function LoanComparisonCalc() {
               <Percent className="h-3.5 w-3.5" /> APR (%)
             </Label>
             <Input
-              type="number"
-              step="0.1"
+              type="text"
+              inputMode="decimal"
               value={values.apr}
               onChange={(e) => onChange({ ...values, apr: e.target.value })}
+              onFocus={(e) => e.target.select()}
               placeholder="6.5"
             />
           </div>
@@ -157,9 +160,11 @@ export function LoanComparisonCalc() {
               <Calendar className="h-3.5 w-3.5" /> Term (years)
             </Label>
             <Input
-              type="number"
+              type="text"
+              inputMode="numeric"
               value={values.years}
               onChange={(e) => onChange({ ...values, years: e.target.value })}
+              onFocus={(e) => e.target.select()}
               placeholder="5"
             />
           </div>

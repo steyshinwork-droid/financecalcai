@@ -24,8 +24,12 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
-  Cell,
 } from "recharts";
+
+function useNumInput(initial: number) {
+  const [str, setStr] = useState(String(initial));
+  return [str, setStr, parseFloat(str) || 0] as const;
+}
 
 function formatMoney(n: number): string {
   return new Intl.NumberFormat("en-US", {
@@ -106,11 +110,11 @@ function generateMortgageInsight(
 }
 
 export function MortgageCalc() {
-  const [homePrice, setHomePrice] = useState(350000);
-  const [downPayment, setDownPayment] = useState(70000);
-  const [rate, setRate] = useState(6.5);
-  const [years, setYears] = useState(30);
-  const [income, setIncome] = useState(7000);
+  const [homePriceStr, setHomePrice, homePrice] = useNumInput(350000);
+  const [downPaymentStr, setDownPayment, downPayment] = useNumInput(70000);
+  const [rateStr, setRate, rate] = useNumInput(6.5);
+  const [yearsStr, setYears, years] = useNumInput(30);
+  const [incomeStr, setIncome, income] = useNumInput(7000);
   const [calculated, setCalculated] = useState(false);
 
   const results = useMemo(() => {
@@ -161,7 +165,7 @@ export function MortgageCalc() {
       totalInterest,
       chartData,
     };
-  }, [homePrice, downPayment, rate, years]);
+  }, [homePriceStr, downPaymentStr, rateStr, yearsStr]);
 
   const aiInsight = useMemo(
     () =>
@@ -176,7 +180,7 @@ export function MortgageCalc() {
             income
           )
         : "",
-    [calculated, homePrice, downPayment, rate, years, results, income]
+    [calculated, homePriceStr, downPaymentStr, rateStr, yearsStr, results, incomeStr]
   );
 
   return (
@@ -197,11 +201,11 @@ export function MortgageCalc() {
               </Label>
               <Input
                 id="price"
-                type="number"
-                value={homePrice}
-                onChange={(e) => setHomePrice(Number(e.target.value))}
-                min={0}
-                step={10000}
+                type="text"
+                inputMode="numeric"
+                value={homePriceStr}
+                onChange={(e) => setHomePrice(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
             </div>
             <div className="space-y-2">
@@ -211,14 +215,14 @@ export function MortgageCalc() {
               </Label>
               <Input
                 id="down"
-                type="number"
-                value={downPayment}
-                onChange={(e) => setDownPayment(Number(e.target.value))}
-                min={0}
-                step={5000}
+                type="text"
+                inputMode="numeric"
+                value={downPaymentStr}
+                onChange={(e) => setDownPayment(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
               <p className="text-xs text-gray-400">
-                {((downPayment / homePrice) * 100).toFixed(0)}% of home price
+                {homePrice > 0 ? ((downPayment / homePrice) * 100).toFixed(0) : 0}% of home price
               </p>
             </div>
             <div className="space-y-2">
@@ -228,12 +232,11 @@ export function MortgageCalc() {
               </Label>
               <Input
                 id="rate"
-                type="number"
-                value={rate}
-                onChange={(e) => setRate(Number(e.target.value))}
-                min={0}
-                max={20}
-                step={0.125}
+                type="text"
+                inputMode="decimal"
+                value={rateStr}
+                onChange={(e) => setRate(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
             </div>
             <div className="space-y-2">
@@ -243,11 +246,11 @@ export function MortgageCalc() {
               </Label>
               <Input
                 id="term"
-                type="number"
-                value={years}
-                onChange={(e) => setYears(Number(e.target.value))}
-                min={1}
-                max={40}
+                type="text"
+                inputMode="numeric"
+                value={yearsStr}
+                onChange={(e) => setYears(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
             </div>
             <div className="space-y-2 sm:col-span-2">
@@ -257,11 +260,11 @@ export function MortgageCalc() {
               </Label>
               <Input
                 id="income"
-                type="number"
-                value={income}
-                onChange={(e) => setIncome(Number(e.target.value))}
-                min={0}
-                step={500}
+                type="text"
+                inputMode="numeric"
+                value={incomeStr}
+                onChange={(e) => setIncome(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
             </div>
           </div>

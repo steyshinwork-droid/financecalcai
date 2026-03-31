@@ -25,6 +25,11 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+function useNumInput(initial: number) {
+  const [str, setStr] = useState(String(initial));
+  return [str, setStr, parseFloat(str) || 0] as const;
+}
+
 function formatMoney(n: number): string {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -99,10 +104,10 @@ function generateAIInsight(
 }
 
 export function CompoundInterestCalc() {
-  const [principal, setPrincipal] = useState(10000);
-  const [monthly, setMonthly] = useState(500);
-  const [rate, setRate] = useState(7);
-  const [years, setYears] = useState(20);
+  const [principalStr, setPrincipal, principal] = useNumInput(10000);
+  const [monthlyStr, setMonthly, monthly] = useNumInput(500);
+  const [rateStr, setRate, rate] = useNumInput(7);
+  const [yearsStr, setYears, years] = useNumInput(20);
   const [calculated, setCalculated] = useState(false);
 
   const results = useMemo(() => {
@@ -136,7 +141,7 @@ export function CompoundInterestCalc() {
       totalInterest,
       chartData,
     };
-  }, [principal, monthly, rate, years]);
+  }, [principalStr, monthlyStr, rateStr, yearsStr]);
 
   const aiInsight = useMemo(
     () =>
@@ -151,7 +156,7 @@ export function CompoundInterestCalc() {
             results.totalInterest
           )
         : "",
-    [calculated, principal, monthly, rate, years, results]
+    [calculated, principalStr, monthlyStr, rateStr, yearsStr, results]
   );
 
   return (
@@ -173,11 +178,11 @@ export function CompoundInterestCalc() {
               </Label>
               <Input
                 id="principal"
-                type="number"
-                value={principal}
-                onChange={(e) => setPrincipal(Number(e.target.value))}
-                min={0}
-                step={1000}
+                type="text"
+                inputMode="numeric"
+                value={principalStr}
+                onChange={(e) => setPrincipal(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
             </div>
             <div className="space-y-2">
@@ -187,11 +192,11 @@ export function CompoundInterestCalc() {
               </Label>
               <Input
                 id="monthly"
-                type="number"
-                value={monthly}
-                onChange={(e) => setMonthly(Number(e.target.value))}
-                min={0}
-                step={100}
+                type="text"
+                inputMode="numeric"
+                value={monthlyStr}
+                onChange={(e) => setMonthly(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
             </div>
             <div className="space-y-2">
@@ -201,12 +206,11 @@ export function CompoundInterestCalc() {
               </Label>
               <Input
                 id="rate"
-                type="number"
-                value={rate}
-                onChange={(e) => setRate(Number(e.target.value))}
-                min={0}
-                max={50}
-                step={0.5}
+                type="text"
+                inputMode="decimal"
+                value={rateStr}
+                onChange={(e) => setRate(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
             </div>
             <div className="space-y-2">
@@ -216,12 +220,11 @@ export function CompoundInterestCalc() {
               </Label>
               <Input
                 id="years"
-                type="number"
-                value={years}
-                onChange={(e) => setYears(Number(e.target.value))}
-                min={1}
-                max={50}
-                step={1}
+                type="text"
+                inputMode="numeric"
+                value={yearsStr}
+                onChange={(e) => setYears(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
             </div>
           </div>

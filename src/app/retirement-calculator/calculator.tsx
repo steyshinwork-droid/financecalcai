@@ -19,6 +19,11 @@ import {
   ReferenceLine,
 } from "recharts";
 
+function useNumInput(initial: number) {
+  const [str, setStr] = useState(String(initial));
+  return [str, setStr, parseFloat(str) || 0] as const;
+}
+
 function formatMoney(n: number): string {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -28,12 +33,12 @@ function formatMoney(n: number): string {
 }
 
 export function RetirementCalc() {
-  const [age, setAge] = useState(30);
-  const [retireAge, setRetireAge] = useState(65);
-  const [currentSavings, setCurrentSavings] = useState(50000);
-  const [monthlyContribution, setMonthlyContribution] = useState(1000);
-  const [rate, setRate] = useState(7);
-  const [annualExpenses, setAnnualExpenses] = useState(50000);
+  const [ageStr, setAge, age] = useNumInput(30);
+  const [retireAgeStr, setRetireAge, retireAge] = useNumInput(65);
+  const [currentSavingsStr, setCurrentSavings, currentSavings] = useNumInput(50000);
+  const [monthlyContributionStr, setMonthlyContribution, monthlyContribution] = useNumInput(1000);
+  const [rateStr, setRate, rate] = useNumInput(7);
+  const [annualExpensesStr, setAnnualExpenses, annualExpenses] = useNumInput(50000);
   const [calculated, setCalculated] = useState(false);
 
   const results = useMemo(() => {
@@ -75,7 +80,7 @@ export function RetirementCalc() {
       chartData,
       yearsToRetire,
     };
-  }, [age, retireAge, currentSavings, monthlyContribution, rate, annualExpenses]);
+  }, [ageStr, retireAgeStr, currentSavingsStr, monthlyContributionStr, rateStr, annualExpensesStr]);
 
   const aiInsight = useMemo(() => {
     if (!calculated) return "";
@@ -108,7 +113,7 @@ export function RetirementCalc() {
     }
 
     return insights.join("\n\n");
-  }, [calculated, results, retireAge, annualExpenses, monthlyContribution, currentSavings, rate]);
+  }, [calculated, results, retireAgeStr, annualExpensesStr, monthlyContributionStr, currentSavingsStr, rateStr]);
 
   return (
     <div className="space-y-6">
@@ -122,37 +127,73 @@ export function RetirementCalc() {
               <Label className="flex items-center gap-1">
                 <Calendar className="h-4 w-4 text-gray-400" /> Current Age
               </Label>
-              <Input type="number" value={age} onChange={(e) => setAge(Number(e.target.value))} min={18} max={80} />
+              <Input
+                type="text"
+                inputMode="numeric"
+                value={ageStr}
+                onChange={(e) => setAge(e.target.value)}
+                onFocus={(e) => e.target.select()}
+              />
             </div>
             <div className="space-y-2">
               <Label className="flex items-center gap-1">
                 <Calendar className="h-4 w-4 text-gray-400" /> Retirement Age
               </Label>
-              <Input type="number" value={retireAge} onChange={(e) => setRetireAge(Number(e.target.value))} min={age + 1} max={90} />
+              <Input
+                type="text"
+                inputMode="numeric"
+                value={retireAgeStr}
+                onChange={(e) => setRetireAge(e.target.value)}
+                onFocus={(e) => e.target.select()}
+              />
             </div>
             <div className="space-y-2">
               <Label className="flex items-center gap-1">
                 <DollarSign className="h-4 w-4 text-gray-400" /> Current Retirement Savings
               </Label>
-              <Input type="number" value={currentSavings} onChange={(e) => setCurrentSavings(Number(e.target.value))} min={0} step={5000} />
+              <Input
+                type="text"
+                inputMode="numeric"
+                value={currentSavingsStr}
+                onChange={(e) => setCurrentSavings(e.target.value)}
+                onFocus={(e) => e.target.select()}
+              />
             </div>
             <div className="space-y-2">
               <Label className="flex items-center gap-1">
                 <DollarSign className="h-4 w-4 text-gray-400" /> Monthly Contribution
               </Label>
-              <Input type="number" value={monthlyContribution} onChange={(e) => setMonthlyContribution(Number(e.target.value))} min={0} step={100} />
+              <Input
+                type="text"
+                inputMode="numeric"
+                value={monthlyContributionStr}
+                onChange={(e) => setMonthlyContribution(e.target.value)}
+                onFocus={(e) => e.target.select()}
+              />
             </div>
             <div className="space-y-2">
               <Label className="flex items-center gap-1">
                 <Percent className="h-4 w-4 text-gray-400" /> Expected Return (%)
               </Label>
-              <Input type="number" value={rate} onChange={(e) => setRate(Number(e.target.value))} min={0} max={15} step={0.5} />
+              <Input
+                type="text"
+                inputMode="decimal"
+                value={rateStr}
+                onChange={(e) => setRate(e.target.value)}
+                onFocus={(e) => e.target.select()}
+              />
             </div>
             <div className="space-y-2">
               <Label className="flex items-center gap-1">
                 <DollarSign className="h-4 w-4 text-gray-400" /> Annual Expenses in Retirement
               </Label>
-              <Input type="number" value={annualExpenses} onChange={(e) => setAnnualExpenses(Number(e.target.value))} min={0} step={5000} />
+              <Input
+                type="text"
+                inputMode="numeric"
+                value={annualExpensesStr}
+                onChange={(e) => setAnnualExpenses(e.target.value)}
+                onFocus={(e) => e.target.select()}
+              />
             </div>
           </div>
           <Button className="mt-6 w-full bg-indigo-600 hover:bg-indigo-700" size="lg" onClick={() => setCalculated(true)}>

@@ -26,6 +26,11 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+function useNumInput(initial: number) {
+  const [str, setStr] = useState(String(initial));
+  return [str, setStr, parseFloat(str) || 0] as const;
+}
+
 function formatMoney(n: number): string {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -35,11 +40,11 @@ function formatMoney(n: number): string {
 }
 
 export function SavingsGoalCalc() {
-  const [goal, setGoal] = useState(20000);
-  const [currentSavings, setCurrentSavings] = useState(2000);
-  const [months, setMonths] = useState(24);
-  const [rate, setRate] = useState(4.5);
-  const [income, setIncome] = useState(5000);
+  const [goalStr, setGoal, goal] = useNumInput(20000);
+  const [currentSavingsStr, setCurrentSavings, currentSavings] = useNumInput(2000);
+  const [monthsStr, setMonths, months] = useNumInput(24);
+  const [rateStr, setRate, rate] = useNumInput(4.5);
+  const [incomeStr, setIncome, income] = useNumInput(5000);
   const [calculated, setCalculated] = useState(false);
 
   const results = useMemo(() => {
@@ -71,7 +76,7 @@ export function SavingsGoalCalc() {
     const interestEarned = goal - totalContributed;
 
     return { monthlySavings, chartData, totalContributed, interestEarned };
-  }, [goal, currentSavings, months, rate, income]);
+  }, [goalStr, currentSavingsStr, monthsStr, rateStr, incomeStr]);
 
   const aiInsight = useMemo(() => {
     if (!calculated) return "";
@@ -122,7 +127,7 @@ export function SavingsGoalCalc() {
     );
 
     return insights.join("\n\n");
-  }, [calculated, goal, months, rate, income, results]);
+  }, [calculated, goalStr, monthsStr, rateStr, incomeStr, results]);
 
   return (
     <div className="space-y-6">
@@ -142,11 +147,11 @@ export function SavingsGoalCalc() {
               </Label>
               <Input
                 id="goal"
-                type="number"
-                value={goal}
-                onChange={(e) => setGoal(Number(e.target.value))}
-                min={0}
-                step={1000}
+                type="text"
+                inputMode="numeric"
+                value={goalStr}
+                onChange={(e) => setGoal(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
             </div>
             <div className="space-y-2">
@@ -156,11 +161,11 @@ export function SavingsGoalCalc() {
               </Label>
               <Input
                 id="current"
-                type="number"
-                value={currentSavings}
-                onChange={(e) => setCurrentSavings(Number(e.target.value))}
-                min={0}
-                step={500}
+                type="text"
+                inputMode="numeric"
+                value={currentSavingsStr}
+                onChange={(e) => setCurrentSavings(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
             </div>
             <div className="space-y-2">
@@ -170,11 +175,11 @@ export function SavingsGoalCalc() {
               </Label>
               <Input
                 id="months"
-                type="number"
-                value={months}
-                onChange={(e) => setMonths(Number(e.target.value))}
-                min={1}
-                max={120}
+                type="text"
+                inputMode="numeric"
+                value={monthsStr}
+                onChange={(e) => setMonths(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
             </div>
             <div className="space-y-2">
@@ -184,12 +189,11 @@ export function SavingsGoalCalc() {
               </Label>
               <Input
                 id="rate"
-                type="number"
-                value={rate}
-                onChange={(e) => setRate(Number(e.target.value))}
-                min={0}
-                max={20}
-                step={0.5}
+                type="text"
+                inputMode="decimal"
+                value={rateStr}
+                onChange={(e) => setRate(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
             </div>
             <div className="space-y-2 sm:col-span-2">
@@ -199,11 +203,11 @@ export function SavingsGoalCalc() {
               </Label>
               <Input
                 id="income"
-                type="number"
-                value={income}
-                onChange={(e) => setIncome(Number(e.target.value))}
-                min={0}
-                step={500}
+                type="text"
+                inputMode="numeric"
+                value={incomeStr}
+                onChange={(e) => setIncome(e.target.value)}
+                onFocus={(e) => e.target.select()}
               />
             </div>
           </div>

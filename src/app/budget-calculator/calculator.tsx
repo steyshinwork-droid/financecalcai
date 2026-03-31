@@ -25,6 +25,11 @@ import {
   Cell,
 } from "recharts";
 
+function useNumInput(initial: number) {
+  const [str, setStr] = useState(String(initial));
+  return [str, setStr, parseFloat(str) || 0] as const;
+}
+
 function formatMoney(n: number): string {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -53,39 +58,51 @@ const categories: ExpenseCategory[] = [
   { label: "Debt Payments", key: "debt", type: "need", placeholder: "200" },
 ];
 
+function parseExp(v: string): number {
+  return parseFloat(v) || 0;
+}
+
 export function BudgetCalc() {
-  const [income, setIncome] = useState(5000);
-  const [expenses, setExpenses] = useState<Record<string, number>>({
-    housing: 1500,
-    utilities: 200,
-    groceries: 400,
-    transport: 300,
-    insurance: 200,
-    dining: 200,
-    entertainment: 100,
-    shopping: 150,
-    savings: 500,
-    debt: 200,
+  const [incomeStr, setIncome, income] = useNumInput(5000);
+  const [expenses, setExpenses] = useState<Record<string, string>>({
+    housing: "1500",
+    utilities: "200",
+    groceries: "400",
+    transport: "300",
+    insurance: "200",
+    dining: "200",
+    entertainment: "100",
+    shopping: "150",
+    savings: "500",
+    debt: "200",
   });
   const [calculated, setCalculated] = useState(false);
+
+  const numericExpenses = useMemo(() => {
+    const result: Record<string, number> = {};
+    for (const key of Object.keys(expenses)) {
+      result[key] = parseExp(expenses[key]);
+    }
+    return result;
+  }, [expenses]);
 
   const results = useMemo(() => {
     const totalNeeds = categories
       .filter((c) => c.type === "need")
-      .reduce((sum, c) => sum + (expenses[c.key] || 0), 0);
+      .reduce((sum, c) => sum + (numericExpenses[c.key] || 0), 0);
     const totalWants = categories
       .filter((c) => c.type === "want")
-      .reduce((sum, c) => sum + (expenses[c.key] || 0), 0);
+      .reduce((sum, c) => sum + (numericExpenses[c.key] || 0), 0);
     const totalExpenses = totalNeeds + totalWants;
     const remaining = income - totalExpenses;
 
     const needsPercent = income > 0 ? (totalNeeds / income) * 100 : 0;
     const wantsPercent = income > 0 ? (totalWants / income) * 100 : 0;
-    const savingsPercent = income > 0 ? ((expenses.savings || 0) / income) * 100 : 0;
+    const savingsPercent = income > 0 ? ((numericExpenses.savings || 0) / income) * 100 : 0;
 
     const chartData = categories.map((c) => ({
       name: c.label.split("(")[0].trim(),
-      amount: expenses[c.key] || 0,
+      amount: numericExpenses[c.key] || 0,
       type: c.type,
     }));
 
@@ -99,7 +116,7 @@ export function BudgetCalc() {
       savingsPercent,
       chartData,
     };
-  }, [income, expenses]);
+  }, [incomeStr, expenses]);
 
   const aiInsight = useMemo(() => {
     if (!calculated) return "";
@@ -112,7 +129,7 @@ export function BudgetCalc() {
       );
     } else {
       insights.push(
-        `Your needs consume ${results.needsPercent.toFixed(0)}% of income — above the recommended 50%. Your housing alone is ${(((expenses.housing || 0) / income) * 100).toFixed(0)}% of income. ${(expenses.housing || 0) / income > 0.3 ? "Consider finding cheaper housing or getting a roommate to reduce this." : ""}`
+        `Your needs consume ${results.needsPercent.toFixed(0)}% of income — above the recommended 50%. Your housing alone is ${(((numericExpenses.housing || 0) / income) * 100).toFixed(0)}% of income. ${(numericExpenses.housing || 0) / income > 0.3 ? "Consider finding cheaper housing or getting a roommate to reduce this." : ""}`
       );
     }
 
@@ -122,7 +139,7 @@ export function BudgetCalc() {
       );
     } else {
       insights.push(
-        `Wants spending at ${results.wantsPercent.toFixed(0)}% exceeds the 30% guideline. Look at dining out (${formatMoney(expenses.dining || 0)}) and shopping (${formatMoney(expenses.shopping || 0)}) — small reductions here add up fast.`
+        `Wants spending at ${results.wantsPercent.toFixed(0)}% exceeds the 30% guideline. Look at dining out (${formatMoney(numericExpenses.dining || 0)}) and shopping (${formatMoney(numericExpenses.shopping || 0)}) — small reductions here add up fast.`
       );
     }
 
@@ -132,7 +149,7 @@ export function BudgetCalc() {
       );
     } else if (results.savingsPercent >= 10) {
       insights.push(
-        `You're saving ${results.savingsPercent.toFixed(0)}% of income — good, but below the 20% target. Try to increase by ${formatMoney(income * 0.2 - (expenses.savings || 0))}/month to reach the goal.`
+        `You're saving ${results.savingsPercent.toFixed(0)}% of income — good, but below the 20% target. Try to increase by ${formatMoney(income * 0.2 - (numericExpenses.savings || 0))}/month to reach the goal.`
       );
     } else {
       insights.push(
@@ -151,7 +168,7 @@ export function BudgetCalc() {
     }
 
     return insights.join("\n\n");
-  }, [calculated, results, income, expenses]);
+  }, [calculated, results, incomeStr, expenses]);
 
   return (
     <div className="space-y-6">
@@ -170,11 +187,11 @@ export function BudgetCalc() {
             </Label>
             <Input
               id="income"
-              type="number"
-              value={income}
-              onChange={(e) => setIncome(Number(e.target.value))}
-              min={0}
-              step={500}
+              type="text"
+              inputMode="numeric"
+              value={incomeStr}
+              onChange={(e) => setIncome(e.target.value)}
+              onFocus={(e) => e.target.select()}
               className="text-lg"
             />
           </div>
@@ -196,13 +213,13 @@ export function BudgetCalc() {
                 </Label>
                 <Input
                   id={cat.key}
-                  type="number"
-                  value={expenses[cat.key] || 0}
+                  type="text"
+                  inputMode="numeric"
+                  value={expenses[cat.key] ?? "0"}
                   onChange={(e) =>
-                    setExpenses({ ...expenses, [cat.key]: Number(e.target.value) })
+                    setExpenses({ ...expenses, [cat.key]: e.target.value })
                   }
-                  min={0}
-                  step={50}
+                  onFocus={(e) => e.target.select()}
                 />
               </div>
             ))}
@@ -249,7 +266,7 @@ export function BudgetCalc() {
                   {results.savingsPercent.toFixed(0)}%
                 </p>
                 <p className="text-sm text-gray-400">
-                  {formatMoney(expenses.savings || 0)}
+                  {formatMoney(numericExpenses.savings || 0)}
                 </p>
               </CardContent>
             </Card>

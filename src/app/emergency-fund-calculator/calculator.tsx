@@ -9,15 +9,20 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Sparkles, Info, Shield, Calendar } from "lucide-react";
 
+function useNumInput(initial: number) {
+  const [str, setStr] = useState(String(initial));
+  return [str, setStr, parseFloat(str) || 0] as const;
+}
+
 function formatMoney(n: number): string {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
 }
 
 export function EmergencyFundCalc() {
-  const [monthlyExpenses, setMonthlyExpenses] = useState(3500);
-  const [currentFund, setCurrentFund] = useState(2000);
-  const [monthlyContribution, setMonthlyContribution] = useState(300);
-  const [dependents, setDependents] = useState(0);
+  const [monthlyExpensesStr, setMonthlyExpenses, monthlyExpenses] = useNumInput(3500);
+  const [currentFundStr, setCurrentFund, currentFund] = useNumInput(2000);
+  const [monthlyContributionStr, setMonthlyContribution, monthlyContribution] = useNumInput(300);
+  const [dependentsStr, setDependents, dependents] = useNumInput(0);
   const [jobStability, setJobStability] = useState("stable");
   const [calculated, setCalculated] = useState(false);
 
@@ -30,7 +35,7 @@ export function EmergencyFundCalc() {
     const coverageMonths = monthlyExpenses > 0 ? (currentFund / monthlyExpenses) : 0;
 
     return { recommendedMonths, targetFund, remaining, monthsToGoal, progress, coverageMonths };
-  }, [monthlyExpenses, currentFund, monthlyContribution, dependents, jobStability]);
+  }, [monthlyExpensesStr, currentFundStr, monthlyContributionStr, dependentsStr, jobStability]);
 
   const aiInsight = useMemo(() => {
     if (!calculated) return "";
@@ -59,7 +64,7 @@ export function EmergencyFundCalc() {
     }
 
     return insights.join("\n\n");
-  }, [calculated, results, currentFund, monthlyContribution, dependents, jobStability]);
+  }, [calculated, results, currentFundStr, monthlyContributionStr, dependentsStr, jobStability]);
 
   return (
     <div className="space-y-6">
@@ -73,19 +78,43 @@ export function EmergencyFundCalc() {
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="space-y-2">
               <Label className="flex items-center gap-1"><DollarSign className="h-4 w-4 text-gray-400" /> Monthly Essential Expenses</Label>
-              <Input type="number" value={monthlyExpenses} onChange={(e) => setMonthlyExpenses(Number(e.target.value))} min={0} step={100} />
+              <Input
+                type="text"
+                inputMode="numeric"
+                value={monthlyExpensesStr}
+                onChange={(e) => setMonthlyExpenses(e.target.value)}
+                onFocus={(e) => e.target.select()}
+              />
             </div>
             <div className="space-y-2">
               <Label className="flex items-center gap-1"><DollarSign className="h-4 w-4 text-gray-400" /> Current Emergency Fund</Label>
-              <Input type="number" value={currentFund} onChange={(e) => setCurrentFund(Number(e.target.value))} min={0} step={500} />
+              <Input
+                type="text"
+                inputMode="numeric"
+                value={currentFundStr}
+                onChange={(e) => setCurrentFund(e.target.value)}
+                onFocus={(e) => e.target.select()}
+              />
             </div>
             <div className="space-y-2">
               <Label className="flex items-center gap-1"><DollarSign className="h-4 w-4 text-gray-400" /> Monthly Savings Toward Fund</Label>
-              <Input type="number" value={monthlyContribution} onChange={(e) => setMonthlyContribution(Number(e.target.value))} min={0} step={50} />
+              <Input
+                type="text"
+                inputMode="numeric"
+                value={monthlyContributionStr}
+                onChange={(e) => setMonthlyContribution(e.target.value)}
+                onFocus={(e) => e.target.select()}
+              />
             </div>
             <div className="space-y-2">
               <Label className="flex items-center gap-1"><Calendar className="h-4 w-4 text-gray-400" /> Dependents</Label>
-              <Input type="number" value={dependents} onChange={(e) => setDependents(Number(e.target.value))} min={0} max={10} />
+              <Input
+                type="text"
+                inputMode="numeric"
+                value={dependentsStr}
+                onChange={(e) => setDependents(e.target.value)}
+                onFocus={(e) => e.target.select()}
+              />
             </div>
             <div className="space-y-2 sm:col-span-2">
               <Label>Job Stability</Label>

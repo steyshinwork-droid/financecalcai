@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { DollarSign, Calendar, Percent, Sparkles, Info, TrendingUp } from "lucide-react";
+import { DollarSign, Calendar, Sparkles, Info, TrendingUp } from "lucide-react";
 import {
   LineChart,
   Line,
@@ -18,6 +18,11 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
+
+function useNumInput(initial: number) {
+  const [str, setStr] = useState(String(initial));
+  return [str, setStr, parseFloat(str) || 0] as const;
+}
 
 function formatMoney(n: number): string {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
@@ -37,9 +42,9 @@ function calcGrowth(initial: number, monthly: number, rate: number, years: numbe
 }
 
 export function InvestmentCalc() {
-  const [initial, setInitial] = useState(10000);
-  const [monthly, setMonthly] = useState(500);
-  const [years, setYears] = useState(20);
+  const [initialStr, setInitial, initial] = useNumInput(10000);
+  const [monthlyStr, setMonthly, monthly] = useNumInput(500);
+  const [yearsStr, setYears, years] = useNumInput(20);
   const [calculated, setCalculated] = useState(false);
 
   const scenarios = useMemo(() => {
@@ -57,7 +62,7 @@ export function InvestmentCalc() {
     }));
 
     return { conservative, moderate, aggressive, savings, chartData };
-  }, [initial, monthly, years]);
+  }, [initialStr, monthlyStr, yearsStr]);
 
   const totalContributed = initial + monthly * 12 * years;
 
@@ -87,7 +92,7 @@ export function InvestmentCalc() {
     }
 
     return insights.join("\n\n");
-  }, [calculated, scenarios, totalContributed, initial, monthly, years]);
+  }, [calculated, scenarios, totalContributed, initialStr, monthlyStr, yearsStr]);
 
   return (
     <div className="space-y-6">
@@ -101,15 +106,33 @@ export function InvestmentCalc() {
           <div className="grid gap-6 sm:grid-cols-3">
             <div className="space-y-2">
               <Label className="flex items-center gap-1"><DollarSign className="h-4 w-4 text-gray-400" /> Initial Investment</Label>
-              <Input type="number" value={initial} onChange={(e) => setInitial(Number(e.target.value))} min={0} step={1000} />
+              <Input
+                type="text"
+                inputMode="numeric"
+                value={initialStr}
+                onChange={(e) => setInitial(e.target.value)}
+                onFocus={(e) => e.target.select()}
+              />
             </div>
             <div className="space-y-2">
               <Label className="flex items-center gap-1"><DollarSign className="h-4 w-4 text-gray-400" /> Monthly Addition</Label>
-              <Input type="number" value={monthly} onChange={(e) => setMonthly(Number(e.target.value))} min={0} step={100} />
+              <Input
+                type="text"
+                inputMode="numeric"
+                value={monthlyStr}
+                onChange={(e) => setMonthly(e.target.value)}
+                onFocus={(e) => e.target.select()}
+              />
             </div>
             <div className="space-y-2">
               <Label className="flex items-center gap-1"><Calendar className="h-4 w-4 text-gray-400" /> Years</Label>
-              <Input type="number" value={years} onChange={(e) => setYears(Number(e.target.value))} min={1} max={50} />
+              <Input
+                type="text"
+                inputMode="numeric"
+                value={yearsStr}
+                onChange={(e) => setYears(e.target.value)}
+                onFocus={(e) => e.target.select()}
+              />
             </div>
           </div>
           <Button className="mt-6 w-full bg-emerald-600 hover:bg-emerald-700" size="lg" onClick={() => setCalculated(true)}>

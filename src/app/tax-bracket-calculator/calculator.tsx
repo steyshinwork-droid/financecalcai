@@ -18,6 +18,11 @@ import {
   Cell,
 } from "recharts";
 
+function useNumInput(initial: number) {
+  const [str, setStr] = useState(String(initial));
+  return [str, setStr, parseFloat(str) || 0] as const;
+}
+
 function formatMoney(n: number): string {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
 }
@@ -66,7 +71,7 @@ function calcTax(income: number, brackets: typeof singleBrackets) {
 }
 
 export function TaxBracketCalc() {
-  const [income, setIncome] = useState(75000);
+  const [incomeStr, setIncome, income] = useNumInput(75000);
   const [filingStatus, setFilingStatus] = useState<"single" | "married">("single");
   const [calculated, setCalculated] = useState(false);
 
@@ -79,7 +84,7 @@ export function TaxBracketCalc() {
     const afterTax = income - totalTax;
 
     return { totalTax, breakdown, effectiveRate, marginalRate, afterTax };
-  }, [income, brackets]);
+  }, [incomeStr, brackets]);
 
   const colors = ["#10b981", "#34d399", "#6ee7b7", "#fbbf24", "#f97316", "#ef4444", "#dc2626"];
 
@@ -108,7 +113,7 @@ export function TaxBracketCalc() {
     insights.push(`Tax reduction strategies:\n${tips.map(t => `- ${t}`).join("\n")}`);
 
     return insights.join("\n\n");
-  }, [calculated, income, results, brackets]);
+  }, [calculated, incomeStr, results, brackets]);
 
   return (
     <div className="space-y-6">
@@ -118,7 +123,13 @@ export function TaxBracketCalc() {
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="space-y-2">
               <Label className="flex items-center gap-1"><DollarSign className="h-4 w-4 text-gray-400" /> Annual Taxable Income</Label>
-              <Input type="number" value={income} onChange={(e) => setIncome(Number(e.target.value))} min={0} step={5000} />
+              <Input
+                type="text"
+                inputMode="numeric"
+                value={incomeStr}
+                onChange={(e) => setIncome(e.target.value)}
+                onFocus={(e) => e.target.select()}
+              />
             </div>
             <div className="space-y-2">
               <Label>Filing Status</Label>

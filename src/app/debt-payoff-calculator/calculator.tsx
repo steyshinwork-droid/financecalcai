@@ -17,6 +17,11 @@ import {
   Trash2,
 } from "lucide-react";
 
+function useNumInput(initial: number) {
+  const [str, setStr] = useState(String(initial));
+  return [str, setStr, parseFloat(str) || 0] as const;
+}
+
 function formatMoney(n: number): string {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -28,13 +33,23 @@ function formatMoney(n: number): string {
 interface Debt {
   id: string;
   name: string;
-  balance: number;
-  rate: number;
-  minPayment: number;
+  balance: string;
+  rate: string;
+  minPayment: string;
+}
+
+function debtToNumbers(d: Debt) {
+  return {
+    id: d.id,
+    name: d.name,
+    balance: parseFloat(d.balance) || 0,
+    rate: parseFloat(d.rate) || 0,
+    minPayment: parseFloat(d.minPayment) || 0,
+  };
 }
 
 function simulatePayoff(
-  debts: Debt[],
+  debts: { id: string; name: string; balance: number; rate: number; minPayment: number }[],
   extraPayment: number,
   method: "avalanche" | "snowball"
 ): { months: number; totalInterest: number } {
@@ -76,11 +91,11 @@ function simulatePayoff(
 
 export function DebtPayoffCalc() {
   const [debts, setDebts] = useState<Debt[]>([
-    { id: "1", name: "Credit Card", balance: 5000, rate: 22, minPayment: 100 },
-    { id: "2", name: "Car Loan", balance: 15000, rate: 6, minPayment: 300 },
-    { id: "3", name: "Student Loan", balance: 25000, rate: 5, minPayment: 250 },
+    { id: "1", name: "Credit Card", balance: "5000", rate: "22", minPayment: "100" },
+    { id: "2", name: "Car Loan", balance: "15000", rate: "6", minPayment: "300" },
+    { id: "3", name: "Student Loan", balance: "25000", rate: "5", minPayment: "250" },
   ]);
-  const [extraPayment, setExtraPayment] = useState(200);
+  const [extraPaymentStr, setExtraPayment, extraPayment] = useNumInput(200);
   const [calculated, setCalculated] = useState(false);
 
   const addDebt = () => {
@@ -89,9 +104,9 @@ export function DebtPayoffCalc() {
       {
         id: Date.now().toString(),
         name: `Debt ${debts.length + 1}`,
-        balance: 0,
-        rate: 0,
-        minPayment: 0,
+        balance: "0",
+        rate: "0",
+        minPayment: "0",
       },
     ]);
   };
@@ -100,13 +115,15 @@ export function DebtPayoffCalc() {
     if (debts.length > 1) setDebts(debts.filter((d) => d.id !== id));
   };
 
-  const updateDebt = (id: string, field: keyof Debt, value: string | number) => {
+  const updateDebt = (id: string, field: keyof Debt, value: string) => {
     setDebts(debts.map((d) => (d.id === id ? { ...d, [field]: value } : d)));
   };
 
+  const numericDebts = useMemo(() => debts.map(debtToNumbers), [debts]);
+
   const results = useMemo(() => {
     if (!calculated) return null;
-    const validDebts = debts.filter((d) => d.balance > 0);
+    const validDebts = numericDebts.filter((d) => d.balance > 0);
     if (validDebts.length === 0) return null;
 
     const avalanche = simulatePayoff(validDebts, extraPayment, "avalanche");
@@ -116,7 +133,7 @@ export function DebtPayoffCalc() {
     const totalDebt = validDebts.reduce((s, d) => s + d.balance, 0);
 
     return { avalanche, snowball, noExtra, totalDebt };
-  }, [calculated, debts, extraPayment]);
+  }, [calculated, debts, extraPaymentStr]);
 
   const aiInsight = useMemo(() => {
     if (!results) return "";
@@ -144,7 +161,7 @@ export function DebtPayoffCalc() {
       `By paying extra, you'll save ${formatMoney(savings)} in interest compared to minimum payments only. Every extra dollar you can put toward debt accelerates your freedom.`
     );
 
-    const highRateDebt = debts.reduce((max, d) => (d.rate > max.rate ? d : max), debts[0]);
+    const highRateDebt = numericDebts.reduce((max, d) => (d.rate > max.rate ? d : max), numericDebts[0]);
     if (highRateDebt.rate > 15) {
       insights.push(
         `Priority: "${highRateDebt.name}" at ${highRateDebt.rate}% is very expensive debt. Focus all extra payments here first (avalanche method). Consider a balance transfer to a 0% introductory rate card if eligible.`
@@ -152,7 +169,7 @@ export function DebtPayoffCalc() {
     }
 
     return insights.join("\n\n");
-  }, [results, extraPayment, debts]);
+  }, [results, extraPaymentStr, debts]);
 
   return (
     <div className="space-y-6">
@@ -164,7 +181,7 @@ export function DebtPayoffCalc() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          {debts.map((debt, i) => (
+          {debts.map((debt) => (
             <div
               key={debt.id}
               className="mb-4 rounded-lg border bg-gray-50 p-4"
@@ -190,12 +207,11 @@ export function DebtPayoffCalc() {
                     <DollarSign className="h-3 w-3" /> Balance
                   </Label>
                   <Input
-                    type="number"
+                    type="text"
+                    inputMode="numeric"
                     value={debt.balance}
-                    onChange={(e) =>
-                      updateDebt(debt.id, "balance", Number(e.target.value))
-                    }
-                    min={0}
+                    onChange={(e) => updateDebt(debt.id, "balance", e.target.value)}
+                    onFocus={(e) => e.target.select()}
                   />
                 </div>
                 <div className="space-y-1">
@@ -203,13 +219,11 @@ export function DebtPayoffCalc() {
                     <Percent className="h-3 w-3" /> Interest Rate (%)
                   </Label>
                   <Input
-                    type="number"
+                    type="text"
+                    inputMode="decimal"
                     value={debt.rate}
-                    onChange={(e) =>
-                      updateDebt(debt.id, "rate", Number(e.target.value))
-                    }
-                    min={0}
-                    step={0.5}
+                    onChange={(e) => updateDebt(debt.id, "rate", e.target.value)}
+                    onFocus={(e) => e.target.select()}
                   />
                 </div>
                 <div className="space-y-1">
@@ -217,12 +231,11 @@ export function DebtPayoffCalc() {
                     <DollarSign className="h-3 w-3" /> Min Payment
                   </Label>
                   <Input
-                    type="number"
+                    type="text"
+                    inputMode="numeric"
                     value={debt.minPayment}
-                    onChange={(e) =>
-                      updateDebt(debt.id, "minPayment", Number(e.target.value))
-                    }
-                    min={0}
+                    onChange={(e) => updateDebt(debt.id, "minPayment", e.target.value)}
+                    onFocus={(e) => e.target.select()}
                   />
                 </div>
               </div>
@@ -242,11 +255,11 @@ export function DebtPayoffCalc() {
             </Label>
             <Input
               id="extra"
-              type="number"
-              value={extraPayment}
-              onChange={(e) => setExtraPayment(Number(e.target.value))}
-              min={0}
-              step={50}
+              type="text"
+              inputMode="numeric"
+              value={extraPaymentStr}
+              onChange={(e) => setExtraPayment(e.target.value)}
+              onFocus={(e) => e.target.select()}
             />
           </div>
 

@@ -49,7 +49,7 @@ function calcPayoff(balance: number, apr: number, monthlyPayment: number) {
 function generateInsight(
   balance: number,
   apr: number,
-  monthly: number,
+  _monthly: number,
   months: number,
   totalInterest: number
 ): string {
@@ -93,13 +93,13 @@ export function CreditCardPayoffCalc() {
   const rate = parseFloat(apr) || 0;
   const pay = parseFloat(monthly) || 0;
 
-  const result = useMemo(() => calcPayoff(bal, rate, pay), [bal, rate, pay]);
+  const result = useMemo(() => calcPayoff(bal, rate, pay), [balance, apr, monthly]);
 
   const minPayResult = useMemo(() => {
     if (bal <= 0 || rate <= 0) return null;
     const minPay = Math.max(bal * 0.02, 25); // typical minimum: 2% or $25
     return calcPayoff(bal, rate, minPay);
-  }, [bal, rate]);
+  }, [balance, apr]);
 
   const chartData = result
     ? [
@@ -132,9 +132,11 @@ export function CreditCardPayoffCalc() {
             </Label>
             <Input
               id="balance"
-              type="number"
+              type="text"
+              inputMode="numeric"
               value={balance}
               onChange={(e) => setBalance(e.target.value)}
+              onFocus={(e) => e.target.select()}
               placeholder="5000"
             />
           </div>
@@ -144,10 +146,11 @@ export function CreditCardPayoffCalc() {
             </Label>
             <Input
               id="apr"
-              type="number"
-              step="0.1"
+              type="text"
+              inputMode="decimal"
               value={apr}
               onChange={(e) => setApr(e.target.value)}
+              onFocus={(e) => e.target.select()}
               placeholder="22"
             />
           </div>
@@ -157,9 +160,11 @@ export function CreditCardPayoffCalc() {
             </Label>
             <Input
               id="monthly"
-              type="number"
+              type="text"
+              inputMode="numeric"
               value={monthly}
               onChange={(e) => setMonthly(e.target.value)}
+              onFocus={(e) => e.target.select()}
               placeholder="200"
             />
           </div>
