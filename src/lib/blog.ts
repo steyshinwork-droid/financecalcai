@@ -6940,7 +6940,7 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "what-is-dollar-cost-averaging",
+    slug: "dollar-cost-averaging-investing-strategy",
     title: "What Is Dollar Cost Averaging? The Simplest Way to Invest Consistently",
     description: "Dollar cost averaging removes the stress of timing the market. Here's how it works, why it beats most strategies, and how to use it starting today.",
     date: "2026-03-31",
