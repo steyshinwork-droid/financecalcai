@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: "Terms of Service",
   description:
     "Terms of Service for FinanceCalcAI. Read our terms before using our free financial calculators.",
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {

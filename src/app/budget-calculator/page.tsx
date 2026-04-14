@@ -10,11 +10,32 @@ export const metadata: Metadata = {
     "Plan your monthly budget with AI-powered analysis. Enter your income and expenses, get personalized tips on where to save money.",
   keywords:
     "budget calculator, monthly budget planner, budget planner, expense calculator, 50 30 20 budget",
+  alternates: { canonical: "/budget-calculator" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Budget Calculator",
+  url: "https://financecalcai.vercel.app/budget-calculator",
+  description:
+    "Free budget calculator with 50/30/20 rule analysis. Plan your monthly budget with AI-powered tips.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
 };
 
 export default function BudgetPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb items={[{ label: "Budget Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">

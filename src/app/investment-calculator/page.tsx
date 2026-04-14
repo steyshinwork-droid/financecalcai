@@ -10,11 +10,32 @@ export const metadata: Metadata = {
     "Calculate your investment returns with different scenarios. Compare stocks, bonds, and other assets with AI-powered insights.",
   keywords:
     "investment calculator, investment return calculator, stock return calculator, ROI calculator",
+  alternates: { canonical: "/investment-calculator" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Investment Return Calculator",
+  url: "https://financecalcai.vercel.app/investment-calculator",
+  description:
+    "Free investment return calculator comparing stocks, bonds, and other assets with AI insights.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
 };
 
 export default function InvestmentPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb items={[{ label: "Investment Return Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">

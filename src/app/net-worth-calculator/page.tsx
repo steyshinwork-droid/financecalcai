@@ -10,11 +10,32 @@ export const metadata: Metadata = {
     "Calculate your net worth and track your financial health. AI compares you to benchmarks for your age and gives actionable advice.",
   keywords:
     "net worth calculator, net worth tracker, financial health calculator, assets minus liabilities",
+  alternates: { canonical: "/net-worth-calculator" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Net Worth Calculator",
+  url: "https://financecalcai.vercel.app/net-worth-calculator",
+  description:
+    "Free net worth calculator tracking assets vs liabilities with AI financial health score.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
 };
 
 export default function NetWorthPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb items={[{ label: "Net Worth Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">

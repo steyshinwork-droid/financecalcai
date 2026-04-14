@@ -20,6 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getBlogPost(slug);
   if (!post) return {};
   const url = `https://financecalcai.vercel.app/blog/${slug}`;
+  const ogTitle = encodeURIComponent(post.title);
+  const ogDesc = encodeURIComponent(post.description);
   return {
     title: post.title,
     description: post.description,
@@ -31,11 +33,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.date,
       url,
       siteName: "FinanceCalcAI",
+      images: [
+        {
+          url: `/og?title=${ogTitle}&description=${ogDesc}`,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: post.title,
       description: post.description,
+      images: [`/og?title=${ogTitle}&description=${ogDesc}`],
     },
   };
 }

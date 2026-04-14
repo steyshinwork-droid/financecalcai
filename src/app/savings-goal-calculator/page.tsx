@@ -10,11 +10,32 @@ export const metadata: Metadata = {
     "Set a savings goal and get a personalized plan. AI tells you exactly how much to save each month to reach your target.",
   keywords:
     "savings goal calculator, savings calculator, how much to save, savings planner, emergency fund calculator",
+  alternates: { canonical: "/savings-goal-calculator" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Savings Goal Calculator",
+  url: "https://financecalcai.vercel.app/savings-goal-calculator",
+  description:
+    "Free savings goal calculator with personalized monthly savings plan and AI tips.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
 };
 
 export default function SavingsGoalPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb items={[{ label: "Savings Goal Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">

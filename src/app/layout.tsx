@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "Free AI-powered financial calculators with personalized insights. Mortgage, compound interest, budget, debt payoff, retirement, investment, net worth, tax bracket and more.",
   keywords:
     "financial calculator, AI calculator, mortgage calculator, compound interest calculator, budget calculator, debt payoff calculator, retirement calculator, investment calculator, net worth calculator, tax bracket calculator",
+  alternates: { canonical: "/" },
   verification: {
     other: {
       "verify-admitad": "b0a3ffeae4",
@@ -32,12 +33,21 @@ export const metadata: Metadata = {
     title: "FinanceCalcAI - Free AI-Powered Financial Calculators",
     description:
       "Free calculators with AI-powered insights. Get personalized advice, not just numbers.",
+    images: [
+      {
+        url: "/og?title=FinanceCalcAI&description=Free+AI-Powered+Financial+Calculators",
+        width: 1200,
+        height: 630,
+        alt: "FinanceCalcAI - Free AI-Powered Financial Calculators",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "FinanceCalcAI - Free AI-Powered Financial Calculators",
     description:
       "Free calculators with AI-powered insights. Get personalized advice, not just numbers.",
+    images: ["/og?title=FinanceCalcAI&description=Free+AI-Powered+Financial+Calculators"],
   },
 };
 

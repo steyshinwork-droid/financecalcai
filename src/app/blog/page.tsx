@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Financial Tips & Guides",
   description:
     "Free personal finance guides: how to pay off debt, compound interest explained, budgeting rules, mortgage advice, and more.",
+  alternates: { canonical: "/blog" },
 };
 
 const categoryColors: Record<string, string> = {

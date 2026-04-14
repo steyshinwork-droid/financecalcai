@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllSlugs } from "@/lib/blog";
+import { getAllSlugs, blogPosts } from "@/lib/blog";
 
 const BASE_URL = "https://financecalcai.vercel.app";
 
@@ -20,6 +20,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const blogSlugs = getAllSlugs();
+
+  // Build a map of slug -> date for blog posts
+  const blogDateMap = new Map(blogPosts.map((p) => [p.slug, p.date]));
 
   return [
     {
@@ -66,7 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...blogSlugs.map((slug) => ({
       url: `${BASE_URL}/blog/${slug}`,
-      lastModified: new Date(),
+      lastModified: new Date(blogDateMap.get(slug) ?? "2025-02-10"),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     })),

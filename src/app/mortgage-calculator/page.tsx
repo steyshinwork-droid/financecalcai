@@ -10,11 +10,32 @@ export const metadata: Metadata = {
     "Calculate your monthly mortgage payment with AI-powered affordability analysis. See amortization schedule, total interest, and get personalized advice.",
   keywords:
     "mortgage calculator, home loan calculator, mortgage payment calculator, house affordability calculator",
+  alternates: { canonical: "/mortgage-calculator" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Mortgage Calculator",
+  url: "https://financecalcai.vercel.app/mortgage-calculator",
+  description:
+    "Free mortgage calculator with AI-powered affordability analysis. Calculate monthly payments and amortization.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
 };
 
 export default function MortgagePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb items={[{ label: "Mortgage Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">

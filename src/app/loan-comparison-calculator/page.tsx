@@ -11,11 +11,32 @@ export const metadata: Metadata = {
     "Compare two loans side by side. See monthly payments, total interest, and total cost instantly. AI tells you which loan saves you more money.",
   keywords:
     "loan comparison calculator, compare loans, best loan calculator, loan interest calculator, which loan is better",
+  alternates: { canonical: "/loan-comparison-calculator" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Loan Comparison Calculator",
+  url: "https://financecalcai.vercel.app/loan-comparison-calculator",
+  description:
+    "Free loan comparison calculator comparing two loans side by side with AI analysis.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
 };
 
 export default function LoanComparisonPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb items={[{ label: "Loan Comparison Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">

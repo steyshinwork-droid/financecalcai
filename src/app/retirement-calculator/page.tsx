@@ -10,11 +10,32 @@ export const metadata: Metadata = {
     "Calculate when you can retire and how much you need. AI-powered analysis with personalized advice on your retirement readiness.",
   keywords:
     "retirement calculator, retirement planning calculator, when can I retire, how much do I need to retire, 401k calculator",
+  alternates: { canonical: "/retirement-calculator" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Retirement Calculator",
+  url: "https://financecalcai.vercel.app/retirement-calculator",
+  description:
+    "Free retirement calculator with 4% rule analysis and personalized retirement readiness score.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
 };
 
 export default function RetirementPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb items={[{ label: "Retirement Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">

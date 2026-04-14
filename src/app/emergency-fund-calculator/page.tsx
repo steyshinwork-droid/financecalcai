@@ -10,11 +10,32 @@ export const metadata: Metadata = {
     "Calculate how much you need in your emergency fund. AI analyzes your situation and creates a personalized savings plan.",
   keywords:
     "emergency fund calculator, how much emergency fund, emergency savings calculator, rainy day fund",
+  alternates: { canonical: "/emergency-fund-calculator" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Emergency Fund Calculator",
+  url: "https://financecalcai.vercel.app/emergency-fund-calculator",
+  description:
+    "Free emergency fund calculator calculating how much you need with personalized savings plan.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
 };
 
 export default function EmergencyFundPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb items={[{ label: "Emergency Fund Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">

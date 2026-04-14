@@ -10,11 +10,32 @@ export const metadata: Metadata = {
     "Calculate the fastest way to pay off your debts. Compare snowball vs avalanche methods with AI-powered recommendations.",
   keywords:
     "debt payoff calculator, debt snowball calculator, debt avalanche calculator, debt free calculator, pay off debt calculator",
+  alternates: { canonical: "/debt-payoff-calculator" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Debt Payoff Calculator",
+  url: "https://financecalcai.vercel.app/debt-payoff-calculator",
+  description:
+    "Free debt payoff calculator comparing snowball vs avalanche methods with AI recommendations.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
 };
 
 export default function DebtPayoffPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb items={[{ label: "Debt Payoff Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">

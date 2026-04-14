@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "Privacy Policy for FinanceCalcAI. Learn how we collect, use, and protect your information.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

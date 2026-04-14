@@ -10,11 +10,32 @@ export const metadata: Metadata = {
     "Calculate compound interest with AI-powered insights. See how your money grows over time with personalized advice and beautiful charts. Free, no signup required.",
   keywords:
     "compound interest calculator, compound interest, investment calculator, savings calculator, interest rate calculator",
+  alternates: { canonical: "/compound-interest-calculator" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Compound Interest Calculator",
+  url: "https://financecalcai.vercel.app/compound-interest-calculator",
+  description:
+    "Free compound interest calculator with AI-powered insights. Calculate how your money grows over time.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
 };
 
 export default function CompoundInterestPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb items={[{ label: "Compound Interest Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">

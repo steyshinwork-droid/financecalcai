@@ -11,11 +11,32 @@ export const metadata: Metadata = {
     "See exactly how long it takes to pay off your credit card and how much interest you'll pay. Compare your plan vs. minimum payments and get AI-powered advice.",
   keywords:
     "credit card payoff calculator, credit card debt calculator, pay off credit card, credit card interest calculator",
+  alternates: { canonical: "/credit-card-payoff-calculator" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Credit Card Payoff Calculator",
+  url: "https://financecalcai.vercel.app/credit-card-payoff-calculator",
+  description:
+    "Free credit card payoff calculator comparing your plan vs minimum payments with AI advice.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
 };
 
 export default function CreditCardPayoffPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb items={[{ label: "Credit Card Payoff Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">

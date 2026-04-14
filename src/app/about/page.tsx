@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "About FinanceCalcAI",
   description:
     "FinanceCalcAI offers free AI-powered financial calculators to help you make smarter money decisions — from mortgages and debt payoff to retirement and investments.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

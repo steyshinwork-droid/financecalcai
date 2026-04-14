@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "Plain-English definitions of the most important personal finance terms: compound interest, APR, net worth, 401(k), amortization, and more.",
   keywords:
     "personal finance glossary, financial terms, finance definitions, compound interest definition, APR meaning, net worth definition",
+  alternates: { canonical: "/glossary" },
 };
 
 const glossary: { term: string; definition: string; relatedHref?: string; relatedLabel?: string }[] = [

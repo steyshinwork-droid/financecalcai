@@ -10,11 +10,32 @@ export const metadata: Metadata = {
     "Calculate your federal tax bracket and effective tax rate. AI explains how marginal tax brackets work in plain English.",
   keywords:
     "tax bracket calculator, income tax calculator, federal tax calculator, marginal tax rate, effective tax rate",
+  alternates: { canonical: "/tax-bracket-calculator" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Tax Bracket Calculator",
+  url: "https://financecalcai.vercel.app/tax-bracket-calculator",
+  description:
+    "Free tax bracket calculator showing federal tax brackets and effective tax rate with AI explanations.",
+  applicationCategory: "FinanceApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
 };
 
 export default function TaxBracketPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Breadcrumb items={[{ label: "Tax Bracket Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">
