@@ -21,9 +21,16 @@ const categoryColors: Record<string, string> = {
   Retirement: "bg-indigo-100 text-indigo-700",
   "Personal Finance": "bg-teal-100 text-teal-700",
   "Net Worth": "bg-cyan-100 text-cyan-700",
+  Insurance: "bg-sky-100 text-sky-700",
+  "Real Estate": "bg-lime-100 text-lime-700",
+  Income: "bg-violet-100 text-violet-700",
+  Career: "bg-violet-100 text-violet-700",
+  "Financial Planning": "bg-teal-100 text-teal-700",
+  "Estate Planning": "bg-teal-100 text-teal-700",
+  Planning: "bg-teal-100 text-teal-700",
 };
 
-const categories = ["All", "Savings", "Debt", "Investing", "Budgeting", "Mortgage", "Taxes", "Credit", "Retirement", "Personal Finance", "Net Worth"];
+const categories = ["All", "Investing", "Budgeting", "Savings", "Debt", "Retirement", "Mortgage", "Taxes", "Credit", "Insurance", "Personal Finance", "Net Worth"];
 
 export default async function BlogPage({
   searchParams,
@@ -32,10 +39,11 @@ export default async function BlogPage({
 }) {
   const { category } = await searchParams;
   const activeCategory = category ?? "All";
+  const sorted = [...blogPosts].reverse();
   const filtered =
     activeCategory === "All"
-      ? blogPosts
-      : blogPosts.filter((p) => p.category === activeCategory);
+      ? sorted
+      : sorted.filter((p) => p.category === activeCategory);
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">

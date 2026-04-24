@@ -146,6 +146,13 @@ const categoryColors: Record<string, string> = {
   Retirement: "bg-indigo-100 text-indigo-700",
   "Personal Finance": "bg-teal-100 text-teal-700",
   "Net Worth": "bg-cyan-100 text-cyan-700",
+  Insurance: "bg-sky-100 text-sky-700",
+  "Real Estate": "bg-lime-100 text-lime-700",
+  Income: "bg-violet-100 text-violet-700",
+  Career: "bg-violet-100 text-violet-700",
+  "Financial Planning": "bg-teal-100 text-teal-700",
+  "Estate Planning": "bg-teal-100 text-teal-700",
+  Planning: "bg-teal-100 text-teal-700",
 };
 
 export default async function BlogPostPage({ params }: Props) {
@@ -232,7 +239,8 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Related Articles */}
       {(() => {
-        const related = blogPosts
+        const related = [...blogPosts]
+          .reverse()
           .filter((p) => p.category === post.category && p.slug !== slug)
           .slice(0, 3);
         if (related.length === 0) return null;

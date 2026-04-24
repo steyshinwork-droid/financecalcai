@@ -6514,7 +6514,7 @@ export const blogPosts: BlogPost[] = [
     description: "CDs offer guaranteed returns with zero risk — but there's a catch. Here's how certificates of deposit work, what rates to expect, and when they make sense for your savings.",
     date: "2025-04-09",
     readTime: "5 min read",
-    category: "Saving",
+    category: "Savings",
     relatedCalculator: { name: "Savings Goal Calculator", href: "/savings-goal-calculator" },
     content: [
       { type: "intro", text: "A certificate of deposit is one of the safest investments you can make — your principal is guaranteed and FDIC-insured up to $250,000. In return, you agree to lock up your money for a set period. If you have cash you won't need for 6–24 months, CDs can earn more than a standard savings account with zero risk." },
@@ -6544,7 +6544,7 @@ export const blogPosts: BlogPost[] = [
     description: "Money market accounts offer higher interest than regular savings with easy access to your funds. Here's how they work, what rates to expect, and when they beat a HYSA or CD.",
     date: "2025-04-10",
     readTime: "5 min read",
-    category: "Saving",
+    category: "Savings",
     relatedCalculator: { name: "Savings Goal Calculator", href: "/savings-goal-calculator" },
     content: [
       { type: "intro", text: "A money market account (MMA) is a type of savings account that typically earns more interest than a standard savings account while still giving you easy access to your money. It's one of the safest places to park cash you might need soon — and in today's rate environment, top MMAs pay 4–5% with no lock-up period." },
@@ -7664,7 +7664,7 @@ export const blogPosts: BlogPost[] = [
     description: "A 529 plan is the most tax-efficient way to save for education. Learn how it works, contribution limits, and how to open one.",
     date: "2026-04-05",
     readTime: "5 min read",
-    category: "Saving",
+    category: "Savings",
     relatedCalculator: { name: "Compound Interest Calculator", href: "/compound-interest-calculator" },
     content: [
       { type: "intro", text: "College costs have risen faster than inflation for decades. The average four-year public university now costs over $100,000 total; private universities can exceed $300,000. A 529 plan is the government's preferred tool for saving for education — with significant tax advantages. Here's how to use it." },
@@ -9054,7 +9054,7 @@ export const blogPosts: BlogPost[] = [
     description: "High-yield savings accounts pay 10–20x more than traditional banks. Here's how to choose one, open it online, and start earning more interest on your savings today.",
     date: "2026-04-23",
     readTime: "6 min read",
-    category: "Saving",
+    category: "Savings",
     relatedCalculator: { name: "Savings Goal Calculator", href: "/savings-goal-calculator" },
     content: [
       { type: "p", text: "The average traditional bank savings account pays 0.01–0.10% APY. High-yield savings accounts (HYSAs) at online banks regularly pay 4–5% APY. On $10,000, that's the difference between earning $10 a year versus $450 a year. Opening one takes about 10 minutes." },
@@ -9229,7 +9229,7 @@ export const blogPosts: BlogPost[] = [
     description: "The average American wedding costs $30,000. Learn how to set a realistic budget, save systematically, and avoid the debt trap that follows so many couples into marriage.",
     date: "2026-04-24",
     readTime: "6 min read",
-    category: "Saving",
+    category: "Savings",
     relatedCalculator: { name: "Savings Goal Calculator", href: "/savings-goal-calculator" },
     content: [
       { type: "p", text: "The average American wedding costs $30,000 — and that number climbs when you include the engagement ring, honeymoon, and related expenses. Most couples finance a significant portion, starting married life with debt. A smarter approach: set a number you can actually save, then build a wedding around that budget." },
