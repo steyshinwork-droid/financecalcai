@@ -5,11 +5,11 @@ import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Investment Return Calculator - Free AI-Powered | FinanceCalcAI",
+  title: "AI Investment Return Calculator — Free | FinanceCalcAI",
   description:
-    "Calculate your investment returns with different scenarios. Compare stocks, bonds, and other assets with AI-powered insights.",
+    "Free AI investment calculator. See how $1,000–$100,000 grows over 5–30 years. Compare stocks, ETFs, and bonds with personalized AI insights and instant projections.",
   keywords:
-    "investment calculator, investment return calculator, stock return calculator, ROI calculator",
+    "ai investment calculator, investment return calculator, free investment calculator, stock return calculator, ROI calculator, investment returns calculator",
   alternates: { canonical: "/investment-calculator" },
 };
 

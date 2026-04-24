@@ -5,11 +5,11 @@ import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Retirement Calculator - Free AI-Powered | FinanceCalcAI",
+  title: "AI Retirement Calculator — Free | When Can You Retire? | FinanceCalcAI",
   description:
-    "Calculate when you can retire and how much you need. AI-powered analysis with personalized advice on your retirement readiness.",
+    "Free AI retirement calculator. Find out exactly when you can retire and how much you need saved. Personalized readiness score, 4% rule analysis, and AI-powered advice.",
   keywords:
-    "retirement calculator, retirement planning calculator, when can I retire, how much do I need to retire, 401k calculator",
+    "ai retirement calculator, free ai retirement calculator, retirement calculator, retirement planning calculator, when can I retire, how much do I need to retire, 401k calculator",
   alternates: { canonical: "/retirement-calculator" },
 };
 
