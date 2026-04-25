@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "Investment Return Calculator",
+  name: "AI Investment Return Calculator",
   url: "https://financecalcai.vercel.app/investment-calculator",
   description:
     "Free investment return calculator comparing stocks, bonds, and other assets with AI insights.",
@@ -39,7 +39,7 @@ export default function InvestmentPage() {
       <Breadcrumb items={[{ label: "Investment Return Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-          Investment Return Calculator
+          AI Investment Return Calculator
         </h1>
         <p className="text-lg text-gray-600">
           Calculate potential returns on your investments. Compare different

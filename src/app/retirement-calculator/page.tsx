@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  name: "Retirement Calculator",
+  name: "AI Retirement Calculator",
   url: "https://financecalcai.vercel.app/retirement-calculator",
   description:
     "Free retirement calculator with 4% rule analysis and personalized retirement readiness score.",
@@ -39,7 +39,7 @@ export default function RetirementPage() {
       <Breadcrumb items={[{ label: "Retirement Calculator" }]} />
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-          Retirement Calculator
+          AI Retirement Calculator
         </h1>
         <p className="text-lg text-gray-600">
           Find out when you can retire and if you&apos;re saving enough. Our AI
