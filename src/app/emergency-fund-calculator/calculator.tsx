@@ -8,6 +8,16 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Sparkles, Info, Shield, Calendar } from "lucide-react";
+import {
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ReferenceLine,
+  ResponsiveContainer,
+} from "recharts";
 
 function useNumInput(initial: number) {
   const [str, setStr] = useState(String(initial));
@@ -34,7 +44,13 @@ export function EmergencyFundCalc() {
     const progress = targetFund > 0 ? Math.min(100, Math.round((currentFund / targetFund) * 100)) : 0;
     const coverageMonths = monthlyExpenses > 0 ? (currentFund / monthlyExpenses) : 0;
 
-    return { recommendedMonths, targetFund, remaining, monthsToGoal, progress, coverageMonths };
+    const chartMonths = monthlyContribution > 0 && monthsToGoal !== Infinity ? Math.min(monthsToGoal + 3, 60) : 24;
+    const chartData = Array.from({ length: chartMonths + 1 }, (_, i) => ({
+      month: i,
+      balance: Math.min(Math.round(currentFund + monthlyContribution * i), targetFund),
+    }));
+
+    return { recommendedMonths, targetFund, remaining, monthsToGoal, progress, coverageMonths, chartData };
   }, [monthlyExpensesStr, currentFundStr, monthlyContributionStr, dependentsStr, jobStability]);
 
   const aiInsight = useMemo(() => {
@@ -173,6 +189,34 @@ export function EmergencyFundCalc() {
               </CardContent>
             </Card>
           </div>
+
+          {results.monthsToGoal !== Infinity && (
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-base font-semibold text-gray-800">
+                  Savings Growth to Goal
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ResponsiveContainer width="100%" height={220}>
+                  <AreaChart data={results.chartData} margin={{ top: 4, right: 16, left: 0, bottom: 0 }}>
+                    <defs>
+                      <linearGradient id="colorFund" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="5%" stopColor="#0ea5e9" stopOpacity={0.3} />
+                        <stop offset="95%" stopColor="#0ea5e9" stopOpacity={0} />
+                      </linearGradient>
+                    </defs>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+                    <XAxis dataKey="month" tickFormatter={(v) => `${v}mo`} tick={{ fontSize: 11 }} tickLine={false} />
+                    <YAxis tickFormatter={(v) => `$${(v / 1000).toFixed(0)}k`} tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
+                    <Tooltip formatter={(value) => `$${Number(value).toLocaleString()}`} labelFormatter={(l) => `Month ${l}`} />
+                    <ReferenceLine y={results.targetFund} stroke="#10b981" strokeDasharray="4 4" label={{ value: "Goal", position: "right", fontSize: 11, fill: "#10b981" }} />
+                    <Area type="monotone" dataKey="balance" stroke="#0ea5e9" strokeWidth={2} fill="url(#colorFund)" dot={false} name="Emergency Fund" />
+                  </AreaChart>
+                </ResponsiveContainer>
+              </CardContent>
+            </Card>
+          )}
 
           <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">
             <CardHeader>

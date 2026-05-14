@@ -16,6 +16,16 @@ import {
   Plus,
   Trash2,
 } from "lucide-react";
+import {
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
 function useNumInput(initial: number) {
   const [str, setStr] = useState(String(initial));
@@ -61,7 +71,6 @@ function simulatePayoff(
   while (remaining.some((d) => d.balance > 0) && months < maxMonths) {
     months++;
 
-    // Sort by method
     const sorted = [...remaining].filter((d) => d.balance > 0);
     if (method === "avalanche") {
       sorted.sort((a, b) => b.rate - a.rate);
@@ -87,6 +96,43 @@ function simulatePayoff(
   }
 
   return { months, totalInterest };
+}
+
+function simulatePayoffChart(
+  debts: { id: string; name: string; balance: number; rate: number; minPayment: number }[],
+  extraPayment: number,
+  method: "avalanche" | "snowball"
+): { month: number; balance: number }[] {
+  const remaining = debts.map((d) => ({ ...d, balance: d.balance }));
+  const data: { month: number; balance: number }[] = [];
+  let months = 0;
+  const maxMonths = 600;
+
+  data.push({ month: 0, balance: Math.round(remaining.reduce((s, d) => s + d.balance, 0)) });
+
+  while (remaining.some((d) => d.balance > 0) && months < maxMonths) {
+    months++;
+
+    const sorted = [...remaining].filter((d) => d.balance > 0);
+    if (method === "avalanche") sorted.sort((a, b) => b.rate - a.rate);
+    else sorted.sort((a, b) => a.balance - b.balance);
+
+    for (const debt of remaining) {
+      if (debt.balance <= 0) continue;
+      const interest = debt.balance * (debt.rate / 100 / 12);
+      const isTarget = sorted[0]?.id === debt.id;
+      const payment = debt.minPayment + (isTarget ? extraPayment : 0);
+      const actualPayment = Math.min(payment, debt.balance + interest);
+      debt.balance = debt.balance + interest - actualPayment;
+      if (debt.balance < 0.01) debt.balance = 0;
+    }
+
+    if (months % 3 === 0 || !remaining.some((d) => d.balance > 0)) {
+      data.push({ month: months, balance: Math.round(remaining.reduce((s, d) => s + d.balance, 0)) });
+    }
+  }
+
+  return data;
 }
 
 export function DebtPayoffCalc() {
@@ -132,7 +178,18 @@ export function DebtPayoffCalc() {
 
     const totalDebt = validDebts.reduce((s, d) => s + d.balance, 0);
 
-    return { avalanche, snowball, noExtra, totalDebt };
+    const avalancheChart = simulatePayoffChart(validDebts, extraPayment, "avalanche");
+    const snowballChart = simulatePayoffChart(validDebts, extraPayment, "snowball");
+
+    // Merge by month for side-by-side comparison
+    const allMonths = Array.from(new Set([...avalancheChart.map((d) => d.month), ...snowballChart.map((d) => d.month)])).sort((a, b) => a - b);
+    const chartData = allMonths.map((month) => ({
+      month,
+      Avalanche: avalancheChart.find((d) => d.month === month)?.balance ?? 0,
+      Snowball: snowballChart.find((d) => d.month === month)?.balance ?? 0,
+    }));
+
+    return { avalanche, snowball, noExtra, totalDebt, chartData };
   }, [calculated, debts, extraPaymentStr]);
 
   const aiInsight = useMemo(() => {
@@ -311,6 +368,50 @@ export function DebtPayoffCalc() {
               </CardContent>
             </Card>
           </div>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base font-semibold text-gray-800">
+                Debt Balance Over Time
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ResponsiveContainer width="100%" height={260}>
+                <AreaChart data={results.chartData} margin={{ top: 4, right: 16, left: 0, bottom: 0 }}>
+                  <defs>
+                    <linearGradient id="colorAvalanche" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#10b981" stopOpacity={0.25} />
+                      <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
+                    </linearGradient>
+                    <linearGradient id="colorSnowball" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.25} />
+                      <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
+                    </linearGradient>
+                  </defs>
+                  <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+                  <XAxis
+                    dataKey="month"
+                    tickFormatter={(v) => `${v}mo`}
+                    tick={{ fontSize: 11 }}
+                    tickLine={false}
+                  />
+                  <YAxis
+                    tickFormatter={(v) => `$${(v / 1000).toFixed(0)}k`}
+                    tick={{ fontSize: 11 }}
+                    axisLine={false}
+                    tickLine={false}
+                  />
+                  <Tooltip
+                    formatter={(value) => `$${Number(value).toLocaleString()}`}
+                    labelFormatter={(label) => `Month ${label}`}
+                  />
+                  <Legend />
+                  <Area type="monotone" dataKey="Avalanche" stroke="#10b981" strokeWidth={2} fill="url(#colorAvalanche)" dot={false} />
+                  <Area type="monotone" dataKey="Snowball" stroke="#3b82f6" strokeWidth={2} fill="url(#colorSnowball)" dot={false} />
+                </AreaChart>
+              </ResponsiveContainer>
+            </CardContent>
+          </Card>
 
           <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">
             <CardHeader>

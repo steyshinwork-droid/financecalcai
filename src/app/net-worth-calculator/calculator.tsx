@@ -8,6 +8,16 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Sparkles, Info, Calendar } from "lucide-react";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  Cell,
+} from "recharts";
 
 function useNumInput(initial: number) {
   const [str, setStr] = useState(String(initial));
@@ -194,6 +204,40 @@ export function NetWorthCalc() {
               </CardContent>
             </Card>
           </div>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base font-semibold text-gray-800">
+                Assets vs Liabilities Breakdown
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              {(() => {
+                const summaryData = [
+                  { name: "Assets", value: results.totalAssets, fill: "#10b981" },
+                  { name: "Liabilities", value: results.totalLiabilities, fill: "#ef4444" },
+                  { name: "Your Net Worth", value: Math.max(0, results.netWorth), fill: results.netWorth >= 0 ? "#3b82f6" : "#f59e0b" },
+                  { name: "Median (Age " + age + ")", value: results.benchmark, fill: "#d1d5db" },
+                ];
+
+                return (
+                  <ResponsiveContainer width="100%" height={220}>
+                    <BarChart data={summaryData} layout="vertical" margin={{ top: 0, right: 16, left: 8, bottom: 0 }}>
+                      <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#f0f0f0" />
+                      <XAxis type="number" tickFormatter={(v) => `$${(v / 1000).toFixed(0)}k`} tick={{ fontSize: 11 }} axisLine={false} tickLine={false} />
+                      <YAxis type="category" dataKey="name" tick={{ fontSize: 11 }} width={120} axisLine={false} tickLine={false} />
+                      <Tooltip formatter={(value) => `$${Number(value).toLocaleString()}`} />
+                      <Bar dataKey="value" radius={[0, 4, 4, 0]}>
+                        {summaryData.map((entry, index) => (
+                          <Cell key={index} fill={entry.fill} />
+                        ))}
+                      </Bar>
+                    </BarChart>
+                  </ResponsiveContainer>
+                );
+              })()}
+            </CardContent>
+          </Card>
 
           <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">
             <CardHeader>
