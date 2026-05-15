@@ -61,6 +61,16 @@ const ALL_CALCULATORS: Record<string, { name: string; href: string; description:
     href: "/loan-comparison-calculator",
     description: "Compare two loans side by side.",
   },
+  "tip-calculator": {
+    name: "Tip Calculator",
+    href: "/tip-calculator",
+    description: "Calculate tip and split the bill instantly.",
+  },
+  "salary-calculator": {
+    name: "Salary Calculator",
+    href: "/salary-calculator",
+    description: "Convert salary between hourly, monthly, and annual.",
+  },
 };
 
 const RELATED_MAP: Record<string, string[]> = {
@@ -76,6 +86,8 @@ const RELATED_MAP: Record<string, string[]> = {
   "tax-bracket-calculator": ["retirement-calculator", "investment-calculator", "budget-calculator"],
   "credit-card-payoff-calculator": ["debt-payoff-calculator", "budget-calculator", "loan-comparison-calculator"],
   "loan-comparison-calculator": ["mortgage-calculator", "credit-card-payoff-calculator", "debt-payoff-calculator"],
+  "tip-calculator": ["budget-calculator", "salary-calculator", "loan-comparison-calculator"],
+  "salary-calculator": ["budget-calculator", "tax-bracket-calculator", "retirement-calculator"],
 };
 
 export function RelatedCalculators({ currentSlug }: { currentSlug: string }) {

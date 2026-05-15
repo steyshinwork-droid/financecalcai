@@ -17,6 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/tax-bracket-calculator",
     "/credit-card-payoff-calculator",
     "/loan-comparison-calculator",
+    "/tip-calculator",
+    "/salary-calculator",
   ];
 
   const blogSlugs = getAllSlugs();
