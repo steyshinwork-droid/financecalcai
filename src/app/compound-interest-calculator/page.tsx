@@ -3,6 +3,7 @@ import { CompoundInterestCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { AffiliateBanner } from "@/components/affiliate-banner";
 
 export const metadata: Metadata = {
   title: "Compound Interest Calculator - Free AI-Powered | FinanceCalcAI",
@@ -48,6 +49,10 @@ export default function CompoundInterestPage() {
       </div>
 
       <CompoundInterestCalc />
+
+      <div className="mt-10">
+        <AffiliateBanner variant="investing" />
+      </div>
 
       {/* SEO Content */}
       <section className="mt-16 space-y-8">

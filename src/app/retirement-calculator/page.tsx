@@ -3,6 +3,7 @@ import { RetirementCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { AffiliateBanner } from "@/components/affiliate-banner";
 
 export const metadata: Metadata = {
   title: "AI Retirement Calculator — Free | When Can You Retire? | FinanceCalcAI",
@@ -47,6 +48,10 @@ export default function RetirementPage() {
         </p>
       </div>
       <RetirementCalc />
+
+      <div className="mt-10">
+        <AffiliateBanner variant="investing" />
+      </div>
       <section className="mt-16 space-y-8">
         <div>
           <h2 className="mb-3 text-2xl font-bold text-gray-900">

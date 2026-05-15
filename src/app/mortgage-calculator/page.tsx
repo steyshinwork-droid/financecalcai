@@ -3,6 +3,7 @@ import { MortgageCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
+import { AffiliateBanner } from "@/components/affiliate-banner";
 
 export const metadata: Metadata = {
   title: "Mortgage Calculator - Free AI-Powered | FinanceCalcAI",
@@ -48,6 +49,10 @@ export default function MortgagePage() {
       </div>
 
       <MortgageCalc />
+
+      <div className="mt-10">
+        <AffiliateBanner variant="savings" />
+      </div>
 
       <section className="mt-16 space-y-8">
         <div>
