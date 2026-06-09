@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return {};
-  const url = `https://financecalcai.vercel.app/blog/${slug}`;
+  const url = `https://www.financecalcai.com/blog/${slug}`;
   const ogTitle = encodeURIComponent(post.title);
   const ogDesc = encodeURIComponent(post.description);
   return {
@@ -170,16 +170,16 @@ export default async function BlogPostPage({ params }: Props) {
     author: {
       "@type": "Organization",
       name: "FinanceCalcAI",
-      url: "https://financecalcai.vercel.app",
+      url: "https://www.financecalcai.com",
     },
     publisher: {
       "@type": "Organization",
       name: "FinanceCalcAI",
-      url: "https://financecalcai.vercel.app",
+      url: "https://www.financecalcai.com",
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://financecalcai.vercel.app/blog/${slug}`,
+      "@id": `https://www.financecalcai.com/blog/${slug}`,
     },
   };
 

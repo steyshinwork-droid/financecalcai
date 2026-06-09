@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { DebtPayoffCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { AffiliateBanner } from "@/components/affiliate-banner";
+import { FaqSection } from "@/components/faq-section";
 
 export const metadata: Metadata = {
   title: "Debt Payoff Calculator - Free AI-Powered | FinanceCalcAI",
@@ -18,7 +19,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Debt Payoff Calculator",
-  url: "https://financecalcai.vercel.app/debt-payoff-calculator",
+  url: "https://www.financecalcai.com/debt-payoff-calculator",
   description:
     "Free debt payoff calculator comparing snowball vs avalanche methods with AI recommendations.",
   applicationCategory: "FinanceApplication",
@@ -67,6 +68,13 @@ export default function DebtPayoffPage() {
         </div>
       </section>
 
+      <FaqSection items={[
+        { question: "What is the debt snowball method?", answer: "The debt snowball pays off debts from smallest balance to largest, regardless of interest rate. You pay minimums on all debts and throw every extra dollar at the smallest one. When it's gone, you roll that payment to the next. Studies show it has higher completion rates because the quick wins build momentum and motivation." },
+        { question: "What is the debt avalanche method?", answer: "The debt avalanche targets the highest interest rate first. You pay minimums on all debts and attack the highest-rate debt with any extra money. This is mathematically optimal — you pay less total interest and get debt-free faster. Best for disciplined people who can stay motivated without quick wins." },
+        { question: "Which debt payoff method saves more money?", answer: "The avalanche method saves more in total interest — sometimes hundreds or even thousands of dollars depending on your balances. However, the snowball method has higher real-world completion rates because of the psychological boost from eliminating debts quickly. The best method is the one you'll actually stick to." },
+        { question: "Should I pay off debt or invest?", answer: "A practical rule: if your debt interest rate is above 7%, prioritize paying it off — guaranteed return beats uncertain stock returns. If below 4%, invest instead (historically stock returns beat that). Between 4–7%, it's a judgment call. Always get your full 401(k) match first — that's an instant 50–100% return." },
+        { question: "How much extra should I pay on debt each month?", answer: "Even small extra payments make a huge difference. An extra $100/month on a $10,000 credit card at 20% APR cuts payoff time from 9+ years to under 3 years and saves thousands in interest. Use our calculator to see exactly how much extra payment changes your payoff date and total interest." },
+      ]} />
       <RelatedArticles calculatorHref="/debt-payoff-calculator" />
       <RelatedCalculators currentSlug="debt-payoff-calculator" />
       <script

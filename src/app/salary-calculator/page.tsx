@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { SalaryCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { AffiliateBanner } from "@/components/affiliate-banner";
+import { FaqSection } from "@/components/faq-section";
 
 export const metadata: Metadata = {
   title: "Salary Calculator — Hourly to Annual | FinanceCalcAI",
@@ -18,7 +19,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Salary Calculator",
-  url: "https://financecalcai.vercel.app/salary-calculator",
+  url: "https://www.financecalcai.com/salary-calculator",
   description: "Convert salary between hourly, weekly, monthly, and annual pay periods instantly.",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Any",
@@ -62,6 +63,13 @@ export default function SalaryCalculatorPage() {
         </div>
       </section>
 
+      <FaqSection items={[
+        { question: "How do I convert hourly wage to annual salary?", answer: "Multiply your hourly rate by the number of hours per week, then by 52 weeks. Standard formula: hourly × 40 hours × 52 = annual salary. Example: $25/hour × 40 × 52 = $52,000/year." },
+        { question: "What is a good hourly wage in the US?", answer: "The US median wage is about $28/hour ($59,000/year). The federal minimum wage is $7.25/hour, but many states are at $16–$17/hour. $20/hour ($41,600/year) is above the federal minimum; $30+/hour puts you above median income." },
+        { question: "How much of my salary should I save?", answer: "The standard rule is to save at least 20% of your income (the 50/30/20 rule: 50% needs, 30% wants, 20% savings). For retirement, aim to save 15% of gross income. Even 10% is a strong start if you're just beginning." },
+        { question: "What is the difference between gross and net salary?", answer: "Gross salary is what your employer pays before any deductions. Net salary (take-home pay) is what you receive after federal and state taxes, Social Security, Medicare, and any benefits deductions. Net pay is typically 70–80% of gross for most Americans." },
+        { question: "How do I negotiate a higher salary?", answer: "Research the market rate for your role using sites like Glassdoor and LinkedIn Salary. Come with a specific number (not a range), anchor high, and time the conversation after a win or performance review. Always negotiate — most employers expect it." },
+      ]} />
       <RelatedArticles calculatorHref="/salary-calculator" />
       <RelatedCalculators currentSlug="salary-calculator" />
 

@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { TaxBracketCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { AffiliateBanner } from "@/components/affiliate-banner";
+import { FaqSection } from "@/components/faq-section";
 
 export const metadata: Metadata = {
   title: "Tax Bracket Calculator - Free AI-Powered | FinanceCalcAI",
@@ -18,7 +19,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Tax Bracket Calculator",
-  url: "https://financecalcai.vercel.app/tax-bracket-calculator",
+  url: "https://www.financecalcai.com/tax-bracket-calculator",
   description:
     "Free tax bracket calculator showing federal tax brackets and effective tax rate with AI explanations.",
   applicationCategory: "FinanceApplication",
@@ -92,6 +93,13 @@ export default function TaxBracketPage() {
         </div>
       </section>
 
+      <FaqSection items={[
+        { question: "How do tax brackets work?", answer: "Tax brackets are progressive — you don't pay your top rate on all income. Each bracket only applies to income within that range. For example, if you're single and earn $50,000, you pay 10% on the first $11,600, 12% on income from $11,600–$47,150, and 22% only on income above $47,150." },
+        { question: "What is the difference between marginal and effective tax rate?", answer: "Your marginal tax rate is the rate on your last dollar of income — the bracket you're 'in.' Your effective tax rate is your actual average rate across all income. Someone in the 22% bracket typically has an effective rate of 12–15%, because most of their income was taxed at lower rates." },
+        { question: "What are the 2024 federal income tax brackets?", answer: "The 2024 brackets for single filers: 10% (up to $11,600), 12% ($11,600–$47,150), 22% ($47,150–$100,525), 24% ($100,525–$191,950), 32% ($191,950–$243,725), 35% ($243,725–$609,350), 37% (over $609,350). These apply after deductions." },
+        { question: "How can I lower my taxable income?", answer: "Contribute to pre-tax accounts like a 401(k) or Traditional IRA, max out your HSA, and itemize deductions if they exceed the standard deduction ($14,600 for single filers in 2024). Every dollar you reduce taxable income saves you money at your marginal rate." },
+        { question: "Does getting a raise put all my income in a higher bracket?", answer: "No — only the income above the bracket threshold is taxed at the higher rate. If a raise pushes $5,000 of your income into the next bracket, only those $5,000 are taxed at the higher rate. The rest is still taxed at lower rates." },
+      ]} />
       <RelatedArticles calculatorHref="/tax-bracket-calculator" />
       <RelatedCalculators currentSlug="tax-bracket-calculator" />
       <script

@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { MortgageCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { AffiliateBanner } from "@/components/affiliate-banner";
+import { FaqSection } from "@/components/faq-section";
 
 export const metadata: Metadata = {
   title: "Mortgage Calculator - Free AI-Powered | FinanceCalcAI",
@@ -18,7 +19,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Mortgage Calculator",
-  url: "https://financecalcai.vercel.app/mortgage-calculator",
+  url: "https://www.financecalcai.com/mortgage-calculator",
   description:
     "Free mortgage calculator with AI-powered affordability analysis. Calculate monthly payments and amortization.",
   applicationCategory: "FinanceApplication",
@@ -79,6 +80,13 @@ export default function MortgagePage() {
         </div>
       </section>
 
+      <FaqSection items={[
+        { question: "How is a monthly mortgage payment calculated?", answer: "Your monthly payment is calculated using the loan amount, interest rate, and loan term. The formula is M = P[r(1+r)^n]/[(1+r)^n-1], where P is the principal, r is the monthly interest rate, and n is the number of payments. Our calculator does this automatically." },
+        { question: "What is the 28/36 rule for mortgages?", answer: "The 28/36 rule says your monthly housing costs (mortgage, taxes, insurance) should not exceed 28% of your gross monthly income, and total debt payments should not exceed 36%. This is the standard affordability guideline lenders use." },
+        { question: "How much do I need for a down payment?", answer: "The standard down payment is 20% to avoid PMI (private mortgage insurance). However, many programs allow as little as 3–5% down. FHA loans require 3.5% with a 580+ credit score. A larger down payment means lower monthly payments and less interest paid overall." },
+        { question: "Should I choose a 15-year or 30-year mortgage?", answer: "A 30-year mortgage has lower monthly payments but costs significantly more in total interest. A 15-year mortgage saves tens of thousands in interest but requires higher monthly payments — typically 30–40% more. Choose 15 years if you can comfortably afford it; 30 years if cash flow is a priority." },
+        { question: "What credit score do I need to get a mortgage?", answer: "Most conventional loans require a 620+ credit score. FHA loans accept scores as low as 500 (with 10% down) or 580 (with 3.5% down). The higher your score, the better your interest rate — a difference of 0.5% can save you thousands over the life of the loan." },
+      ]} />
       <RelatedArticles calculatorHref="/mortgage-calculator" />
       <RelatedCalculators currentSlug="mortgage-calculator" />
       <script

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import {
   TrendingUp,
   Home,
@@ -20,6 +20,12 @@ import {
   Tag,
   BadgePercent,
   ArrowLeftRight,
+  Car,
+  Percent,
+  Briefcase,
+  Activity,
+  GraduationCap,
+  DollarSign,
 } from "lucide-react";
 import {
   Card,
@@ -89,7 +95,7 @@ const calculators = [
     icon: Clock,
     color: "text-indigo-600",
     bg: "bg-indigo-50",
-    badge: "New",
+    badge: null,
   },
   {
     title: "Investment Return Calculator",
@@ -99,7 +105,7 @@ const calculators = [
     icon: BarChart3,
     color: "text-cyan-600",
     bg: "bg-cyan-50",
-    badge: "New",
+    badge: null,
   },
   {
     title: "Net Worth Calculator",
@@ -139,7 +145,7 @@ const calculators = [
     icon: BadgePercent,
     color: "text-pink-600",
     bg: "bg-pink-50",
-    badge: "New",
+    badge: null,
   },
   {
     title: "Loan Comparison Calculator",
@@ -149,6 +155,96 @@ const calculators = [
     icon: ArrowLeftRight,
     color: "text-violet-600",
     bg: "bg-violet-50",
+    badge: null,
+  },
+  {
+    title: "Tip Calculator",
+    description:
+      "Calculate tip and split the bill instantly. Choose any tip percentage and split between any number of people.",
+    href: "/tip-calculator",
+    icon: Percent,
+    color: "text-lime-600",
+    bg: "bg-lime-50",
+    badge: null,
+  },
+  {
+    title: "Salary Calculator",
+    description:
+      "Convert any salary to hourly, daily, weekly, or monthly pay. Get a take-home pay estimate instantly.",
+    href: "/salary-calculator",
+    icon: Briefcase,
+    color: "text-slate-600",
+    bg: "bg-slate-50",
+    badge: null,
+  },
+  {
+    title: "Inflation Calculator",
+    description:
+      "See how inflation erodes purchasing power over time. Uses real US CPI data from 1990 to 2025.",
+    href: "/inflation-calculator",
+    icon: Activity,
+    color: "text-orange-600",
+    bg: "bg-orange-50",
+    badge: "New",
+  },
+  {
+    title: "Loan Calculator",
+    description:
+      "Calculate monthly payment and total interest for any personal loan. AI checks if the loan fits your budget.",
+    href: "/loan-calculator",
+    icon: Calculator,
+    color: "text-blue-600",
+    bg: "bg-blue-50",
+    badge: "New",
+  },
+  {
+    title: "Car Affordability Calculator",
+    description:
+      "Find out how much car you can truly afford. See full cost of ownership including insurance and fuel.",
+    href: "/car-affordability-calculator",
+    icon: Car,
+    color: "text-sky-600",
+    bg: "bg-sky-50",
+    badge: "New",
+  },
+  {
+    title: "Rent vs. Buy Calculator",
+    description:
+      "Compare the true cost of renting vs. buying a home. See break-even point, equity built, and AI analysis.",
+    href: "/rent-vs-buy-calculator",
+    icon: Home,
+    color: "text-emerald-600",
+    bg: "bg-emerald-50",
+    badge: "New",
+  },
+  {
+    title: "Student Loan Calculator",
+    description:
+      "See how fast you can pay off student loans and how much interest extra payments save. AI recommends the best strategy.",
+    href: "/student-loan-calculator",
+    icon: GraduationCap,
+    color: "text-violet-600",
+    bg: "bg-violet-50",
+    badge: "New",
+  },
+  {
+    title: "Home Affordability Calculator",
+    description:
+      "Find out how much house you can afford. Get max home price, monthly payment breakdown, and DTI analysis with AI insights.",
+    href: "/home-affordability-calculator",
+    icon: Home,
+    color: "text-blue-600",
+    bg: "bg-blue-50",
+    badge: null,
+  },
+  {
+    title: "Paycheck Calculator",
+    description:
+      "See your exact take-home pay after federal taxes, Social Security, Medicare, state tax, and 401(k). Uses 2025 tax brackets.",
+    href: "/paycheck-calculator",
+    icon: DollarSign,
+    color: "text-amber-600",
+    bg: "bg-amber-50",
     badge: "New",
   },
 ];
@@ -178,12 +274,12 @@ const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "FinanceCalcAI",
-  url: "https://financecalcai.vercel.app",
+  url: "https://www.financecalcai.com",
   description:
     "Free AI-powered financial calculators with personalized insights.",
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://financecalcai.vercel.app/?q={search_term_string}",
+    target: "https://www.financecalcai.com/?q={search_term_string}",
     "query-input": "required name=search_term_string",
   },
 };
@@ -192,7 +288,7 @@ const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "FinanceCalcAI",
-  url: "https://financecalcai.vercel.app",
+  url: "https://www.financecalcai.com",
   description:
     "Free AI-powered financial calculators to help you make smarter money decisions.",
 };

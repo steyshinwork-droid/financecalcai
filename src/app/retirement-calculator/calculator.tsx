@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Calendar, Percent, Sparkles, Info } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   AreaChart,
   Area,
@@ -248,6 +249,20 @@ export function RetirementCalc() {
               </div>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="retirement"
+              title={`Age ${age}→${retireAge}, $${monthlyContribution}/mo, ${rate}% return`}
+              inputs={{ age, retireAge, currentSavings, monthlyContribution, rate, annualExpenses }}
+              results={{
+                retirementBalance: results.retirementBalance,
+                monthlyRetirementIncome: Math.round(results.monthlyRetirementIncome),
+                readinessScore: results.readinessScore,
+                lastingYears: results.lastingYears,
+              }}
+            />
+          </div>
 
           <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">
             <CardHeader>

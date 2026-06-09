@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Calendar, Sparkles, Info, TrendingUp } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   LineChart,
   Line,
@@ -190,6 +191,20 @@ export function InvestmentCalc() {
               </div>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="investment"
+              title={`$${initialStr} initial, $${monthlyStr}/mo, ${yearsStr}yr`}
+              inputs={{ initial: initialStr, monthly: monthlyStr, years: yearsStr }}
+              results={{
+                moderate: Math.round(scenarios.moderate.finalBalance),
+                conservative: Math.round(scenarios.conservative.finalBalance),
+                aggressive: Math.round(scenarios.aggressive.finalBalance),
+                totalContributed: Math.round(totalContributed),
+              }}
+            />
+          </div>
 
           <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">
             <CardHeader>

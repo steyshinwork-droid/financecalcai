@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { EmergencyFundCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { AffiliateBanner } from "@/components/affiliate-banner";
+import { FaqSection } from "@/components/faq-section";
 
 export const metadata: Metadata = {
   title: "Emergency Fund Calculator - Free AI-Powered | FinanceCalcAI",
@@ -18,7 +19,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Emergency Fund Calculator",
-  url: "https://financecalcai.vercel.app/emergency-fund-calculator",
+  url: "https://www.financecalcai.com/emergency-fund-calculator",
   description:
     "Free emergency fund calculator calculating how much you need with personalized savings plan.",
   applicationCategory: "FinanceApplication",
@@ -90,6 +91,13 @@ export default function EmergencyFundPage() {
         </div>
       </section>
 
+      <FaqSection items={[
+        { question: "How much should I have in an emergency fund?", answer: "3–6 months of essential living expenses (rent/mortgage, utilities, groceries, insurance, minimum debt payments). Stable job, no dependents: 3 months is fine. Self-employed, variable income, or with dependents: 6 months minimum. Two-income households can often manage 3 months since both would need to lose their jobs simultaneously." },
+        { question: "Where should I keep my emergency fund?", answer: "A high-yield savings account (HYSA) earning 4–5% APY. It should be: separate from your checking (out of sight, out of mind), FDIC-insured, and accessible within 1–2 business days. Don't invest emergency funds in stocks — markets can drop 30–50% right when you need the money. Don't keep it in a regular savings account earning 0.01%." },
+        { question: "How long does it take to build an emergency fund?", answer: "At $500/month: a $15,000 fund takes 30 months. At $1,000/month: 15 months. At $200/month: ~6 years. Speed tip: set up automatic transfer on payday, use tax refunds and bonuses to make lump-sum contributions. Start with a $1,000 'starter' emergency fund as your first goal, then build to 3–6 months." },
+        { question: "Should I have an emergency fund before investing?", answer: "Yes — build a $1,000 starter emergency fund before investing (except for getting your full 401k employer match, which is essentially free money). Without an emergency fund, any unexpected expense forces you to sell investments at a bad time or go into high-interest debt. The order: 401k match → $1,000 emergency fund → high-interest debt → full 3–6 month fund → then invest aggressively." },
+        { question: "Is $10,000 a good emergency fund?", answer: "$10,000 is solid for most single people or couples without children in average-cost-of-living areas. Whether it's 'enough' depends on your monthly expenses. If you spend $3,000/month on essentials, $10,000 covers ~3 months — adequate for someone with stable employment. If you spend $5,000/month, $10,000 is only 2 months — consider building to $15,000–$20,000." },
+      ]} />
       <RelatedArticles calculatorHref="/emergency-fund-calculator" />
       <RelatedCalculators currentSlug="emergency-fund-calculator" />
       <script

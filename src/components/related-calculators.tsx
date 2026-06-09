@@ -71,6 +71,41 @@ const ALL_CALCULATORS: Record<string, { name: string; href: string; description:
     href: "/salary-calculator",
     description: "Convert salary between hourly, monthly, and annual.",
   },
+  "inflation-calculator": {
+    name: "Inflation Calculator",
+    href: "/inflation-calculator",
+    description: "See how inflation erodes purchasing power over time.",
+  },
+  "loan-calculator": {
+    name: "Loan Calculator",
+    href: "/loan-calculator",
+    description: "Calculate monthly payment and total interest for any loan.",
+  },
+  "car-affordability-calculator": {
+    name: "Car Affordability Calculator",
+    href: "/car-affordability-calculator",
+    description: "Find out how much car you can truly afford.",
+  },
+  "rent-vs-buy-calculator": {
+    name: "Rent vs. Buy Calculator",
+    href: "/rent-vs-buy-calculator",
+    description: "See whether renting or buying a home is the smarter financial move.",
+  },
+  "student-loan-calculator": {
+    name: "Student Loan Calculator",
+    href: "/student-loan-calculator",
+    description: "See how fast you can pay off student loans with extra payments.",
+  },
+  "home-affordability-calculator": {
+    name: "Home Affordability Calculator",
+    href: "/home-affordability-calculator",
+    description: "See how much house you can afford based on your income and debts.",
+  },
+  "paycheck-calculator": {
+    name: "Paycheck Calculator",
+    href: "/paycheck-calculator",
+    description: "See your exact take-home pay after taxes and deductions.",
+  },
 };
 
 const RELATED_MAP: Record<string, string[]> = {
@@ -88,6 +123,13 @@ const RELATED_MAP: Record<string, string[]> = {
   "loan-comparison-calculator": ["mortgage-calculator", "credit-card-payoff-calculator", "debt-payoff-calculator"],
   "tip-calculator": ["budget-calculator", "salary-calculator", "loan-comparison-calculator"],
   "salary-calculator": ["budget-calculator", "tax-bracket-calculator", "retirement-calculator"],
+  "inflation-calculator": ["compound-interest-calculator", "investment-calculator", "retirement-calculator"],
+  "loan-calculator": ["debt-payoff-calculator", "credit-card-payoff-calculator", "loan-comparison-calculator"],
+  "car-affordability-calculator": ["loan-calculator", "budget-calculator", "loan-comparison-calculator"],
+  "rent-vs-buy-calculator": ["mortgage-calculator", "budget-calculator", "investment-calculator"],
+  "student-loan-calculator": ["debt-payoff-calculator", "budget-calculator", "loan-calculator"],
+  "home-affordability-calculator": ["mortgage-calculator", "rent-vs-buy-calculator", "budget-calculator"],
+  "paycheck-calculator": ["budget-calculator", "tax-bracket-calculator", "salary-calculator"],
 };
 
 export function RelatedCalculators({ currentSlug }: { currentSlug: string }) {

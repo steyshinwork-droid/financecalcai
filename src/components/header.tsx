@@ -1,8 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { Calculator, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { Calculator, Menu, X, User, LogOut, LayoutDashboard, Crown } from "lucide-react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { createClient } from "@/lib/supabase";
+import type { User as SupabaseUser } from "@supabase/supabase-js";
 
 const calculators = [
   { name: "Compound Interest", href: "/compound-interest-calculator" },
@@ -17,10 +20,34 @@ const calculators = [
   { name: "Tax Bracket", href: "/tax-bracket-calculator" },
   { name: "Credit Card Payoff", href: "/credit-card-payoff-calculator" },
   { name: "Loan Comparison", href: "/loan-comparison-calculator" },
+  { name: "Rent vs. Buy", href: "/rent-vs-buy-calculator" },
+  { name: "Student Loan", href: "/student-loan-calculator" },
+  { name: "Home Affordability", href: "/home-affordability-calculator" },
+  { name: "Paycheck", href: "/paycheck-calculator" },
 ];
 
 export function Header() {
+  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [userMenuOpen, setUserMenuOpen] = useState(false);
+  const [user, setUser] = useState<SupabaseUser | null>(null);
+
+  useEffect(() => {
+    const supabase = createClient();
+    supabase.auth.getUser().then(({ data }) => setUser(data.user));
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null);
+    });
+    return () => subscription.unsubscribe();
+  }, []);
+
+  async function handleSignOut() {
+    const supabase = createClient();
+    await supabase.auth.signOut();
+    setUserMenuOpen(false);
+    router.push("/");
+    router.refresh();
+  }
 
   return (
     <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur-md">
@@ -57,11 +84,66 @@ export function Header() {
             Blog
           </Link>
           <Link
-            href="/glossary"
-            className="text-sm font-medium text-emerald-600 transition hover:text-emerald-700"
+            href="/pricing"
+            className="text-sm font-medium text-gray-600 transition hover:text-emerald-600"
           >
-            Glossary
+            Pricing
           </Link>
+
+          {user ? (
+            <div className="relative">
+              <button
+                onClick={() => setUserMenuOpen(!userMenuOpen)}
+                className="flex items-center gap-2 rounded-lg border border-gray-200 px-3 py-1.5 text-sm font-medium text-gray-700 transition hover:border-emerald-300 hover:text-emerald-600"
+              >
+                <User className="h-4 w-4" />
+                <span className="max-w-[120px] truncate">{user.email?.split("@")[0]}</span>
+              </button>
+              {userMenuOpen && (
+                <div className="absolute right-0 mt-2 w-48 rounded-xl border bg-white p-1 shadow-lg">
+                  <Link
+                    href="/dashboard"
+                    onClick={() => setUserMenuOpen(false)}
+                    className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                  >
+                    <LayoutDashboard className="h-4 w-4" />
+                    Dashboard
+                  </Link>
+                  <Link
+                    href="/pricing"
+                    onClick={() => setUserMenuOpen(false)}
+                    className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                  >
+                    <Crown className="h-4 w-4 text-yellow-500" />
+                    Upgrade to PRO
+                  </Link>
+                  <hr className="my-1" />
+                  <button
+                    onClick={handleSignOut}
+                    className="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm text-red-600 hover:bg-red-50"
+                  >
+                    <LogOut className="h-4 w-4" />
+                    Sign out
+                  </button>
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="flex items-center gap-2">
+              <Link
+                href="/login"
+                className="text-sm font-medium text-gray-600 transition hover:text-emerald-600"
+              >
+                Sign in
+              </Link>
+              <Link
+                href="/signup"
+                className="rounded-lg bg-emerald-600 px-3 py-1.5 text-sm font-semibold text-white transition hover:bg-emerald-700"
+              >
+                Get PRO
+              </Link>
+            </div>
+          )}
         </nav>
 
         <button
@@ -93,12 +175,47 @@ export function Header() {
             Blog
           </Link>
           <Link
-            href="/glossary"
-            className="block py-2 font-medium text-emerald-600 transition hover:text-emerald-700"
+            href="/pricing"
+            className="block py-2 font-medium text-gray-600 transition hover:text-emerald-600"
             onClick={() => setMenuOpen(false)}
           >
-            Glossary
+            Pricing
           </Link>
+          <hr className="my-2" />
+          {user ? (
+            <>
+              <Link
+                href="/dashboard"
+                className="block py-2 font-medium text-emerald-600"
+                onClick={() => setMenuOpen(false)}
+              >
+                Dashboard
+              </Link>
+              <button
+                onClick={() => { handleSignOut(); setMenuOpen(false); }}
+                className="block py-2 text-sm text-red-600"
+              >
+                Sign out
+              </button>
+            </>
+          ) : (
+            <div className="flex gap-3 pt-2">
+              <Link
+                href="/login"
+                className="flex-1 rounded-lg border py-2 text-center text-sm font-medium text-gray-700"
+                onClick={() => setMenuOpen(false)}
+              >
+                Sign in
+              </Link>
+              <Link
+                href="/signup"
+                className="flex-1 rounded-lg bg-emerald-600 py-2 text-center text-sm font-semibold text-white"
+                onClick={() => setMenuOpen(false)}
+              >
+                Get PRO
+              </Link>
+            </div>
+          )}
         </nav>
       )}
     </header>

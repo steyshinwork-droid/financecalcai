@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://financecalcai.vercel.app"),
+  metadataBase: new URL("https://www.financecalcai.com"),
   title: {
     default: "FinanceCalcAI - Free AI-Powered Financial Calculators",
     template: "%s | FinanceCalcAI",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description:
     "Free AI-powered financial calculators with personalized insights. Mortgage, compound interest, budget, debt payoff, retirement, investment, net worth, tax bracket and more.",
   keywords:
-    "financial calculator, AI calculator, mortgage calculator, compound interest calculator, budget calculator, debt payoff calculator, retirement calculator, investment calculator, net worth calculator, tax bracket calculator",
+    "financial calculator, AI calculator, mortgage calculator, compound interest calculator, budget calculator, debt payoff calculator, retirement calculator, investment calculator, net worth calculator, tax bracket calculator, inflation calculator, loan calculator, car affordability calculator, tip calculator, salary calculator, credit card payoff calculator",
   alternates: { canonical: "/" },
   verification: {
     other: {

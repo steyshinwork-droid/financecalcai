@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/breadcrumb";
 
@@ -179,7 +179,7 @@ const jsonLd = {
   "@type": "DefinedTermSet",
   name: "Personal Finance Glossary",
   description: "Definitions of common personal finance terms",
-  url: "https://financecalcai.vercel.app/glossary",
+  url: "https://www.financecalcai.com/glossary",
   hasDefinedTerm: glossary.map((g) => ({
     "@type": "DefinedTerm",
     name: g.term,

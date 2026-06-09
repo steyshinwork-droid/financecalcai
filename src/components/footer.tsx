@@ -84,6 +84,26 @@ export function Footer() {
                   Loan Comparison
                 </Link>
               </li>
+              <li>
+                <Link href="/rent-vs-buy-calculator" className="hover:text-emerald-600">
+                  Rent vs. Buy
+                </Link>
+              </li>
+              <li>
+                <Link href="/student-loan-calculator" className="hover:text-emerald-600">
+                  Student Loan
+                </Link>
+              </li>
+              <li>
+                <Link href="/home-affordability-calculator" className="hover:text-emerald-600">
+                  Home Affordability
+                </Link>
+              </li>
+              <li>
+                <Link href="/paycheck-calculator" className="hover:text-emerald-600">
+                  Paycheck
+                </Link>
+              </li>
             </ul>
           </div>
 

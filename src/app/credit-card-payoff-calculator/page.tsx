@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { CreditCardPayoffCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { AffiliateBanner } from "@/components/affiliate-banner";
+import { FaqSection } from "@/components/faq-section";
 
 export const metadata: Metadata = {
   title: "Credit Card Payoff Calculator - Free | FinanceCalcAI",
@@ -18,7 +19,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Credit Card Payoff Calculator",
-  url: "https://financecalcai.vercel.app/credit-card-payoff-calculator",
+  url: "https://www.financecalcai.com/credit-card-payoff-calculator",
   description:
     "Free credit card payoff calculator comparing your plan vs minimum payments with AI advice.",
   applicationCategory: "FinanceApplication",
@@ -94,6 +95,13 @@ export default function CreditCardPayoffPage() {
         </div>
       </section>
 
+      <FaqSection items={[
+        { question: "How long does it take to pay off a credit card?", answer: "On a $5,000 balance at 22% APR: paying $200/month takes ~32 months and costs $1,300 in interest. Paying $350/month cuts it to ~16 months and saves $700. Paying only minimums (~$100/month initially) takes 25+ years and costs more than the original debt. Our calculator shows your exact timeline." },
+        { question: "What happens if I only pay the minimum on my credit card?", answer: "Minimum payments are designed to maximize interest. On a $5,000 balance at 22% APR, the minimum might start at $100 and slowly decrease as the balance drops — meaning you're barely covering interest charges. This can drag payoff out 25+ years and cost $6,000+ in interest on a $5,000 debt. Always pay more than the minimum." },
+        { question: "Can I transfer my credit card balance to a 0% APR card?", answer: "Yes, if your credit score is 670+. Balance transfer cards offer 0% APR for 12–21 months. A $5,000 balance paid at $300/month with 0% APR is gone in 17 months with $0 interest, vs $1,800+ at 22% APR. Watch for: transfer fees (typically 3–5% of balance), and what happens if you don't pay off the full balance before the promotional period ends." },
+        { question: "How can I pay off credit card debt faster?", answer: "Three most effective strategies: (1) Pay more than minimum — even $50 extra/month makes a massive difference over time. (2) Use the avalanche method — put all extra money toward the highest APR card. (3) Balance transfer to 0% APR if you qualify. Also consider: cutting a recurring subscription, selling something, or picking up extra work to accelerate payoff." },
+        { question: "What is the average credit card interest rate?", answer: "As of 2024, the average US credit card APR is around 21–22% — the highest in decades due to Federal Reserve rate hikes. Rewards cards tend to have higher APRs (22–27%). Store cards often charge 25–30%+. If you carry a balance, look for cards with lower purchase APRs rather than focusing on rewards." },
+      ]} />
       <RelatedArticles calculatorHref="/credit-card-payoff-calculator" />
       <RelatedCalculators currentSlug="credit-card-payoff-calculator" />
 

@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { RetirementCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { AffiliateBanner } from "@/components/affiliate-banner";
+import { FaqSection } from "@/components/faq-section";
 
 export const metadata: Metadata = {
   title: "AI Retirement Calculator — Free | When Can You Retire? | FinanceCalcAI",
@@ -18,7 +19,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "AI Retirement Calculator",
-  url: "https://financecalcai.vercel.app/retirement-calculator",
+  url: "https://www.financecalcai.com/retirement-calculator",
   description:
     "Free retirement calculator with 4% rule analysis and personalized retirement readiness score.",
   applicationCategory: "FinanceApplication",
@@ -66,6 +67,13 @@ export default function RetirementPage() {
         </div>
       </section>
 
+      <FaqSection items={[
+        { question: "How much do I need to retire?", answer: "Using the 4% rule, you need 25× your annual expenses saved. If you spend $50,000/year, you need $1,250,000. If you spend $80,000/year, you need $2,000,000. Our calculator factors in your current savings, monthly contributions, and expected return to show exactly when you'll hit your number." },
+        { question: "How much should I have saved for retirement by age?", answer: "Fidelity's guidelines: by age 30 — 1× your salary; by 40 — 3×; by 50 — 6×; by 60 — 8×; by 67 — 10×. These assume you want to maintain your current lifestyle. If you plan to spend less in retirement, you need less saved." },
+        { question: "What is the 4% rule in retirement?", answer: "The 4% rule says you can withdraw 4% of your portfolio in year one, then adjust for inflation each year, with a high probability of your money lasting 30+ years. It's based on historical stock and bond market data going back to 1926. At 3.5% withdrawal rate you have even more safety margin." },
+        { question: "When can I start collecting Social Security?", answer: "You can claim Social Security as early as age 62 (reduced benefit) or as late as 70 (maximum benefit). Full retirement age is 66–67 depending on your birth year. Waiting from 62 to 70 increases your benefit by roughly 76%. Our calculator lets you factor in Social Security income." },
+        { question: "Is a 401(k) or IRA better for retirement savings?", answer: "Both are valuable and you should use both if possible. A 401(k) has higher contribution limits ($23,000/year in 2024) and often includes employer matching — always get the full match first. A Roth IRA offers tax-free growth and withdrawals. Max your 401(k) match, then fund a Roth IRA, then go back to the 401(k)." },
+      ]} />
       <RelatedArticles calculatorHref="/retirement-calculator" />
       <RelatedCalculators currentSlug="retirement-calculator" />
       <script

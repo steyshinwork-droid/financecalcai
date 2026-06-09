@@ -16,6 +16,7 @@ import {
   Info,
   Target,
 } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   AreaChart,
   Area,
@@ -296,6 +297,19 @@ export function SavingsGoalCalc() {
               </div>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="savings-goal"
+              title={`Save $${goalStr} in ${monthsStr} months`}
+              inputs={{ goal: goalStr, currentSavings: currentSavingsStr, months: monthsStr, rate: rateStr }}
+              results={{
+                monthlySavings: Math.round(results.monthlySavings),
+                totalContributed: Math.round(results.totalContributed),
+                interestEarned: Math.round(results.interestEarned),
+              }}
+            />
+          </div>
 
           <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">
             <CardHeader>

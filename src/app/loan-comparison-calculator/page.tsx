@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { LoanComparisonCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { AffiliateBanner } from "@/components/affiliate-banner";
+import { FaqSection } from "@/components/faq-section";
 
 export const metadata: Metadata = {
   title: "Loan Comparison Calculator - Compare Two Loans | FinanceCalcAI",
@@ -18,7 +19,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Loan Comparison Calculator",
-  url: "https://financecalcai.vercel.app/loan-comparison-calculator",
+  url: "https://www.financecalcai.com/loan-comparison-calculator",
   description:
     "Free loan comparison calculator comparing two loans side by side with AI analysis.",
   applicationCategory: "FinanceApplication",
@@ -93,6 +94,13 @@ export default function LoanComparisonPage() {
         </div>
       </section>
 
+      <FaqSection items={[
+        { question: "What is the difference between APR and interest rate?", answer: "The interest rate is the base cost of borrowing. The APR (Annual Percentage Rate) includes the interest rate plus all fees and costs, giving you the true annual cost. Always compare APRs — not just interest rates — when evaluating loan offers." },
+        { question: "Is a lower monthly payment always better?", answer: "Not necessarily. A lower monthly payment usually means a longer term, which means you pay more total interest. Compare both monthly payment and total cost. If you can afford the higher payment, the shorter loan usually saves you more money overall." },
+        { question: "How do I compare two loan offers?", answer: "Compare three numbers: APR (true cost), monthly payment (cash flow impact), and total cost (principal + all interest paid). Use a loan comparison calculator to see all three side by side — the right choice depends on your cash flow and financial priorities." },
+        { question: "Should I choose a longer or shorter loan term?", answer: "Shorter terms mean higher monthly payments but less total interest. Longer terms free up monthly cash but cost significantly more over time. A 3-year auto loan vs a 6-year loan on $25,000 at 7% saves over $2,800 in interest with the shorter term." },
+        { question: "What fees should I watch out for in a loan?", answer: "Key fees: origination fees (1–8% of loan amount), prepayment penalties (charged if you pay off early), late payment fees, and balloon payments. Always ask for the full fee schedule and factor them into your APR comparison." },
+      ]} />
       <RelatedArticles calculatorHref="/loan-comparison-calculator" />
       <RelatedCalculators currentSlug="loan-comparison-calculator" />
 

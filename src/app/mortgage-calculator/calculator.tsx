@@ -16,6 +16,7 @@ import {
   Info,
   PieChart,
 } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   BarChart,
   Bar,
@@ -352,6 +353,20 @@ export function MortgageCalc() {
               </div>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="mortgage"
+              title={`${formatMoney(homePrice)} home, ${rate}%, ${years}yr`}
+              inputs={{ homePrice, downPayment, rate, years, income }}
+              results={{
+                monthlyPayment: Math.round(results.monthlyPayment),
+                loanAmount: results.loanAmount,
+                totalPaid: Math.round(results.totalPaid),
+                totalInterest: Math.round(results.totalInterest),
+              }}
+            />
+          </div>
 
           <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">
             <CardHeader>

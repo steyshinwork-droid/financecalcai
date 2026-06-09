@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -28,7 +28,7 @@ export default function PrivacyPage() {
             is committed to protecting your privacy. This Privacy Policy
             explains how we collect, use, and safeguard your information when
             you visit{" "}
-            <span className="text-emerald-600">financecalcai.vercel.app</span>.
+            <span className="text-emerald-600">www.financecalcai.com</span>.
           </p>
         </section>
 

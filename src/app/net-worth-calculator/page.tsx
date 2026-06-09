@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { NetWorthCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { AffiliateBanner } from "@/components/affiliate-banner";
+import { FaqSection } from "@/components/faq-section";
 
 export const metadata: Metadata = {
   title: "Net Worth Calculator - Free AI-Powered | FinanceCalcAI",
@@ -18,7 +19,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Net Worth Calculator",
-  url: "https://financecalcai.vercel.app/net-worth-calculator",
+  url: "https://www.financecalcai.com/net-worth-calculator",
   description:
     "Free net worth calculator tracking assets vs liabilities with AI financial health score.",
   applicationCategory: "FinanceApplication",
@@ -90,6 +91,13 @@ export default function NetWorthPage() {
         </div>
       </section>
 
+      <FaqSection items={[
+        { question: "What is net worth and how is it calculated?", answer: "Net worth is total assets minus total liabilities. Assets include cash, investments, real estate, and vehicles. Liabilities include mortgages, car loans, student loans, and credit card debt. A positive net worth means you own more than you owe." },
+        { question: "What is the average net worth by age in the US?", answer: "According to the Federal Reserve: median net worth under 35 is ~$39,000; ages 35–44 is ~$135,600; ages 45–54 is ~$247,200; ages 55–64 is ~$364,500; ages 65–74 is ~$409,900. Use median (not average) as averages are skewed by the ultra-wealthy." },
+        { question: "How can I increase my net worth?", answer: "Two levers: grow assets and reduce liabilities. Pay down high-interest debt aggressively, invest consistently in index funds, avoid depreciating assets like new cars, and track your net worth monthly to stay accountable and motivated." },
+        { question: "Should I include my home in net worth?", answer: "Yes — your home's current market value counts as an asset, but your remaining mortgage balance counts as a liability. Your home equity (value minus mortgage) is the net contribution. Use a conservative estimate of your home's value." },
+        { question: "How often should I calculate my net worth?", answer: "Monthly is ideal for staying motivated, quarterly is practical for most people. The key is consistency — track it at the same time each period to compare apples to apples. Even slow growth is progress worth celebrating." },
+      ]} />
       <RelatedArticles calculatorHref="/net-worth-calculator" />
       <RelatedCalculators currentSlug="net-worth-calculator" />
       <script

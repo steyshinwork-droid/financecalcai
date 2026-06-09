@@ -1,7 +1,7 @@
-import type { MetadataRoute } from "next";
+﻿import type { MetadataRoute } from "next";
 import { getAllSlugs, blogPosts } from "@/lib/blog";
 
-const BASE_URL = "https://financecalcai.vercel.app";
+const BASE_URL = "https://www.financecalcai.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const calculators = [
@@ -19,6 +19,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/loan-comparison-calculator",
     "/tip-calculator",
     "/salary-calculator",
+    "/inflation-calculator",
+    "/loan-calculator",
+    "/car-affordability-calculator",
+    "/rent-vs-buy-calculator",
+    "/student-loan-calculator",
+    "/home-affordability-calculator",
+    "/paycheck-calculator",
   ];
 
   const blogSlugs = getAllSlugs();

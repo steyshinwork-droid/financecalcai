@@ -15,6 +15,7 @@ import {
   Sparkles,
   Info,
 } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   AreaChart,
   Area,
@@ -317,6 +318,19 @@ export function CompoundInterestCalc() {
               </div>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="compound-interest"
+              title={`$${principalStr} initial, $${monthlyStr}/mo, ${rateStr}%, ${yearsStr}yr`}
+              inputs={{ principal: principalStr, monthly: monthlyStr, rate: rateStr, years: yearsStr }}
+              results={{
+                total: Math.round(results.total),
+                totalContributions: Math.round(results.totalContributions),
+                totalInterest: Math.round(results.totalInterest),
+              }}
+            />
+          </div>
 
           {/* AI Insight */}
           <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">

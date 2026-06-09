@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { BudgetCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { AffiliateBanner } from "@/components/affiliate-banner";
+import { FaqSection } from "@/components/faq-section";
 
 export const metadata: Metadata = {
   title: "Budget Calculator - Free AI-Powered | FinanceCalcAI",
@@ -18,7 +19,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Budget Calculator",
-  url: "https://financecalcai.vercel.app/budget-calculator",
+  url: "https://www.financecalcai.com/budget-calculator",
   description:
     "Free budget calculator with 50/30/20 rule analysis. Plan your monthly budget with AI-powered tips.",
   applicationCategory: "FinanceApplication",
@@ -67,6 +68,13 @@ export default function BudgetPage() {
         </div>
       </section>
 
+      <FaqSection items={[
+        { question: "What is the 50/30/20 budget rule?", answer: "The 50/30/20 rule splits your after-tax income: 50% for needs (rent, utilities, groceries, minimum debt payments), 30% for wants (dining out, streaming, hobbies), and 20% for savings and extra debt payoff. It's flexible — if you live in an expensive city, 60% on needs is realistic. Adjust the proportions to fit your situation." },
+        { question: "What percentage of income should go to housing?", answer: "The traditional guideline is 28–30% of gross income on housing. But in high-cost cities like NYC or SF, 35–40% is common. More important: keep total debt payments (housing + car + loans) under 36% of gross income. If housing alone exceeds 35%, look for ways to increase income or reduce other expenses." },
+        { question: "How do I stick to a budget?", answer: "The most effective strategies: (1) Automate savings on payday — pay yourself first before you can spend it. (2) Use the envelope or zero-based method — assign every dollar a job. (3) Track weekly, not monthly — catching overspending early prevents snowballing. (4) Give yourself a guilt-free spending allowance so the budget doesn't feel like a prison." },
+        { question: "What is zero-based budgeting?", answer: "Zero-based budgeting means every dollar of income is assigned a purpose so income minus expenses equals zero. You don't overspend — unspent money is consciously allocated to savings or debt. Apps like YNAB (You Need A Budget) use this method. It's more involved than 50/30/20 but gives complete control over your money." },
+        { question: "How much should I have in an emergency fund?", answer: "3–6 months of essential living expenses. If your income is unstable (freelance, seasonal) or you have dependents, aim for 6 months. A single person with a stable job can manage with 3 months. Keep it in a high-yield savings account (4–5% APY) so it earns interest while remaining accessible." },
+      ]} />
       <RelatedArticles calculatorHref="/budget-calculator" />
       <RelatedCalculators currentSlug="budget-calculator" />
       <script

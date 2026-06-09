@@ -1,4 +1,4 @@
-import { ImageResponse } from "next/og";
+﻿import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
@@ -90,7 +90,7 @@ export async function GET(request: Request) {
             opacity: 0.7,
           }}
         >
-          financecalcai.vercel.app
+          www.financecalcai.com
         </div>
       </div>
     ),

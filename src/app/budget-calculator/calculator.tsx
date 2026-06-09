@@ -15,6 +15,7 @@ import {
   CheckCircle,
   AlertTriangle,
 } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   BarChart,
   Bar,
@@ -332,6 +333,22 @@ export function BudgetCalc() {
               </div>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="budget"
+              title={`$${incomeStr}/mo income budget`}
+              inputs={{ income: incomeStr }}
+              results={{
+                totalNeeds: Math.round(results.totalNeeds),
+                totalWants: Math.round(results.totalWants),
+                remaining: Math.round(results.remaining),
+                needsPercent: Math.round(results.needsPercent),
+                wantsPercent: Math.round(results.wantsPercent),
+                savingsPercent: Math.round(results.savingsPercent),
+              }}
+            />
+          </div>
 
           <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">
             <CardHeader>

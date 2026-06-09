@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { ChevronRight, Home } from "lucide-react";
 
 interface BreadcrumbItem {
@@ -21,7 +21,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
       position: index + 1,
       name: item.label,
       ...(item.href
-        ? { item: `https://financecalcai.vercel.app${item.href}` }
+        ? { item: `https://www.financecalcai.com${item.href}` }
         : {}),
     })),
   };

@@ -16,6 +16,7 @@ import {
   Plus,
   Trash2,
 } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   AreaChart,
   Area,
@@ -412,6 +413,21 @@ export function DebtPayoffCalc() {
               </ResponsiveContainer>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="debt-payoff"
+              title={`${formatMoney(results.totalDebt)} debt, $${extraPaymentStr}/mo extra`}
+              inputs={{ extraPayment: extraPaymentStr }}
+              results={{
+                totalDebt: Math.round(results.totalDebt),
+                avalancheMonths: results.avalanche.months,
+                avalancheInterest: Math.round(results.avalanche.totalInterest),
+                snowballMonths: results.snowball.months,
+                snowballInterest: Math.round(results.snowball.totalInterest),
+              }}
+            />
+          </div>
 
           <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">
             <CardHeader>

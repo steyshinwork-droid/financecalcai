@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { TipCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { AffiliateBanner } from "@/components/affiliate-banner";
+import { FaqSection } from "@/components/faq-section";
 
 export const metadata: Metadata = {
   title: "Tip Calculator - Split the Bill Fast | FinanceCalcAI",
@@ -18,7 +19,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
   name: "Tip Calculator",
-  url: "https://financecalcai.vercel.app/tip-calculator",
+  url: "https://www.financecalcai.com/tip-calculator",
   description: "Free tip calculator — choose tip percentage and split between any number of people.",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Any",
@@ -63,6 +64,13 @@ export default function TipCalculatorPage() {
         </div>
       </section>
 
+      <FaqSection items={[
+        { question: "How much should I tip at a restaurant?", answer: "The standard in the US is 15–20%. Tip 10% for poor service, 15% for adequate service, 18–20% for good service, and 25%+ for exceptional service. For fast casual or counter service, 10–15% is appreciated but optional." },
+        { question: "Should I tip on the pre-tax or post-tax amount?", answer: "Most etiquette experts say tip on the pre-tax amount. In practice, the difference is small — on a $100 bill with 8% tax, 20% on pre-tax = $20 vs $21.60 on post-tax. Either is acceptable; tipping on pre-tax is the traditional standard." },
+        { question: "How much should I tip for delivery?", answer: "For delivery, tip 15–20% of the order total, with a minimum of $3–$5. For large orders or difficult deliveries (bad weather, long distance), tip more. Delivery drivers rely heavily on tips as a significant part of their income." },
+        { question: "Do I have to tip if service was bad?", answer: "There's no legal obligation, but tipping is a strong social norm in the US where servers often earn below minimum wage with tips expected to make up the difference. For poor service, 10% acknowledges the norm while signaling dissatisfaction. Speak to a manager for serious issues." },
+        { question: "How do I split the bill evenly at a restaurant?", answer: "Add the tip to the total bill first, then divide by the number of people. For example: $120 bill + 20% tip = $144 total ÷ 4 people = $36 per person. Our calculator handles this automatically for any party size." },
+      ]} />
       <RelatedArticles calculatorHref="/tip-calculator" />
       <RelatedCalculators currentSlug="tip-calculator" />
 
