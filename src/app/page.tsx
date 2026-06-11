@@ -26,6 +26,7 @@ import {
   Activity,
   GraduationCap,
   DollarSign,
+  Landmark,
 } from "lucide-react";
 import {
   Card,
@@ -245,6 +246,16 @@ const calculators = [
     icon: DollarSign,
     color: "text-amber-600",
     bg: "bg-amber-50",
+    badge: "New",
+  },
+  {
+    title: "Dividend Calculator",
+    description:
+      "Calculate dividend income, DRIP reinvestment growth, and portfolio value over time. See with vs. without reinvestment.",
+    href: "/dividend-calculator",
+    icon: Landmark,
+    color: "text-indigo-600",
+    bg: "bg-indigo-50",
     badge: "New",
   },
 ];

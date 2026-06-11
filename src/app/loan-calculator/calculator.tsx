@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Percent, Calendar, Sparkles, Info, BarChart2 } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from "recharts";
@@ -224,6 +225,19 @@ export function LoanCalc() {
               </ResponsiveContainer>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="loan"
+              title={`$${amountStr} loan, ${rateStr}%, ${yearsStr}yr`}
+              inputs={{ loanAmount: amountStr, rate: rateStr, years: yearsStr, income: incomeStr }}
+              results={{
+                monthlyPayment: Math.round(results.monthlyPayment),
+                totalPaid: Math.round(results.totalPaid),
+                totalInterest: Math.round(results.totalInterest),
+              }}
+            />
+          </div>
 
           <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">
             <CardHeader>

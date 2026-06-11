@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Percent, Calendar, Sparkles, Info, Home } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend,
 } from "recharts";
@@ -406,6 +407,19 @@ export function RentVsBuyCalc() {
               </p>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="rent-vs-buy"
+              title={`$${homePriceStr} home vs $${rentStr}/mo rent, ${stayYearsStr}yr`}
+              inputs={{ homePrice: homePriceStr, downPayment: downPaymentStr, mortgageRate: mortgageRateStr, monthlyRent: rentStr, stayYears: stayYearsStr }}
+              results={{
+                breakEvenYear: results.breakEvenYear ?? 0,
+                monthlyBuyCost: Math.round(results.monthlyBuyCost),
+                monthlyRentCost: Math.round(monthlyRent),
+              }}
+            />
+          </div>
 
           {/* AI Insight */}
           <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">

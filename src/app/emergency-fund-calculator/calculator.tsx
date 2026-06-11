@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Sparkles, Info, Shield, Calendar } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   AreaChart,
   Area,
@@ -217,6 +218,20 @@ export function EmergencyFundCalc() {
               </CardContent>
             </Card>
           )}
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="emergency-fund"
+              title={`$${monthlyExpensesStr}/mo expenses, $${currentFundStr} saved`}
+              inputs={{ monthlyExpenses: monthlyExpensesStr, currentFund: currentFundStr, monthlyContribution: monthlyContributionStr, dependents: dependentsStr }}
+              results={{
+                targetFund: Math.round(results.targetFund),
+                remaining: Math.round(results.remaining),
+                monthsToGoal: results.monthsToGoal === Infinity ? 0 : results.monthsToGoal,
+                progress: results.progress,
+              }}
+            />
+          </div>
 
           <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">
             <CardHeader>

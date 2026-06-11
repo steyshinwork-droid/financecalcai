@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/student-loan-calculator",
     "/home-affordability-calculator",
     "/paycheck-calculator",
+    "/dividend-calculator",
   ];
 
   const blogSlugs = getAllSlugs();

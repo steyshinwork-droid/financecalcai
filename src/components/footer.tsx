@@ -104,6 +104,11 @@ export function Footer() {
                   Paycheck
                 </Link>
               </li>
+              <li>
+                <Link href="/dividend-calculator" className="hover:text-emerald-600">
+                  Dividend
+                </Link>
+              </li>
             </ul>
           </div>
 

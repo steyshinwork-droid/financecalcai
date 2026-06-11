@@ -106,6 +106,11 @@ const ALL_CALCULATORS: Record<string, { name: string; href: string; description:
     href: "/paycheck-calculator",
     description: "See your exact take-home pay after taxes and deductions.",
   },
+  "dividend-calculator": {
+    name: "Dividend Calculator",
+    href: "/dividend-calculator",
+    description: "Calculate dividend income and DRIP reinvestment growth over time.",
+  },
 };
 
 const RELATED_MAP: Record<string, string[]> = {
@@ -130,6 +135,7 @@ const RELATED_MAP: Record<string, string[]> = {
   "student-loan-calculator": ["debt-payoff-calculator", "budget-calculator", "loan-calculator"],
   "home-affordability-calculator": ["mortgage-calculator", "rent-vs-buy-calculator", "budget-calculator"],
   "paycheck-calculator": ["budget-calculator", "tax-bracket-calculator", "salary-calculator"],
+  "dividend-calculator": ["investment-calculator", "compound-interest-calculator", "retirement-calculator"],
 };
 
 export function RelatedCalculators({ currentSlug }: { currentSlug: string }) {

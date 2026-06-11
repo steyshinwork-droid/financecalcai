@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Percent, Calendar, Sparkles, Info, Car } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
 } from "recharts";
@@ -256,6 +257,20 @@ export function CarAffordabilityCalc() {
               </p>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="car-affordability"
+              title={`$${carPriceStr} car, $${downPaymentStr} down, ${rateStr}%`}
+              inputs={{ carPrice: carPriceStr, downPayment: downPaymentStr, rate: rateStr, years: yearsStr, income: incomeStr }}
+              results={{
+                monthlyPayment: Math.round(results.monthlyPayment),
+                totalPaid: Math.round(results.totalPaid),
+                totalInterest: Math.round(results.totalInterest),
+                maxAffordable: Math.round(results.maxAffordable),
+              }}
+            />
+          </div>
 
           <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">
             <CardHeader>

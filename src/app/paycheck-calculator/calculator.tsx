@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Sparkles, Info } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 
 function useNumInput(initial: number) {
   const [str, setStr] = useState(String(initial));
@@ -248,6 +249,19 @@ export function PaycheckCalc() {
           </p>
         </CardContent>
       </Card>
+
+      <div className="flex justify-end">
+        <SaveCalculationButton
+          calculatorType="paycheck"
+          title={`$${salaryStr}/yr, ${filingStatus}, ${stateTaxStr}% state`}
+          inputs={{ salary: salaryStr, stateTax: stateTaxStr, k401: k401Str, filingStatus, payFreq }}
+          results={{
+            netPerPeriod: Math.round(result.netPerPeriod),
+            grossPerPeriod: Math.round(result.grossPerPeriod),
+            annualNet: Math.round(result.netPerPeriod * (payFreq === "weekly" ? 52 : payFreq === "biweekly" ? 26 : payFreq === "semimonthly" ? 24 : 12)),
+          }}
+        />
+      </div>
 
       <Card className="border-amber-200 bg-gradient-to-br from-amber-50 to-white">
         <CardHeader>
