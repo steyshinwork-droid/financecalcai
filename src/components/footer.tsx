@@ -109,6 +109,11 @@ export function Footer() {
                   Dividend
                 </Link>
               </li>
+              <li>
+                <Link href="/social-security-calculator" className="hover:text-emerald-600">
+                  Social Security
+                </Link>
+              </li>
             </ul>
           </div>
 

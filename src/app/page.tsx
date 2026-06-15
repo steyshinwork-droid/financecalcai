@@ -27,6 +27,7 @@ import {
   GraduationCap,
   DollarSign,
   Landmark,
+  BadgeCheck,
 } from "lucide-react";
 import {
   Card,
@@ -256,6 +257,15 @@ const calculators = [
     icon: Landmark,
     color: "text-indigo-600",
     bg: "bg-indigo-50",
+  },
+  {
+    title: "Social Security Calculator",
+    description:
+      "Estimate your monthly Social Security benefit at 62, 67, or 70. See breakeven analysis and find the best age to claim.",
+    href: "/social-security-calculator",
+    icon: BadgeCheck,
+    color: "text-cyan-600",
+    bg: "bg-cyan-50",
     badge: "New",
   },
 ];

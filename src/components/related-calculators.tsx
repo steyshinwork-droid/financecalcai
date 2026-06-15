@@ -111,6 +111,11 @@ const ALL_CALCULATORS: Record<string, { name: string; href: string; description:
     href: "/dividend-calculator",
     description: "Calculate dividend income and DRIP reinvestment growth over time.",
   },
+  "social-security-calculator": {
+    name: "Social Security Calculator",
+    href: "/social-security-calculator",
+    description: "Estimate your monthly SS benefit and find the best age to claim.",
+  },
 };
 
 const RELATED_MAP: Record<string, string[]> = {
@@ -136,6 +141,7 @@ const RELATED_MAP: Record<string, string[]> = {
   "home-affordability-calculator": ["mortgage-calculator", "rent-vs-buy-calculator", "budget-calculator"],
   "paycheck-calculator": ["budget-calculator", "tax-bracket-calculator", "salary-calculator"],
   "dividend-calculator": ["investment-calculator", "compound-interest-calculator", "retirement-calculator"],
+  "social-security-calculator": ["retirement-calculator", "investment-calculator", "paycheck-calculator"],
 };
 
 export function RelatedCalculators({ currentSlug }: { currentSlug: string }) {

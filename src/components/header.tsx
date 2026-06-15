@@ -25,6 +25,7 @@ const calculators = [
   { name: "Home Affordability", href: "/home-affordability-calculator" },
   { name: "Paycheck", href: "/paycheck-calculator" },
   { name: "Dividend", href: "/dividend-calculator" },
+  { name: "Social Security", href: "/social-security-calculator" },
 ];
 
 export function Header() {
