@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Calendar, Sparkles, Info, TrendingUp, Percent } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   LineChart,
   Line,
@@ -262,6 +263,15 @@ export function DividendCalc() {
               <p className="flex items-center gap-1 text-xs text-gray-400"><Info className="h-3 w-3" /> For informational purposes only. Not financial advice.</p>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="dividend"
+              title={`${shares} shares @ $${price}, ${years}yr → $${Math.round(final.portfolioValue).toLocaleString()}`}
+              inputs={{ shares, price, dps, dividendGrowth: growth, appreciation, years }}
+              results={{ portfolioValueDrip: Math.round(final.portfolioValue), portfolioValueNoDrip: Math.round(finalNoDrip.portfolioValue), annualIncome: Math.round(final.annualIncome) }}
+            />
+          </div>
         </>
       )}
     </div>

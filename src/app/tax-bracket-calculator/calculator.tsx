@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Sparkles, Info } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   BarChart,
   Bar,
@@ -221,6 +222,15 @@ export function TaxBracketCalc() {
               <p className="flex items-center gap-1 text-xs text-gray-400"><Info className="h-3 w-3" /> Based on 2025 federal brackets. State taxes not included. Not tax advice.</p>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="tax-bracket"
+              title={`$${income.toLocaleString()} income (${filingStatus}), $${Math.round(results.totalTax).toLocaleString()} tax`}
+              inputs={{ income, filingStatus }}
+              results={{ totalTax: Math.round(results.totalTax), effectiveRate: parseFloat(results.effectiveRate.toFixed(1)), marginalRate: results.marginalRate, afterTax: Math.round(results.afterTax) }}
+            />
+          </div>
         </>
       )}
     </div>

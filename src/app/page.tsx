@@ -28,6 +28,7 @@ import {
   DollarSign,
   Landmark,
   BadgeCheck,
+  Target,
 } from "lucide-react";
 import {
   Card,
@@ -266,6 +267,16 @@ const calculators = [
     icon: BadgeCheck,
     color: "text-cyan-600",
     bg: "bg-cyan-50",
+    badge: null,
+  },
+  {
+    title: "FIRE Calculator",
+    description:
+      "Find your FIRE number and see exactly when you can retire early. Supports Lean FIRE, Regular FIRE, and Fat FIRE goals.",
+    href: "/fire-calculator",
+    icon: Target,
+    color: "text-fuchsia-600",
+    bg: "bg-fuchsia-50",
     badge: "New",
   },
 ];

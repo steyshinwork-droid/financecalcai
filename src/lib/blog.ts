@@ -14042,6 +14042,360 @@ export const blogPosts: BlogPost[] = [
       { type: "cta", ctaText: "See Your Take-Home Pay After Taxes", ctaHref: "/paycheck-calculator" },
     ],
   },
+  {
+    slug: "what-is-cash-out-refinance",
+    title: "What Is a Cash-Out Refinance and When Does It Make Sense?",
+    description: "A cash-out refinance replaces your mortgage with a larger one and gives you the difference in cash. It can be a smart move — or an expensive mistake. Here's how to decide.",
+    date: "2026-06-15",
+    readTime: "6 min read",
+    category: "Mortgage",
+    relatedCalculator: { name: "Mortgage Calculator", href: "/mortgage-calculator" },
+    content: [
+      { type: "intro", text: "A cash-out refinance lets you tap into your home equity by replacing your existing mortgage with a new, larger loan and receiving the difference as cash. If your home is worth $400,000 and you owe $250,000, you might refinance into a $310,000 mortgage and walk away with $60,000 in cash. The appeal is obvious — but so are the risks." },
+      { type: "h2", text: "How It Works" },
+      { type: "p", text: "You apply for a new mortgage larger than what you currently owe. The new loan pays off your old mortgage, and you receive the remaining balance in cash at closing. Lenders typically allow you to borrow up to 80% of your home's appraised value — meaning you must keep at least 20% equity in the home after the refinance." },
+      { type: "h2", text: "Cash-Out Refinance vs. HELOC vs. Home Equity Loan" },
+      { type: "ul", items: [
+        "Cash-out refinance: Replaces your entire mortgage. One loan, one payment. Usually the lowest rate, but you restart your loan term and pay closing costs (2–5% of loan amount).",
+        "Home equity loan: A second loan on top of your existing mortgage. Fixed rate, fixed payment. Good if you want to keep your current low-rate first mortgage.",
+        "HELOC: A revolving line of credit secured by your home. Variable rate, flexible draw period. Best for ongoing expenses rather than a lump sum."
+      ]},
+      { type: "h2", text: "When a Cash-Out Refinance Makes Sense" },
+      { type: "ul", items: [
+        "Home improvements that increase your home's value (kitchen remodel, addition, energy upgrades).",
+        "Consolidating high-interest debt — if your mortgage rate is significantly lower than credit card or personal loan rates.",
+        "Paying for education when other options are exhausted.",
+        "Funding a business investment with a clear return — not speculation."
+      ]},
+      { type: "h2", text: "When It Doesn't Make Sense" },
+      { type: "ul", items: [
+        "To fund discretionary spending or vacations — you're converting unsecured debt into debt backed by your house.",
+        "When your current rate is significantly lower than today's refinance rates — check the break-even carefully.",
+        "When you plan to move within 3–5 years — closing costs may not be recovered.",
+        "When you can't reliably afford the new, higher payment — foreclosure risk increases."
+      ]},
+      { type: "h2", text: "The Hidden Cost: Resetting Your Loan Term" },
+      { type: "p", text: "If you've been paying your 30-year mortgage for 8 years, you have 22 years left. A cash-out refinance into a new 30-year loan extends that to 30 years again — adding 8 years of payments. Even at the same rate, this increases your total interest paid significantly. Run the full math before deciding." },
+      { type: "h2", text: "Tax Implications" },
+      { type: "p", text: "Cash-out refinance proceeds are not taxable income. However, the interest deduction is now limited to interest on up to $750,000 of mortgage debt (for loans after December 15, 2017), and only if you itemize deductions. If you use the cash for home improvements, the interest on that portion is generally deductible; if used for other purposes, it may not be." },
+      { type: "tip", text: "The break-even calculation matters most: divide your closing costs by your monthly payment savings. If you're saving $150/month and closing costs are $6,000, break-even is 40 months. If you plan to stay in the home longer than that, the refinance makes financial sense on rate alone — independent of the cash-out component." },
+      { type: "cta", ctaText: "Calculate Your New Mortgage Payment", ctaHref: "/mortgage-calculator" },
+    ],
+  },
+  {
+    slug: "when-to-claim-social-security",
+    title: "When Should You Claim Social Security? The Complete Timing Guide",
+    description: "The age you claim Social Security can mean a difference of hundreds of dollars per month for life. Here's how to decide between claiming early, at full retirement age, or waiting until 70.",
+    date: "2026-06-15",
+    readTime: "7 min read",
+    category: "Retirement",
+    relatedCalculator: { name: "Social Security Calculator", href: "/social-security-calculator" },
+    content: [
+      { type: "intro", text: "You can claim Social Security as early as 62 or as late as 70. The difference in your monthly benefit between these two ages is typically 76% — a gap that compounds over decades. This single decision may be the most consequential financial choice you make in retirement. Getting it right requires understanding breakeven ages, health, income, and taxes." },
+      { type: "h2", text: "The Three Claiming Windows" },
+      { type: "ul", items: [
+        "Age 62 (early): You can claim immediately but receive permanently reduced benefits — up to 30% less than your Full Retirement Age (FRA) benefit.",
+        "Full Retirement Age (FRA): 66–67 depending on birth year. You receive 100% of your earned benefit.",
+        "Age 70 (delayed): Benefits grow 8% per year between FRA and 70. Claiming at 70 gives you the maximum possible benefit."
+      ]},
+      { type: "h2", text: "Full Retirement Age by Birth Year" },
+      { type: "ul", items: [
+        "Born 1943–1954: FRA is 66",
+        "Born 1955: FRA is 66 and 2 months",
+        "Born 1956: FRA is 66 and 4 months",
+        "Born 1957: FRA is 66 and 6 months",
+        "Born 1958: FRA is 66 and 8 months",
+        "Born 1959: FRA is 66 and 10 months",
+        "Born 1960 or later: FRA is 67"
+      ]},
+      { type: "h2", text: "The Break-Even Calculation" },
+      { type: "p", text: "If you claim at 62 instead of 67, you receive 5 extra years of payments — but at a reduced amount. The break-even point is typically around age 78–80. If you live past that age, waiting was the better financial decision. If you die before it, claiming early came out ahead. The problem: most people underestimate how long they'll live." },
+      { type: "h2", text: "When Claiming Early (62) Makes Sense" },
+      { type: "ul", items: [
+        "You have a serious health condition that reduces life expectancy.",
+        "You are in urgent financial need with no other income sources.",
+        "You have a spouse with a significantly higher earning record who will delay — your early claim can fund household expenses while their benefit grows.",
+        "You plan to invest the early payments and are confident in the returns."
+      ]},
+      { type: "h2", text: "When Waiting Until 70 Makes Sense" },
+      { type: "ul", items: [
+        "You are in good health with family history of longevity.",
+        "You have other income sources (pension, savings, part-time work) to cover the gap years.",
+        "You are the higher earner in a married couple — your delayed benefit becomes the survivor benefit your spouse inherits.",
+        "You want to minimize longevity risk — the fear of outliving your money."
+      ]},
+      { type: "h2", text: "The Survivor Benefit Factor for Married Couples" },
+      { type: "p", text: "When one spouse dies, the surviving spouse receives the higher of the two benefits — their own or the deceased spouse's. This makes the claiming decision for the higher earner especially important. If the higher earner delays to 70 and dies first, the surviving spouse inherits that maximized benefit for life. This often makes waiting to 70 optimal for the household even when it doesn't look optimal individually." },
+      { type: "h2", text: "Social Security and Taxes" },
+      { type: "p", text: "Up to 85% of your Social Security benefits may be taxable if your combined income (AGI + nontaxable interest + half of Social Security) exceeds $34,000 for singles or $44,000 for married couples. Working while receiving benefits before FRA also triggers the earnings test: in 2025, you lose $1 in benefits for every $2 earned above $22,320. After FRA, there is no earnings test." },
+      { type: "tip", text: "The Social Security Administration's online tools at ssa.gov let you see your personalized benefit estimates at different claiming ages based on your actual earnings record. Run these numbers before making any decision — generic break-even calculations miss the specifics of your earnings history." },
+      { type: "cta", ctaText: "Estimate Your Social Security Benefits", ctaHref: "/social-security-calculator" },
+    ],
+  },
+  {
+    slug: "what-is-lean-fire",
+    title: "What Is Lean FIRE? Early Retirement on a Lean Budget",
+    description: "Lean FIRE is early retirement on a frugal budget — typically under $40,000 per year. It's faster to reach but leaves little cushion. Here's who it's right for and who it isn't.",
+    date: "2026-06-15",
+    readTime: "5 min read",
+    category: "Retirement",
+    relatedCalculator: { name: "Retirement Calculator", href: "/retirement-calculator" },
+    content: [
+      { type: "intro", text: "Lean FIRE is the early retirement strategy for people willing to trade lifestyle for freedom, speed, or both. Where Fat FIRE targets $100,000+ annual spending, Lean FIRE typically means living on $25,000–$40,000 per year and reaching financial independence faster — often a decade or more sooner — by keeping both spending and the required portfolio size small." },
+      { type: "h2", text: "The Math Behind Lean FIRE" },
+      { type: "p", text: "Using the 4% safe withdrawal rule, your target portfolio is 25× your annual expenses. At $30,000/year spending, that's $750,000. At $40,000/year, it's $1,000,000. Compare this to Fat FIRE at $100,000/year — which requires $2,500,000. The difference in time to reach these targets can be 10–20 years, depending on your income and savings rate." },
+      { type: "h2", text: "What Lean FIRE Looks Like in Practice" },
+      { type: "ul", items: [
+        "Housing: Paid-off modest home, low cost-of-living city, or house hacking.",
+        "Food: Cooking at home, meal prepping, minimal dining out.",
+        "Transportation: One reliable used car or no car in a walkable city.",
+        "Healthcare: ACA marketplace plans subsidized by low income, or health sharing.",
+        "Entertainment: Library, nature, free community events, low-cost hobbies.",
+        "Travel: Slow travel, credit card points, budget lodging, or skipping it."
+      ]},
+      { type: "h2", text: "The Real Risks of Lean FIRE" },
+      { type: "ul", items: [
+        "Sequence of returns risk: A bad market in years 1–5 of retirement can permanently damage a lean portfolio with little buffer.",
+        "Healthcare costs: A medical emergency or chronic condition can blow a lean budget. Pre-Medicare healthcare is expensive.",
+        "Lifestyle inflation: What feels fine at 40 may feel restrictive at 55 — kids, aging parents, health.",
+        "Inflation: 30–40 years of inflation on a tight budget leaves little room for cost increases.",
+        "Social pressure: Explaining Lean FIRE to family and friends who live differently can be socially isolating."
+      ]},
+      { type: "h2", text: "Lean FIRE vs. Barista FIRE" },
+      { type: "p", text: "Barista FIRE is a middle path: you reach partial FI and then work part-time — enough to cover basic expenses without drawing down savings. The portfolio can be smaller (15–18× expenses rather than 25×) because you're not fully dependent on it. For many, Barista FIRE solves the risk problems of Lean FIRE while still exiting the full-time grind early." },
+      { type: "h2", text: "Who Lean FIRE Is Right For" },
+      { type: "ul", items: [
+        "People who genuinely prefer simple, low-consumption living — not just tolerating it.",
+        "People with geographic flexibility (can move to low cost-of-living areas).",
+        "People with skills that can generate income opportunistically (freelance, consulting) if needed.",
+        "Single people or couples without dependents who share the same lifestyle values.",
+        "People with a pension, rental income, or other income that supplements the portfolio."
+      ]},
+      { type: "tip", text: "Build a 'Lean FIRE escape valve' before retiring: a part-time skill or side income you genuinely enjoy that can generate $10,000–$20,000/year if needed. This turns Lean FIRE into Barista FIRE on demand, dramatically reducing sequence-of-returns risk without requiring a larger portfolio upfront." },
+      { type: "cta", ctaText: "Plan Your Retirement Timeline", ctaHref: "/retirement-calculator" },
+    ],
+  },
+  {
+    slug: "what-is-fat-fire",
+    title: "What Is Fat FIRE? Early Retirement with a Comfortable Lifestyle",
+    description: "Fat FIRE is financial independence with enough wealth to maintain a generous lifestyle in retirement — typically $100,000+ per year. Here's how it works and what it takes to get there.",
+    date: "2026-06-15",
+    readTime: "5 min read",
+    category: "Retirement",
+    relatedCalculator: { name: "Retirement Calculator", href: "/retirement-calculator" },
+    content: [
+      { type: "intro", text: "Fat FIRE is financial independence without the frugality. While Lean FIRE trades lifestyle for speed, Fat FIRE targets a retirement income of $100,000 or more per year — enough to maintain or improve on a comfortable pre-retirement lifestyle. The portfolio required is typically $2.5 million or more, and reaching it usually requires high income, aggressive saving, or both." },
+      { type: "h2", text: "The Numbers Behind Fat FIRE" },
+      { type: "p", text: "Using the 4% safe withdrawal rule, every $1,000 in annual spending requires $25,000 in portfolio. Fat FIRE targets by spending level: $80,000/year → $2,000,000 portfolio; $100,000/year → $2,500,000; $150,000/year → $3,750,000; $200,000/year → $5,000,000. These are pre-tax numbers — actual portfolio needed is higher if your withdrawals are taxable." },
+      { type: "h2", text: "Who Typically Pursues Fat FIRE" },
+      { type: "ul", items: [
+        "High-income professionals: doctors, lawyers, engineers, finance workers, tech workers.",
+        "Entrepreneurs who sold or partially exited a business.",
+        "Dual-income couples with combined income above $200,000 who save aggressively.",
+        "People who inherited wealth and built on it.",
+        "Real estate investors who built significant passive income streams."
+      ]},
+      { type: "h2", text: "Fat FIRE Strategy: How to Get There" },
+      { type: "ul", items: [
+        "Maximize tax-advantaged accounts first: 401(k), Roth IRA, HSA, backdoor Roth if eligible.",
+        "Invest heavily in taxable brokerage accounts — tax-advantaged alone won't be enough for most Fat FIRE targets.",
+        "Focus on income growth: promotions, job-hopping, consulting income, equity compensation.",
+        "Minimize lifestyle inflation: keeping spending flat while income grows is how the gap closes.",
+        "Consider real estate for additional passive income streams that reduce portfolio draw rate.",
+        "Tax efficiency: index funds, tax-loss harvesting, asset location to minimize taxes on withdrawals."
+      ]},
+      { type: "h2", text: "Fat FIRE vs. Regular FIRE vs. Lean FIRE" },
+      { type: "ul", items: [
+        "Lean FIRE: $25,000–$40,000/year spending, $625,000–$1,000,000 portfolio. Fast to reach, minimal lifestyle.",
+        "Regular FIRE: $50,000–$80,000/year spending, $1,250,000–$2,000,000 portfolio. Comfortable but not lavish.",
+        "Fat FIRE: $100,000+/year spending, $2,500,000+ portfolio. Comfortable retirement with travel, dining, generosity."
+      ]},
+      { type: "h2", text: "The Advantage Fat FIRE Provides" },
+      { type: "p", text: "Fat FIRE portfolios have substantial buffer. If markets drop 30%, a $3,000,000 portfolio becomes $2,100,000 — still enough to sustain $80,000/year withdrawals. A Lean FIRE portfolio has little room for error. Fat FIRE also makes healthcare, long-term care, and unexpected expenses manageable without panic. The stress reduction alone is significant." },
+      { type: "h2", text: "One-More-Year Syndrome" },
+      { type: "p", text: "Fat FIRE pursuers are especially susceptible to one-more-year syndrome: the high-income lifestyle makes it easy to rationalize working 'just one more year' for more security. At some point the portfolio is clearly sufficient. Developing a clear target and pre-committing to a retirement date helps avoid perpetually moving the goalposts." },
+      { type: "tip", text: "Consider building to 3.5× or 3.3% rather than 4% if you're retiring early (before 50). A slightly more conservative withdrawal rate adds significant longevity protection for a 40–50 year retirement horizon without requiring dramatically more portfolio." },
+      { type: "cta", ctaText: "Calculate Your Retirement Number", ctaHref: "/retirement-calculator" },
+    ],
+  },
+  {
+    slug: "what-is-a-sep-ira",
+    title: "What Is a SEP IRA? The Retirement Account for the Self-Employed",
+    description: "A SEP IRA lets self-employed workers and small business owners contribute up to 25% of net income — far more than a standard IRA. Here's how it works and who should use it.",
+    date: "2026-06-15",
+    readTime: "5 min read",
+    category: "Retirement",
+    relatedCalculator: { name: "Retirement Calculator", href: "/retirement-calculator" },
+    content: [
+      { type: "intro", text: "A SEP IRA (Simplified Employee Pension Individual Retirement Account) is a retirement savings account designed for self-employed individuals, freelancers, and small business owners. The contribution limit is dramatically higher than a traditional or Roth IRA — up to $69,000 in 2024 — making it one of the most powerful tax-advantaged tools available to those who work for themselves." },
+      { type: "h2", text: "SEP IRA Contribution Limits" },
+      { type: "p", text: "For 2024, you can contribute up to 25% of net self-employment income (after deducting the employer contribution and half of self-employment tax), with a maximum of $69,000. For employees, the limit is 25% of compensation up to the same cap. Compare this to the $7,000 limit for traditional and Roth IRAs ($8,000 if 50+) — the SEP IRA allows nearly 10× the savings for high earners." },
+      { type: "h2", text: "Key SEP IRA Rules" },
+      { type: "ul", items: [
+        "Contributions are tax-deductible, reducing your taxable income in the contribution year.",
+        "All investment growth is tax-deferred — you pay taxes only on withdrawals in retirement.",
+        "Withdrawals before age 59½ are subject to regular income tax plus a 10% early withdrawal penalty.",
+        "Required Minimum Distributions (RMDs) begin at age 73.",
+        "You can contribute to a SEP IRA and a traditional IRA in the same year, but IRA deductibility may be limited by income.",
+        "Contributions can be made up to the tax filing deadline (including extensions) for the prior year."
+      ]},
+      { type: "h2", text: "SEP IRA for Business Owners with Employees" },
+      { type: "p", text: "If you have employees, a SEP IRA requires you to contribute the same percentage of compensation for all eligible employees as you contribute for yourself. An eligible employee is anyone 21 or older who has worked for the business in at least 3 of the last 5 years and earned at least $750 in the current year. This can make the SEP expensive for businesses with staff, where a Solo 401(k) is often better for owner-only businesses." },
+      { type: "h2", text: "SEP IRA vs. Solo 401(k)" },
+      { type: "ul", items: [
+        "SEP IRA: Simpler to set up. Works with employees. Contribution is employer-only (no employee contribution). Limit: 25% of net income up to $69,000.",
+        "Solo 401(k): For self-employed with no employees (except spouse). Allows both employee and employer contributions. Can reach $69,000 limit at lower income levels. Allows Roth contributions and loans.",
+        "Winner for most solo self-employed: Solo 401(k) because you can reach the limit at lower income."
+      ]},
+      { type: "h2", text: "How to Open a SEP IRA" },
+      { type: "p", text: "Opening a SEP IRA is straightforward. Any major brokerage (Fidelity, Schwab, Vanguard) offers them with no account fees. You complete IRS Form 5305-SEP (or the brokerage's equivalent), open the account, and make contributions by your tax filing deadline. There are no annual filing requirements with the IRS as long as the account holds under $250,000 in assets." },
+      { type: "tip", text: "If you have a profitable self-employment year, max out your SEP IRA contribution before the tax filing deadline — even if you need to file an extension to do so. At a 24% federal tax bracket, a $20,000 SEP contribution saves $4,800 in federal taxes immediately, making the net cost of the contribution only $15,200 on $20,000 invested." },
+      { type: "cta", ctaText: "Project Your Retirement Savings Growth", ctaHref: "/retirement-calculator" },
+    ],
+  },
+  {
+    slug: "what-is-a-fha-loan",
+    title: "What Is an FHA Loan and Who Qualifies for One?",
+    description: "FHA loans let buyers purchase a home with as little as 3.5% down and a credit score of 580. Here's how they work, what they cost, and when they make sense over a conventional loan.",
+    date: "2026-06-15",
+    readTime: "6 min read",
+    category: "Mortgage",
+    relatedCalculator: { name: "Home Affordability Calculator", href: "/home-affordability-calculator" },
+    content: [
+      { type: "intro", text: "An FHA loan is a mortgage insured by the Federal Housing Administration. Because the government backstops the lender's risk, lenders can offer these loans to buyers who wouldn't qualify for a conventional mortgage — people with lower credit scores, smaller down payments, or higher debt-to-income ratios. FHA loans opened homeownership to millions of first-time buyers, but they come with costs that conventional loans don't." },
+      { type: "h2", text: "FHA Loan Requirements" },
+      { type: "ul", items: [
+        "Credit score 580+: Minimum 3.5% down payment.",
+        "Credit score 500–579: Minimum 10% down payment.",
+        "Credit score below 500: Not eligible for FHA financing.",
+        "Debt-to-income (DTI) ratio: Typically up to 43%, sometimes 50% with compensating factors.",
+        "Primary residence only: FHA loans cannot be used for investment properties or vacation homes.",
+        "Property must meet FHA minimum property standards (condition requirements).",
+        "Loan limits vary by county: In 2024, the baseline limit is $498,257 (higher in high-cost areas)."
+      ]},
+      { type: "h2", text: "FHA Mortgage Insurance Premium (MIP)" },
+      { type: "p", text: "The major cost of FHA loans is mortgage insurance. Unlike conventional PMI which can be canceled, FHA MIP is required for the life of the loan if you put less than 10% down. There are two components: an upfront MIP of 1.75% of the loan amount (paid at closing or rolled into the loan), and an annual MIP of 0.55%–1.05% of the loan amount depending on term and LTV, paid monthly." },
+      { type: "h2", text: "FHA vs. Conventional Loan" },
+      { type: "ul", items: [
+        "Down payment: FHA allows 3.5% (at 580+); conventional allows 3% but requires higher credit.",
+        "Credit score: FHA more flexible; conventional typically requires 620+ for best terms.",
+        "Mortgage insurance: FHA MIP is often for life of loan; conventional PMI cancels at 20% equity.",
+        "Loan limits: Conventional has higher loan limits in most areas.",
+        "Property condition: FHA has stricter property standards than conventional.",
+        "Interest rates: FHA rates are often similar to or slightly lower than conventional, but MIP adds effective cost."
+      ]},
+      { type: "h2", text: "When an FHA Loan Makes Sense" },
+      { type: "ul", items: [
+        "Credit score between 580–679 where conventional rates would be much higher.",
+        "Limited savings — you need the lowest possible down payment.",
+        "You plan to refinance into a conventional loan once you've built equity (typically 20%) to eliminate MIP.",
+        "High DTI situation where conventional lenders won't approve but FHA will."
+      ]},
+      { type: "h2", text: "How to Get Rid of FHA MIP" },
+      { type: "p", text: "If you put 10% or more down on an FHA loan, MIP cancels after 11 years. With less than 10% down, the only way to eliminate MIP is to refinance into a conventional loan once you reach 20% equity. Given that FHA MIP adds roughly 0.55–1.05% annually to your effective rate, refinancing when eligible is usually worthwhile — typically once you've been in the home 3–5 years and values have risen." },
+      { type: "tip", text: "Check your conventional loan eligibility before defaulting to FHA. If your credit score is 640–660 and you have a 5–10% down payment, a conventional loan with PMI may cost less over time than FHA with permanent MIP — especially since conventional PMI cancels automatically at 22% equity and FHA MIP often doesn't. Run both scenarios side by side before deciding." },
+      { type: "cta", ctaText: "See What Home You Can Afford", ctaHref: "/home-affordability-calculator" },
+    ],
+  },
+  {
+    slug: "va-loan-benefits-for-veterans",
+    title: "VA Loan Benefits Explained: Zero Down and No PMI for Veterans",
+    description: "VA loans offer eligible veterans, service members, and surviving spouses the ability to buy a home with no down payment and no private mortgage insurance. Here's everything you need to know.",
+    date: "2026-06-15",
+    readTime: "6 min read",
+    category: "Mortgage",
+    relatedCalculator: { name: "Home Affordability Calculator", href: "/home-affordability-calculator" },
+    content: [
+      { type: "intro", text: "VA loans are one of the most powerful financial benefits available to eligible U.S. military veterans, active service members, and surviving spouses. They allow qualified borrowers to purchase a home with zero down payment, no private mortgage insurance (PMI), and competitive interest rates backed by the Department of Veterans Affairs. For those who qualify, it's frequently the best mortgage product available." },
+      { type: "h2", text: "Who Is Eligible for a VA Loan?" },
+      { type: "ul", items: [
+        "Active duty service members: After 90 consecutive days of active service during wartime, or 181 days during peacetime.",
+        "Veterans: Who served the minimum service requirements and were discharged under conditions other than dishonorable.",
+        "National Guard and Reserve members: After 6 years of service, or 90 days of active duty under certain conditions.",
+        "Surviving spouses: Of veterans who died in service or from a service-connected disability, and who have not remarried (with some exceptions)."
+      ]},
+      { type: "h2", text: "Core VA Loan Benefits" },
+      { type: "ul", items: [
+        "No down payment required: You can finance 100% of the purchase price.",
+        "No private mortgage insurance (PMI): Conventional loans require PMI if you put less than 20% down. VA loans never require it.",
+        "Competitive interest rates: VA loans typically have rates 0.25–0.5% lower than comparable conventional loans.",
+        "Limited closing costs: The VA limits what lenders can charge. Sellers are allowed (not required) to pay all VA closing costs.",
+        "No prepayment penalty: Pay off early or make extra payments without penalty.",
+        "Reusable benefit: VA loan eligibility can be used multiple times throughout your life."
+      ]},
+      { type: "h2", text: "The VA Funding Fee" },
+      { type: "p", text: "In place of PMI, VA loans charge a one-time funding fee paid at closing or rolled into the loan. The fee ranges from 1.25% to 3.3% of the loan amount depending on whether it's your first VA loan, your subsequent use, and your down payment amount. Veterans with a service-connected disability rating of 10% or more are exempt from the funding fee entirely, as are surviving spouses receiving dependency and indemnity compensation (DIC)." },
+      { type: "h2", text: "VA Loan vs. FHA vs. Conventional" },
+      { type: "ul", items: [
+        "Down payment: VA = 0%; FHA = 3.5% (580+ credit); Conventional = 3–20%.",
+        "Mortgage insurance: VA = none; FHA = permanent MIP; Conventional = PMI until 20% equity.",
+        "Credit score: VA is most flexible; lenders typically require 620+ but this is lender overlay, not VA requirement.",
+        "Loan limits: As of 2020, no loan limit for eligible veterans with full entitlement.",
+        "Property: Must be primary residence. No investment properties."
+      ]},
+      { type: "h2", text: "How to Get a VA Loan" },
+      { type: "ul", items: [
+        "Step 1: Obtain your Certificate of Eligibility (COE) — available through eBenefits, a VA-approved lender, or by mail.",
+        "Step 2: Find a VA-approved lender. Most major banks and mortgage companies offer VA loans.",
+        "Step 3: Get pre-approved and shop for your home.",
+        "Step 4: The VA requires a property appraisal by a VA-assigned appraiser to ensure the property meets minimum property requirements.",
+        "Step 5: Close and use the benefit."
+      ]},
+      { type: "tip", text: "If you have a service-connected disability rating, verify your funding fee exemption before closing — lenders don't always check automatically, and this can save 1.25–3.3% of your loan amount. On a $300,000 loan, that's $3,750–$9,900. Request your disability rating verification from the VA early in the process to avoid delays at closing." },
+      { type: "cta", ctaText: "See What Home You Can Afford", ctaHref: "/home-affordability-calculator" },
+    ],
+  },
+  {
+    slug: "what-is-a-trust-fund",
+    title: "What Is a Trust Fund and How Does It Work?",
+    description: "Trust funds aren't just for the wealthy — they're estate planning tools that control how and when assets are distributed. Here's how trusts work, what types exist, and when one makes sense.",
+    date: "2026-06-15",
+    readTime: "6 min read",
+    category: "Personal Finance",
+    relatedCalculator: { name: "Net Worth Calculator", href: "/net-worth-calculator" },
+    content: [
+      { type: "intro", text: "A trust fund is a legal arrangement where one party (the grantor) places assets — cash, investments, real estate, life insurance — under the control of a trustee for the benefit of one or more beneficiaries. Despite the stereotype of wealthy heirs, trusts are used across income levels for everything from protecting a disabled child's benefits to minimizing estate taxes to ensuring assets go to the right people at the right time." },
+      { type: "h2", text: "The Three Parties in a Trust" },
+      { type: "ul", items: [
+        "Grantor (Settlor/Trustor): The person who creates the trust and transfers assets into it. Often also the initial trustee.",
+        "Trustee: The person or institution responsible for managing trust assets according to the trust's terms. Can be the grantor, a family member, an attorney, or a corporate trustee (bank/trust company).",
+        "Beneficiary: The person(s) who benefit from the trust — receive income, distributions, or inherit assets according to the trust's terms."
+      ]},
+      { type: "h2", text: "Revocable vs. Irrevocable Trusts" },
+      { type: "ul", items: [
+        "Revocable (Living) Trust: The grantor can change or dissolve it at any time during their lifetime. Assets remain in the grantor's estate for tax purposes. Primary benefit: avoids probate, not asset protection or tax savings.",
+        "Irrevocable Trust: Once established, cannot be easily changed or revoked. Assets leave the grantor's estate — providing asset protection and potential estate tax benefits. Used for Medicaid planning, special needs trusts, life insurance trusts, and large estate planning."
+      ]},
+      { type: "h2", text: "Common Types of Trusts" },
+      { type: "ul", items: [
+        "Revocable Living Trust: Avoids probate, maintains privacy, allows seamless asset transfer at death.",
+        "Special Needs Trust: Provides for a disabled beneficiary without disqualifying them from government benefits (SSI, Medicaid).",
+        "Testamentary Trust: Created through a will, comes into effect at death. Does not avoid probate.",
+        "Spendthrift Trust: Protects beneficiaries who might mismanage money — distributions are controlled by trustee.",
+        "Charitable Remainder Trust: Provides income to beneficiary, then passes remainder to charity. Provides tax deductions.",
+        "Generation-Skipping Trust: Passes wealth to grandchildren while minimizing estate taxes across generations."
+      ]},
+      { type: "h2", text: "Why Use a Trust Instead of Just a Will?" },
+      { type: "ul", items: [
+        "Avoids probate: Assets in a trust transfer without court involvement — faster, cheaper, and private (wills are public record).",
+        "Control over timing: Specify that children receive funds at 25, not 18. A will distributes assets immediately.",
+        "Multi-state property: Owning property in multiple states means multiple probates without a trust.",
+        "Incapacity planning: A successor trustee can manage assets if you become incapacitated — a will doesn't activate until death.",
+        "Privacy: Trusts aren't filed publicly; wills are."
+      ]},
+      { type: "h2", text: "When a Trust Makes Sense" },
+      { type: "ul", items: [
+        "Estate over $150,000–$200,000 (the threshold where probate becomes meaningfully expensive).",
+        "Minor children or special needs dependents.",
+        "Real estate owned in multiple states.",
+        "Business ownership you want to transfer smoothly.",
+        "Blended family — ensuring specific people inherit specific assets.",
+        "High net worth where estate tax planning is relevant (federal estate tax exemption is $13.61 million in 2024)."
+      ]},
+      { type: "tip", text: "A revocable living trust is inexpensive to set up relative to the probate costs it avoids — typically $1,500–$3,000 with an estate planning attorney vs. 2–5% of estate value in probate costs. For a $500,000 estate, that's $10,000–$25,000 in probate savings. The trust pays for itself on a moderately sized estate with a single probate avoided." },
+      { type: "cta", ctaText: "Calculate Your Net Worth", ctaHref: "/net-worth-calculator" },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {

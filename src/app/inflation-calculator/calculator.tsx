@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, TrendingUp, Sparkles, Info, Calendar } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from "recharts";
@@ -189,6 +190,15 @@ export function InflationCalc() {
               </p>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="inflation"
+              title={`$${amount} in ${Math.round(fromYear)} → $${Math.round(results.adjustedAmount).toLocaleString()} in ${Math.round(toYear)}`}
+              inputs={{ amount, fromYear: Math.round(fromYear), toYear: Math.round(toYear) }}
+              results={{ adjustedAmount: Math.round(results.adjustedAmount), totalInflation: parseFloat(results.totalInflation.toFixed(1)), avgAnnual: parseFloat(results.avgAnnual.toFixed(1)) }}
+            />
+          </div>
         </>
       )}
 

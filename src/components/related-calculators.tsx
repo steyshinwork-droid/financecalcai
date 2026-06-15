@@ -116,6 +116,11 @@ const ALL_CALCULATORS: Record<string, { name: string; href: string; description:
     href: "/social-security-calculator",
     description: "Estimate your monthly SS benefit and find the best age to claim.",
   },
+  "fire-calculator": {
+    name: "FIRE Calculator",
+    href: "/fire-calculator",
+    description: "Find your FIRE number and see when you can retire early.",
+  },
 };
 
 const RELATED_MAP: Record<string, string[]> = {
@@ -142,6 +147,7 @@ const RELATED_MAP: Record<string, string[]> = {
   "paycheck-calculator": ["budget-calculator", "tax-bracket-calculator", "salary-calculator"],
   "dividend-calculator": ["investment-calculator", "compound-interest-calculator", "retirement-calculator"],
   "social-security-calculator": ["retirement-calculator", "investment-calculator", "paycheck-calculator"],
+  "fire-calculator": ["retirement-calculator", "investment-calculator", "compound-interest-calculator"],
 };
 
 export function RelatedCalculators({ currentSlug }: { currentSlug: string }) {

@@ -28,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/paycheck-calculator",
     "/dividend-calculator",
     "/social-security-calculator",
+    "/fire-calculator",
   ];
 
   const blogSlugs = getAllSlugs();

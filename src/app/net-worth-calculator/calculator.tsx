@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Sparkles, Info, Calendar } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   BarChart,
   Bar,
@@ -254,6 +255,15 @@ export function NetWorthCalc() {
               <p className="flex items-center gap-1 text-xs text-gray-400"><Info className="h-3 w-3" /> Benchmarks based on US Federal Reserve data. Not financial advice.</p>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="net-worth"
+              title={`Age ${age}, Net Worth: $${Math.round(results.netWorth).toLocaleString()}`}
+              inputs={{ age, ...numericAssets, ...numericLiabilities }}
+              results={{ netWorth: Math.round(results.netWorth), totalAssets: Math.round(results.totalAssets), totalLiabilities: Math.round(results.totalLiabilities) }}
+            />
+          </div>
         </>
       )}
     </div>

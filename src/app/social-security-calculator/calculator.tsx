@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Calendar, Sparkles, Info, Shield, Users } from "lucide-react";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 import {
   BarChart,
   Bar,
@@ -327,6 +328,15 @@ export function SocialSecurityCalc() {
               </p>
             </CardContent>
           </Card>
+
+          <div className="flex justify-end">
+            <SaveCalculationButton
+              calculatorType="social-security"
+              title={`Age ${claimAge} claim: $${Math.round(results.selectedBenefit).toLocaleString()}/mo`}
+              inputs={{ age, income, yearsWorked: years, claimAge }}
+              results={{ selectedBenefit: Math.round(results.selectedBenefit), at62: Math.round(results.at62), at67: Math.round(results.at67), at70: Math.round(results.at70) }}
+            />
+          </div>
         </>
       )}
     </div>

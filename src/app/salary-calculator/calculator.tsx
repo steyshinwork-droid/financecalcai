@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { DollarSign, Clock, Sparkles, Info } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { SaveCalculationButton } from "@/components/save-calculation-button";
 
 function useNumInput(initial: number) {
   const [str, setStr] = useState(String(initial));
@@ -166,6 +167,15 @@ export function SalaryCalc() {
           </div>
         </CardContent>
       </Card>
+
+      <div className="flex justify-end">
+        <SaveCalculationButton
+          calculatorType="salary"
+          title={`$${amount} ${period} → $${Math.round(breakdown.annual).toLocaleString()}/yr`}
+          inputs={{ amount, period, hoursPerWeek: hours }}
+          results={{ annual: Math.round(breakdown.annual), monthly: Math.round(breakdown.monthly), hourly: parseFloat(breakdown.hourly.toFixed(2)) }}
+        />
+      </div>
 
       <Card className="border-purple-200 bg-gradient-to-br from-purple-50 to-white">
         <CardHeader>

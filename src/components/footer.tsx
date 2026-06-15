@@ -114,6 +114,11 @@ export function Footer() {
                   Social Security
                 </Link>
               </li>
+              <li>
+                <Link href="/fire-calculator" className="hover:text-emerald-600">
+                  FIRE Calculator
+                </Link>
+              </li>
             </ul>
           </div>
 

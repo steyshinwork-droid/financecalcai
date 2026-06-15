@@ -6,9 +6,9 @@ import { Check, Crown, Zap } from "lucide-react";
 import { createClient } from "@/lib/supabase";
 
 const freeFeatures = [
-  "23 financial calculators",
+  "24 financial calculators",
   "AI-powered insights",
-  "308 expert articles",
+  "316 expert articles",
   "Basic calculations",
 ];
 
