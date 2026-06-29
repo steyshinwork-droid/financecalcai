@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { StudentLoanCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
@@ -52,7 +52,7 @@ export default function StudentLoanPage() {
       <StudentLoanCalc />
 
       <div className="mt-10">
-        <AffiliateBanner variant="debt" />
+        <AffiliateBanner variant="student" />
       </div>
 
       <section className="mt-16 space-y-8">
@@ -64,7 +64,7 @@ export default function StudentLoanPage() {
             Student loans accrue interest daily based on your outstanding
             balance and interest rate. Your monthly payment first covers
             accrued interest, then reduces the principal. In the early years,
-            most of your payment goes to interest — which is why extra
+            most of your payment goes to interest вЂ” which is why extra
             principal payments early in the loan save the most money.
           </p>
         </div>
@@ -78,7 +78,7 @@ export default function StudentLoanPage() {
             forbearance, and potential forgiveness. Private loans have none of
             these protections but sometimes offer lower rates for
             creditworthy borrowers. Always exhaust federal loan options before
-            taking private loans — the flexibility is worth more than a
+            taking private loans вЂ” the flexibility is worth more than a
             slightly lower rate.
           </p>
         </div>
@@ -89,7 +89,7 @@ export default function StudentLoanPage() {
           {
             question: "Should I pay off student loans or invest?",
             answer:
-              "It depends on your interest rate. If your student loan rate is above 7%, prioritize paying it off — the guaranteed return beats uncertain stock returns. If below 5%, invest in tax-advantaged accounts first (401k match, then IRA). Between 5–7%, do both: invest enough to get any employer match, then split extra money between loans and investments.",
+              "It depends on your interest rate. If your student loan rate is above 7%, prioritize paying it off вЂ” the guaranteed return beats uncertain stock returns. If below 5%, invest in tax-advantaged accounts first (401k match, then IRA). Between 5вЂ“7%, do both: invest enough to get any employer match, then split extra money between loans and investments.",
           },
           {
             question: "What is the avalanche method for student loans?",
@@ -99,12 +99,12 @@ export default function StudentLoanPage() {
           {
             question: "How much does an extra $100/month save on student loans?",
             answer:
-              "On a $30,000 loan at 6.5% with a 10-year term, an extra $100/month saves approximately $2,800 in interest and cuts about 2 years off your repayment. The earlier you start making extra payments, the greater the savings — because you're reducing the principal on which interest compounds.",
+              "On a $30,000 loan at 6.5% with a 10-year term, an extra $100/month saves approximately $2,800 in interest and cuts about 2 years off your repayment. The earlier you start making extra payments, the greater the savings вЂ” because you're reducing the principal on which interest compounds.",
           },
           {
             question: "What are income-driven repayment plans?",
             answer:
-              "Income-driven repayment (IDR) plans cap your federal student loan payment at 5–10% of your discretionary income. Plans include SAVE (formerly REPAYE), PAYE, IBR, and ICR. After 20–25 years of qualifying payments, any remaining balance is forgiven. These are ideal if your loan balance is high relative to your income.",
+              "Income-driven repayment (IDR) plans cap your federal student loan payment at 5вЂ“10% of your discretionary income. Plans include SAVE (formerly REPAYE), PAYE, IBR, and ICR. After 20вЂ“25 years of qualifying payments, any remaining balance is forgiven. These are ideal if your loan balance is high relative to your income.",
           },
           {
             question: "Should I refinance my student loans?",
@@ -127,7 +127,7 @@ export default function StudentLoanPage() {
                 name: "Should I pay off student loans or invest?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "It depends on your interest rate. If your student loan rate is above 7%, prioritize paying it off. If below 5%, invest in tax-advantaged accounts first. Between 5–7%, do both: get the 401k match, then split extra money between loans and investments.",
+                  text: "It depends on your interest rate. If your student loan rate is above 7%, prioritize paying it off. If below 5%, invest in tax-advantaged accounts first. Between 5вЂ“7%, do both: get the 401k match, then split extra money between loans and investments.",
                 },
               },
               {
@@ -143,7 +143,7 @@ export default function StudentLoanPage() {
                 name: "What are income-driven repayment plans?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Income-driven repayment plans cap your federal student loan payment at 5–10% of your discretionary income. After 20–25 years of qualifying payments, any remaining balance is forgiven.",
+                  text: "Income-driven repayment plans cap your federal student loan payment at 5вЂ“10% of your discretionary income. After 20вЂ“25 years of qualifying payments, any remaining balance is forgiven.",
                 },
               },
             ],
@@ -153,3 +153,4 @@ export default function StudentLoanPage() {
     </div>
   );
 }
+

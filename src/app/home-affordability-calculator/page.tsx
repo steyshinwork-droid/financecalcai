@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { HomeAffordabilityCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
@@ -52,7 +52,7 @@ export default function HomeAffordabilityPage() {
       <HomeAffordabilityCalc />
 
       <div className="mt-10">
-        <AffiliateBanner variant="general" />
+        <AffiliateBanner variant="mortgage" />
       </div>
 
       <section className="mt-16 space-y-8">
@@ -91,9 +91,9 @@ export default function HomeAffordabilityPage() {
           </h2>
           <p className="text-gray-600">
             A 20% down payment eliminates private mortgage insurance (PMI),
-            which typically costs 0.5–1.5% of the loan annually. On a
-            $400,000 loan, that's $2,000–$6,000 per year added to your
-            housing costs. You can buy with as little as 3–5% down (FHA or
+            which typically costs 0.5вЂ“1.5% of the loan annually. On a
+            $400,000 loan, that's $2,000вЂ“$6,000 per year added to your
+            housing costs. You can buy with as little as 3вЂ“5% down (FHA or
             conventional loans), but the PMI adds significantly to your
             monthly payment and reduces your buying power.
           </p>
@@ -105,27 +105,27 @@ export default function HomeAffordabilityPage() {
           {
             question: "How much house can I afford on a $100,000 salary?",
             answer:
-              "On a $100,000 salary with $500/month in existing debts, 10% down, and a 6.8% mortgage rate, you can typically afford a home in the $350,000–$400,000 range. Your monthly housing costs would be roughly $2,300, which is about 28% of your $8,333 monthly gross income. Use the calculator above to get a precise number based on your actual situation.",
+              "On a $100,000 salary with $500/month in existing debts, 10% down, and a 6.8% mortgage rate, you can typically afford a home in the $350,000вЂ“$400,000 range. Your monthly housing costs would be roughly $2,300, which is about 28% of your $8,333 monthly gross income. Use the calculator above to get a precise number based on your actual situation.",
           },
           {
             question: "What is debt-to-income ratio and why does it matter?",
             answer:
-              "Debt-to-income ratio (DTI) is your total monthly debt payments divided by your gross monthly income. Lenders use two ratios: front-end DTI (housing costs only, max 28%) and back-end DTI (all debts, max 36–43%). Most conventional loans require back-end DTI below 43%. FHA loans can go higher. A lower DTI not only helps you qualify — it also means you can handle your mortgage without financial stress.",
+              "Debt-to-income ratio (DTI) is your total monthly debt payments divided by your gross monthly income. Lenders use two ratios: front-end DTI (housing costs only, max 28%) and back-end DTI (all debts, max 36вЂ“43%). Most conventional loans require back-end DTI below 43%. FHA loans can go higher. A lower DTI not only helps you qualify вЂ” it also means you can handle your mortgage without financial stress.",
           },
           {
             question: "Should I buy the maximum I can afford?",
             answer:
-              "Almost never. The maximum you can qualify for and the amount that's wise to borrow are very different. Lenders approve based on income and debts, but don't factor in your lifestyle, savings goals, retirement contributions, or home maintenance costs (typically 1–2% of home value annually). Most financial advisors suggest keeping housing costs below 25% of take-home pay — more conservative than lender guidelines.",
+              "Almost never. The maximum you can qualify for and the amount that's wise to borrow are very different. Lenders approve based on income and debts, but don't factor in your lifestyle, savings goals, retirement contributions, or home maintenance costs (typically 1вЂ“2% of home value annually). Most financial advisors suggest keeping housing costs below 25% of take-home pay вЂ” more conservative than lender guidelines.",
           },
           {
             question: "What costs are not included in the calculator?",
             answer:
-              "The calculator doesn't include private mortgage insurance (PMI, required when down payment is under 20%), closing costs (typically 2–5% of purchase price), moving costs, home inspection fees, ongoing maintenance and repairs (budget 1–2% of home value per year), utilities, and any immediate renovation costs. These can add $10,000–$30,000 or more to the first year of homeownership.",
+              "The calculator doesn't include private mortgage insurance (PMI, required when down payment is under 20%), closing costs (typically 2вЂ“5% of purchase price), moving costs, home inspection fees, ongoing maintenance and repairs (budget 1вЂ“2% of home value per year), utilities, and any immediate renovation costs. These can add $10,000вЂ“$30,000 or more to the first year of homeownership.",
           },
           {
             question: "How does the interest rate affect affordability?",
             answer:
-              "Interest rate has a major impact on affordability. On a $400,000 home with 20% down ($320,000 loan), a 5% rate gives a $1,718/month P&I payment. At 7%, that rises to $2,129/month — a $411 difference. Over 30 years, the 7% loan costs $148,000 more in total interest. Even a 0.5% rate improvement significantly expands your affordable price range.",
+              "Interest rate has a major impact on affordability. On a $400,000 home with 20% down ($320,000 loan), a 5% rate gives a $1,718/month P&I payment. At 7%, that rises to $2,129/month вЂ” a $411 difference. Over 30 years, the 7% loan costs $148,000 more in total interest. Even a 0.5% rate improvement significantly expands your affordable price range.",
           },
         ]}
       />
@@ -143,7 +143,7 @@ export default function HomeAffordabilityPage() {
                 name: "How much house can I afford on a $100,000 salary?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "On a $100,000 salary with $500/month in debts, 10% down, and 6.8% rate, you can typically afford a home in the $350,000–$400,000 range, with monthly housing costs around $2,300.",
+                  text: "On a $100,000 salary with $500/month in debts, 10% down, and 6.8% rate, you can typically afford a home in the $350,000вЂ“$400,000 range, with monthly housing costs around $2,300.",
                 },
               },
               {
@@ -151,7 +151,7 @@ export default function HomeAffordabilityPage() {
                 name: "What is debt-to-income ratio?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "DTI is your total monthly debt payments divided by gross monthly income. Lenders typically require front-end DTI below 28% and back-end DTI below 36–43%.",
+                  text: "DTI is your total monthly debt payments divided by gross monthly income. Lenders typically require front-end DTI below 28% and back-end DTI below 36вЂ“43%.",
                 },
               },
               {
@@ -169,3 +169,4 @@ export default function HomeAffordabilityPage() {
     </div>
   );
 }
+

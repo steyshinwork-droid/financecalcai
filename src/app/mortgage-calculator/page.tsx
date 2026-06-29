@@ -52,7 +52,7 @@ export default function MortgagePage() {
       <MortgageCalc />
 
       <div className="mt-10">
-        <AffiliateBanner variant="savings" />
+        <AffiliateBanner variant="mortgage" />
       </div>
 
       <section className="mt-16 space-y-8">
@@ -127,3 +127,4 @@ export default function MortgagePage() {
     </div>
   );
 }
+

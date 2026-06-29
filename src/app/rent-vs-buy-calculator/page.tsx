@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { RentVsBuyCalc } from "./calculator";
 import { RelatedCalculators } from "@/components/related-calculators";
 import { RelatedArticles } from "@/components/related-articles";
@@ -7,7 +7,7 @@ import { AffiliateBanner } from "@/components/affiliate-banner";
 import { FaqSection } from "@/components/faq-section";
 
 export const metadata: Metadata = {
-  title: "Rent vs. Buy Calculator — Is It Better to Rent or Buy a Home? | FinanceCalcAI",
+  title: "Rent vs. Buy Calculator вЂ” Is It Better to Rent or Buy a Home? | FinanceCalcAI",
   description:
     "Compare the true cost of renting vs. buying a home. See break-even point, net costs, equity built, and get AI-powered analysis to make the right decision for your situation.",
   keywords:
@@ -20,7 +20,7 @@ const jsonLd = {
   "@type": "WebApplication",
   name: "Rent vs. Buy Calculator",
   url: "https://www.financecalcai.com/rent-vs-buy-calculator",
-  description: "Free rent vs. buy calculator — compare true costs, see the break-even point, and get AI analysis on whether renting or buying makes sense for you.",
+  description: "Free rent vs. buy calculator вЂ” compare true costs, see the break-even point, and get AI analysis on whether renting or buying makes sense for you.",
   applicationCategory: "FinanceApplication",
   operatingSystem: "Any",
   offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
@@ -34,22 +34,22 @@ export default function RentVsBuyPage() {
       <div className="mb-8">
         <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">Rent vs. Buy Calculator</h1>
         <p className="text-lg text-gray-600">
-          Enter your rent, home price, and financial details to see which option costs less — and exactly when buying breaks even with renting.
+          Enter your rent, home price, and financial details to see which option costs less вЂ” and exactly when buying breaks even with renting.
         </p>
       </div>
 
       <RentVsBuyCalc />
 
       <div className="mt-10">
-        <AffiliateBanner variant="general" />
+        <AffiliateBanner variant="mortgage" />
       </div>
 
       <section className="mt-16 space-y-8">
         <div>
           <h2 className="mb-3 text-2xl font-bold text-gray-900">How the Rent vs. Buy Decision Really Works</h2>
           <p className="text-gray-600">
-            The rent vs. buy decision is not simply about monthly payment — it's about total cost over your actual time horizon.
-            Buying has large upfront costs (down payment, closing costs of 2–5%) and ongoing costs (taxes, insurance, maintenance).
+            The rent vs. buy decision is not simply about monthly payment вЂ” it's about total cost over your actual time horizon.
+            Buying has large upfront costs (down payment, closing costs of 2вЂ“5%) and ongoing costs (taxes, insurance, maintenance).
             Renting has lower upfront costs but no equity building and rent subject to annual increases.
             The key variable is time: the longer you stay, the more buying tends to win. The shorter your horizon, the more renting tends to win.
           </p>
@@ -66,7 +66,7 @@ export default function RentVsBuyPage() {
           <h2 className="mb-3 text-2xl font-bold text-gray-900">The Opportunity Cost of a Down Payment</h2>
           <p className="text-gray-600">
             A down payment of $80,000 invested in a diversified index fund at 7% annual return grows to over $160,000 in 10 years.
-            That growth you give up when you put money into a house instead of the market is called opportunity cost —
+            That growth you give up when you put money into a house instead of the market is called opportunity cost вЂ”
             and it's one reason buying isn't automatically better than renting even when monthly mortgage payments are similar to rent.
             Our calculator factors this in so you see the honest comparison.
           </p>
@@ -75,7 +75,7 @@ export default function RentVsBuyPage() {
           <h2 className="mb-3 text-2xl font-bold text-gray-900">The 5% Rule for Rent vs. Buy</h2>
           <p className="text-gray-600">
             A useful heuristic: multiply the home price by 5%, then divide by 12. If your annual rent is less than 5% of the home price,
-            renting is likely more cost-effective. Example: $400,000 home × 5% = $20,000/year = $1,667/month.
+            renting is likely more cost-effective. Example: $400,000 home Г— 5% = $20,000/year = $1,667/month.
             If rent is under $1,667, renting may be the better deal. This rule accounts for property taxes (~1%),
             maintenance (~1%), and the cost of capital tied up in the home (~3%).
           </p>
@@ -85,7 +85,7 @@ export default function RentVsBuyPage() {
       <FaqSection items={[
         {
           question: "Is it always better to buy than rent?",
-          answer: "No — it depends heavily on how long you stay. Buying has large upfront costs (down payment, closing costs of 2–5% of the home price) that take years to recoup through equity and appreciation. If you move within 2–4 years, renting is usually cheaper. If you stay 7–10+ years, buying typically wins financially. The break-even point varies by market, but most US cities see break-even between 4–8 years."
+          answer: "No вЂ” it depends heavily on how long you stay. Buying has large upfront costs (down payment, closing costs of 2вЂ“5% of the home price) that take years to recoup through equity and appreciation. If you move within 2вЂ“4 years, renting is usually cheaper. If you stay 7вЂ“10+ years, buying typically wins financially. The break-even point varies by market, but most US cities see break-even between 4вЂ“8 years."
         },
         {
           question: "What does the break-even point mean?",
@@ -93,15 +93,15 @@ export default function RentVsBuyPage() {
         },
         {
           question: "How much should I put down when buying a home?",
-          answer: "20% down eliminates private mortgage insurance (PMI), which typically costs 0.5–1.5% of the loan annually. Below 20%, you pay PMI until you reach 20% equity. FHA loans allow as little as 3.5% down but require mortgage insurance for the life of the loan. A larger down payment reduces your monthly payment and total interest but increases your opportunity cost (money not invested). There's no universal right answer — it depends on your cash reserves, income stability, and how long you plan to stay."
+          answer: "20% down eliminates private mortgage insurance (PMI), which typically costs 0.5вЂ“1.5% of the loan annually. Below 20%, you pay PMI until you reach 20% equity. FHA loans allow as little as 3.5% down but require mortgage insurance for the life of the loan. A larger down payment reduces your monthly payment and total interest but increases your opportunity cost (money not invested). There's no universal right answer вЂ” it depends on your cash reserves, income stability, and how long you plan to stay."
         },
         {
           question: "What costs do homeowners often underestimate?",
-          answer: "Maintenance and repairs are the most commonly underestimated cost. Financial advisors typically budget 1–2% of the home's value annually ($4,000–$8,000/year on a $400,000 home). Other overlooked costs: closing costs (2–5% upfront), property taxes (0.5–2.5% depending on state), HOA fees, homeowner's insurance, and the cost of capital tied up in the down payment. Together, these can add $1,000–$2,000/month beyond the mortgage payment on a median-priced home."
+          answer: "Maintenance and repairs are the most commonly underestimated cost. Financial advisors typically budget 1вЂ“2% of the home's value annually ($4,000вЂ“$8,000/year on a $400,000 home). Other overlooked costs: closing costs (2вЂ“5% upfront), property taxes (0.5вЂ“2.5% depending on state), HOA fees, homeowner's insurance, and the cost of capital tied up in the down payment. Together, these can add $1,000вЂ“$2,000/month beyond the mortgage payment on a median-priced home."
         },
         {
           question: "Does renting mean throwing money away?",
-          answer: "No — this is one of the most persistent myths in personal finance. When you rent, you're paying for housing, flexibility, and the ability to invest the difference. When you buy, significant portions of your early mortgage payments go to interest (not equity), and you incur large ongoing costs beyond the mortgage. The 'throwing money away' framing ignores that buyers also pay interest, taxes, insurance, and maintenance — none of which build equity."
+          answer: "No вЂ” this is one of the most persistent myths in personal finance. When you rent, you're paying for housing, flexibility, and the ability to invest the difference. When you buy, significant portions of your early mortgage payments go to interest (not equity), and you incur large ongoing costs beyond the mortgage. The 'throwing money away' framing ignores that buyers also pay interest, taxes, insurance, and maintenance вЂ” none of which build equity."
         },
       ]} />
 
@@ -120,7 +120,7 @@ export default function RentVsBuyPage() {
                 name: "Is it always better to buy than rent?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "No. It depends on how long you stay and local market conditions. If you move within 2–4 years, renting is usually cheaper after factoring in closing costs and the break-even timeline. Buying tends to win financially after 6–8+ years in most markets.",
+                  text: "No. It depends on how long you stay and local market conditions. If you move within 2вЂ“4 years, renting is usually cheaper after factoring in closing costs and the break-even timeline. Buying tends to win financially after 6вЂ“8+ years in most markets.",
                 },
               },
               {
@@ -128,7 +128,7 @@ export default function RentVsBuyPage() {
                 name: "What is the break-even point in rent vs. buy?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "The break-even point is when the cumulative net cost of buying (payments minus equity, plus opportunity cost of down payment) equals the total rent paid. After that point, buying is cheaper on a net basis. In most US markets, break-even falls between 4–8 years.",
+                  text: "The break-even point is when the cumulative net cost of buying (payments minus equity, plus opportunity cost of down payment) equals the total rent paid. After that point, buying is cheaper on a net basis. In most US markets, break-even falls between 4вЂ“8 years.",
                 },
               },
               {
@@ -136,7 +136,7 @@ export default function RentVsBuyPage() {
                 name: "Does renting mean throwing money away?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "No. Rent pays for housing and flexibility. Early mortgage payments mostly go to interest, not equity. Buyers also pay property taxes, insurance, and maintenance — costs that don't build equity. The 'throwing money away' framing ignores the full cost of homeownership.",
+                  text: "No. Rent pays for housing and flexibility. Early mortgage payments mostly go to interest, not equity. Buyers also pay property taxes, insurance, and maintenance вЂ” costs that don't build equity. The 'throwing money away' framing ignores the full cost of homeownership.",
                 },
               },
             ],
@@ -146,3 +146,4 @@ export default function RentVsBuyPage() {
     </div>
   );
 }
+

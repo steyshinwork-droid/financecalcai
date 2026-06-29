@@ -1,43 +1,76 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 
 interface AffiliateBannerProps {
-  variant?: "savings" | "investing" | "debt" | "general";
+  variant?: "savings" | "investing" | "debt" | "general" | "mortgage" | "retirement" | "student";
 }
 
 const banners = {
   savings: {
     label: "Recommended",
-    title: "Earn Up to 5.00% APY on Your Savings",
+    title: "Earn Up to 4.50% APY — No Fees, FDIC Insured",
     description:
-      "Open a high-yield savings account and put your emergency fund to work. No fees, FDIC insured, instant access.",
-    cta: "Compare Top HYSAs",
-    href: "https://www.financecalcai.com/blog/high-yield-savings-account-explained",
+      "Open a high-yield savings account at Ally Bank. No minimum balance, no monthly fees, and earn 10x the national average interest rate on your savings.",
+    cta: "Open Free Account",
+    href: "https://www.ally.com/bank/online-savings-account/",
     bg: "bg-amber-50 border-amber-200",
     labelColor: "bg-amber-100 text-amber-800",
     ctaColor: "bg-amber-600 hover:bg-amber-700",
   },
   investing: {
-    label: "Sponsored",
-    title: "Start Investing With as Little as $1",
+    label: "Recommended",
+    title: "Invest Automatically — Start With Just $5",
     description:
-      "Beginner-friendly investment platform. Build a diversified portfolio of ETFs automatically, with zero commissions.",
+      "Acorns rounds up your everyday purchases and invests the spare change. Build wealth on autopilot with expert-built portfolios matched to your goals.",
     cta: "Start Investing Free",
-    href: "https://www.financecalcai.com/blog/how-to-start-investing-100-dollars",
+    href: "https://www.acorns.com/",
     bg: "bg-emerald-50 border-emerald-200",
     labelColor: "bg-emerald-100 text-emerald-800",
     ctaColor: "bg-emerald-600 hover:bg-emerald-700",
   },
   debt: {
     label: "Recommended",
-    title: "Lower Your Interest Rate With a Balance Transfer",
+    title: "Compare Personal Loan Rates in 2 Minutes",
     description:
-      "Move high-interest credit card debt to a 0% APR card. Stop paying interest and pay down principal faster.",
-    cta: "Compare Balance Transfer Cards",
-    href: "https://www.financecalcai.com/blog/how-to-get-out-of-debt-fast",
+      "LendingTree lets you compare offers from multiple lenders at once. Find the lowest interest rate without hurting your credit score.",
+    cta: "Compare Rates Free",
+    href: "https://www.lendingtree.com/personal-loans/",
     bg: "bg-blue-50 border-blue-200",
     labelColor: "bg-blue-100 text-blue-800",
     ctaColor: "bg-blue-600 hover:bg-blue-700",
+  },
+  mortgage: {
+    label: "Recommended",
+    title: "Compare Mortgage Rates From 10+ Lenders",
+    description:
+      "See current mortgage rates from multiple lenders in minutes. No commitment, no hard credit pull. Compare offers and find the best rate for your home loan.",
+    cta: "Compare Mortgage Rates",
+    href: "https://www.lendingtree.com/home/mortgage/",
+    bg: "bg-sky-50 border-sky-200",
+    labelColor: "bg-sky-100 text-sky-800",
+    ctaColor: "bg-sky-600 hover:bg-sky-700",
+  },
+  retirement: {
+    label: "Recommended",
+    title: "Track All Your Investments in One Place — Free",
+    description:
+      "Empower (formerly Personal Capital) connects all your accounts and shows your full financial picture. Net worth, investment performance, and retirement forecast — 100% free.",
+    cta: "Try Empower Free",
+    href: "https://www.empower.com/",
+    bg: "bg-violet-50 border-violet-200",
+    labelColor: "bg-violet-100 text-violet-800",
+    ctaColor: "bg-violet-600 hover:bg-violet-700",
+  },
+  student: {
+    label: "Recommended",
+    title: "Refinance Student Loans — Save Thousands",
+    description:
+      "SoFi can lower your interest rate and monthly payment. Check your new rate in 2 minutes with no impact to your credit score. No fees, ever.",
+    cta: "Check Your Rate Free",
+    href: "https://www.sofi.com/refinance-student-loan/",
+    bg: "bg-indigo-50 border-indigo-200",
+    labelColor: "bg-indigo-100 text-indigo-800",
+    ctaColor: "bg-indigo-600 hover:bg-indigo-700",
   },
   general: {
     label: "Sponsored",

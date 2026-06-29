@@ -51,7 +51,7 @@ export default function NetWorthPage() {
       <NetWorthCalc />
 
       <div className="mt-10">
-        <AffiliateBanner variant="investing" />
+        <AffiliateBanner variant="retirement" />
       </div>
       <section className="mt-16 space-y-8">
         <div>
@@ -138,3 +138,4 @@ export default function NetWorthPage() {
     </div>
   );
 }
+

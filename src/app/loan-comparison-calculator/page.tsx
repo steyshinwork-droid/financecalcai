@@ -53,7 +53,7 @@ export default function LoanComparisonPage() {
       <LoanComparisonCalc />
 
       <div className="mt-10">
-        <AffiliateBanner variant="general" />
+        <AffiliateBanner variant="debt" />
       </div>
 
       <section className="mt-16 space-y-8">
@@ -142,3 +142,4 @@ export default function LoanComparisonPage() {
     </div>
   );
 }
+
