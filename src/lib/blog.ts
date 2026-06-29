@@ -14396,6 +14396,373 @@ export const blogPosts: BlogPost[] = [
       { type: "cta", ctaText: "Calculate Your Net Worth", ctaHref: "/net-worth-calculator" },
     ],
   },
+  {
+    slug: "what-is-a-simple-ira",
+    title: "What Is a SIMPLE IRA? A Complete Guide for Small Business Owners",
+    description: "Learn how a SIMPLE IRA works, who qualifies, contribution limits for 2025, and how it compares to a 401(k).",
+    date: "2026-06-29",
+    readTime: "6 min read",
+    category: "Retirement",
+    relatedCalculator: { name: "Retirement Calculator", href: "/retirement-calculator" },
+    content: [
+      { type: "intro", text: "A SIMPLE IRA (Savings Incentive Match Plan for Employees) is a retirement savings plan designed for small businesses with 100 or fewer employees. It's one of the easiest employer-sponsored retirement plans to set up and offers significant tax advantages for both employers and employees." },
+      { type: "h2", text: "How a SIMPLE IRA Works" },
+      { type: "p", text: "Both employees and employers contribute to individual IRA accounts. Employees contribute through payroll deductions before taxes are taken out. Employers are required to contribute — either matching or a flat percentage." },
+      { type: "h2", text: "SIMPLE IRA Contribution Limits 2025" },
+      { type: "ul", items: [
+        "Employee contribution limit: $16,000 per year (up from $15,500 in 2023)",
+        "Catch-up contribution (age 50+): additional $3,500 (total $19,500)",
+        "Employer matching: 100% of employee contributions up to 3% of salary",
+        "Employer non-elective: 2% of each eligible employee's salary (even non-participants)"
+      ]},
+      { type: "h2", text: "SIMPLE IRA vs. 401(k): Key Differences" },
+      { type: "ul", items: [
+        "Setup: SIMPLE IRA is much easier — no annual IRS filing required (no Form 5500)",
+        "Contribution limits: 401(k) allows $23,500 vs SIMPLE IRA's $16,000 in 2025",
+        "Employer requirement: SIMPLE IRA mandates employer contributions; 401(k) employer match is optional",
+        "Eligibility: SIMPLE IRA only for businesses with 100 or fewer employees",
+        "Early withdrawal penalty: SIMPLE IRA has a 25% penalty in the first 2 years (vs 10% for 401k)"
+      ]},
+      { type: "h2", text: "Who Should Choose a SIMPLE IRA?" },
+      { type: "ul", items: [
+        "Small businesses wanting to offer retirement benefits with minimal administrative burden",
+        "Self-employed individuals with a few employees",
+        "Business owners who want required employer contributions (good for retaining talent)",
+        "Companies not yet ready for the complexity and cost of a 401(k)"
+      ]},
+      { type: "tip", text: "The 2-year rule is critical: money withdrawn from a SIMPLE IRA within the first 2 years of participation faces a 25% early withdrawal penalty, not 10%. After 2 years, you can roll it into a traditional IRA or 401(k) penalty-free." },
+      { type: "h2", text: "Tax Advantages" },
+      { type: "p", text: "Employee contributions reduce taxable income dollar-for-dollar. A worker earning $60,000 who contributes $16,000 only pays income tax on $44,000. Investments grow tax-deferred until withdrawal in retirement. Employer contributions are tax-deductible as a business expense." },
+      { type: "cta", ctaText: "Project Your Retirement Savings", ctaHref: "/retirement-calculator" },
+    ],
+  },
+  {
+    slug: "how-to-build-wealth-in-your-20s",
+    title: "How to Build Wealth in Your 20s: 10 Moves That Compound Forever",
+    description: "The financial decisions you make in your 20s have the biggest long-term impact. Here's exactly what to prioritize.",
+    date: "2026-06-29",
+    readTime: "7 min read",
+    category: "Personal Finance",
+    relatedCalculator: { name: "Compound Interest Calculator", href: "/compound-interest-calculator" },
+    content: [
+      { type: "intro", text: "Your 20s are the most powerful decade for building wealth — not because you earn the most, but because time is on your side. A dollar invested at 25 is worth roughly 4x more at 65 than a dollar invested at 45, assuming 7% annual returns. Here's what to actually do." },
+      { type: "h2", text: "1. Start Investing Immediately — Even Small Amounts" },
+      { type: "p", text: "$100 per month invested at 22 at 7% average return grows to over $360,000 by age 65. The same $100 starting at 32 grows to only $180,000. The decade you skip costs you more than any investment choice you make." },
+      { type: "h2", text: "2. Get Your Employer 401(k) Match — It's Free Money" },
+      { type: "p", text: "If your employer matches 50% up to 6% of salary, and you earn $50,000, you're leaving $1,500 per year on the table by not contributing. That's a 50% instant return on investment — nothing else comes close." },
+      { type: "h2", text: "3. Open a Roth IRA Right Now" },
+      { type: "p", text: "Your 20s are the best time for a Roth IRA because your tax bracket is likely lower than it will be in your peak earning years. Contributing $7,000/year to a Roth IRA from age 22 to 65 could grow to over $1.5 million — completely tax-free." },
+      { type: "h2", text: "4. Build an Emergency Fund Before Investing More" },
+      { type: "p", text: "3–6 months of expenses in a high-yield savings account (currently 4–5% APY). Without it, any unexpected expense forces you to sell investments or take on debt — both destroy wealth." },
+      { type: "h2", text: "5. Avoid Lifestyle Inflation" },
+      { type: "p", text: "Every time you get a raise, resist the urge to spend it all. Save/invest at least 50% of every income increase. The people who build wealth in their 30s are almost always the ones who kept expenses flat in their 20s while income grew." },
+      { type: "h2", text: "6. Kill High-Interest Debt Aggressively" },
+      { type: "p", text: "Credit card debt at 20–25% APR is the opposite of compounding. Paying off $5,000 in credit card debt is a guaranteed 20–25% return. Pay minimums on everything else, nuke high-interest debt first." },
+      { type: "h2", text: "7. Increase Your Income — It's the Highest Leverage Move" },
+      { type: "p", text: "In your 20s, switching jobs every 2–3 years typically produces 20–30% salary increases. Staying at the same company averages 3% annual raises. A $15,000 salary increase invested over 40 years at 7% is worth over $3 million extra." },
+      { type: "h2", text: "8. Track Your Net Worth Monthly" },
+      { type: "p", text: "You can't manage what you don't measure. People who track their net worth monthly make better financial decisions. Set a goal: reach $100,000 net worth before 30." },
+      { type: "h2", text: "9. Learn About Taxes" },
+      { type: "p", text: "Most people in their 20s overpay taxes because they don't know about deductions, tax-advantaged accounts, or how investment taxes work. A few hours of learning can save thousands annually." },
+      { type: "h2", text: "10. Invest in Index Funds, Not Individual Stocks" },
+      { type: "p", text: "80% of professional fund managers underperform the S&P 500 index over 10+ years. A simple 3-fund portfolio (US stocks, international stocks, bonds) beats most complex strategies. Keep fees under 0.20%." },
+      { type: "tip", text: "The single biggest wealth-building mistake in your 20s is waiting. Whether it's waiting until you earn more, waiting until debt is paid, or waiting until you understand investing better — the delay costs more than any mistake you'd make by starting now." },
+      { type: "cta", ctaText: "See How Compound Interest Works", ctaHref: "/compound-interest-calculator" },
+    ],
+  },
+  {
+    slug: "how-to-freeze-your-credit-report",
+    title: "How to Freeze Your Credit Report (Step-by-Step Guide)",
+    description: "A credit freeze is the most effective way to prevent identity theft. Here's how to freeze and unfreeze your credit at all 3 bureaus.",
+    date: "2026-06-29",
+    readTime: "5 min read",
+    category: "Credit",
+    relatedCalculator: { name: "Mortgage Calculator", href: "/mortgage-calculator" },
+    content: [
+      { type: "intro", text: "A credit freeze (also called a security freeze) prevents anyone — including identity thieves — from opening new credit accounts in your name. It's free, reversible, and the single most effective tool to stop new-account fraud. If you're not actively applying for credit, your report should be frozen." },
+      { type: "h2", text: "What a Credit Freeze Does (and Doesn't Do)" },
+      { type: "ul", items: [
+        "DOES: Block lenders from pulling your credit report to open new accounts",
+        "DOES: Stop credit card, loan, and mortgage fraud in your name",
+        "DOES NOT: Affect your credit score",
+        "DOES NOT: Block existing creditors from viewing your account",
+        "DOES NOT: Prevent you from seeing your own credit report",
+        "DOES NOT: Stop soft inquiries (pre-approved offers, background checks)"
+      ]},
+      { type: "h2", text: "How to Freeze Your Credit at All 3 Bureaus" },
+      { type: "p", text: "You must freeze separately at all three major bureaus. The process is free and takes about 5 minutes each." },
+      { type: "ul", items: [
+        "Equifax: equifax.com/personal/credit-report-services/credit-freeze — online, phone (1-800-349-9960), or mail",
+        "Experian: experian.com/freeze/center.html — online, phone (1-888-397-3742), or mail",
+        "TransUnion: transunion.com/credit-freeze — online, phone (1-888-909-8872), or mail"
+      ]},
+      { type: "h2", text: "What You'll Need to Freeze Your Credit" },
+      { type: "ul", items: [
+        "Social Security Number",
+        "Date of birth",
+        "Current and recent addresses (past 2 years)",
+        "Email address (to receive PIN/confirmation)",
+        "Photo ID may be required if doing by mail"
+      ]},
+      { type: "h2", text: "How to Unfreeze Your Credit" },
+      { type: "p", text: "When you want to apply for credit (mortgage, car loan, credit card), you temporarily lift the freeze — either permanently or for a specified window (e.g., 3 days). You do this through the same bureau website or phone number. The lift is usually instant online." },
+      { type: "h2", text: "Credit Freeze vs. Credit Lock: What's the Difference?" },
+      { type: "ul", items: [
+        "Freeze: Free by law, requires PIN to unfreeze, the same level of protection",
+        "Lock: Offered by each bureau as a premium product (some free, some paid), unlocks faster via app but not legally required to be free",
+        "Recommendation: Use the freeze — same protection, always free, legally mandated"
+      ]},
+      { type: "tip", text: "Also freeze at ChexSystems (chexsystems.com) to prevent fraudulent bank account openings, and NCTUE (equifax.com/personal/credit-report-services) for utility account protection. Total time investment: 20 minutes. Protection: priceless." },
+      { type: "cta", ctaText: "Check Mortgage Rates You'd Qualify For", ctaHref: "/mortgage-calculator" },
+    ],
+  },
+  {
+    slug: "what-is-your-financial-freedom-number",
+    title: "What Is Your Financial Freedom Number? (And How to Calculate It)",
+    description: "Your financial freedom number is the amount of savings needed to retire and live off investment returns. Here's how to find yours.",
+    date: "2026-06-29",
+    readTime: "6 min read",
+    category: "Retirement",
+    relatedCalculator: { name: "FIRE Calculator", href: "/fire-calculator" },
+    content: [
+      { type: "intro", text: "Your financial freedom number is the portfolio size at which your investment returns cover your annual expenses indefinitely — without ever running out of money. Reaching it means work becomes optional. The math is simpler than most people think." },
+      { type: "h2", text: "The Formula: 25x Rule" },
+      { type: "p", text: "Multiply your annual expenses by 25. That's your financial freedom number. A household spending $60,000/year needs $1,500,000. Spending $40,000/year needs $1,000,000. This comes from the 4% safe withdrawal rate — the research-backed level at which a portfolio survives 30+ years of withdrawals." },
+      { type: "h2", text: "The 4% Safe Withdrawal Rate Explained" },
+      { type: "p", text: "The Trinity Study (1998, updated 2009) found that withdrawing 4% of your initial portfolio annually, adjusted for inflation, had a 95%+ success rate over 30 years across all historical market conditions including the Great Depression. $1.5 million × 4% = $60,000/year." },
+      { type: "h2", text: "How to Calculate Your Financial Freedom Number" },
+      { type: "ul", items: [
+        "Step 1: Track your current annual spending (not income, spending)",
+        "Step 2: Decide your target retirement spending (same, higher, or lower)",
+        "Step 3: Multiply target spending × 25 = your number",
+        "Step 4: Subtract expected Social Security income to reduce the required portfolio"
+      ]},
+      { type: "h2", text: "How Long Will It Take to Reach Your Number?" },
+      { type: "p", text: "Your savings rate is the biggest driver. With a 50% savings rate, you reach financial freedom in about 17 years regardless of income. At 70%, about 8.5 years. At 10%, about 40+ years. This is why FIRE (Financial Independence, Retire Early) adherents focus obsessively on reducing expenses and increasing savings rate." },
+      { type: "h2", text: "What If the 4% Rule Feels Risky?" },
+      { type: "ul", items: [
+        "Use a 3.5% withdrawal rate (multiply expenses by 28.6) for a longer retirement or higher confidence",
+        "Consider part-time income in early retirement to reduce withdrawal rate",
+        "Factor in Social Security — even a partial benefit reduces your required portfolio",
+        "Flexibility: reducing spending by 10–15% in bad market years dramatically improves success rates"
+      ]},
+      { type: "h2", text: "Examples by Spending Level" },
+      { type: "ul", items: [
+        "$30,000/year spending → $750,000 financial freedom number",
+        "$50,000/year spending → $1,250,000",
+        "$75,000/year spending → $1,875,000",
+        "$100,000/year spending → $2,500,000",
+        "$150,000/year spending → $3,750,000"
+      ]},
+      { type: "tip", text: "Most people significantly overestimate how much they spend in retirement. Studies show retirees typically spend 15–20% less than they planned, partly because the expensive commuting, work clothing, and lunches disappear. Use your current spending as an upper bound, not an exact target." },
+      { type: "cta", ctaText: "Calculate Your FIRE Number and Date", ctaHref: "/fire-calculator" },
+    ],
+  },
+  {
+    slug: "ira-contribution-limits-2025",
+    title: "IRA Contribution Limits 2025: Traditional, Roth, SEP, and SIMPLE",
+    description: "Complete guide to 2025 IRA contribution limits for all account types, income limits, and strategies to maximize your retirement savings.",
+    date: "2026-06-29",
+    readTime: "5 min read",
+    category: "Retirement",
+    relatedCalculator: { name: "Retirement Calculator", href: "/retirement-calculator" },
+    content: [
+      { type: "intro", text: "IRS announced the 2025 IRA contribution limits in November 2024. Knowing the exact limits helps you maximize tax-advantaged retirement savings. Here are all the numbers for every IRA type." },
+      { type: "h2", text: "Traditional and Roth IRA Limits 2025" },
+      { type: "ul", items: [
+        "Maximum contribution: $7,000 per person",
+        "Catch-up contribution (age 50+): additional $1,000 (total $8,000)",
+        "Contribution deadline: April 15, 2026 (for tax year 2025)",
+        "Note: The $7,000 limit is shared between traditional and Roth IRAs combined"
+      ]},
+      { type: "h2", text: "Roth IRA Income Limits 2025" },
+      { type: "ul", items: [
+        "Single filers: full contribution up to $150,000 MAGI; phase-out $150,000–$165,000; no contribution above $165,000",
+        "Married filing jointly: full contribution up to $236,000; phase-out $236,000–$246,000; no contribution above $246,000",
+        "Married filing separately (lived with spouse): phase-out $0–$10,000",
+        "No income limit for traditional IRA contributions (but deductibility phases out)"
+      ]},
+      { type: "h2", text: "Traditional IRA Deductibility Phase-Out 2025" },
+      { type: "p", text: "Anyone can contribute to a traditional IRA, but the tax deduction phases out if you (or spouse) have a workplace retirement plan:" },
+      { type: "ul", items: [
+        "Single with workplace plan: full deduction up to $79,000 MAGI; phase-out $79,000–$89,000",
+        "Married, covered by workplace plan: full deduction up to $126,000; phase-out $126,000–$146,000",
+        "Married, spouse covered (you're not): phase-out $236,000–$246,000"
+      ]},
+      { type: "h2", text: "SEP-IRA Limits 2025" },
+      { type: "ul", items: [
+        "Maximum contribution: lesser of $69,000 or 25% of net self-employment income",
+        "No catch-up contribution for SEP-IRA",
+        "Contribution deadline: tax filing deadline plus extensions (October 15 with extension)",
+        "Available to self-employed and small business owners"
+      ]},
+      { type: "h2", text: "SIMPLE IRA Limits 2025" },
+      { type: "ul", items: [
+        "Employee contribution: $16,000",
+        "Catch-up contribution (age 50+): additional $3,500 (total $19,500)",
+        "Employer must contribute: either 3% matching or 2% non-elective"
+      ]},
+      { type: "tip", text: "If you earn too much for a Roth IRA, consider the Backdoor Roth IRA: contribute to a non-deductible traditional IRA ($7,000), then immediately convert it to a Roth. There are no income limits on conversions — only on direct Roth IRA contributions." },
+      { type: "h2", text: "2025 vs 2024 Comparison" },
+      { type: "ul", items: [
+        "Traditional/Roth IRA limit: $7,000 (unchanged from 2024)",
+        "Catch-up: $1,000 (unchanged)",
+        "SEP-IRA: $69,000 (up from $66,000 in 2024)",
+        "SIMPLE IRA: $16,000 (up from $15,500 in 2023)"
+      ]},
+      { type: "cta", ctaText: "Project Your Retirement Portfolio", ctaHref: "/retirement-calculator" },
+    ],
+  },
+  {
+    slug: "millionaire-habits-to-adopt",
+    title: "10 Millionaire Habits You Can Start Today (Backed by Research)",
+    description: "Studies of wealthy individuals reveal consistent habits around money, time, and mindset. Here are the ones that actually matter.",
+    date: "2026-06-29",
+    readTime: "6 min read",
+    category: "Personal Finance",
+    relatedCalculator: { name: "Investment Calculator", href: "/investment-calculator" },
+    content: [
+      { type: "intro", text: "Tom Corley spent 5 years studying 233 wealthy and 128 poor individuals, tracking their daily habits. The differences weren't luck or inheritance — they were systems and behaviors practiced consistently over years. Here are the habits that statistically separate wealth builders from wealth spenders." },
+      { type: "h2", text: "1. They Pay Themselves First" },
+      { type: "p", text: "Wealthy individuals automate savings before spending. The moment a paycheck arrives, a fixed percentage goes to investments. They don't save what's left over — they spend what's left over after saving. Start with 10%, target 20%." },
+      { type: "h2", text: "2. They Live Below Their Means (Even When Rich)" },
+      { type: "p", text: "The Millionaire Next Door (Stanley & Danko, 1996) found that most millionaires drive used cars, live in modest neighborhoods, and wear average clothing. Wealth is what you accumulate, not what you spend. Lifestyle inflation is the wealth killer." },
+      { type: "h2", text: "3. They Track Their Net Worth, Not Just Income" },
+      { type: "p", text: "Wealthy individuals know their exact net worth at all times. They measure success by assets minus liabilities, not by salary or possessions. A high income with no savings is not wealth." },
+      { type: "h2", text: "4. They Have Multiple Income Streams" },
+      { type: "p", text: "IRS data shows that the average millionaire has 7 income streams: salary, dividends, rental income, business income, royalties, interest, and capital gains. Building a second income stream — even $500/month — adds $6,000/year and compounds over time." },
+      { type: "h2", text: "5. They Invest Consistently, Not Perfectly" },
+      { type: "p", text: "Wealthy investors don't try to time the market. They invest the same amount every month (dollar-cost averaging) regardless of market conditions. Research consistently shows this outperforms market-timing strategies over 10+ year periods." },
+      { type: "h2", text: "6. They Read — A Lot" },
+      { type: "p", text: "Corley's research found 88% of wealthy individuals read 30+ minutes daily, mostly non-fiction (personal development, finance, history, biographies). Only 2% of poor individuals did the same. Reading compounds knowledge the same way investing compounds money." },
+      { type: "h2", text: "7. They Protect Their Time Aggressively" },
+      { type: "p", text: "High-net-worth individuals decline more than they accept. They outsource low-value tasks, batch similar activities, and ruthlessly eliminate time-wasters. Time is the only truly finite resource — wealthy people treat it that way." },
+      { type: "h2", text: "8. They Avoid Toxic Debt" },
+      { type: "p", text: "Millionaires use debt strategically: mortgages to buy appreciating assets, business loans to generate returns exceeding the interest rate. They avoid consumer debt (credit cards, car loans for depreciating vehicles, personal loans for lifestyle spending)." },
+      { type: "h2", text: "9. They Maintain Their Health" },
+      { type: "p", text: "76% of wealthy individuals exercise aerobically 4+ days per week (Corley). Physical health directly correlates with mental performance, energy, and longevity — all factors in long-term wealth building. Medical bills from preventable conditions destroy wealth." },
+      { type: "h2", text: "10. They Think Long-Term by Default" },
+      { type: "p", text: "Wealthy individuals consistently choose delayed gratification. They sacrifice now for compounding later. This mindset shift — from today's pleasure to tomorrow's security — is arguably the single biggest behavioral difference between wealth builders and wealth spenders." },
+      { type: "tip", text: "Start with just 2–3 habits and execute them for 90 days before adding more. Habit stacking (attaching new habits to existing ones) is far more effective than trying to overhaul everything at once. The 1% daily improvement compounds to 37x improvement over a year." },
+      { type: "cta", ctaText: "See How Your Investments Can Grow", ctaHref: "/investment-calculator" },
+    ],
+  },
+  {
+    slug: "how-to-become-a-millionaire",
+    title: "How to Become a Millionaire: A Step-by-Step Roadmap",
+    description: "Becoming a millionaire is more achievable than most people think. Here's the mathematical roadmap — no luck, no shortcuts required.",
+    date: "2026-06-29",
+    readTime: "7 min read",
+    category: "Investing",
+    relatedCalculator: { name: "Compound Interest Calculator", href: "/compound-interest-calculator" },
+    content: [
+      { type: "intro", text: "The number of Americans with $1 million or more in investable assets hit 24 million in 2023 — up from 15 million in 2020. This isn't luck. It's math, time, and consistent behavior. Here's the exact roadmap." },
+      { type: "h2", text: "The Math: How Long Does It Actually Take?" },
+      { type: "p", text: "Assuming 7% average annual returns (S&P 500 historical inflation-adjusted average):" },
+      { type: "ul", items: [
+        "Investing $500/month → reaches $1M in about 36 years",
+        "Investing $1,000/month → reaches $1M in about 26 years",
+        "Investing $2,000/month → reaches $1M in about 19 years",
+        "Investing $3,000/month → reaches $1M in about 15 years",
+        "Starting at 25 with $1,000/month → millionaire by 51"
+      ]},
+      { type: "h2", text: "Step 1: Build Your Financial Foundation (Months 1–6)" },
+      { type: "ul", items: [
+        "Create a budget and find $500–$1,000/month to invest",
+        "Build a $1,000 starter emergency fund",
+        "Get employer 401(k) match (instant 50–100% return)",
+        "Pay off any credit card debt (20%+ guaranteed return)"
+      ]},
+      { type: "h2", text: "Step 2: Establish the Wealth-Building Engine (Year 1–2)" },
+      { type: "ul", items: [
+        "Max out Roth IRA ($7,000/year in 2025) — tax-free growth for decades",
+        "Contribute 10–15% to 401(k) including employer match",
+        "Build emergency fund to 3–6 months of expenses",
+        "Open a taxable brokerage account for everything above tax-advantaged limits"
+      ]},
+      { type: "h2", text: "Step 3: Maximize Income Growth (Ongoing)" },
+      { type: "ul", items: [
+        "Switch jobs every 2–3 years for 20–30% salary increases",
+        "Develop high-value skills that command premium pay",
+        "Build a side income: consulting, freelancing, rental income",
+        "Invest every raise — don't increase lifestyle proportionally"
+      ]},
+      { type: "h2", text: "Step 4: Invest the Right Way" },
+      { type: "ul", items: [
+        "Index funds: VTSAX, VTI, or S&P 500 ETF — keep it simple",
+        "Dollar-cost average every month without trying to time the market",
+        "Keep expense ratios below 0.20%",
+        "Don't panic-sell in market downturns — this is the number-one mistake that derails millionaire timelines"
+      ]},
+      { type: "h2", text: "Step 5: Protect and Accelerate (Mid-Journey)" },
+      { type: "ul", items: [
+        "Get term life insurance (1–1.5x income is enough if you're early in wealth-building)",
+        "Set up an estate plan once you cross $100K",
+        "Consider real estate once your investment portfolio is established",
+        "Tax optimization: tax-loss harvesting, asset location strategy"
+      ]},
+      { type: "h2", text: "The Real Secret: Consistency Over Everything" },
+      { type: "p", text: "The millionaires built wealth by doing boring things consistently for a long time. They didn't get hot stock tips. They didn't time markets. They saved systematically, invested in index funds, increased income, and didn't panic. The strategy is simple. The execution over 20–30 years is what separates people." },
+      { type: "tip", text: "The millionaire milestone feels distant until it doesn't. People often reach their first $100K around year 7–10, then the next $100K takes 4–5 years, then 3, then 2. Compounding accelerates — the most important thing is to survive the slow early years without quitting." },
+      { type: "cta", ctaText: "Calculate Your Path to $1 Million", ctaHref: "/compound-interest-calculator" },
+    ],
+  },
+  {
+    slug: "sep-ira-contribution-limits",
+    title: "SEP-IRA Contribution Limits 2025: Complete Guide for Self-Employed",
+    description: "SEP-IRA allows self-employed people to save up to $69,000 per year for retirement. Here's exactly how it works and how to maximize contributions.",
+    date: "2026-06-29",
+    readTime: "5 min read",
+    category: "Retirement",
+    relatedCalculator: { name: "Retirement Calculator", href: "/retirement-calculator" },
+    content: [
+      { type: "intro", text: "A SEP-IRA (Simplified Employee Pension) is the most powerful retirement account available to self-employed individuals and small business owners. With a contribution limit of $69,000 in 2025 — nearly 10x the traditional IRA limit — it's the fastest way to build tax-deferred retirement savings if you're self-employed." },
+      { type: "h2", text: "SEP-IRA Contribution Limits 2025" },
+      { type: "ul", items: [
+        "Maximum contribution: $69,000 (up from $66,000 in 2024)",
+        "As a percentage: 25% of net self-employment income (after deductions)",
+        "No catch-up contributions (unlike traditional IRA or SIMPLE IRA)",
+        "Contribution deadline: Tax filing deadline plus extensions (October 15 with extension)"
+      ]},
+      { type: "h2", text: "How to Calculate Your SEP-IRA Contribution" },
+      { type: "p", text: "For self-employed individuals, the calculation is slightly complex because you can deduct half your self-employment tax, and the contribution itself reduces your income. The effective rate is 20% of net self-employment income (not 25%)." },
+      { type: "ul", items: [
+        "Net self-employment income: $100,000",
+        "Self-employment tax deduction (50% of SE tax): ~$7,065",
+        "Adjusted income: $100,000 − $7,065 = $92,935",
+        "SEP-IRA contribution: $92,935 × 20% = $18,587",
+        "Use IRS Worksheet in Publication 560 for exact numbers"
+      ]},
+      { type: "h2", text: "SEP-IRA vs Solo 401(k): Which Is Better?" },
+      { type: "ul", items: [
+        "SEP-IRA limit: 25% of net income (up to $69,000) — simpler",
+        "Solo 401(k) limit: $23,500 employee + 25% employer = up to $69,000 — same max, but employee portion lets you contribute more at lower income levels",
+        "Solo 401(k) wins if income under $200,000 — you can contribute more",
+        "SEP-IRA wins for pure simplicity — no annual filing until assets exceed $250,000",
+        "SEP-IRA allows employees; Solo 401(k) for owner-only businesses"
+      ]},
+      { type: "h2", text: "Who Can Open a SEP-IRA?" },
+      { type: "ul", items: [
+        "Sole proprietors and freelancers",
+        "Partnerships and LLCs",
+        "S-corps and C-corps",
+        "Anyone with self-employment income, even if also employed elsewhere",
+        "You can contribute to a SEP-IRA and a Roth IRA in the same year"
+      ]},
+      { type: "h2", text: "Tax Benefits of a SEP-IRA" },
+      { type: "p", text: "Contributions are 100% tax-deductible. A freelancer in the 24% tax bracket who contributes $20,000 to a SEP-IRA saves $4,800 in federal taxes immediately. Money grows tax-deferred. Withdrawals in retirement are taxed as ordinary income." },
+      { type: "h2", text: "How to Open a SEP-IRA" },
+      { type: "ul", items: [
+        "Choose a brokerage: Fidelity, Vanguard, Schwab, or any major financial institution",
+        "Complete Form 5305-SEP (IRS model form — takes 15 minutes)",
+        "Each eligible employee gets their own SEP-IRA account",
+        "No annual IRS filing required until assets exceed $250,000",
+        "Can open and fund by tax deadline for the prior tax year"
+      ]},
+      { type: "tip", text: "You can open a SEP-IRA retroactively up to the tax filing deadline (including extensions). If you file by April 15 with no extension, you can open a SEP-IRA by April 15 and count contributions for the previous tax year. This makes it one of the most flexible retirement accounts available." },
+      { type: "cta", ctaText: "Project Your Self-Employment Retirement Savings", ctaHref: "/retirement-calculator" },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
