@@ -121,6 +121,11 @@ const ALL_CALCULATORS: Record<string, { name: string; href: string; description:
     href: "/fire-calculator",
     description: "Find your FIRE number and see when you can retire early.",
   },
+  "hsa-calculator": {
+    name: "HSA Calculator",
+    href: "/hsa-calculator",
+    description: "See how much your HSA could grow by retirement.",
+  },
 };
 
 const RELATED_MAP: Record<string, string[]> = {
@@ -148,6 +153,7 @@ const RELATED_MAP: Record<string, string[]> = {
   "dividend-calculator": ["investment-calculator", "compound-interest-calculator", "retirement-calculator"],
   "social-security-calculator": ["retirement-calculator", "investment-calculator", "paycheck-calculator"],
   "fire-calculator": ["retirement-calculator", "investment-calculator", "compound-interest-calculator"],
+  "hsa-calculator": ["retirement-calculator", "tax-bracket-calculator", "investment-calculator"],
 };
 
 export function RelatedCalculators({ currentSlug }: { currentSlug: string }) {

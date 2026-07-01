@@ -29,6 +29,7 @@ import {
   Landmark,
   BadgeCheck,
   Target,
+  HeartPulse,
 } from "lucide-react";
 import {
   Card,
@@ -277,6 +278,16 @@ const calculators = [
     icon: Target,
     color: "text-fuchsia-600",
     bg: "bg-fuchsia-50",
+    badge: null,
+  },
+  {
+    title: "HSA Calculator",
+    description:
+      "See how much your Health Savings Account could grow by retirement, plus the tax savings from contributions and tax-free growth.",
+    href: "/hsa-calculator",
+    icon: HeartPulse,
+    color: "text-green-600",
+    bg: "bg-green-50",
     badge: "New",
   },
 ];

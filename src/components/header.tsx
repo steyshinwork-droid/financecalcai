@@ -27,6 +27,7 @@ const calculators = [
   { name: "Dividend", href: "/dividend-calculator" },
   { name: "Social Security", href: "/social-security-calculator" },
   { name: "FIRE", href: "/fire-calculator" },
+  { name: "HSA", href: "/hsa-calculator" },
 ];
 
 export function Header() {

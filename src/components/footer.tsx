@@ -119,6 +119,11 @@ export function Footer() {
                   FIRE Calculator
                 </Link>
               </li>
+              <li>
+                <Link href="/hsa-calculator" className="hover:text-emerald-600">
+                  HSA Calculator
+                </Link>
+              </li>
             </ul>
           </div>
 
