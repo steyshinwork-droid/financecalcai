@@ -290,6 +290,16 @@ const calculators = [
     bg: "bg-green-50",
     badge: "New",
   },
+  {
+    title: "College Savings Calculator",
+    description:
+      "Project your 529 plan's growth and see if you're on track to cover future college costs, adjusted for tuition inflation.",
+    href: "/college-savings-calculator",
+    icon: BookOpen,
+    color: "text-yellow-600",
+    bg: "bg-yellow-50",
+    badge: "New",
+  },
 ];
 
 const features = [

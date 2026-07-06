@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/social-security-calculator",
     "/fire-calculator",
     "/hsa-calculator",
+    "/college-savings-calculator",
   ];
 
   const blogSlugs = getAllSlugs();

@@ -124,6 +124,11 @@ export function Footer() {
                   HSA Calculator
                 </Link>
               </li>
+              <li>
+                <Link href="/college-savings-calculator" className="hover:text-emerald-600">
+                  College Savings Calculator
+                </Link>
+              </li>
             </ul>
           </div>
 

@@ -126,6 +126,11 @@ const ALL_CALCULATORS: Record<string, { name: string; href: string; description:
     href: "/hsa-calculator",
     description: "See how much your HSA could grow by retirement.",
   },
+  "college-savings-calculator": {
+    name: "College Savings Calculator",
+    href: "/college-savings-calculator",
+    description: "Project your 529 plan's growth and college cost coverage.",
+  },
 };
 
 const RELATED_MAP: Record<string, string[]> = {
@@ -154,6 +159,7 @@ const RELATED_MAP: Record<string, string[]> = {
   "social-security-calculator": ["retirement-calculator", "investment-calculator", "paycheck-calculator"],
   "fire-calculator": ["retirement-calculator", "investment-calculator", "compound-interest-calculator"],
   "hsa-calculator": ["retirement-calculator", "tax-bracket-calculator", "investment-calculator"],
+  "college-savings-calculator": ["compound-interest-calculator", "budget-calculator", "investment-calculator"],
 };
 
 export function RelatedCalculators({ currentSlug }: { currentSlug: string }) {

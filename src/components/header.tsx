@@ -28,6 +28,7 @@ const calculators = [
   { name: "Social Security", href: "/social-security-calculator" },
   { name: "FIRE", href: "/fire-calculator" },
   { name: "HSA", href: "/hsa-calculator" },
+  { name: "College Savings", href: "/college-savings-calculator" },
 ];
 
 export function Header() {
