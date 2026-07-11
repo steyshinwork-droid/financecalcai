@@ -3866,7 +3866,7 @@ export const blogPosts: BlogPost[] = [
     date: "2025-03-01",
     readTime: "7 min read",
     category: "Taxes",
-    relatedCalculator: { name: "Income Tax Calculator", href: "/income-tax-calculator" },
+    relatedCalculator: { name: "Tax Bracket Calculator", href: "/tax-bracket-calculator" },
     content: [
       { type: "intro", text: "The average tax refund in the US is around $3,000 — but millions of people overpay and never claim what they're owed. With the right strategies, you can legally reduce your tax bill and get more money back. Here are 12 proven ways to maximize your refund." },
       { type: "h2", text: "1. Contribute to a Traditional IRA" },
@@ -3898,7 +3898,7 @@ export const blogPosts: BlogPost[] = [
       { type: "tip", text: "Use tax software to compare itemizing vs. taking the standard deduction. Since the 2018 tax reform, about 90% of filers get a bigger benefit from the standard deduction — but not everyone." },
       { type: "h2", text: "7. Harvest Your Investment Losses" },
       { type: "p", text: "If you have investments that have lost value, selling them can offset capital gains you've realized. This 'tax-loss harvesting' can reduce your taxable income by up to $3,000 per year beyond offsetting gains." },
-      { type: "cta", text: "See how different deductions and strategies affect your tax bill.", ctaText: "Try Income Tax Calculator", ctaHref: "/income-tax-calculator" },
+      { type: "cta", text: "See how different deductions and strategies affect your tax bill.", ctaText: "Try Tax Bracket Calculator", ctaHref: "/tax-bracket-calculator" },
     ],
   },
   {
@@ -3908,7 +3908,7 @@ export const blogPosts: BlogPost[] = [
     date: "2025-03-03",
     readTime: "6 min read",
     category: "Taxes",
-    relatedCalculator: { name: "Income Tax Calculator", href: "/income-tax-calculator" },
+    relatedCalculator: { name: "Tax Bracket Calculator", href: "/tax-bracket-calculator" },
     content: [
       { type: "intro", text: "Every year, millions of taxpayers choose between two options: take the standard deduction (a flat amount that reduces your taxable income) or itemize their deductions (add up every eligible expense). Most people should take the standard deduction — but not everyone. Here's how to know which is right for you." },
       { type: "h2", text: "What Is the Standard Deduction?" },
@@ -3942,7 +3942,7 @@ export const blogPosts: BlogPost[] = [
         "Take whichever is larger",
         "Keep records — if you itemize, you need documentation for everything",
       ]},
-      { type: "cta", text: "Calculate your estimated tax liability under different scenarios.", ctaText: "Try Income Tax Calculator", ctaHref: "/income-tax-calculator" },
+      { type: "cta", text: "Calculate your estimated tax liability under different scenarios.", ctaText: "Try Tax Bracket Calculator", ctaHref: "/tax-bracket-calculator" },
     ],
   },
   {
@@ -3952,7 +3952,7 @@ export const blogPosts: BlogPost[] = [
     date: "2025-03-05",
     readTime: "7 min read",
     category: "Taxes",
-    relatedCalculator: { name: "Income Tax Calculator", href: "/income-tax-calculator" },
+    relatedCalculator: { name: "Tax Bracket Calculator", href: "/tax-bracket-calculator" },
     content: [
       { type: "intro", text: "Paying less in taxes isn't about loopholes — it's about using the strategies Congress has already written into the tax code. The wealthy don't pay less in taxes because they cheat; they pay less because they understand these rules. Here are 10 legal ways to reduce your taxable income starting today." },
       { type: "h2", text: "1. Max Out Tax-Advantaged Retirement Accounts" },
@@ -3983,7 +3983,7 @@ export const blogPosts: BlogPost[] = [
         "Half of self-employment tax",
       ]},
       { type: "tip", text: "You don't need to do all 10 things. Pick the 2-3 that apply to your situation and implement them consistently. Small optimizations compounded over decades create enormous wealth." },
-      { type: "cta", text: "See how reducing your taxable income changes your tax bill.", ctaText: "Try Income Tax Calculator", ctaHref: "/income-tax-calculator" },
+      { type: "cta", text: "See how reducing your taxable income changes your tax bill.", ctaText: "Try Tax Bracket Calculator", ctaHref: "/tax-bracket-calculator" },
     ],
   },
   {
@@ -4077,7 +4077,7 @@ export const blogPosts: BlogPost[] = [
     date: "2025-03-13",
     readTime: "7 min read",
     category: "Investing",
-    relatedCalculator: { name: "Investment Returns Calculator", href: "/investment-calculator" },
+    relatedCalculator: { name: "Investment Calculator", href: "/investment-calculator" },
     content: [
       { type: "intro", text: "Most professional money managers fail to beat a simple index fund strategy over the long term. The 3-fund portfolio takes this insight to its logical conclusion: own the entire market, keep costs near zero, and get out of your own way. Here's how to build one." },
       { type: "h2", text: "What Is the 3-Fund Portfolio?" },
@@ -6810,7 +6810,9 @@ export const blogPosts: BlogPost[] = [
       { type: "ol", items: ["Calculate the payoff amount: divide your balance by the number of 0% months and pay that amount each month — no exceptions", "Set up autopay: a single late payment can void your 0% promotional rate instantly", "Stop using the old card: don't add new charges during the payoff period", "Don't use the new card for purchases: new purchases typically aren't covered by the 0% rate"] },
       { type: "h2", text: "Who Qualifies?" },
       { type: "p", text: "You generally need a credit score of 670+ (good credit) to qualify for the best balance transfer offers. The new card issuer won't allow you to transfer balances from their own cards — you need to transfer from a different bank's card." },
-      { type: "tip", text: "Apply for the balance transfer card before you're desperate — your credit score should be in good shape. Applying when you're already maxed out and missing payments will likely result in denial or poor terms." },
+      { type: "h2", text: "Balance Transfer vs. Personal Loan" },
+      { type: "p", text: "For debt you can't pay off in 12–21 months, a personal loan might be better. Personal loans offer fixed rates (often 8–18% for good credit), fixed terms, and no surprise rate spikes. A balance transfer wins if you can realistically pay the balance in the promotional window. A personal loan is better for larger debt or longer timelines." },
+      { type: "tip", text: "Apply for the balance transfer card before you're desperate — your credit score should be in good shape. Applying when you're already maxed out and missing payments will likely result in denial or poor terms. Also, don't close the old card immediately after transferring — closing it reduces your total available credit and can hurt your credit utilization ratio." },
       { type: "cta", text: "See how quickly you can pay off your credit card debt with a structured payoff plan.", ctaText: "Try Debt Payoff Calculator", ctaHref: "/debt-payoff-calculator" },
     ],
   },
@@ -7714,7 +7716,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-13",
     readTime: "7 min read",
     category: "Investing",
-    relatedCalculator: { name: "Investment Returns Calculator", href: "/investment-returns-calculator" },
+    relatedCalculator: { name: "Investment Calculator", href: "/investment-calculator" },
     content: [
       { type: "intro", text: "A robo-advisor is an automated investment platform that builds and manages a portfolio for you based on your goals, timeline, and risk tolerance. You answer a few questions, deposit money, and the platform handles the rest — asset allocation, rebalancing, tax optimization — all for 0.15% to 0.50% per year, compared to 1% or more for a human financial advisor." },
       { type: "h2", text: "How Does a Robo-Advisor Work?" },
@@ -7745,7 +7747,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "If you're comfortable building your own portfolio of index funds and rebalancing annually, you can save the 0.15-0.50% robo-advisor fee entirely. A simple three-fund portfolio (US stocks, international stocks, bonds) costs less than 0.10% in total expense ratios and performs nearly identically to a robo-advisor portfolio. The robo-advisor's value is in automation and behavioral coaching — it prevents you from panic-selling during market crashes." },
       { type: "h2", text: "Are Robo-Advisors Safe?" },
       { type: "p", text: "Yes. Robo-advisors are registered with the SEC and are members of SIPC, which protects securities up to $500,000. Your money isn't held by the robo-advisor — it's held at a custodian bank (like Fidelity or Goldman Sachs) in your name. The robo-advisor only has trading authority, not withdrawal authority. That said, investments themselves carry market risk — a robo-advisor doesn't protect you from market losses, it just manages how your money is allocated." },
-      { type: "cta", text: "See how much your investments could grow over time with different return scenarios.", ctaText: "Try Investment Returns Calculator", ctaHref: "/investment-returns-calculator" },
+      { type: "cta", text: "See how much your investments could grow over time with different return scenarios.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
   },
   {
@@ -7755,7 +7757,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-13",
     readTime: "6 min read",
     category: "Budgeting",
-    relatedCalculator: { name: "Income Tax Calculator", href: "/income-tax-calculator" },
+    relatedCalculator: { name: "Tax Bracket Calculator", href: "/tax-bracket-calculator" },
     content: [
       { type: "intro", text: "Most people glance at the net pay on their paycheck and move on. But your pay stub contains a detailed breakdown of every dollar — federal taxes, state taxes, Social Security, Medicare, health insurance, retirement contributions, and more. Understanding it helps you verify accuracy, optimize your withholdings, and see exactly what you're paying for." },
       { type: "h2", text: "Gross Pay vs Net Pay" },
@@ -7791,7 +7793,7 @@ export const blogPosts: BlogPost[] = [
       ] },
       { type: "h2", text: "How to Adjust Your Withholdings" },
       { type: "p", text: "If you consistently get a large tax refund, you're over-withholding — that's an interest-free loan to the government. If you owe money at tax time, you're under-withholding. Use the IRS Tax Withholding Estimator (irs.gov/withholding) to calculate the right number of allowances, then submit a new W-4 to your employer. Getting this right means more money in each paycheck and fewer surprises at tax time." },
-      { type: "cta", text: "Calculate your estimated take-home pay after taxes based on your income and state.", ctaText: "Try Income Tax Calculator", ctaHref: "/income-tax-calculator" },
+      { type: "cta", text: "Calculate your estimated take-home pay after taxes based on your income and state.", ctaText: "Try Tax Bracket Calculator", ctaHref: "/tax-bracket-calculator" },
     ],
   },
   {
@@ -8336,7 +8338,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-15",
     readTime: "8 min read",
     category: "Investing",
-    relatedCalculator: { name: "Investment Returns Calculator", href: "/investment-returns-calculator" },
+    relatedCalculator: { name: "Investment Calculator", href: "/investment-calculator" },
     content: [
       { type: "intro", text: "The Roth IRA is one of the most powerful retirement accounts available. Unlike a traditional IRA, you contribute after-tax money — but every dollar of growth and every withdrawal in retirement is 100% tax-free. If you're in your 20s or 30s, a Roth IRA could save you tens of thousands of dollars in taxes over your lifetime." },
       { type: "h2", text: "What Is a Roth IRA?" },
@@ -8393,7 +8395,7 @@ export const blogPosts: BlogPost[] = [
         "Back to 401(k) for any additional retirement savings",
       ] },
       { type: "p", text: "The Roth IRA gives you more investment flexibility and tax-free withdrawals, so it's usually better to max it out after getting your employer match." },
-      { type: "cta", text: "See how much your Roth IRA could grow over 30+ years with consistent contributions.", ctaText: "Try Investment Returns Calculator", ctaHref: "/investment-returns-calculator" },
+      { type: "cta", text: "See how much your Roth IRA could grow over 30+ years with consistent contributions.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
   },
   {
@@ -8403,7 +8405,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-22",
     readTime: "7 min read",
     category: "Investing",
-    relatedCalculator: { name: "Investment Returns Calculator", href: "/investment-returns-calculator" },
+    relatedCalculator: { name: "Investment Calculator", href: "/investment-calculator" },
     content: [
       { type: "p", text: "A brokerage account is an investment account that lets you buy and sell stocks, bonds, ETFs, mutual funds, and other securities. Unlike a 401(k) or IRA, a brokerage account has no contribution limits and no restrictions on when you can withdraw your money — but you do pay taxes on gains." },
       { type: "h2", text: "Brokerage Account vs. Retirement Account" },
@@ -8449,7 +8451,7 @@ export const blogPosts: BlogPost[] = [
         "Dividends: Taxed as ordinary income or at the lower qualified dividend rate",
       ] },
       { type: "p", text: "The key takeaway: hold investments for at least one year to qualify for the lower long-term capital gains rate. This alone can save you thousands in taxes." },
-      { type: "cta", text: "See how your brokerage account investments could grow over time with compound returns.", ctaText: "Try Investment Returns Calculator", ctaHref: "/investment-returns-calculator" },
+      { type: "cta", text: "See how your brokerage account investments could grow over time with compound returns.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
   },
   {
@@ -8522,7 +8524,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-22",
     readTime: "7 min read",
     category: "Investing",
-    relatedCalculator: { name: "Investment Returns Calculator", href: "/investment-returns-calculator" },
+    relatedCalculator: { name: "Investment Calculator", href: "/investment-calculator" },
     content: [
       { type: "p", text: "Tax-loss harvesting is a strategy that lets you reduce your tax bill by selling investments that have declined in value. It sounds counterintuitive — selling losers on purpose — but done correctly, it can save you thousands of dollars in taxes while keeping your investment strategy intact." },
       { type: "h2", text: "How Tax-Loss Harvesting Works" },
@@ -8565,7 +8567,7 @@ export const blogPosts: BlogPost[] = [
         "If transaction costs exceed the tax benefit",
         "If the replacement investment is significantly worse than what you sold",
       ] },
-      { type: "cta", text: "See how your investment portfolio grows with and without taxes factored in.", ctaText: "Try Investment Returns Calculator", ctaHref: "/investment-returns-calculator" },
+      { type: "cta", text: "See how your investment portfolio grows with and without taxes factored in.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
   },
   {
@@ -8633,7 +8635,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-22",
     readTime: "8 min read",
     category: "Debt",
-    relatedCalculator: { name: "Loan Payoff Calculator", href: "/loan-payoff-calculator" },
+    relatedCalculator: { name: "Debt Payoff Calculator", href: "/debt-payoff-calculator" },
     content: [
       { type: "p", text: "Getting out of debt isn't just about throwing money at balances — it requires a structured plan. Without one, most people make minimum payments for years, pay thousands in interest, and never actually become debt-free. A solid debt payoff plan changes that." },
       { type: "h2", text: "Step 1: List Every Debt You Have" },
@@ -8676,7 +8678,7 @@ export const blogPosts: BlogPost[] = [
       ] },
       { type: "h2", text: "What to Do After You're Debt-Free" },
       { type: "p", text: "The moment you make your last payment, redirect all those former debt payments into savings and investing. If you were paying $600/month in debt payments, that's $600/month that can now build wealth instead of paying interest." },
-      { type: "cta", text: "Calculate exactly when you'll be debt-free and how much interest you'll save by paying extra.", ctaText: "Try Loan Payoff Calculator", ctaHref: "/loan-payoff-calculator" },
+      { type: "cta", text: "Calculate exactly when you'll be debt-free and how much interest you'll save by paying extra.", ctaText: "Try Debt Payoff Calculator", ctaHref: "/debt-payoff-calculator" },
     ],
   },
   {
@@ -8686,7 +8688,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-23",
     readTime: "7 min read",
     category: "Investing",
-    relatedCalculator: { name: "Investment Returns Calculator", href: "/investment-calculator" },
+    relatedCalculator: { name: "Investment Calculator", href: "/investment-calculator" },
     content: [
       { type: "p", text: "If you've ever looked at your 401(k) options and felt overwhelmed by the list of funds, a target-date fund might be the simplest answer. You pick one fund based on your expected retirement year, and it manages everything else automatically." },
       { type: "h2", text: "How a Target-Date Fund Works" },
@@ -8726,7 +8728,7 @@ export const blogPosts: BlogPost[] = [
       { type: "h2", text: "Should You Use a Target-Date Fund?" },
       { type: "p", text: "Target-date funds are ideal if: you're just starting out, you have no interest in managing investments, or your 401(k) offers a low-cost index version. They're also a good default for money you don't want to think about." },
       { type: "p", text: "They're less ideal if: you want more control, you have a complex financial situation, or your plan only offers expensive actively managed versions. In that case, a simple 3-fund portfolio (total stock, total international, total bond) may serve you better." },
-      { type: "cta", text: "See how your retirement savings can grow over time regardless of which fund you choose.", ctaText: "Try Investment Returns Calculator", ctaHref: "/investment-calculator" },
+      { type: "cta", text: "See how your retirement savings can grow over time regardless of which fund you choose.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
   },
   {
@@ -8779,7 +8781,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-23",
     readTime: "6 min read",
     category: "Debt",
-    relatedCalculator: { name: "Loan Payoff Calculator", href: "/loan-payoff-calculator" },
+    relatedCalculator: { name: "Loan Calculator", href: "/loan-calculator" },
     content: [
       { type: "p", text: "The average car loan interest rate in 2024 is around 7–9% for new cars and 10–14% for used. On a $25,000 loan over 60 months at 9%, you'd pay over $6,000 in interest alone. Paying off that loan early cuts straight into that number." },
       { type: "h2", text: "Step 1: Check for Prepayment Penalties" },
@@ -8809,7 +8811,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "It may not make sense when: your rate is below 4% (investing that money might return more), or you'd deplete your emergency fund to do it." },
       { type: "h2", text: "After Payoff: What to Do With the Extra Cash" },
       { type: "p", text: "The moment your car is paid off, resist lifestyle creep. Redirect that monthly payment into your emergency fund, retirement account, or the next debt on your payoff list. Paying off a car that cost $400/month frees up $4,800 per year — that's a meaningful wealth-building opportunity." },
-      { type: "cta", text: "Calculate how much you'd save by making extra payments on your car loan.", ctaText: "Try Loan Payoff Calculator", ctaHref: "/loan-payoff-calculator" },
+      { type: "cta", text: "Calculate how much you'd save by making extra payments on your car loan.", ctaText: "Try Loan Calculator", ctaHref: "/loan-calculator" },
     ],
   },
   {
@@ -8956,7 +8958,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-24",
     readTime: "6 min read",
     category: "Investing",
-    relatedCalculator: { name: "Investment Returns Calculator", href: "/investment-calculator" },
+    relatedCalculator: { name: "Investment Calculator", href: "/investment-calculator" },
     content: [
       { type: "p", text: "Treasury bonds (T-bonds) are loans you make to the U.S. government. In return, the government pays you interest and returns your principal at the end of the term. Because they're backed by the full faith and credit of the United States, they're considered the safest investment in the world." },
       { type: "h2", text: "Types of U.S. Treasury Securities" },
@@ -8981,7 +8983,7 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Pros: zero credit risk, predictable income, state and local tax exemption, highly liquid, available from $100 minimum. Cons: lower returns than stocks over the long run, inflation risk if your yield doesn't keep up, interest rate risk if rates rise after purchase and you need to sell early." },
       { type: "h2", text: "Who Should Consider Treasury Bonds?" },
       { type: "p", text: "Treasuries make sense for: retirees needing stable income, conservative investors as part of a bond allocation, anyone wanting a CD alternative with potentially better rates, and short-term investors using T-bills as a cash equivalent. They are not ideal as the primary investment for long-term wealth building — stocks have significantly outperformed over any 20+ year period." },
-      { type: "cta", text: "Compare Treasury bond returns with stock market returns over time to see how they fit your strategy.", ctaText: "Try Investment Returns Calculator", ctaHref: "/investment-calculator" },
+      { type: "cta", text: "Compare Treasury bond returns with stock market returns over time to see how they fit your strategy.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
   },
   {
@@ -8991,7 +8993,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-24",
     readTime: "6 min read",
     category: "Debt",
-    relatedCalculator: { name: "Loan Payoff Calculator", href: "/loan-payoff-calculator" },
+    relatedCalculator: { name: "Student Loan Calculator", href: "/student-loan-calculator" },
     content: [
       { type: "p", text: "Income-driven repayment (IDR) plans set your federal student loan payment as a percentage of your discretionary income — usually 5-20% — rather than a fixed amount based on what you borrowed. If your income is low enough, your payment could be $0/month." },
       { type: "h2", text: "The Main IDR Plans" },
@@ -9022,7 +9024,7 @@ export const blogPosts: BlogPost[] = [
       ] },
       { type: "h2", text: "When IDR Is NOT the Best Choice" },
       { type: "p", text: "If you can afford standard payments and your loan balance is manageable relative to your income, paying aggressively on the standard 10-year plan saves thousands in interest. IDR is most valuable when your balance is very high relative to income, or when you're pursuing PSLF." },
-      { type: "cta", text: "Calculate how much faster you could pay off student loans with extra monthly payments.", ctaText: "Try Loan Payoff Calculator", ctaHref: "/loan-payoff-calculator" },
+      { type: "cta", text: "Calculate how much faster you could pay off student loans with extra monthly payments.", ctaText: "Try Student Loan Calculator", ctaHref: "/student-loan-calculator" },
     ],
   },
   {
@@ -9304,44 +9306,6 @@ export const blogPosts: BlogPost[] = [
     ],
   },
   {
-    slug: "what-is-a-balance-transfer",
-    title: "What Is a Balance Transfer? How to Use It to Pay Off Credit Card Debt Faster",
-    description: "A balance transfer moves high-interest credit card debt to a new card with 0% APR. Learn how to qualify, avoid the fees, and actually pay off debt during the promotional period.",
-    date: "2026-04-25",
-    readTime: "5 min read",
-    category: "Debt",
-    relatedCalculator: { name: "Loan Payoff Calculator", href: "/loan-payoff-calculator" },
-    content: [
-      { type: "p", text: "A balance transfer is when you move existing credit card debt from one card to another — typically to take advantage of a 0% introductory APR offer. If you're paying 20-29% interest on a card balance, moving it to a 0% offer for 12-21 months means every payment goes entirely toward principal instead of mostly interest." },
-      { type: "h2", text: "How Balance Transfers Work" },
-      { type: "ol", items: [
-        "Apply for a new credit card with a 0% balance transfer offer",
-        "Request to transfer your existing balance during or after approval",
-        "The new card pays off your old card (or multiple cards)",
-        "You now owe that balance to the new card at 0% APR",
-        "Pay it off before the promotional period ends, or interest kicks in at the regular rate",
-      ] },
-      { type: "h2", text: "The Balance Transfer Fee" },
-      { type: "p", text: "Almost all balance transfer offers charge a fee of 3-5% of the transferred amount. On a $5,000 balance, that's $150-$250. This is almost always still worth it compared to months of 25% APR interest. Example: $5,000 at 25% APR for 12 months = $1,250 in interest. 3% fee = $150. You save $1,100." },
-      { type: "tip", text: "Rare 'no fee' balance transfer cards do exist. They're worth looking for if you have good credit — but even a 3% fee is typically a good deal when you're paying 20%+ APR." },
-      { type: "h2", text: "What You Need to Qualify" },
-      { type: "p", text: "Balance transfer offers are typically available to people with good to excellent credit (670+ FICO score). The better your credit, the longer the promotional period you'll likely get. If your score is below 670, work on improving it before applying — a denial can temporarily drop your score further." },
-      { type: "h2", text: "Critical Rules to Follow" },
-      { type: "ul", items: [
-        "Pay at least the minimum every month — missing a payment can cancel the 0% offer immediately",
-        "Divide your balance by the number of promotional months to calculate your required monthly payment",
-        "Don't use the new card for new purchases — these may accrue interest at the regular rate",
-        "Don't close the old card immediately — it affects your credit utilization ratio",
-        "Set a calendar reminder 2 months before the promotional period ends",
-      ] },
-      { type: "h2", text: "What Happens When the Promotional Period Ends" },
-      { type: "p", text: "Any remaining balance after the 0% period ends starts accruing interest at the card's regular APR — often 20-29%. This is why having a payoff plan from day one is essential. If you can't pay the full balance by the end of the promotional period, consider doing another balance transfer, but be aware that not everyone qualifies twice and repeated transfers mean repeated fees." },
-      { type: "h2", text: "Balance Transfer vs. Personal Loan" },
-      { type: "p", text: "For debt you can't pay off in 12-21 months, a personal loan might be better. Personal loans offer fixed rates (often 8-18% for good credit), fixed terms, and no surprise rate spikes. A balance transfer wins if you can realistically pay the balance in the promotional window. A personal loan is better for larger debt or longer timelines." },
-      { type: "cta", text: "Calculate exactly how long it takes to pay off your current debt with or without a balance transfer.", ctaText: "Try Loan Payoff Calculator", ctaHref: "/loan-payoff-calculator" },
-    ],
-  },
-  {
     slug: "what-is-required-minimum-distribution",
     title: "What Is a Required Minimum Distribution (RMD)?",
     description: "The IRS forces you to withdraw from your retirement accounts starting at age 73. Here's how RMDs work, how much you must take, and how to minimize the tax hit.",
@@ -9386,7 +9350,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-27",
     readTime: "6 min read",
     category: "Investing",
-    relatedCalculator: { name: "Investment Returns Calculator", href: "/investment-returns-calculator" },
+    relatedCalculator: { name: "Investment Calculator", href: "/investment-calculator" },
     content: [
       { type: "intro", text: "Portfolio rebalancing is the process of realigning your investment holdings back to your target asset allocation after market movements have shifted the percentages. If you started with 70% stocks / 30% bonds and stocks had a great year, you might now have 80% stocks / 20% bonds — more risk than you intended. Rebalancing sells some stocks and buys more bonds to get back to 70/30. It's not glamorous, but it's one of the few provably useful things you can do as an investor." },
       { type: "h2", text: "Why Rebalancing Matters" },
@@ -9418,7 +9382,7 @@ export const blogPosts: BlogPost[] = [
         "Changing your target allocation based on market conditions — that's market timing, not rebalancing",
         "Not rebalancing at all — a portfolio that started 60/40 in 2010 would have been nearly 90/10 stocks/bonds by 2022 without rebalancing",
       ] },
-      { type: "cta", text: "Model how different asset allocations affect your long-term investment returns.", ctaText: "Try Investment Returns Calculator", ctaHref: "/investment-returns-calculator" },
+      { type: "cta", text: "Model how different asset allocations affect your long-term investment returns.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
   },
   {
@@ -9428,7 +9392,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-27",
     readTime: "7 min read",
     category: "Investing",
-    relatedCalculator: { name: "Investment Returns Calculator", href: "/investment-returns-calculator" },
+    relatedCalculator: { name: "Investment Calculator", href: "/investment-calculator" },
     content: [
       { type: "intro", text: "A municipal bond (or 'muni') is a debt security issued by a state, city, county, or other local government entity to fund public projects — schools, roads, water systems, hospitals. When you buy a municipal bond, you're lending money to the government, which promises to repay you with interest over a set period. The defining feature: the interest income is typically exempt from federal income taxes, and often exempt from state taxes too if you live in the issuing state." },
       { type: "h2", text: "How Municipal Bonds Work" },
@@ -9459,7 +9423,7 @@ export const blogPosts: BlogPost[] = [
       ] },
       { type: "h2", text: "When Municipal Bonds Don't Make Sense" },
       { type: "p", text: "Munis are generally not appropriate in tax-advantaged accounts (401k, IRA) — since those accounts already shield investment income from taxes, the muni's tax advantage is wasted. They also don't make sense if you're in a low tax bracket where taxable bonds offer better after-tax returns. And like all bonds, rising interest rates reduce muni prices — so they carry interest rate risk if you need to sell before maturity." },
-      { type: "cta", text: "Model how tax-free income from bonds fits into your long-term investment returns.", ctaText: "Try Investment Returns Calculator", ctaHref: "/investment-returns-calculator" },
+      { type: "cta", text: "Model how tax-free income from bonds fits into your long-term investment returns.", ctaText: "Try Investment Calculator", ctaHref: "/investment-calculator" },
     ],
   },
   {
