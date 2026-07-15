@@ -29,6 +29,11 @@ const calculators = [
   { name: "FIRE", href: "/fire-calculator" },
   { name: "HSA", href: "/hsa-calculator" },
   { name: "College Savings", href: "/college-savings-calculator" },
+  { name: "Tip", href: "/tip-calculator" },
+  { name: "Salary", href: "/salary-calculator" },
+  { name: "Inflation", href: "/inflation-calculator" },
+  { name: "Loan", href: "/loan-calculator" },
+  { name: "Car Affordability", href: "/car-affordability-calculator" },
 ];
 
 export function Header() {

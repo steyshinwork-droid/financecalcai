@@ -6641,7 +6641,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-03-31",
     readTime: "7 min read",
     category: "Debt",
-    relatedCalculator: { name: "Credit Card Payoff Calculator", href: "/credit-card-payoff" },
+    relatedCalculator: { name: "Credit Card Payoff Calculator", href: "/credit-card-payoff-calculator" },
     content: [
       { type: "intro", text: "The average credit card interest rate is over 20% APR. That means a $5,000 balance costs you $1,000+ per year in interest alone. The good news: with the right strategy, most people can eliminate credit card debt in 12–36 months — even on a tight budget." },
       { type: "h2", text: "Step 1: Stop Adding New Debt" },
@@ -6674,7 +6674,7 @@ export const blogPosts: BlogPost[] = [
       { type: "h2", text: "Strategy 7: Credit Counseling (If Overwhelmed)" },
       { type: "p", text: "Nonprofit credit counseling agencies (look for NFCC members) can negotiate with creditors on your behalf and set up a Debt Management Plan (DMP) with reduced interest rates, often 6–10%. There's usually a small monthly fee ($25–50). This is not debt settlement (which damages credit) — it's a structured repayment plan." },
       { type: "tip", text: "The single most powerful move: apply 50% of any tax refund directly to your highest-interest card. The average US tax refund is about $3,000. Applying $1,500 to a 22% APR balance saves you $330/year in interest — every year until it's paid off." },
-      { type: "cta", text: "See exactly how long it will take to pay off your cards.", ctaText: "Try Credit Card Payoff Calculator", ctaHref: "/credit-card-payoff" },
+      { type: "cta", text: "See exactly how long it will take to pay off your cards.", ctaText: "Try Credit Card Payoff Calculator", ctaHref: "/credit-card-payoff-calculator" },
     ],
   },
   {
@@ -8216,7 +8216,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-04-15",
     readTime: "7 min read",
     category: "Credit",
-    relatedCalculator: { name: "Credit Score Simulator", href: "/credit-score-simulator" },
+    relatedCalculator: { name: "Credit Card Payoff Calculator", href: "/credit-card-payoff-calculator" },
     content: [
       { type: "intro", text: "About 45 million Americans are 'credit invisible' — they have no credit history at all. Without a credit score, you can't get a car loan, apartment, or even a cell phone plan in some cases. The catch-22: you need credit to build credit. But there are proven ways to break in." },
       { type: "h2", text: "Why Having No Credit Is Different Than Bad Credit" },
@@ -8263,7 +8263,7 @@ export const blogPosts: BlogPost[] = [
         "Closing your first card: Length of credit history matters — keep your oldest account open",
         "Using debit-only forever: You'll never build credit without using credit products",
       ] },
-      { type: "cta", text: "Want to see how different credit-building actions affect your score? Simulate the impact before you act.", ctaText: "Try Credit Score Simulator", ctaHref: "/credit-score-simulator" },
+      { type: "cta", text: "Want to see how different credit-building actions affect your score? Simulate the impact before you act.", ctaText: "Try Credit Card Payoff Calculator", ctaHref: "/credit-card-payoff-calculator" },
     ],
   },
   {

@@ -129,6 +129,31 @@ export function Footer() {
                   College Savings Calculator
                 </Link>
               </li>
+              <li>
+                <Link href="/tip-calculator" className="hover:text-emerald-600">
+                  Tip Calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/salary-calculator" className="hover:text-emerald-600">
+                  Salary Calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/inflation-calculator" className="hover:text-emerald-600">
+                  Inflation Calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/loan-calculator" className="hover:text-emerald-600">
+                  Loan Calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/car-affordability-calculator" className="hover:text-emerald-600">
+                  Car Affordability Calculator
+                </Link>
+              </li>
             </ul>
           </div>
 

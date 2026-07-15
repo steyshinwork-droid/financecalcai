@@ -68,6 +68,71 @@ function generateInsight(
   return parts.join(" ");
 }
 
+const inputClass = "grid gap-3 sm:grid-cols-3";
+
+type LoanValues = { principal: string; apr: string; years: string };
+
+function LoanInputs({
+  values,
+  onChange,
+  label,
+  color,
+}: {
+  values: LoanValues;
+  onChange: (v: LoanValues) => void;
+  label: string;
+  color: string;
+}) {
+  return (
+    <Card className={`border-2 ${color}`}>
+      <CardHeader className="pb-3">
+        <CardTitle className="text-base">{label}</CardTitle>
+      </CardHeader>
+      <CardContent className={inputClass}>
+        <div className="space-y-1.5">
+          <Label className="flex items-center gap-1 text-sm">
+            <DollarSign className="h-3.5 w-3.5" /> Loan Amount
+          </Label>
+          <Input
+            type="text"
+            inputMode="numeric"
+            value={values.principal}
+            onChange={(e) => onChange({ ...values, principal: e.target.value })}
+            onFocus={(e) => e.target.select()}
+            placeholder="20000"
+          />
+        </div>
+        <div className="space-y-1.5">
+          <Label className="flex items-center gap-1 text-sm">
+            <Percent className="h-3.5 w-3.5" /> APR (%)
+          </Label>
+          <Input
+            type="text"
+            inputMode="decimal"
+            value={values.apr}
+            onChange={(e) => onChange({ ...values, apr: e.target.value })}
+            onFocus={(e) => e.target.select()}
+            placeholder="6.5"
+          />
+        </div>
+        <div className="space-y-1.5">
+          <Label className="flex items-center gap-1 text-sm">
+            <Calendar className="h-3.5 w-3.5" /> Term (years)
+          </Label>
+          <Input
+            type="text"
+            inputMode="numeric"
+            value={values.years}
+            onChange={(e) => onChange({ ...values, years: e.target.value })}
+            onFocus={(e) => e.target.select()}
+            placeholder="5"
+          />
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
 export function LoanComparisonCalc() {
   const [a, setA] = useState({ principal: "20000", apr: "6.5", years: "5" });
   const [b, setB] = useState({ principal: "20000", apr: "8.9", years: "5" });
@@ -109,69 +174,6 @@ export function LoanComparisonCalc() {
           parseFloat(b.principal), parseFloat(b.apr), parseFloat(b.years), loanB.monthly, loanB.totalInterest
         )
       : null;
-
-  const inputClass = "grid gap-3 sm:grid-cols-3";
-
-  function LoanInputs({
-    values,
-    onChange,
-    label,
-    color,
-  }: {
-    values: typeof a;
-    onChange: (v: typeof a) => void;
-    label: string;
-    color: string;
-  }) {
-    return (
-      <Card className={`border-2 ${color}`}>
-        <CardHeader className="pb-3">
-          <CardTitle className="text-base">{label}</CardTitle>
-        </CardHeader>
-        <CardContent className={inputClass}>
-          <div className="space-y-1.5">
-            <Label className="flex items-center gap-1 text-sm">
-              <DollarSign className="h-3.5 w-3.5" /> Loan Amount
-            </Label>
-            <Input
-              type="text"
-              inputMode="numeric"
-              value={values.principal}
-              onChange={(e) => onChange({ ...values, principal: e.target.value })}
-              onFocus={(e) => e.target.select()}
-              placeholder="20000"
-            />
-          </div>
-          <div className="space-y-1.5">
-            <Label className="flex items-center gap-1 text-sm">
-              <Percent className="h-3.5 w-3.5" /> APR (%)
-            </Label>
-            <Input
-              type="text"
-              inputMode="decimal"
-              value={values.apr}
-              onChange={(e) => onChange({ ...values, apr: e.target.value })}
-              onFocus={(e) => e.target.select()}
-              placeholder="6.5"
-            />
-          </div>
-          <div className="space-y-1.5">
-            <Label className="flex items-center gap-1 text-sm">
-              <Calendar className="h-3.5 w-3.5" /> Term (years)
-            </Label>
-            <Input
-              type="text"
-              inputMode="numeric"
-              value={values.years}
-              onChange={(e) => onChange({ ...values, years: e.target.value })}
-              onFocus={(e) => e.target.select()}
-              placeholder="5"
-            />
-          </div>
-        </CardContent>
-      </Card>
-    );
-  }
 
   return (
     <div className="space-y-6">
