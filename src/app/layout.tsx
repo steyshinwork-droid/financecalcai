@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     "financial calculator, AI calculator, mortgage calculator, compound interest calculator, budget calculator, debt payoff calculator, retirement calculator, investment calculator, net worth calculator, tax bracket calculator, inflation calculator, loan calculator, car affordability calculator, tip calculator, salary calculator, credit card payoff calculator",
   alternates: { canonical: "/" },
   verification: {
+    google: "pVrKWTt1z_lWHM27qEebkvm0xwiXahgOYRPbhYpMnLU",
     other: {
       "verify-admitad": "b0a3ffeae4",
       "impact-site-verification": "e39330ed-e605-46f6-bf43-c88ea79d9fbe",
