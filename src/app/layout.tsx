@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     other: {
       "verify-admitad": "b0a3ffeae4",
       "impact-site-verification": "e39330ed-e605-46f6-bf43-c88ea79d9fbe",
+      monetag: "a7dee95c2cc88ba5ebb16708a0cf167b",
     },
   },
   openGraph: {
