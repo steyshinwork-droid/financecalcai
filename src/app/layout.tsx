@@ -69,6 +69,12 @@ export default function RootLayout({
         />
         {/* @ts-ignore */}
         <meta name="impact-site-verification" value="e39330ed-e605-46f6-bf43-c88ea79d9fbe" />
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(s){s.dataset.zone='11343747',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))`,
+          }}
+        />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <Analytics />
