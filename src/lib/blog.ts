@@ -5333,7 +5333,7 @@ export const blogPosts: BlogPost[] = [
     date: "2025-03-15",
     readTime: "5 min read",
     category: "Personal Finance",
-    relatedCalculator: { name: "Net Worth Calculator", href: "/net-worth-calculator" },
+    relatedCalculator: { name: "Life Insurance Calculator", href: "/life-insurance-calculator" },
     content: [
       { type: "intro", text: "Life insurance is one of the most important financial decisions you can make — and one of the most confusing. Agents often push too much coverage. Online calculators give wildly different numbers. Here's a clear, honest framework for determining your actual need." },
       { type: "h2", text: "The DIME Method (Most Comprehensive)" },
@@ -5347,7 +5347,7 @@ export const blogPosts: BlogPost[] = [
       { type: "h2", text: "When You Don't Need Life Insurance" },
       { type: "ul", items: ["No dependents (single, no children, spouse is financially independent)", "Enough assets to cover your debts and support dependents without income", "Children are grown and financially independent"] },
       { type: "tip", text: "Apply for life insurance when you're young and healthy. A 30-year-old pays 2–3x less than a 45-year-old for the same coverage. Medical issues later in life can make insurance unaffordable or unavailable." },
-      { type: "cta", text: "Calculate your net worth to see if you already have enough assets.", ctaText: "Try Net Worth Calculator", ctaHref: "/net-worth-calculator" },
+      { type: "cta", text: "Run the DIME method automatically to get your exact coverage number.", ctaText: "Try Life Insurance Calculator", ctaHref: "/life-insurance-calculator" },
     ],
   },
   {

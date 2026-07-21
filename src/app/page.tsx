@@ -30,6 +30,7 @@ import {
   BadgeCheck,
   Target,
   HeartPulse,
+  Heart,
 } from "lucide-react";
 import {
   Card,
@@ -298,6 +299,16 @@ const calculators = [
     icon: BookOpen,
     color: "text-yellow-600",
     bg: "bg-yellow-50",
+    badge: "New",
+  },
+  {
+    title: "Life Insurance Calculator",
+    description:
+      "Find out how much life insurance coverage your family actually needs, using the DIME method - debt, income, mortgage, and education costs.",
+    href: "/life-insurance-calculator",
+    icon: Heart,
+    color: "text-gray-600",
+    bg: "bg-gray-50",
     badge: "New",
   },
 ];

@@ -154,6 +154,11 @@ export function Footer() {
                   Car Affordability Calculator
                 </Link>
               </li>
+              <li>
+                <Link href="/life-insurance-calculator" className="hover:text-emerald-600">
+                  Life Insurance Calculator
+                </Link>
+              </li>
             </ul>
           </div>
 

@@ -131,6 +131,11 @@ const ALL_CALCULATORS: Record<string, { name: string; href: string; description:
     href: "/college-savings-calculator",
     description: "Project your 529 plan's growth and college cost coverage.",
   },
+  "life-insurance-calculator": {
+    name: "Life Insurance Calculator",
+    href: "/life-insurance-calculator",
+    description: "Find out how much life insurance coverage you need.",
+  },
 };
 
 const RELATED_MAP: Record<string, string[]> = {
@@ -160,6 +165,7 @@ const RELATED_MAP: Record<string, string[]> = {
   "fire-calculator": ["retirement-calculator", "investment-calculator", "compound-interest-calculator"],
   "hsa-calculator": ["retirement-calculator", "tax-bracket-calculator", "investment-calculator"],
   "college-savings-calculator": ["compound-interest-calculator", "budget-calculator", "investment-calculator"],
+  "life-insurance-calculator": ["net-worth-calculator", "mortgage-calculator", "budget-calculator"],
 };
 
 export function RelatedCalculators({ currentSlug }: { currentSlug: string }) {
