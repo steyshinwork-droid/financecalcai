@@ -12,5 +12,5 @@ jobs:
       - name: Ping Supabase REST API
         run: |
           curl -s -o /dev/null -w "Supabase ping status: %{http_code}\n" \
-            "https://ocnxetcjqaqagakeieev.supabase.co/rest/v1/" \
+            "https://ocnxetcjqaqagakeieev.supabase.co/rest/v1/profiles?select=id&limit=1" \
             -H "apikey: sb_publishable_bTByhnnUXWBxd-bli8sPQg_1fQuYnyu"
