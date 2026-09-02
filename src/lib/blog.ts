@@ -12031,7 +12031,7 @@ export const blogPosts: BlogPost[] = [
     slug: "what-is-a-401k-loan",
     title: "What Is a 401(k) Loan and When Should You Use One?",
     description: "Borrowing from your 401(k) sounds easy — but the hidden costs are significant. Here's exactly how 401(k) loans work, when they make sense, and when to avoid them.",
-    date: "2026-06-06",
+    date: "2026-09-02",
     readTime: "6 min read",
     category: "Retirement",
     relatedCalculator: { name: "Retirement Calculator", href: "/retirement-calculator" },
@@ -12043,7 +12043,7 @@ export const blogPosts: BlogPost[] = [
       { type: "ul", items: [
         "Opportunity cost: The borrowed money isn't invested and misses market growth. Borrow $20,000 when the market returns 8% that year and you miss $1,600 in growth.",
         "Double taxation on interest: You repay the loan with after-tax dollars, then pay taxes again on those same dollars in retirement.",
-        "Risk of job loss: If you leave your job, the full loan balance is typically due within 60–90 days. If you can't repay, it's treated as a distribution — income taxes plus a 10% early withdrawal penalty.",
+        "Risk of job loss: If you leave your job, the full remaining balance is typically due by the tax-filing deadline for that year (extended from the old 60-day rule by the Tax Cuts and Jobs Act). If you can't repay in time, it's treated as a distribution — income taxes plus a 10% early withdrawal penalty if you're under 59½.",
         "Contribution disruption: Many people stop contributing to their 401(k) while repaying the loan, losing both the employer match and compounding growth."
       ]},
       { type: "h2", text: "When a 401(k) Loan Makes Sense" },
@@ -12053,6 +12053,8 @@ export const blogPosts: BlogPost[] = [
         "The alternative is high-interest debt (credit cards at 20%+) that you can't pay off quickly.",
         "You can maintain your 401(k) contributions while repaying the loan."
       ]},
+      { type: "p", text: "Even in the best case, a 401(k) loan costs you something. Because the borrowed money stops compounding the moment it leaves the account, a loan you repay perfectly on schedule still leaves your retirement balance smaller than if you had never touched it. The interest you pay yourself is almost always less than what the market would have returned over the same years — that gap is the real price, and you don't get it back." },
+      { type: "tip", text: "Before you sign, ask yourself one question: if you were laid off tomorrow, could you repay the whole balance in a lump sum by next April? If the answer is no, you're carrying more risk than the 'borrowing from yourself' framing suggests." },
       { type: "h2", text: "Better Alternatives to a 401(k) Loan" },
       { type: "ul", items: [
         "Emergency fund: The ideal solution — interest-free, no tax consequences.",
@@ -15088,33 +15090,6 @@ export const blogPosts: BlogPost[] = [
       { type: "p", text: "Many divorce attorneys bring in a QDRO specialist for this step specifically, since plan administrators are strict about exact language and rejected orders can add months to the process. Budgeting a few hundred to low thousands of dollars for a QDRO specialist is often worth it to avoid a rejected order and a second round of court filings." },
       { type: "tip", text: "Start the QDRO process as soon as the divorce settlement is reached — plan administrators can take weeks to months to review and implement it, and account values (and your ex's cooperation) can change while it's pending." },
       { type: "cta", text: "See how a divided retirement balance affects your long-term retirement plan.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
-    ],
-  },
-  {
-    slug: "what-is-a-401k-loan",
-    title: "What Is a 401(k) Loan? How Borrowing From Your Own Retirement Works",
-    description: "A 401(k) loan lets you borrow from your own retirement savings and pay yourself back with interest. Here's how it actually works, and where it quietly backfires.",
-    date: "2026-07-29",
-    readTime: "6 min read",
-    category: "Retirement",
-    relatedCalculator: { name: "Retirement Calculator", href: "/retirement-calculator" },
-    content: [
-      { type: "intro", text: "A 401(k) loan lets you borrow against your own retirement balance and repay it, with interest, back into your own account. It sounds like a victimless way to access cash — you're just borrowing from yourself, right? The mechanics are more forgiving than a bank loan, but the real cost shows up in ways that aren't obvious until years later." },
-      { type: "h2", text: "How a 401(k) Loan Works" },
-      { type: "ul", items: [
-        "You can typically borrow the lesser of $50,000 or 50% of your vested account balance",
-        "No credit check, no application process beyond your plan administrator, and funds usually arrive within days",
-        "Repayment is made through payroll deduction, generally over 5 years (longer if the loan is used to buy a primary home)",
-        "Interest is usually prime rate plus 1-2%, and that interest goes back into your own account, not to a bank",
-      ]},
-      { type: "h2", text: "The Real Cost: Missing Out on Growth" },
-      { type: "p", text: "The 'paying yourself interest' framing makes this sound free, but it isn't. While the borrowed amount is out of the market, it isn't earning investment returns — and the interest rate you pay yourself is usually far lower than what the market would have returned over the same years. If you borrow $20,000 for 5 years during a period when the market returns 8-10% annually, the gap between what you paid yourself in interest and what you would have earned invested is real money you don't get back." },
-      { type: "h2", text: "The Biggest Risk: Leaving Your Job" },
-      { type: "p", text: "This is where 401(k) loans get dangerous. If you leave your job — voluntarily or not — while a loan is outstanding, the full remaining balance typically becomes due by the tax-filing deadline for that year (this was extended from the old 60-day rule by the Tax Cuts and Jobs Act). If you can't repay it in time, the outstanding balance is treated as a distribution: it's added to your taxable income for the year, and if you're under 59½, it also triggers a 10% early withdrawal penalty on top of that." },
-      { type: "tip", text: "Before taking a 401(k) loan, ask what happens to the balance if you're laid off tomorrow. If you couldn't repay it in a lump sum on short notice, you're carrying more risk than the 'borrowing from yourself' framing suggests." },
-      { type: "h2", text: "When It Might Actually Make Sense" },
-      { type: "p", text: "A 401(k) loan is most defensible when the alternative is worse — like high-interest credit card debt — and your job is genuinely stable. It's least defensible for discretionary spending, or in any situation where job security is uncertain. Because the money you borrow stops compounding, even a 'successful' 401(k) loan that gets fully repaid on schedule still leaves your retirement balance smaller than if you'd left it alone." },
-      { type: "cta", text: "See how pausing contributions or withdrawing funds now changes your long-term retirement number.", ctaText: "Try Retirement Calculator", ctaHref: "/retirement-calculator" },
     ],
   },
   {
