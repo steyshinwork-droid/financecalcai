@@ -94,7 +94,7 @@
 **Среднее описание (~300 знаков):**
 > FinanceCalcAI is a free set of 27 financial calculators covering mortgages, retirement,
 > debt payoff, budgeting, investing, taxes and insurance. Every calculator comes with a
-> plain-English breakdown of the result, plus a library of 349 explainer articles. No signup
+> plain-English breakdown of the result, plus a library of 347 explainer articles. No signup
 > required, no ads-first experience.
 
 **Длинное описание (для AlternativeTo / Product Hunt):**
@@ -107,7 +107,7 @@
 > debt payoff, credit card payoff, student loan, loan comparison, car affordability, salary,
 > paycheck, tax bracket, inflation, HSA, 529 college savings, life insurance and more.
 >
-> Backed by 349 explainer articles on the topics behind the math — from income-driven
+> Backed by 347 explainer articles on the topics behind the math — from income-driven
 > student loan repayment to how a Roth conversion is taxed.
 >
 > Free, no account needed to use the calculators.
